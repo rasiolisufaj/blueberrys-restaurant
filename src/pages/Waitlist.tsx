@@ -3,7 +3,7 @@ import React from "react";
 function Waitlist() {
 
   return (
-    <div>
+    <div id="pageContainer">
       Waitlist
     </div>
   );

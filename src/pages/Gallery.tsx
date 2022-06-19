@@ -3,7 +3,7 @@ import React from "react";
 function Gallery() {
 
   return (
-    <div>
+    <div id="pageContainer">
       Gallery
     </div>
   );

@@ -3,7 +3,7 @@ import React from "react";
 function MenuCocktails() {
 
   return (
-    <div>
+    <div id="pageContainer">
       Menu Cocktails
     </div>
   );

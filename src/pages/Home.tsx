@@ -6,12 +6,10 @@ import HomeReviews from "./HomeReviews";
 function Home() {
 
   return (
-    <div>
-      <main id="main">
-        <HomeMain />
-        <HomeAboutUs />
-        <HomeReviews />
-      </main>
+    <div id="pageContainer">
+      <HomeMain/>
+      <HomeAboutUs/>
+      <HomeReviews/>
     </div>
   );
 };
