@@ -1,17 +1,17 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
+import HomeMain from "./HomeMain";
+import HomeAboutUs from "./HomeAboutUs";
+import HomeReviews from "./HomeReviews";
 
-const Home: React.FC = () => {
-  const [content, setContent] = useState<string>("");
-
-  useEffect(() => {
-    setContent("Content page");
-  }, []);
+function Home() {
 
   return (
-    <div className="container">
-      <header className="jumbotron">
-        <h3>{content}</h3>
-      </header>
+    <div>
+      <main id="main">
+        <HomeMain />
+        <HomeAboutUs />
+        <HomeReviews />
+      </main>
     </div>
   );
 };
