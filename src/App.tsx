@@ -9,13 +9,10 @@ import MenuBreakfast from "./pages/MenuBreakfast";
 import Gallery from "./pages/Gallery";
 import Waitlist from "./pages/Waitlist";
 import Profile from "./pages/Profile";
-import AuthService from "./services/auth.service";
 
 export const App = () => {
 
-  const [currentUser, setCurrentUser] = useState(false);
-
-  console.log("INIT. currentUser: ", currentUser);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function init() {
@@ -27,9 +24,7 @@ export const App = () => {
 
   const authenticate = async () => {
     try {
-      const user = AuthService.getCurrentUser();
-      console.log("App currentUser: ", currentUser);
-      setCurrentUser(user);
+      setLoading(false) // use loading if you want to avoid rendering while loading
 
       setTimeout(() => {
         console.log('On token expiration update the token. TODO')
@@ -42,7 +37,7 @@ export const App = () => {
   return (
     <>
       <Router>
-        <NavBar currentUser={currentUser}/>
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/#aboutUs" element={<Home/>}/>

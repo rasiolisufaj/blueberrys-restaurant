@@ -33,7 +33,7 @@ const logout = () => {
     localStorage.removeItem("user");
 };
 
-const getCurrentUser = () => {
+const getLoggedUser = () => {
     console.debug("current user in storage ", localStorage.getItem("user"));
     return JSON.parse(localStorage.getItem("user"));
 };
@@ -48,7 +48,7 @@ const isAuthenticated = () => {
 };
 
 const authHeader = () => {
-    const user = getCurrentUser();
+    const user = getLoggedUser();
 
     if (user && user.accessToken) {
         return {Authorization: 'Bearer ' + user.accessToken}; // for Spring Boot back-end
@@ -62,7 +62,7 @@ const AuthService = {
     register,
     login,
     logout,
-    getCurrentUser,
+    getLoggedUser: getLoggedUser,
     isAuthenticated,
     authHeader
 };
