@@ -4,10 +4,27 @@ import "../assets/css/App.css";
 
 import * as FaIcons from 'react-icons/fa';
 import Image from "./../assets/img/logo.png";
+import AuthService from "./../services/auth.service";
 
-function NavBar() {
+const NavBar = (props: { currentUser: any }) => {
 
   const [navbar, setNavbar] = useState(false);
+  const currentUser = props.currentUser;
+  console.log("currentUser in NavBar: ", currentUser);
+
+  const login = () => {
+    AuthService.login("ermal"); //test
+    handleRefresh();
+  }
+
+  const logout = () => {
+    AuthService.logout();
+    handleRefresh();
+  }
+
+  const handleRefresh = () => {
+    window.location.reload();
+  }
 
   const showNavbar = () => {
     setNavbar(!navbar);
@@ -36,8 +53,8 @@ function NavBar() {
         <nav className="navbar">
           <ul>
             <li><Link to={"/"} className="nav-link">Home</Link></li>
-            <li><Link to={"/aboutUs"} className="nav-link">About us</Link></li>
-            <li><Link to={"/reviews"} className="nav-link">Reviews</Link></li>
+            <li><Link to={"/#aboutUs"} className="nav-link">About us</Link></li>
+            <li><Link to={"/#reviews"} className="nav-link">Reviews</Link></li>
             <li className="dropdown">
               <Link to={"#"} className="nav-link dropdown-toggle" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Menu</Link>
@@ -50,6 +67,10 @@ function NavBar() {
             <li><Link to={"/contactUs"} className="nav-link">Contact us</Link></li>
             <li><Link to={"/gallery"} className="nav-link">Gallery</Link></li>
             <li><Link to={"/waitlist"} className="nav-link">Waitlist</Link></li>
+
+            {!currentUser && (<li><Link to={"/"} className="nav-link" onClick={login}>Login</Link></li>)}
+            {currentUser && (<li><Link to={"/"} className="nav-link" onClick={logout}>Logout</Link></li>)}
+            {currentUser && (<li><Link to={"/profile"} className="nav-link">Profile</Link></li>)}
           </ul>
         </nav>
       </div>

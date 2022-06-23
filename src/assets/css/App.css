@@ -1,2 +1,10 @@
+@import "common.css";
 @import "sidebar.css";
 @import "home.css";
+@import "menu.css";
+@import "contactUs.css";
+@import "gallery.css";
+@import "waitlist.css";
+@import "profile.css";
+@import "loginPopup.css";
+@import "welcomePopup.css";
