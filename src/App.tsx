@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react"
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import NavBar from "./pages/NavBar";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import "./assets/css/App.css";
+import NavBar from "./pages/NavBar";
 import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
 import MenuBreakfast from "./pages/MenuBreakfast";

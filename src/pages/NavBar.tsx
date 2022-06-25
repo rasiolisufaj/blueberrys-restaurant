@@ -1,17 +1,16 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import "../assets/css/App.css";
-
 import * as FaIcons from 'react-icons/fa';
 import Image from "./../assets/img/logo.png";
 import AuthService from "./../services/auth.service";
 import User from "../types/user.type";
+import LoginModal from "./../components/LoginModal";
 
 interface Props {
 }
 
 interface State {
-  showConfirmDialog: boolean
+  showLoginDialog: boolean
   loggedUser?: User
   navbar: boolean
 }
@@ -19,13 +18,13 @@ interface State {
 export default class NavBar extends React.Component<Props> {
 
   state: State = {
-    showConfirmDialog: false,
+    showLoginDialog: false,
     loggedUser: undefined,
     navbar: false
   }
 
   async componentDidMount() {
-    const user  = AuthService.getLoggedUser();
+    const user = AuthService.getLoggedUser();
     console.log("navbar loggedUser : ", user);
     this.setState({loggedUser: user})
   }
@@ -44,13 +43,26 @@ export default class NavBar extends React.Component<Props> {
     window.location.reload();
   }
 
-  showNavbar() {
+  showNavbar = () => {
     const {navbar} = this.state
     this.setState({navbar: !navbar})
   }
 
+  openLoginDialog = () => {
+    this.setState({showLoginDialog: true})
+    console.log("openLoginDialog:  showLoginDialog : ", this.state.showLoginDialog);
+  }
+
+  onOk = () => {
+    this.setState({showLoginDialog: false})
+  }
+
+  onCancel = () => {
+    this.setState({showLoginDialog: false})
+  }
+
   render() {
-    const {navbar, loggedUser} = this.state;
+    const {navbar, loggedUser, showLoginDialog} = this.state;
     return (
       <>
         <div className="sidebarMobile">
@@ -88,13 +100,18 @@ export default class NavBar extends React.Component<Props> {
               <li><Link to={"/contactUs"} className="nav-link">Contact us</Link></li>
               <li><Link to={"/gallery"} className="nav-link">Gallery</Link></li>
               <li><Link to={"/waitlist"} className="nav-link">Waitlist</Link></li>
-              {!loggedUser && (<li><Link to={"/"} className="nav-link" onClick={this.login}>Login</Link></li>)}
+              {!loggedUser && (<li><Link to={"/"} className="nav-link" onClick={this.openLoginDialog}>Login</Link></li>)}
               {loggedUser && (<li><Link to={"/"} className="nav-link" onClick={this.logout}>Logout</Link></li>)}
               {loggedUser && (<li><Link to={"/profile"} className="nav-link">Profile</Link></li>)}
 
             </ul>
           </nav>
+
+          <LoginModal showLoginDialog={showLoginDialog}
+                      onCancel={this.onCancel}
+                      onOk={this.onOk}/>
         </div>
+
       </>
     )
   };

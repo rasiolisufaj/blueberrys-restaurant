@@ -1,3 +1,7 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import '~antd/dist/antd.min.css';
+
 @import "common.css";
 @import "sidebar.css";
 @import "home.css";
