@@ -8,10 +8,12 @@ import MenuBreakfast from "./pages/MenuBreakfast";
 import Gallery from "./pages/Gallery";
 import Waitlist from "./pages/Waitlist";
 import Profile from "./pages/Profile";
+import LoginModal from "./components/LoginModal";
 
 export const App = () => {
 
   const [loading, setLoading] = useState(true)
+  const [showLoginDialog, setShowLoginDialog] = useState(false)
 
   useEffect(() => {
     async function init() {
@@ -33,10 +35,20 @@ export const App = () => {
     }
   }
 
+  const openLoginDialog = () => {
+    setShowLoginDialog(!showLoginDialog);
+  }
+
+  const onCancelLoginDialog = () => {
+    setShowLoginDialog(false);
+  }
+
   return (
     <>
       <Router>
-        <NavBar/>
+        <NavBar openLoginDialog={openLoginDialog}/>
+        <LoginModal showLoginDialog={showLoginDialog} onCancel={onCancelLoginDialog}/>
+
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/#aboutUs" element={<Home/>}/>

@@ -1,0 +1,242 @@
+.customPopup {
+  top: 0;
+  left: 160px;
+}
+
+.ant-modal-mask {
+  left: 300px;
+}
+
+.ant-modal-body {
+  border: 20px solid #273c89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background: #f3f6ff url("../img/backgroundHome.png") no-repeat center center;
+  background-size: cover;
+}
+
+.ant-modal-close {
+  background-color: #273c89;
+  font-size: 33px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: white;
+}
+
+.ant-modal-close-x {
+  font-size: 33px;
+}
+
+.loginPopupContainer {
+  display: flex;
+  border: 5px solid #273c89;
+  margin: 5px;
+  padding: 50px;
+}
+
+.registerOrLoginMessageDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.loginText {
+  font-size: 30px;
+  line-height: 36px;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  margin-top: 18px;
+}
+
+.registerAndLoginFormDiv {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.registerForm {
+  width: 48%;
+}
+
+.loginForm {
+  width: 48%;
+}
+
+.registerAndLoginFormDiv h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+}
+
+.registerAndLoginFormDiv input {
+  height: 46px;
+  border: 1px solid rgb(39 60 137 / 50%);
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 10px;
+  outline: 0;
+}
+
+.registerAndLoginFormDiv label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #273c89;
+  opacity: 0.5;
+  font-weight: 400;
+  font-family: "Aileron", Sans-serif, serif;
+  margin-bottom: 5px;
+}
+
+.registerAndLoginFormDiv .required {
+  color: red;
+  font-weight: 700;
+  border: 0;
+}
+
+.formInput::-webkit-input-placeholder {
+  color: rgb(170, 186, 214);
+}
+
+.rememberMeDiv {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  opacity: 1 !important;
+}
+
+.rememberMeDiv input {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.checkboxCustom {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 25px;
+  width: 28px;
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  border: 1px solid rgb(39 60 137 / 50%);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* When the checkbox is checked, add a blue background */
+.rememberMeDiv input:checked ~ .checkboxCustom {
+  background-color: white;
+}
+
+/* Create the checkboxCustom/indicator (hidden when not checked) */
+.checkboxCustom:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.rememberMeDiv input:checked ~ .checkboxCustom:after {
+  display: block;
+}
+
+.rememberMeDiv .checkboxCustom:after {
+  left: 9px;
+  top: 2px;
+  width: 8px;
+  height: 16px;
+  border-bottom: 2px solid #273c89;
+  border-right: 2px solid #273c89;
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rememberMeText {
+  margin-left: 3px;
+}
+
+.lostPasswordButton {
+  padding: 13px 10px 14px;
+  background: #ecc36c;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 900;
+  font-family: "Aileron", Sans-serif, serif;
+  width: 100%;
+  text-align: center;
+  color: #273c89;
+  border: 0;
+  font-style: inherit;
+  margin: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+@media (max-width: 1199px) {
+  .customPopup {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 1025px) {
+  .loginPopupContainer {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .registerOrLoginMessageDiv {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .registerAndLoginFormDiv {
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .loginText {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .registerAndLoginFormDiv {
+    flex-direction: column-reverse;
+  }
+
+  .registerForm {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .loginForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .loginPopupContainer {
+    width: revert;
+  }
+}
