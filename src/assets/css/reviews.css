@@ -1,0 +1,274 @@
+#reviews {
+  height: 1000px;
+  padding: 40px;
+  color: #273c89;
+}
+
+#reviews nav {
+  background: white !important;
+}
+
+.reviewsCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 5px;
+  position: relative;
+  margin-top: 130px;
+}
+
+.reviewsSocialMediaIcons img {
+  max-height: 42px;
+  max-width: 45px;
+  /* padding-right: 15px; */
+  margin-right: 20px;
+}
+
+.reviewsTitle {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.review-stars-block {
+  font-size: 30px;
+  color: #273c89;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.review-star {
+  margin-right: 1px;
+  transform: rotate(20deg);
+}
+
+.review {
+  background: #ecc36c;
+  width: 326.667px;
+  height: 360px;
+  margin-right: 80px;
+  box-shadow: 10px -10px 1px 1px #273c89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 20px 0px;
+}
+
+.reviewBy {
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #273c89;
+}
+
+.reviewDescription {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  max-height: 140px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: grab;
+}
+
+.reviewDate {
+  font-size: 19px;
+  color: #273c89;
+  margin-top: 10px;
+}
+
+.reviewLogo {
+  position: absolute;
+  top: -35px;
+}
+
+.reviewLogo img {
+  position: relative !important;
+}
+
+.reviewLogo img {
+  width: 66px;
+  height: 66px;
+}
+
+.positionRelativeOfreview {
+  position: relative;
+}
+
+.reviewLogo::before {
+  position: absolute;
+  content: "";
+  background: url(https://blueberrysgrillmb.com/wp-content/uploads/2021/12/review_before.svg) no-repeat;
+  width: 67px;
+  height: 55px;
+  top: -42px;
+  left: 38px;
+  z-index: 10;
+}
+
+.reviewsHeader-small {
+  display: none;
+}
+
+.reviewsAddNewBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.loginToAddReview {
+  color: #273c89;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Aileron", Sans-serif, serif;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+.loginToAddReview img {
+  width: 39px;
+  height: 39px;
+}
+
+.loginToAddReview span {
+  margin-left: 13px;
+  display: inline;
+}
+
+.reviewsLoginButton a {
+  color: white;
+}
+
+.reviewsLoginButton {
+  /* border-bottom: 1px solid turquoise; */
+  width: 30%;
+  background: #273c89;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  min-width: 235px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.reviewsSocialMediaIcons-small {
+  display: none;
+}
+
+.reviewsCarousel-small {
+  display: none;
+}
+
+.reviewsSocialMediaIcons-small a {
+  padding: 15px;
+}
+
+.scrollable-element {
+  scrollbar-color: red yellow; /* red is for the thumb and yellow is for the track */
+}
+
+.carousel-control {
+  opacity: -1 !important;
+}
+
+::-webkit-scrollbar {
+  /* height: 12px; */
+  height: 100%;
+  width: 3px;
+  background: #ecc36c;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #273c89;
+  margin-right: 5px;
+  /* -webkit-border-radius: 1ex; */
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+@media (max-width: 1000px) {
+  #reviews nav {
+    display: none;
+  }
+
+  .reviewsCarousel {
+    display: none;
+  }
+
+  .review {
+    width: 100%;
+    padding: 40px;
+    margin-top: 137px;
+  }
+
+  .reviewsCarousel-small {
+    display: block;
+    /* margin-right: 20px; */
+  }
+
+  .reviewsHeader-small {
+    display: block;
+  }
+
+  .reviewsHeader-small h2 {
+    color: #273c89;
+    font-family: "Aileron", Sans-serif, serif;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .reviewsSocialMediaIcons-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .carousel-indicators {
+    display: none !important;
+  }
+}
+
+@media (max-width: 766px) {
+  .reviewsAddNewBlock {
+    flex-direction: column;
+  }
+
+  .loginToAddReview {
+    margin-right: 0px;
+  }
+
+  .reviewsLoginButton {
+    margin-top: 20px;
+  }
+
+  .reviewsSocialMediaIcons-small {
+    margin-top: 35px;
+  }
+
+  .reviewsHeader-small h2 {
+    font-size: 30px;
+  }
+}

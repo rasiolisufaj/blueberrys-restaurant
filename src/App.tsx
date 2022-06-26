@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import "./assets/css/App.css";
+import "./assets/css/app.css";
 import NavBar from "./pages/NavBar";
 import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
@@ -9,6 +9,9 @@ import Gallery from "./pages/Gallery";
 import Waitlist from "./pages/Waitlist";
 import Profile from "./pages/Profile";
 import LoginModal from "./components/LoginModal";
+import Values from "./pages/Values";
+import Blog from "./pages/Blog";
+import Team from "./pages/Team";
 
 export const App = () => {
 
@@ -58,6 +61,9 @@ export const App = () => {
           <Route path="/gallery" element={<Gallery/>}/>
           <Route path="/waitlist" element={<Waitlist/>}/>
           <Route path="/profile" element={<Profile/>}/>
+          <Route path="/values" element={<Values/>}/>
+          <Route path="/blog" element={<Blog/>}/>
+          <Route path="/team" element={<Team/>}/>
         </Routes>
       </Router>
     </>

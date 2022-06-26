@@ -1,0 +1,212 @@
+#about {
+  background: #273c89;
+  color: #ffff;
+  padding: 125px 30px 240px;
+}
+
+#about a {
+  color: white;
+}
+
+.aboutHeader {
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  /* border: 1px solid red; */
+   position: relative;
+  /*width: fit-content;*/
+}
+
+.aboutUsBackgroundImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 40px; */
+  /* position: absolute; */
+}
+
+.aboutUsBackgroundImage img {
+  /* width: 80vw; */
+  object-fit: contain;
+  height: 80vh;
+  vertical-align: middle;
+  display: inline-block;
+  width: 987px;
+  aspect-ratio: auto 987 / 657;
+  position: relative;
+}
+
+.aboutHeading {
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 57.6px;
+  font-style: inherit;
+  position: absolute;
+  left: 126px;
+  top: -87px;
+}
+
+.valueAndTeamButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 102px;
+  top: -69px;
+}
+
+.ValueButton {
+  font-family: "Aileron", Sans-serif, serif;
+  /* font-size: 36px; */
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 43.2px;
+  font-size: 30px;
+  /* position: relative; */
+}
+
+.TeamButton {
+  font-family: "Aileron", Sans-serif, serif;
+  /* font-size: 36px; */
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 43.2px;
+  font-size: 30px;
+  /* position: relative; */
+}
+
+.aboutTeam img {
+  /* position: absolute;
+    left: 62px;
+    top: 35px; */
+}
+
+.aboutValue img {
+  /* position: absolute;
+    left: 92px;
+    top: 35px; */
+}
+
+.aboutValue {
+  /* position: absolute;
+    right: 325px;
+    top: -73px; */
+}
+
+.aboutTeam {
+  /* position: absolute;
+    right: 163px;
+    top: -73px; */
+}
+
+#more {
+  display: none;
+  /* margin-bottom: 15px; */
+}
+
+#aboutUsOpenedPara {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.aboutUsDescription {
+  padding: 50px 30px 50px 50px;
+  width: 681px;
+  height: 343px;
+  border: 14px solid #ecc36c;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  position: absolute;
+  bottom: -860px;
+  /*left: 20px;*/
+  background-color: #273c89;
+}
+
+.aboutUsPara div {
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+#readMoreButton {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+#readMoreButton i {
+  margin-left: 5px;
+}
+
+#readMoreButton:hover {
+  border: 1px dotted white;
+}
+
+.aboutUsFirstPara,
+.sty {
+  /* margin-bottom: 15px; */
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+#aboutUsArrowUp {
+  display: none;
+}
+
+@media (max-width: 733px) {
+  .aboutUsDescription {
+    width: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .aboutUsDescription {
+    left: -1px !important;
+  }
+}
+@media (max-width: 800px) {
+  .aboutUsDescription {
+    width: 300px !important;
+    padding: 20px 20px 20px 20px;
+    top: -170px;
+  }
+  .aboutUsFirstPara,
+  .sty {
+    font-size: 15px;
+  }
+  #readMoreButton {
+    font-size: 14px;
+  }
+  #aboutUsOpenedPara {
+    font-size: 15px;
+  }
+  .positionRelativeForSmallWIdth {
+    position: relative;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* .aboutHeader {
+      width: 100%;
+      margin-left: 0;
+    } */
+}

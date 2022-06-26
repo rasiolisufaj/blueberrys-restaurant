@@ -5,6 +5,9 @@
 @import "common.css";
 @import "sidebar.css";
 @import "home.css";
+@import "aboutUs.css";
+@import "homeBlog.css";
+@import "reviews.css";
 @import "menu.css";
 @import "contactUs.css";
 @import "gallery.css";
@@ -12,3 +15,6 @@
 @import "profile.css";
 @import "loginPopup.css";
 @import "welcomePopup.css";
+@import "team.css";
+@import "values.css";
+@import "blog.css";

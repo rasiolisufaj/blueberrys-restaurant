@@ -1,4 +1,7 @@
 import React from "react";
+import AboutUs from "./AboutUs";
+import HomeBlog from "./HomeBlog";
+import Reviews from "./Reviews";
 
 function Home() {
 
@@ -33,6 +36,10 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <AboutUs/>
+      <HomeBlog/>
+      <Reviews/>
     </div>
   );
 };
