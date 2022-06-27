@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import * as FaIcons from 'react-icons/fa';
+import {FaBars, FaRegWindowClose} from 'react-icons/fa';
 import Image from "./../assets/img/logo.png";
 import AuthService from "./../services/auth.service";
 import User from "../types/user.type";
@@ -52,8 +52,8 @@ export default class NavBar extends React.Component<Props> {
           </div>
 
           <Link to='#' className='mobile-navbar-toggle'>
-            {!navbar && <FaIcons.FaBars onClick={this.showNavbar}/>}
-            {navbar && <FaIcons.FaRegWindowClose onClick={this.showNavbar}/>}
+            {!navbar && <FaBars onClick={this.showNavbar}/>}
+            {navbar && <FaRegWindowClose onClick={this.showNavbar}/>}
           </Link>
         </div>
 

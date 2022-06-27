@@ -29,23 +29,23 @@ function Reviews() {
             </div>
 
             <div className="d-flex align-items-center reviewsSocialMediaIcons">
-              <a href="https://www.facebook.com/blueberrysgrill/" target="_blank">
-                <img src={FbImage}/>
+              <a href="https://www.facebook.com/blueberrysgrill/">
+                <img src={FbImage} alt=""/>
               </a>
-              <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach" target="_blank">
-                <img src={YahooImage}/>
+              <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach">
+                <img src={YahooImage} alt=""/>
               </a>
-              <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250" target="_blank">
-                <img src={YellowPagesImage}/>
+              <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250">
+                <img src={YellowPagesImage} alt=""/>
               </a>
-              <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2" target="_blank">
-                <img src={YelpImage}/>
+              <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2">
+                <img src={YelpImage} alt=""/>
               </a>
-              <a href="https://pin.it/3RItKJx" target="_blank">
-                <img src={PinterestImage}/>
+              <a href="https://pin.it/3RItKJx">
+                <img src={PinterestImage} alt=""/>
               </a>
-              <a href="https://www.tripadvisor.com/Restaurant_Review-g54359-d12162017-Reviews-Blueberry_s_Grill-Myrtle_Beach_South_C" target="_blank">
-                <img src={TripAdvisorImage}/>
+              <a href="https://www.tripadvisor.com/Restaurant_Review-g54359-d12162017-Reviews-Blueberry_s_Grill-Myrtle_Beach_South_C">
+                <img src={TripAdvisorImage} alt=""/>
               </a>
             </div>
           </div>
@@ -225,23 +225,23 @@ function Reviews() {
 
       <div className="reviewsSocialMediaIcons-small">
         <div>
-          <a href="https://www.facebook.com/blueberrysgrill/" target="_blank">
-            <img src={FbImage}/>
+          <a href="https://www.facebook.com/blueberrysgrill/">
+            <img src={FbImage} alt=""/>
           </a>
         </div>
         <div>
-          <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach" target="_blank">
-            <img src={YahooImage}/>
+          <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach">
+            <img src={YahooImage} alt=""/>
           </a>
         </div>
         <div>
-          <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250" target="_blank">
-            <img src={YellowPagesImage}/>
+          <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250">
+            <img src={YellowPagesImage} alt=""/>
           </a>
         </div>
         <div>
-          <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2" target="_blank">
-            <img src={YelpImage}/>
+          <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2">
+            <img src={YelpImage} alt=""/>
           </a>
         </div>
       </div>
