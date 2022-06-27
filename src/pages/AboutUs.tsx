@@ -8,19 +8,19 @@ function AboutUs() {
   return (
     <section id="about">
       <div data-aos="fade-up">
-        <header className="aboutHeader">
+        <div className="aboutHeader">
           <h2 className="aboutHeading">ABOUT US</h2>
           <div className="valueAndTeamButtons">
-            <Link to={"/values"} className="aboutValue nav-link">
+            <Link to={"/values"} className="aboutValue">
               <div className="ValueButton">Values</div>
               <img src={ArrowWhiteImage} alt=""/>
             </Link>
-            <Link to={"/team"} className="aboutTeam nav-link">
+            <Link to={"/team"} className="aboutTeam">
               <div className="TeamButton">Team</div>
               <img src={ArrowWhiteImage} alt=""/>
             </Link>
           </div>
-        </header>
+        </div>
 
         <div className="aboutUsBackgroundImage">
           <img src={AboutUsImage} alt=""/>

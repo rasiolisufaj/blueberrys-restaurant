@@ -10,7 +10,7 @@ function Home() {
       <section id="home">
         <div className="homeSection">
           <div className="homeSectionLeft">
-            <iframe width="100%" height="100%" className="responsive-iframe"
+            <iframe width="100%" height="100%" className="responsive-iframe" title="Blueberry Video"
                     src="https://www.youtube-nocookie.com/embed/YqhH-RfInA4?playlist=YqhH-RfInA4&autoplay=1&controls=1&loop=1&mute=1">
             </iframe>
           </div>

@@ -55,7 +55,11 @@
   align-items: center;
   position: absolute;
   right: 102px;
-  top: -69px;
+  top: -88px;
+}
+
+.valueAndTeamButtons a {
+  padding-left: 10px;
 }
 
 .ValueButton {

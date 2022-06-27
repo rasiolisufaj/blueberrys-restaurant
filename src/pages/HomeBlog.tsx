@@ -12,7 +12,7 @@ function HomeBlog() {
     <section id="blogHome">
       <div data-aos="fade-up">
         <header className="blogHeader">
-          <Link to={"/blog"} className="blogTitle nav-link">
+          <Link to={"/blog"} className="blogTitle">
             <h2>Blog</h2>
             <img src={ArrowBlueImage} alt=""/>
           </Link>
@@ -20,7 +20,7 @@ function HomeBlog() {
 
         <div className="blogContent">
           <div className="blogCard">
-            <img src={BlogImage1}/>
+            <img src={BlogImage1} alt=""/>
             <div className="blogCardContent">
               <h2>BLUEBERRY HUSHPUPPIES</h2>
               <div className="blogCardParagraph">
@@ -38,7 +38,7 @@ function HomeBlog() {
           </div>
 
           <div className="blogCard">
-            <img src={BlogImage2} width="445" height="284"/>
+            <img src={BlogImage2} width="445" height="284" alt=""/>
             <div className="blogCardContent">
               <h2>BLOODY MARY & CHEESY SHRIMP & GRITS</h2>
               <div className="blogCardParagraph">
@@ -56,7 +56,7 @@ function HomeBlog() {
           </div>
 
           <div className="blogCard blogCard-3">
-            <img src={BlogImage3} width="445" height="284"/>
+            <img src={BlogImage3} width="445" height="284" alt=""/>
             <div className="blogCardContent">
               <h2>BLUEBERRY FRENCH TOAST</h2>
               <div className="blogCardParagraph">
@@ -64,7 +64,7 @@ function HomeBlog() {
                 This is a French toast game changer. You’ll never want ordinary French toast ever again.
               </div>
               <div className="blogCardReadMore">
-                <a href="#">
+                <a href="/#">
                   <span>Read more</span>
                   <i aria-hidden="true" className="fas fa-chevron-down"></i>
                 </a>
