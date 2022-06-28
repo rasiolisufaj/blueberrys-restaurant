@@ -1,5 +1,4 @@
 #blogHome {
-  /* height: 400px; */
   background-color: #f4eddd !important;
   background: url("../img/backgroundHome.png") top center;
   background-size: cover;
@@ -7,11 +6,29 @@
   position: relative;
 }
 
-.blogTitle {
+.blogHeader {
   position: absolute;
   right: 81px;
-  /* top: 44px; */
   padding-top: 44px;
+}
+
+.blogHeader a {
+  color: #273c89;
+}
+
+.blogHeader h2 {
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 43px;
+  color: #273c89;
+}
+
+.blogHeader img {
+  position: absolute;
+  right: -31px;
+  top: 96px;
 }
 
 .blogContent {
@@ -19,7 +36,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* border: 1px solid red; */
   padding: 100px 10px 10px;
 }
 
@@ -31,10 +47,6 @@
 }
 
 .blogCardContent {
-  /* display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; */
   padding: 42px;
 }
 
@@ -71,43 +83,36 @@
   font-family: "Aileron", Sans-serif, serif;
   font-size: 17px;
   font-weight: 400;
-  line-height: 21.6px;
+  line-height: 21px;
   fill: #273c89;
   color: #273c89;
-  /* margin-top: 25px; */
 }
 
 .blogCardReadMore {
   margin-top: 20px;
 }
 
-.blogHeader a {
-  color: #273c89;
-}
-
-.blogHeader h2 {
-  font-family: "Aileron", Sans-serif, serif;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 43.2px;
-}
-
-.blogTitle h2 {
-  color: #273c89;
-  position: relative;
-}
-
-.blogTitle img {
-  position: absolute;
-  right: -31px;
-  /* top: 32px; */
-  top: 96px;
+.blogCardReadMore svg {
+  font-size: 20px;
+  padding-left: 5px;
 }
 
 @media (max-width: 1199px) {
+  #blogHome {
+    padding-bottom: 25px;
+  }
+
+  .blogHeader {
+    bottom: 28px !important;
+  }
+
+  .blogHeader h2 {
+    font-size: 27px;
+  }
+
   .blogCard {
     flex-direction: column;
+    padding-top: 15px;
   }
 
   .blogCard img {
@@ -129,46 +134,25 @@
     font-size: 16px;
     line-height: 19.2px;
   }
-
-  .blogTitle {
-    right: 81px;
-
-    bottom: 0px !important;
-  }
-
-  #blogHome {
-    padding-bottom: 25px;
-  }
-
-  .blogHeader h2 {
-    font-size: 27px;
-  }
-
-  .blogCard {
-    padding-top: 15px;
-  }
 }
 
 @media (max-width: 757px) {
-  .blogCardContent {
-    padding-top: 20px;
-  }
-
   .blogHeader h2 {
     font-size: 22px;
   }
 
   .blogCard {
     flex-direction: column-reverse;
+    padding-bottom: 30px;
   }
 
-  .blogCard {
-    padding-bottom: 30px;
+  .blogCardContent {
+    padding-top: 20px;
   }
 }
 
 @media (max-width: 500px) {
-  .blogTitle {
+  .blogHeader {
     right: 60px;
   }
 

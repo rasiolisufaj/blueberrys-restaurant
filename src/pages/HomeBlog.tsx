@@ -2,8 +2,8 @@ import React from "react";
 import BlogImage1 from "../assets/img/blog/blog1.jpg";
 import BlogImage2 from "../assets/img/blog/blog2.jpg";
 import BlogImage3 from "../assets/img/blog/blog3.jpg";
-
 import ArrowBlueImage from "../assets/img/arrowBlue.svg";
+import {FaChevronDown} from 'react-icons/fa';
 import {Link} from "react-router-dom";
 
 function HomeBlog() {
@@ -11,12 +11,12 @@ function HomeBlog() {
   return (
     <section id="blogHome">
       <div data-aos="fade-up">
-        <header className="blogHeader">
-          <Link to={"/blog"} className="blogTitle">
+        <div className="blogHeader">
+          <Link to={"/blog"}>
             <h2>Blog</h2>
             <img src={ArrowBlueImage} alt=""/>
           </Link>
-        </header>
+        </div>
 
         <div className="blogContent">
           <div className="blogCard">
@@ -31,7 +31,7 @@ function HomeBlog() {
               <div className="blogCardReadMore">
                 <Link to={"/blog"}>
                   <span>Read more</span>
-                  <i aria-hidden="true" className="fas fa-chevron-down"></i>
+                  <FaChevronDown onClick={undefined}/>
                 </Link>
               </div>
             </div>
@@ -49,7 +49,7 @@ function HomeBlog() {
               <div className="blogCardReadMore">
                 <Link to={"/blog"}>
                   <span>Read more</span>
-                  <i aria-hidden="true" className="fas fa-chevron-down"></i>
+                  <FaChevronDown onClick={undefined}/>
                 </Link>
               </div>
             </div>
@@ -66,7 +66,7 @@ function HomeBlog() {
               <div className="blogCardReadMore">
                 <a href="/#">
                   <span>Read more</span>
-                  <i aria-hidden="true" className="fas fa-chevron-down"></i>
+                  <FaChevronDown onClick={undefined}/>
                 </a>
               </div>
             </div>

@@ -117,6 +117,10 @@
     left: -300px  !important;
     width: 300px !important;
   }
+
+  #pageContainer {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 1199px) {

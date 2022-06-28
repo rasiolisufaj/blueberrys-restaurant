@@ -9,40 +9,15 @@
 }
 
 .aboutHeader {
-  /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-  /* border: 1px solid red; */
    position: relative;
-  /*width: fit-content;*/
 }
 
-.aboutUsBackgroundImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* padding: 40px; */
-  /* position: absolute; */
-}
-
-.aboutUsBackgroundImage img {
-  /* width: 80vw; */
-  object-fit: contain;
-  height: 80vh;
-  vertical-align: middle;
-  display: inline-block;
-  width: 987px;
-  aspect-ratio: auto 987 / 657;
-  position: relative;
-}
-
-.aboutHeading {
+.aboutHeader h2 {
   color: #ffffff;
   font-family: "Aileron", Sans-serif, serif;
   font-size: 40px;
   font-weight: 800;
-  line-height: 57.6px;
+  line-height: 57px;
   font-style: inherit;
   position: absolute;
   left: 126px;
@@ -58,66 +33,24 @@
   top: -88px;
 }
 
-.valueAndTeamButtons a {
+.aboutUsLink {
+  font-family: "Aileron", Sans-serif, serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 43px;
+  font-size: 30px;
   padding-left: 10px;
 }
 
-.ValueButton {
-  font-family: "Aileron", Sans-serif, serif;
-  /* font-size: 36px; */
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 43.2px;
-  font-size: 30px;
-  /* position: relative; */
+.aboutUsBackgroundImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.TeamButton {
-  font-family: "Aileron", Sans-serif, serif;
-  /* font-size: 36px; */
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 43.2px;
-  font-size: 30px;
-  /* position: relative; */
-}
-
-.aboutTeam img {
-  /* position: absolute;
-    left: 62px;
-    top: 35px; */
-}
-
-.aboutValue img {
-  /* position: absolute;
-    left: 92px;
-    top: 35px; */
-}
-
-.aboutValue {
-  /* position: absolute;
-    right: 325px;
-    top: -73px; */
-}
-
-.aboutTeam {
-  /* position: absolute;
-    right: 163px;
-    top: -73px; */
-}
-
-#more {
-  display: none;
-  /* margin-bottom: 15px; */
-}
-
-#aboutUsOpenedPara {
-  margin-bottom: 25px;
-  color: #ffffff;
-  font-family: "Aileron", Sans-serif, serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
+.aboutUsBackgroundImage img {
+  height: 80vh;
 }
 
 .aboutUsDescription {
@@ -130,17 +63,20 @@
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   position: absolute;
   bottom: -860px;
-  /*left: 20px;*/
   background-color: #273c89;
 }
 
-.aboutUsPara div {
+.aboutUsPara {
   color: #ffffff;
   font-family: "Aileron", Sans-serif, serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 25px;
+}
+
+#more {
+  display: none;
 }
 
 #readMoreButton {
@@ -151,7 +87,6 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  /* border: 1px solid red; */
 }
 
 #readMoreButton i {
@@ -162,26 +97,13 @@
   border: 1px dotted white;
 }
 
-.aboutUsFirstPara,
-.sty {
-  /* margin-bottom: 15px; */
-  color: #ffffff;
-  font-family: "Aileron", Sans-serif, serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 25px;
-}
-
 #aboutUsArrowUp {
   display: none;
 }
 
-@media (max-width: 733px) {
-  .aboutUsDescription {
-    width: auto;
-  }
+@media (max-width: 1199px) {
 }
+
 @media (max-width: 1000px) {
   .aboutUsDescription {
     left: -1px !important;
@@ -193,24 +115,19 @@
     padding: 20px 20px 20px 20px;
     top: -170px;
   }
-  .aboutUsFirstPara,
-  .sty {
+  .aboutUsPara{
     font-size: 15px;
   }
   #readMoreButton {
     font-size: 14px;
   }
-  #aboutUsOpenedPara {
-    font-size: 15px;
-  }
-  .positionRelativeForSmallWIdth {
+  .positionRelative-sm {
     position: relative;
   }
 }
 
-@media (max-width: 1199px) {
-  /* .aboutHeader {
-      width: 100%;
-      margin-left: 0;
-    } */
+@media (max-width: 733px) {
+  .aboutUsDescription {
+    width: auto;
+  }
 }

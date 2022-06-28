@@ -14,18 +14,10 @@ function Reviews() {
   return (
     <section id="reviews">
       <div data-aos="fade-up">
-        <header className="reviewsHeader-small">
-          <h2>Reviews</h2>
-        </header>
-
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container-fluid">
-            <div className="collapse navbar-collapse">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item reviewsTitle">
+        <div className="reviewsContent">
+          <div className="reviewsHeader">
+            <div className="reviewsTitle">
                   Reviews
-                </li>
-              </ul>
             </div>
 
             <div className="d-flex align-items-center reviewsSocialMediaIcons">
@@ -49,7 +41,7 @@ function Reviews() {
               </a>
             </div>
           </div>
-        </nav>
+        </div>
 
         <div className="reviewsCarousel">
           <div className="review review-1">

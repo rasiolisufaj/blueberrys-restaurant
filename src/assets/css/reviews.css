@@ -4,7 +4,20 @@
   color: #273c89;
 }
 
-#reviews nav {
+.reviewsHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewsTitle {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.reviewsContent {
   background: white !important;
 }
 
@@ -22,14 +35,6 @@
   max-width: 45px;
   /* padding-right: 15px; */
   margin-right: 20px;
-}
-
-.reviewsTitle {
-  color: #273c89;
-  font-family: "Aileron", Sans-serif, serif;
-  font-size: 48px;
-  font-weight: 900;
-  text-transform: uppercase;
 }
 
 .review-stars-block {
@@ -95,9 +100,6 @@
 
 .reviewLogo img {
   position: relative !important;
-}
-
-.reviewLogo img {
   width: 66px;
   height: 66px;
 }
@@ -115,10 +117,6 @@
   top: -42px;
   left: 38px;
   z-index: 10;
-}
-
-.reviewsHeader-small {
-  display: none;
 }
 
 .reviewsAddNewBlock {
@@ -188,29 +186,32 @@
   opacity: -1 !important;
 }
 
-::-webkit-scrollbar {
-  /* height: 12px; */
+.reviewDescription::-webkit-scrollbar {
   height: 100%;
-  width: 3px;
+  width: 5px;
   background: #ecc36c;
   padding-right: 5px;
   margin-right: 5px;
 }
 
-::-webkit-scrollbar-thumb {
+.reviewDescription::-webkit-scrollbar-thumb {
   background: #273c89;
   margin-right: 5px;
-  /* -webkit-border-radius: 1ex; */
+   /*-webkit-border-radius: 10px;*/
 }
 
-::-webkit-scrollbar-corner {
+.reviewDescription::-webkit-scrollbar-corner {
   background: #000;
 }
 
 @media (max-width: 1000px) {
-  #reviews nav {
-    display: none;
+  .reviewsContent {
+    /*display: none;*/
   }
+
+  /*.reviewsHeader {*/
+    /*display: block;*/
+  /*}*/
 
   .reviewsCarousel {
     display: none;
@@ -225,18 +226,6 @@
   .reviewsCarousel-small {
     display: block;
     /* margin-right: 20px; */
-  }
-
-  .reviewsHeader-small {
-    display: block;
-  }
-
-  .reviewsHeader-small h2 {
-    color: #273c89;
-    font-family: "Aileron", Sans-serif, serif;
-    font-size: 40px;
-    font-weight: 900;
-    text-transform: uppercase;
   }
 
   .reviewsSocialMediaIcons-small {
