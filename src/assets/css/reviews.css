@@ -4,6 +4,10 @@
   color: #273c89;
 }
 
+.reviewsContent {
+  background: white !important;
+}
+
 .reviewsHeader {
   display: flex;
   justify-content: space-between;
@@ -17,8 +21,10 @@
   text-transform: uppercase;
 }
 
-.reviewsContent {
-  background: white !important;
+.reviewsSocialMediaIcons img {
+  max-height: 42px;
+  max-width: 45px;
+  margin-right: 20px;
 }
 
 .reviewsCarousel {
@@ -30,11 +36,48 @@
   margin-top: 130px;
 }
 
-.reviewsSocialMediaIcons img {
-  max-height: 42px;
-  max-width: 45px;
-  /* padding-right: 15px; */
-  margin-right: 20px;
+.reviewCard {
+  background: #ecc36c;
+  width: 326px;
+  height: 360px;
+  margin-right: 80px;
+  box-shadow: 10px -10px 1px 1px #273c89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 20px 0px;
+}
+
+.reviewLogo {
+  position: absolute;
+  top: -35px;
+}
+
+.reviewLogo img {
+  position: relative !important;
+  width: 66px;
+  height: 66px;
+}
+
+.reviewLogo::before {
+  position: absolute;
+  content: "";
+  background: url(https://blueberrysgrillmb.com/wp-content/uploads/2021/12/review_before.svg) no-repeat;
+  width: 67px;
+  height: 55px;
+  top: -42px;
+  left: 38px;
+  z-index: 10;
+}
+
+.reviewBy {
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #273c89;
 }
 
 .review-stars-block {
@@ -48,28 +91,6 @@
 .review-star {
   margin-right: 1px;
   transform: rotate(20deg);
-}
-
-.review {
-  background: #ecc36c;
-  width: 326.667px;
-  height: 360px;
-  margin-right: 80px;
-  box-shadow: 10px -10px 1px 1px #273c89;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  padding: 20px 20px 0px;
-}
-
-.reviewBy {
-  font-family: "Aileron", Sans-serif, serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #273c89;
 }
 
 .reviewDescription {
@@ -93,40 +114,14 @@
   margin-top: 10px;
 }
 
-.reviewLogo {
-  position: absolute;
-  top: -35px;
-}
-
-.reviewLogo img {
-  position: relative !important;
-  width: 66px;
-  height: 66px;
-}
-
-.positionRelativeOfreview {
-  position: relative;
-}
-
-.reviewLogo::before {
-  position: absolute;
-  content: "";
-  background: url(https://blueberrysgrillmb.com/wp-content/uploads/2021/12/review_before.svg) no-repeat;
-  width: 67px;
-  height: 55px;
-  top: -42px;
-  left: 38px;
-  z-index: 10;
-}
-
-.reviewsAddNewBlock {
+.loginToReviewSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 100px;
 }
 
-.loginToAddReview {
+.loginToReviewDiv {
   color: #273c89;
   font-size: 20px;
   font-weight: 700;
@@ -137,34 +132,23 @@
   margin-right: 20px;
 }
 
-.loginToAddReview img {
+.loginToReviewDiv img {
   width: 39px;
   height: 39px;
 }
 
-.loginToAddReview span {
+.loginToReviewDiv span {
   margin-left: 13px;
   display: inline;
 }
 
-.reviewsLoginButton a {
-  color: white;
+.loginToReviewButton {
+  width: 30%;
+  font-weight: 900;
 }
 
-.reviewsLoginButton {
-  /* border-bottom: 1px solid turquoise; */
-  width: 30%;
-  background: #273c89;
-  font-size: 18px;
-  font-weight: 900;
-  color: #fff;
-  min-width: 235px;
-  display: inline-block;
-  text-align: center;
-  padding: 15px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+
+/***** MOBILE *****/
 
 .reviewsSocialMediaIcons-small {
   display: none;
@@ -217,7 +201,7 @@
     display: none;
   }
 
-  .review {
+  .reviewCard {
     width: 100%;
     padding: 40px;
     margin-top: 137px;
@@ -241,15 +225,15 @@
 }
 
 @media (max-width: 766px) {
-  .reviewsAddNewBlock {
+  .loginToReviewSection {
     flex-direction: column;
   }
 
-  .loginToAddReview {
+  .loginToReviewDiv {
     margin-right: 0px;
   }
 
-  .reviewsLoginButton {
+  .loginToReviewButton {
     margin-top: 20px;
   }
 

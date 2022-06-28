@@ -5,6 +5,7 @@
 .mainButton {
   border: none;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   background-color: #273c89;
   padding: 13px 10px 14px;
@@ -15,6 +16,14 @@
   color: white;
   margin-top: 15px;
 }
+
+.mainButton:active,
+.mainButton:focus,
+.mainButton:hover {
+  color: white;
+  background-color: #000000;
+}
+
 
 .marginTop-20 {
   margin-top: 20px;

@@ -53,9 +53,9 @@ export const App = () => {
         <LoginModal showLoginDialog={showLoginDialog} onCancel={onCancelLoginDialog}/>
 
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/#aboutUs" element={<Home/>}/>
-          <Route path="/#reviews" element={<Home/>}/>
+          <Route path="/" element={<Home openLoginDialog={openLoginDialog}/>}/>
+          <Route path="/#aboutUs" element={<Home openLoginDialog={openLoginDialog}/>}/>
+          <Route path="/#reviews" element={<Home openLoginDialog={openLoginDialog}/>}/>
           <Route path="/menu" element={<MenuBreakfast/>}/>
           <Route path="/contactUs" element={<ContactUs/>}/>
           <Route path="/gallery" element={<Gallery/>}/>
