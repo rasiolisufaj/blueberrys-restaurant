@@ -3,17 +3,14 @@ import bookImage from "../assets/img/waitlist/book.svg";
 import plateImage from "../assets/img/waitlist/plateSpoon.svg";
 import clockImage from "../assets/img/waitlist/clock.svg";
 
-
 interface Props {
 }
 
 export default class Waitlist extends React.Component<Props> {
 
-
   joinWaitlist() {
     console.debug("Join the waitlist..");
   }
-
 
   render() {
 

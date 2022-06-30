@@ -28,7 +28,7 @@ function AboutUs() {
 
         <div className="positionRelative-sm">
           <div className="aboutUsDescription" id="aboutUsDescription">
-            <p>
+            <div>
               <div className="aboutUsPara">
                 Blueberry’s Grill was created from what was once a modest small
                 restaurant serving classic breakfast dishes in Sunny Side Up
@@ -58,7 +58,7 @@ function AboutUs() {
                   Come on a journey with us...
                 </div>
               </span>
-            </p>
+            </div>
 
             <div id="readMoreButton" className="aboutUsPara">
               <span id="readMoreText">Read more</span>

@@ -14,18 +14,18 @@ const login = (username, password) => {
     console.debug("Login for ", username);
     localStorage.setItem("user", JSON.stringify({name: username, pwd: password}));//for test purpose
 
-    return axios
-        .post(API_URL + "signin", {
-            username,
-            password,
-        })
-        .then((response) => {
-            if (response.data.accessToken) {
-                localStorage.setItem("user", JSON.stringify(response.data));
-            }
-
-            return response.data;
-        });
+    // return axios
+    //     .post(API_URL + "signin", {
+    //         username,
+    //         password,
+    //     })
+    //     .then((response) => {
+    //         if (response.data.accessToken) {
+    //             localStorage.setItem("user", JSON.stringify(response.data));
+    //         }
+    //
+    //         return response.data;
+    //     });
 };
 
 const logout = () => {

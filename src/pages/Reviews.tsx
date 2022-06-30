@@ -1,34 +1,39 @@
 import React from "react";
 
 import ReviewLogoImage from "./../assets/img/reviews/reviewLogo.png";
-import FbImage from "./../assets/img/socialMedia/facebook.svg";
-import YahooImage from "./../assets/img/socialMedia/yahoo.svg";
-import YellowPagesImage from "./../assets/img/socialMedia/yellowPages.svg";
-import YelpImage from "./../assets/img/socialMedia/yelp.svg";
-import PinterestImage from "./../assets/img/socialMedia/pinterest.png";
-import TripAdvisorImage from "./../assets/img/socialMedia/tripadvisor.png";
 import {Link} from "react-router-dom";
 import User from "../types/user.type";
 import AuthService from "../services/auth.service";
+import ReviewsService from "../services/reviews.service";
+import Review from "../types/reviews.type";
+import ReviewCard from "../components/ReviewCard";
+import SocialMediaBlock from "../components/SocialMediaBlock";
+import SocialMediaSmallBlock from "../components/SocialMediaSmallBlock";
 
 interface Props {
   openLoginDialog: () => void
 }
 
 interface State {
-  loggedUser?: User
+  loggedUser?: User,
+  reviewItems: Review[]
 }
 
-export default class Reviews extends React.Component<Props> {
+export default class Reviews extends React.Component<Props, State> {
 
   state: State = {
     loggedUser: undefined,
+    reviewItems: []
   }
 
   async componentDidMount() {
     const user = AuthService.getLoggedUser();
     console.log("Reviews loggedUser : ", user);
-    this.setState({loggedUser: user})
+
+    const reviewItems: Review[] = await ReviewsService.getAll()
+    console.debug("reviewItems", reviewItems);
+
+    this.setState({loggedUser: user, reviewItems})
   }
 
   addReview() {
@@ -37,7 +42,7 @@ export default class Reviews extends React.Component<Props> {
 
   render() {
     const {openLoginDialog} = this.props;
-    const {loggedUser} = this.state;
+    const {loggedUser, reviewItems} = this.state;
 
     return (
       <section id="reviews">
@@ -48,87 +53,16 @@ export default class Reviews extends React.Component<Props> {
                 Reviews
               </div>
 
-              <div className="d-flex align-items-center reviewsSocialMediaIcons">
-                <a href="https://www.facebook.com/blueberrysgrill/" target="_blank" rel="noopener noreferrer">
-                  <img src={FbImage} alt=""/>
-                </a>
-                <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach" target="_blank" rel="noopener noreferrer">
-                  <img src={YahooImage} alt=""/>
-                </a>
-                <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250" target="_blank" rel="noopener noreferrer">
-                  <img src={YellowPagesImage} alt=""/>
-                </a>
-                <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2" target="_blank" rel="noopener noreferrer">
-                  <img src={YelpImage} alt=""/>
-                </a>
-                <a href="https://pin.it/3RItKJx" target="_blank" rel="noopener noreferrer">
-                  <img src={PinterestImage} alt=""/>
-                </a>
-                <a href="https://www.tripadvisor.com/Restaurant_Review-g54359-d12162017-Reviews-Blueberry_s_Grill-Myrtle_Beach_South_C" target="_blank" rel="noopener noreferrer">
-                  <img src={TripAdvisorImage} alt=""/>
-                </a>
-              </div>
+              <SocialMediaBlock/>
             </div>
           </div>
 
           <div className="reviewsCarousel">
-            <div className="reviewCard review-1">
-              <div className="reviewLogo">
-                <img src={ReviewLogoImage} alt=""/>
-              </div>
-              <div className="reviewBy">Michaela M.</div>
-              <div className="review-stars-block">
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-              </div>
-              <div className="reviewDescription">
-                Perfect for brunch! They have something like 6-7 different
-                kinds of mimosas. Not to mention their Blast French Toast is sooo good!!
-                Definitely a must if you are in the area!
-              </div>
-              <div className="reviewDate">31/08/2021</div>
-            </div>
-
-            <div className="reviewCard review-2">
-              <div className="reviewLogo">
-                <img src={ReviewLogoImage} alt=""/>
-              </div>
-              <div className="reviewBy">Lauren M.</div>
-              <div className="review-stars-block">
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-              </div>
-              <div className="reviewDescription">
-                I went here for my birthday brunch and it was fantastic!!!
-                food was soo delicious that ididn't mind the wait!
-              </div>
-              <div className="reviewDate">25/09/2021</div>
-            </div>
-
-            <div className="reviewCard review-3">
-              <div className="reviewLogo">
-                <img src={ReviewLogoImage} alt=""/>
-              </div>
-              <div className="reviewBy">Dejah D.</div>
-              <div className="review-stars-block">
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-                <i className="review-star">★</i>
-              </div>
-              <div className="reviewDescription">
-                Stopped in at Blueberry Grill my first day back in town and to my expectation, I am never disappointed!
-                The mahimahi tacos were to die for and the mimosa are always a hit- This place is a must try!
-              </div>
-              <div className="reviewDate">10/10/2021</div>
-            </div>
+            {
+              reviewItems.map((review) => (
+                <ReviewCard reviewCard={review}/>
+              ))
+            }
           </div>
 
           <div id="myCarousel" className="carousel slide reviewsCarousel-small" data-ride="carousel">
@@ -139,87 +73,11 @@ export default class Reviews extends React.Component<Props> {
             </ol>
 
             <div className="carousel-inner">
-              <div className="item active">
-                <div className="reviewCard review-1">
-                  <div className="reviewLogo">
-                    <img src={ReviewLogoImage} alt=""/>
-                  </div>
-                  <div className="reviewBy">Michaela M.</div>
-                  <div className="review-stars-block">
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                  </div>
-                  <div className="reviewDescription">
-                    Perfect for brunch! They have something like 6-7 different kinds of mimosas.
-                    Not to mention their Blast French Toast is sooo good!! Definitely a must if you are in the area!
-                  </div>
-                  <div className="reviewDate">31/08/2021</div>
-                </div>
-              </div>
-
-              <div className="item">
-                <div className="reviewCard review-2">
-                  <div className="reviewLogo">
-                    <img src={ReviewLogoImage} alt=""/>
-                  </div>
-                  <div className="reviewBy">Lauren M.</div>
-                  <div className="review-stars-block">
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                  </div>
-                  <div className="reviewDescription">
-                    I went here for my birthday brunch and it was fantastic!!!
-                    food was soo delicious that ididn't mind the wait!
-                  </div>
-                  <div className="reviewDate">25/09/2021</div>
-                </div>
-              </div>
-
-              <div className="item">
-                <div className="reviewCard review-3">
-                  <div className="reviewLogo">
-                    <img src={ReviewLogoImage} alt=""/>
-                  </div>
-                  <div className="reviewBy">Dejah D.</div>
-                  <div className="review-stars-block">
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                  </div>
-                  <div className="reviewDescription">
-                    Stopped in at Blueberry Grill my first day back in town and to my expectation, I am never disappointed!
-                    The mahimahi tacos were to die for and the mimosa are always a hit- This place is a must try!
-                  </div>
-                  <div className="reviewDate">10/10/2021</div>
-                </div>
-              </div>
-
-              <div className="item">
-                <div className="reviewCard review-4">
-                  <div className="reviewLogo">
-                    <img src={ReviewLogoImage} alt=""/>
-                  </div>
-                  <div className="reviewBy">Ermal A.</div>
-                  <div className="review-stars-block">
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                    <i className="review-star">★</i>
-                  </div>
-                  <div className="reviewDescription">
-                    Great Service!
-                  </div>
-                  <div className="reviewDate">26/06/2022</div>
-                </div>
-              </div>
+              {
+                reviewItems.map((review) => (
+                  <ReviewCard reviewCard={review}/>
+                ))
+              }
             </div>
 
             <a className="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -248,34 +106,14 @@ export default class Reviews extends React.Component<Props> {
             <div className="loginToReviewDiv">
               <img src={ReviewLogoImage} alt=""/>
               <span>Insert review</span>
-              <input  required/>
+              <input required/>
               <Link to={"/"} className="mainButton loginToReviewButton" onClick={this.addReview}>Add review</Link>
             </div>
           </div>
         )}
 
-        <div className="reviewsSocialMediaIcons-small">
-          <div>
-            <a href="https://www.facebook.com/blueberrysgrill/">
-              <img src={FbImage} alt=""/>
-            </a>
-          </div>
-          <div>
-            <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach">
-              <img src={YahooImage} alt=""/>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250">
-              <img src={YellowPagesImage} alt=""/>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2">
-              <img src={YelpImage} alt=""/>
-            </a>
-          </div>
-        </div>
+        <SocialMediaSmallBlock/>
+
       </section>
     )
   };
