@@ -5,7 +5,7 @@ class Reviews {
 
   async getAll() {
     const res: Review[] = [{
-      id: undefined,
+      id: "1",
       rank: 5,
       name: "Michaela M.",
       comment: "Perfect for brunch! They have something like 6-7 different\n" +
@@ -15,7 +15,7 @@ class Reviews {
       date: undefined
     },
       {
-        id: undefined,
+        id: "2",
         rank: 5,
         name: "Lauren M.",
         comment: "I went here for my birthday brunch and it was fantastic!!!\n" +
@@ -24,7 +24,7 @@ class Reviews {
         date: undefined
       },
       {
-        id: undefined,
+        id: "3",
         rank: 1,
         name: "Dejah D.",
         comment: " Stopped in at Blueberry Grill my first day back in town and to my expectation, I am never disappointed!\n" +

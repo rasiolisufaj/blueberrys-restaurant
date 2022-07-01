@@ -32,11 +32,16 @@
   font-size: 33px;
 }
 
+
+#loginPopupSection {
+  width: 100%;
+}
+
 .loginPopupContainer {
   display: flex;
   border: 5px solid #273c89;
   margin: 5px;
-  padding: 50px;
+  padding: 35px;
 }
 
 .registerOrLoginMessageDiv {
@@ -120,54 +125,71 @@
   opacity: 1 !important;
 }
 
-.rememberMeDiv input {
-  position: absolute;
-  height: 0;
-  width: 0;
-}
+/*.rememberMeDiv input {*/
+  /*position: absolute;*/
+  /*height: 0;*/
+  /*width: 0;*/
+/*}*/
 
-.checkboxCustom {
-  position: absolute;
-  top: -3px;
-  left: 0;
-  height: 25px;
-  width: 28px;
-  -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
-  appearance: checkbox;
-  border: 1px solid rgb(39 60 137 / 50%);
-  margin-right: 10px;
-  vertical-align: middle;
-}
+/*.checkboxCustom {*/
+  /*position: absolute;*/
+  /*top: -3px;*/
+  /*left: 0;*/
+  /*height: 25px;*/
+  /*width: 28px;*/
+  /*-webkit-appearance: checkbox;*/
+  /*-moz-appearance: checkbox;*/
+  /*appearance: checkbox;*/
+  /*border: 1px solid rgb(39 60 137 / 50%);*/
+  /*margin-right: 10px;*/
+  /*vertical-align: middle;*/
+/*}*/
 
 /* When the checkbox is checked, add a blue background */
-.rememberMeDiv input:checked ~ .checkboxCustom {
-  background-color: white;
-}
+/*.rememberMeDiv input:checked ~ .checkboxCustom {*/
+  /*background-color: white;*/
+/*}*/
+
+/*.rememberMeDiv input:checked {*/
+/*background-color: white;*/
+/*}*/
 
 /* Create the checkboxCustom/indicator (hidden when not checked) */
-.checkboxCustom:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+/*.checkboxCustom:after {*/
+  /*content: "";*/
+  /*position: absolute;*/
+  /*display: none;*/
+/*}*/
 
-.rememberMeDiv input:checked ~ .checkboxCustom:after {
-  display: block;
-}
+/*.rememberMeDiv input:checked ~ .checkboxCustom:after {*/
+  /*display: block;*/
+/*}*/
 
-.rememberMeDiv .checkboxCustom:after {
-  left: 9px;
-  top: 2px;
-  width: 8px;
-  height: 16px;
-  border-bottom: 2px solid #273c89;
-  border-right: 2px solid #273c89;
+label.checkboxCustom {
   opacity: 1;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
+
+.checkboxCustom span{
+
+}
+
+
+.rememberMeDiv input:checked {
+display: block;
+}
+
+/*.rememberMeDiv .checkboxCustom:after {*/
+  /*left: 9px;*/
+  /*top: 2px;*/
+  /*width: 8px;*/
+  /*height: 16px;*/
+  /*border-bottom: 2px solid #273c89;*/
+  /*border-right: 2px solid #273c89;*/
+  /*opacity: 1;*/
+  /*-webkit-transform: rotate(45deg);*/
+  /*-ms-transform: rotate(45deg);*/
+  /*transform: rotate(45deg);*/
+/*}*/
 
 .rememberMeText {
   margin-left: 3px;

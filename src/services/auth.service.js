@@ -10,7 +10,7 @@ const register = (username, email, password) => {
     });
 };
 
-const login = (username, password) => {
+const login = async(username, password) => {
     console.debug("Login for ", username);
     localStorage.setItem("user", JSON.stringify({name: username, pwd: password}));//for test purpose
 

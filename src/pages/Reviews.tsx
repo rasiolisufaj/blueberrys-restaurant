@@ -60,7 +60,7 @@ export default class Reviews extends React.Component<Props, State> {
           <div className="reviewsCarousel">
             {
               reviewItems.map((review) => (
-                <ReviewCard reviewCard={review}/>
+                <ReviewCard reviewCard={review} key={review.id}/>
               ))
             }
           </div>
@@ -75,7 +75,7 @@ export default class Reviews extends React.Component<Props, State> {
             <div className="carousel-inner">
               {
                 reviewItems.map((review) => (
-                  <ReviewCard reviewCard={review}/>
+                  <ReviewCard reviewCard={review} key={"m" + review.id}/>
                 ))
               }
             </div>

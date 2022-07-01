@@ -1,32 +1,107 @@
-import React from 'react';
-import {Modal} from 'antd';
+import React, {createRef, RefObject} from 'react';
+import {FormInstance} from 'antd/es/form'
+import {Button, Checkbox, Form, Input, Modal} from 'antd';
 import LogoImage from "../assets/img/LoginPageLogo.svg";
 import {faClose} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import AuthService from "./../services/auth.service";
+import { FormUser} from "../types/user.type";
+import AdvancedForm, {Schema} from "./AdvancedForm";
+import LoginForm from "./LoginForm";
+// import {withTheme} from "@rjsf/core";
+// import { Theme as AntDTheme } from '@rjsf/antd'
+// const FormT = withTheme(AntDTheme)
+// import Form from "react-validation/build/form";
 
 interface Props {
   showLoginDialog: boolean
   onCancel: () => void
+  // form: FormT
+
 }
 
-export default class LoginModal extends React.Component<Props> {
+interface State {
+  // formUser: FormUser
+  // formRef: RefObject<FormInstance>
+  // submitButton: RefObject<HTMLButtonElement>
+}
 
-  login() {
-    AuthService.login("ermal"); //test
-    this.handleRefresh();
+export default class LoginModal extends React.Component <Props, State> {
+  // readonly  form = Form.useForm()
+
+  state: State = {
+    // formUser : {
+    //   user: {
+    //     name: "n",
+    //     password: "p",
+    //     email: "e",
+    //     phone: "p",
+    //   }
+    // },
+    // formRef: createRef<FormInstance>(),
+    // submitButton: React.createRef<HTMLButtonElement>(),
   }
 
-  handleRefresh() {
-    window.location.reload();
-  }
+  // getSchema = (): Schema[] => {
+  //   // const {user} = this.state
+  //
+  //   // return [
+  //   //   {
+  //   //     name: 'name',
+  //   //     type: 'text',
+  //   //     label: "Name",
+  //   //     placeholder: "Name",
+  //   //     rules: [{required: true, message: 'Please insert your name'}],
+  //   //     defaultValue: user.name
+  //   //   }
+  //   // ]
+  // }
 
   async componentDidMount() {
-    console.log("LoginModal");
+
+    // const {formUser, formRef} = this.state
+    // formRef: createRef<FormInstance>()
+    // // const { formFields } = this.props
+    // // const [form] = Form.useForm()
+    // console.log("LoginModal", formUser);
+    // this.setState(formRef)
+  }
+
+  // login() {
+  //   AuthService.login("ermal"); //test
+  //   this.handleRefresh();
+  // }
+
+  handleSubmit () {
+
+    // const {formUser} = this.state
+    // console.log("formUser", formUser);
+
+    // const formRefList = [formRef]
+    // const formValidationsResult = formRefList.map((formRef) => formRef.current)
+    //   .map(formInstance => formInstance?.validateFields())
+    //   .filter(formInstanceValidation => formInstanceValidation !== undefined);
+    //
+    // console.debug("formValidationsResult:", formValidationsResult)
+    //
+    // Promise.all(formValidationsResult).then(async () => {
+    //   console.info("Calling backend for savind data");
+    // })
+  }
+
+  // handleRefresh() {
+  //   window.location.reload();
+  // }
+
+  handleFulfillmentSubmit = () => {
+    // this.setState(() => this.state.submitButton.current?.click())
   }
 
   render() {
+    // let [form] = Form.useForm()
+    // const {formUser} = this.state;
     const {onCancel, showLoginDialog} = this.props;
+    // const { getFieldDecorator } = this.props.form;
     const closeIcon = <FontAwesomeIcon icon={faClose}/>
     return (
       <>
@@ -36,8 +111,7 @@ export default class LoginModal extends React.Component<Props> {
           width={1100}
           className={"customPopup"}
           onCancel={onCancel}
-          closeIcon={closeIcon}
-        >
+          closeIcon={closeIcon}>
 
           <section id="loginPopupSection">
             <div className="loginPopupContainer">
@@ -54,70 +128,60 @@ export default class LoginModal extends React.Component<Props> {
               <div className="registerAndLoginFormDiv">
                 <div className="registerForm">
                   <h2>Register</h2>
-                  <form>
-                    <div>
-                      <div className="formItem">
-                        <label htmlFor="name">Your name<span className="required">*</span></label>
-                        <input type="text" name="name" className="formInput" id="name" required/>
-                      </div>
-                      <div className="formItem">
-                        <label htmlFor="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" className="formInput" pattern="[0-9]{4}[0-9]{2}[0-9]{4}" required/>
-                      </div>
-                      <div className="formItem">
-                        <label htmlFor="email">Email address<span className="required">*</span></label>
-                        <input type="email" className="formInput" name="email" id="email" required/>
-                      </div>
 
-                      <div className="formItem">
-                        <label htmlFor="pwd">Create Password<span className="required">*</span></label>
-                        <input type="password" className="formInput" name="pwd" id="pwd" required/>
-                      </div>
-                      <div className="formItem">
-                        <label htmlFor="repeatPwd">Verify Password<span className="required">*</span></label>
-                        <input type="password" className="formInput" name="repeatPwd" id="repeatPwd" required/>
-                      </div>
-                      <div className="formItem">
-                        <button type="submit" className="mainButton">
-                          Register
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+                  {/*<AdvancedForm*/}
+                    {/*// formRef={this.props.formRef}*/}
+                    {/*schema={this.getSchema()}*/}
+                    {/*values={user}*/}
+                    {/*// onValuesChange={this.props.onValuesChange}*/}
+                    {/*submitButton={{*/}
+                      {/*text: "Submit",*/}
+                      {/*onPress: this.handleFulfillmentSubmit,*/}
+                      {/*// col: 12,*/}
+                    {/*}}*/}
+                  {/*/>*/}
+
                 </div>
 
                 <div className="loginForm">
                   <h2>Login</h2>
-                  <form>
-                    <div>
-                      <div className="formItem">
-                        <label htmlFor="email">Username or email address<span className="required">*</span></label>
-                        <input type="text" className="formInput" name="email" id="email" required/>
-                      </div>
+                  <LoginForm
+                    onCancel={this.props.onCancel}
+                    // formUser={formUser}
+                    // fulfillmentFormSubmitButtonRef={fulfillmentFormSubmitButtonRef}
+                  />
+                  {/*<Form*/}
+                    {/*layout="vertical"*/}
+                    {/*name="basic"*/}
+                    {/*// labelCol={{span: 8}}*/}
+                    {/*// wrapperCol={{span: 16}}*/}
+                    {/*initialValues={{remember: true}}*/}
+                    {/*// onFinish={onFinish}*/}
+                    {/*// onFinishFailed={onFinishFailed}*/}
+                    {/*autoComplete="on">*/}
+                    {/*<Form.Item name="email" label="Username or email address"*/}
+                               {/*rules={[{required: true, message: 'Please input your email'}]}>*/}
+                      {/*<Input/>*/}
+                    {/*</Form.Item>*/}
 
-                      <div className="formItem">
-                        <label htmlFor="pwd">Password<span className="required">*</span></label>
-                        <input type="password" className="form-controlLogin" name="pwd" id="pwd" required/>
-                      </div>
-                      <div className="formItem">
-                        <label className="rememberMeDiv"><span className="rememberMeText">Remember me</span>
-                          <input type="checkbox"/>
-                          <span className="checkboxCustom"> </span>
-                        </label>
-                      </div>
-                      <div className="formItem">
-                        <button type="submit" className="mainButton marginTop-20 marginBottom-10"
-                                onClick={this.login}>
-                          Login
-                        </button>
-                      </div>
-                      <div className="formItem">
-                        <button type="submit" className="lostPasswordButton">
-                          LOST YOUR PASSWORD?
-                        </button>
-                      </div>
-                    </div>
-                  </form>
+                    {/*<Form.Item name="password" label="Password"*/}
+                               {/*rules={[{required: true, message: 'Please input your password'}]}>*/}
+                      {/*<Input/>*/}
+                    {/*</Form.Item>*/}
+
+                    {/*<Form.Item name="remember" valuePropName="checked"*/}
+                               {/*wrapperCol={{offset: 8, span: 16}}>*/}
+                      {/*<Checkbox className="checkboxCustom">Remember me</Checkbox>*/}
+                    {/*</Form.Item>*/}
+
+                    {/*<Button type="primary" htmlType="submit" className="mainButton marginTop-20 marginBottom-10"*/}
+                            {/*onClick={this.login}>*/}
+                      {/*Login*/}
+                    {/*</Button>*/}
+                    {/*<Button type="primary" className="mainButton lostPasswordButton">*/}
+                      {/*LOST YOUR PASSWORD?*/}
+                    {/*</Button>*/}
+                  {/*</Form>*/}
                 </div>
               </div>
             </div>

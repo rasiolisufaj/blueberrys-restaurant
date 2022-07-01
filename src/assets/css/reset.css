@@ -1,0 +1,36 @@
+.ant-col-24.ant-form-item-label, .ant-col-xl-24.ant-form-item-label, .ant-form-vertical .ant-form-item-label {
+  padding: 0 0 5px;
+  max-width: 100%;
+}
+
+.ant-form-item {
+  margin: 0;
+}
+
+.ant-col-16 {
+  max-width: 100%;
+  margin: 0;
+}
+
+.ant-checkbox-inner {
+  height: 24px;
+  width: 26px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: white;
+  /*border: 1px solid rgb(39 60 137 / 50%);*/
+}
+
+
+.ant-checkbox-checked .ant-checkbox-inner:after {
+  border-bottom: 2px solid #273c89;
+  border-right: 2px solid #273c89;
+  height: 16px;
+  left: 9px;
+  opacity: 1;
+  top: 2px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 8px;
+}

@@ -2,6 +2,8 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import '~antd/dist/antd.min.css';
 
+@import "reset.css";
+
 @import "common.css";
 @import "sidebar.css";
 @import "home.css";
