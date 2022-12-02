@@ -34,3 +34,7 @@
   transform: rotate(45deg);
   width: 8px;
 }
+
+.d-flex {
+  display: inherit;
+}
