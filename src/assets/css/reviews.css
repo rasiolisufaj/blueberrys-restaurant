@@ -1,7 +1,17 @@
 #reviews {
-  height: 1000px;
-  padding: 40px;
+  /*height: 1000px;*/
+  /*padding: 40px;*/
   color: #273c89;
+  padding: 70px 40px 70px 40px;
+}
+
+.sectionReviewsBody {
+  max-width: 1140px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .reviewsContent {
@@ -31,9 +41,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px 5px;
+  /*padding: 10px 10px 5px;*/
   position: relative;
   margin-top: 130px;
+}
+
+.reviewsCarousel .reviewCard:last-of-type {
+  margin-right: 0;
 }
 
 .reviewCard {
@@ -116,7 +130,7 @@
 
 .loginToReviewSection {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
   margin-top: 100px;
 }
@@ -130,6 +144,7 @@
   width: 100%;
   padding-bottom: 10px;
   margin-right: 20px;
+  display: flex;
 }
 
 .loginToReviewDiv img {
@@ -147,10 +162,24 @@
   font-weight: 900;
 }
 
+.addReviewSection {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 80px 0px 0px 0px;
+}
+
+.addReviewSectionWrap {
+  max-width: 1140px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  flex-wrap: wrap;
+}
 
 /***** MOBILE *****/
 
-.reviewsSocialMediaIcons-small {
+.reviewsSocialMediaIcons-sm {
   display: none;
 }
 
@@ -158,7 +187,7 @@
   display: none;
 }
 
-.reviewsSocialMediaIcons-small a {
+.reviewsSocialMediaIcons-sm a {
   padding: 15px;
 }
 
@@ -181,22 +210,118 @@
 .reviewDescription::-webkit-scrollbar-thumb {
   background: #273c89;
   margin-right: 5px;
-   /*-webkit-border-radius: 10px;*/
+  /*-webkit-border-radius: 10px;*/
 }
 
 .reviewDescription::-webkit-scrollbar-corner {
   background: #000;
 }
 
+.loggedUser {
+  width: auto;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.addReviewField {
+  width: 85%;
+  outline: 0;
+  background: none;
+  border: none #eaeaea;
+  background: #fafafa;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.addReviewField:focus {
+  outline: 0;
+}
+
 @media (max-width: 1000px) {
+  /*.reviewsContent {*/
+  /*!*display: none;*!*/
+  /*}*/
+  /*!*.reviewsHeader {*!*/
+  /*!*display: block;*!*/
+  /*!*}*!*/
+  /*.reviewsCarousel {*/
+  /*display: none;*/
+  /*}*/
+  /*.reviewCard {*/
+  /*width: 100%;*/
+  /*padding: 40px;*/
+  /*margin-top: 137px;*/
+  /*}*/
+  /*.reviewsCarousel-small {*/
+  /*display: block;*/
+  /*!* margin-right: 20px; *!*/
+  /*}*/
+  /*.reviewsSocialMediaIcons-sm {*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*margin-top: 20px;*/
+  /*}*/
+  /*.carousel-indicators {*/
+  /*display: none !important;*/
+  /*}*/
+}
+
+/*@media (max-width: 766px) {*/
+/*.loginToReviewSection {*/
+/*flex-direction: column;*/
+/*}*/
+
+/*.loginToReviewDiv {*/
+/*margin-right: 0px;*/
+/*}*/
+
+/*.loginToReviewButton {*/
+/*margin-top: 20px;*/
+/*}*/
+
+/*.reviewsSocialMediaIcons {*/
+/*display: none;*/
+/*}*/
+
+/*.reviewsSocialMediaIcons-sm {*/
+/*margin-top: 35px;*/
+/*}*/
+
+/*.reviewsHeader-small h2 {*/
+/*font-size: 30px;*/
+/*}*/
+/*}*/
+
+@media (min-width: 1199px) {
+  .reviewsSocialMediaIcons {
+    display: flex;
+  }
+
+  .reviewsSocialMediaIcons-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 1198px) {
+  .reviewsSocialMediaIcons {
+    display: none !important;
+  }
+
+  .reviewsSocialMediaIcons-sm {
+    display: flex;
+  }
+
+  .reviewLogo {
+    top: 100px;
+  }
+
   .reviewsContent {
     /*display: none;*/
   }
 
   /*.reviewsHeader {*/
-    /*display: block;*/
+  /*display: block;*/
   /*}*/
-
   .reviewsCarousel {
     display: none;
   }
@@ -212,7 +337,7 @@
     /* margin-right: 20px; */
   }
 
-  .reviewsSocialMediaIcons-small {
+  .reviewsSocialMediaIcons-sm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,27 +346,5 @@
 
   .carousel-indicators {
     display: none !important;
-  }
-}
-
-@media (max-width: 766px) {
-  .loginToReviewSection {
-    flex-direction: column;
-  }
-
-  .loginToReviewDiv {
-    margin-right: 0px;
-  }
-
-  .loginToReviewButton {
-    margin-top: 20px;
-  }
-
-  .reviewsSocialMediaIcons-small {
-    margin-top: 35px;
-  }
-
-  .reviewsHeader-small h2 {
-    font-size: 30px;
   }
 }

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BlueBerry's Grill</title>
+
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+
+    <link href="assets/img/favIcon.svg" rel="icon"/>
+    <link href="assets/img/favIcon.svg" rel="apple-touch-icon"/>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+
+    <link href="assets/css/index.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="root">
+    <div id="sidebar" class="">
+        <div class="sidebarLogo"><a href="/"><img
+                src="data:image/png;base64,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"
+                alt="Home"></a></div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link" href="/#aboutUs">About us</a></li>
+                <li><a class="nav-link" href="/#reviews">Reviews</a></li>
+                <li class="dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/">Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="/menu-breakfast">Breakfast</a><a class="dropdown-item" href="/menu-lunch">Lunch</a><a class="dropdown-item" href="/menu-cocktails">Special cocktails</a></div>
+                </li>
+                <li><a class="nav-link" href="/contactUs">Contact us</a></li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="/waitlist">Waitlist</a></li>
+                <li><a class="nav-link" href="/">Logout</a></li>
+                <li><a class="nav-link" href="/profile">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="pageContainer">
+        <div class="pageContainerWrap">
+            <div class="pageContainerWrapCenter">
+                <section id="home">
+                    <div class="sectionHomeBody">
+                        <div class="row">
+                            <!--<div class="homeSection">-->
+                                <div class="homeSectionLeft ">
+                                    <div class="columnWrap ">
+                                        <div class="wrap ">
+                                            <div class="iframeDiv">
+                                                <iframe src="https://www.youtube-nocookie.com/embed/YqhH-RfInA4?playlist=YqhH-RfInA4&amp;autoplay=1&amp;controls=1&amp;loop=1&amp;mute=1&amp;origin=http://localhost"
+                                                    width="100%" height="100%" class="responsive-iframe" title="Blueberry Video">
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="homeSectionRight ">
+                                    <div class="columnWrap ">
+                                        <div class="wrap homeSectionRightContent">
+                                            <div><h2>ENTICE YOUR PALETTE!</h2></div>
+                                            <div>
+                                                <div><p class="homeSectionRightPar">Treat yourself with a fresh and modern American menu. Fresh ingredients sourced locally, where possible, and prepared by a dedicated team.</p></div>
+                                                <div><p class="sloganPar">SIT. DRINK AND EAT. BE OUR GUEST.</p></div>
+                                            </div>
+                                            <div class="waitlistButton">Waitlist</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </section>
+                <section id="about">
+                    <div data-aos="fade-up">
+                        <div class="aboutHeader"><h2>ABOUT US</h2>
+                            <div class="valueAndTeamButtons"><a href="/values">
+                                <div class="aboutUsLink">Values</div>
+                                <img src="/static/media/arrowWhite.02d1fbfb30880122470a898502645e25.svg" alt=""></a><a href="/team">
+                                <div class="aboutUsLink">Team</div>
+                                <img src="/static/media/arrowWhite.02d1fbfb30880122470a898502645e25.svg" alt=""></a></div>
+                        </div>
+                        <div class="aboutUsBackgroundImage"><img src="/static/media/aboutUsPhoto.cc5b1b9b33107f678868.jpg" alt=""></div>
+                        <div class="positionRelative-sm">
+                            <div class="aboutUsDescription" id="aboutUsDescription">
+                                <div>
+                                    <div class="aboutUsPara">Blueberry’s Grill was created from what was once a modest small restaurant serving classic breakfast dishes in Sunny Side Up Grill, Little River – a small town in South Carolina.</div>
+                                    <div class="aboutUsPara">With some help, we became what you see today. Blueberry’s Grill is a Mediterranean-themed American casual dining</div>
+                                    <span id="dots"> </span><span id="more"><div
+                                        class="aboutUsPara">restaurant chain, serving American cuisine, based in NC and SC. We pride ourselves on our hospitality and to make everyone feel that warm welcome when they walk through the doors.</div><div
+                                        class="aboutUsPara">Serving up an elevated food experience with delicious and unique dishes for breakfast, brunch and lunch that everyone can enjoy together. We are known for our modern interpretation of classic dishes and its consistency on only using high-quality fresh ingredients.</div><div
+                                        class="aboutUsPara">Whether you are a picky eater or adventurous food lover, you will find something to fill your belly at Blueberry’s Grill.</div><div class="aboutUsPara">Come on a journey with us...</div></span></div>
+                                <div id="readMoreButton" class="aboutUsPara"><span id="readMoreText">Read more</span><i aria-hidden="true" class="fas fa-chevron-down" id="aboutUsArrowDown"></i><i aria-hidden="true" class="fas fa-chevron-up" id="aboutUsArrowUp"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="blogHome">
+                    <div data-aos="fade-up">
+                        <div class="blogHeader"><a href="/blog"><h2>Blog</h2><img src="/static/media/arrowBlue.29386b440da62f3d8b28884445ea8bee.svg" alt=""></a></div>
+                        <div class="blogContent">
+                            <div class="blogCard"><img src="/static/media/blog1.bba138e7eb5a04c48938.jpg" alt="">
+                                <div class="blogCardContent"><h2>BLUEBERRY HUSHPUPPIES</h2>
+                                    <div class="blogCardParagraph">Hushpuppies are a classic Southern delicacy of an appetizer. They are deep-fried savory cornmeal-batter balls that can be served with breakfast, lunch or dinner. We put a nice spin on the classic hushpuppies and add
+                                        fresh
+                                        blueberries to the mix. A great way to start the day!
+                                    </div>
+                                    <div class="blogCardReadMore"><a href="/blog"><span>Read more</span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                                        </svg>
+                                    </a></div>
+                                </div>
+                            </div>
+                            <div class="blogCard"><img src="/static/media/blog2.aa8dcf9848b4300b26fe.jpg" width="445" height="284" alt="">
+                                <div class="blogCardContent"><h2>BLOODY MARY &amp; CHEESY SHRIMP &amp; GRITS</h2>
+                                    <div class="blogCardParagraph">Shrimp &amp; grits is a popular dish in the low country. For a fun brunch spin, we made these shrimp &amp; grits with bloody Mary mix! Bloody Mary Shrimp &amp; Grits will make such a fun brunch dish to serve up next
+                                        to
+                                        your brunch bloody Mary bar every summer.
+                                    </div>
+                                    <div class="blogCardReadMore"><a href="/blog"><span>Read more</span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                                        </svg>
+                                    </a></div>
+                                </div>
+                            </div>
+                            <div class="blogCard blogCard-3"><img src="/static/media/blog3.6d0e002ffbae17acfba3.jpg" width="445" height="284" alt="">
+                                <div class="blogCardContent"><h2>BLUEBERRY FRENCH TOAST</h2>
+                                    <div class="blogCardParagraph">Absorb the greatness of this dish because your French toasts will forever be transformed in the best way possible. This is a French toast game changer. You’ll never want ordinary French toast ever again.</div>
+                                    <div class="blogCardReadMore"><a href="/#"><span>Read more</span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                                        </svg>
+                                    </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="reviews">
+                    <div data-aos="fade-up">
+                        <div class="reviewsContent">
+                            <div class="reviewsHeader">
+                                <div class="reviewsTitle">Reviews</div>
+                                <div class="d-flex align-items-center reviewsSocialMediaIcons"><a href="https://www.facebook.com/blueberrysgrill/" target="_blank" rel="noopener noreferrer"><img src="/static/media/facebook.554d13f27f715cceea852994bd14f75e.svg" alt=""></a><a
+                                        href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach" target="_blank" rel="noopener noreferrer"><img src="/static/media/yahoo.8b8d0e14a128122545027a016fdfc665.svg" alt=""></a><a
+                                        href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250" target="_blank" rel="noopener noreferrer"><img src="/static/media/yellowPages.2501edbd992481d8967f78b516898be4.svg" alt=""></a><a
+                                        href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2" target="_blank" rel="noopener noreferrer"><img src="/static/media/yelp.995924f1e3265b52b38cd3f719a76fe7.svg" alt=""></a><a href="https://pin.it/3RItKJx" target="_blank"
+                                                                                                                                                                                                                                   rel="noopener noreferrer"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmIwZjhiZTkwLCAyMDIxLzEyLzE1LTIxOjI1OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjMuMiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0FDN0VDQzhCMDBFMTFFQzgxMTFEQ0VCNzBCNkI3MTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0FDN0VDQzlCMDBFMTFFQzgxMTFEQ0VCNzBCNkI3MTAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDQUM3RUNDNkIwMEUxMUVDODExMURDRUI3MEI2QjcxMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQUM3RUNDN0IwMEUxMUVDODExMURDRUI3MEI2QjcxMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PihE+mIAAAkUSURBVHja7F1njFVFFB7KQqhZUIogvaggHRVRECkW7IkYQUQFIyj+UEAEK1ItiF1RFGIQEREMu0oTFUFABFlWEVgQZNeyIIqwlGUj8Dwn75C8bNj37jlT7n377pd8Cdl355b57swpc+5QJhKJqEQ4v9vzykeUBZ4LrAVsBLwA2ATYEHg2MB1YBZgGLA88CjwMLAQWAH8BbgFuB+YDc4H/+PEg21ePTnhMeRU8lAM2B3YE3gS8AliX0b5aseMvL/Y7voFZwOXAZcANJGIgEBRB8O3uDewD7M8UgIsyJDZyDPAUcAFwMfAz4N+pLEhj4J3AB4G1fZwS+xGPAacD3wVu8+tm/EAXmi5+BY73UYziqAwcAdwK/IZGUakWpBnwc+A64FUq2OgO/AGYQU5EqRPkDfJ4+qrkwg3A3cBxpUWQrsD9wAdUcuNp4A5gy2QW5DngGooXSgNaAHOAdyejIGgrRqvSiVk0BSeF21sHuBIDfIsdcoDc0kPAk8Dj9HJVoJimIU0tNt16nIJbAa8MsiAYV3xHopgCdvoqcgjWAzcDdwFPJGhXHdiavKUW5Gq3Nvy8PWgmuC6IgtQhd9aEGJjemE0R9BcqmpfiooDuZ13M3zpSNmA4sIGh5+5LL0z3INmQqsAVBlIex2ICxbsoBig0+NJsIkcDR/LNwJ8Mnbcb8P0gCfIh8ELNc0wjbwzdS9v5JMxfLQK2BQ4hm6SLQcDHgiDIOAqepEC7cBZwpOHR4BUz6fpzDJxrkopmp30TpAe90VI8Rcb2gPIfA4H3GTgP2r5KfghSTnPe7AWcELD4YgbwMprSpEBn4XU/BJlA/j4XGDO0A34V0KBvLY3aiMY5BtPs4UwQXEYdKzSmuIL3Y8Aj8Q1KPwn6rEtBnhS2u15FU9rJgKWaXtMlEmdHIgimJPoL2qEXtUQlF6YAMzXaj3IhyAjh2zZNJSeGa7jj3SnWsZY6SRMMQzSOwzQ7BUuAbgS2V9Eihb2UrljlQJDfyB48I2z/EBl5K4JgQUI9wVSVK3yYnkAsCutUwu+HKdUy1bIoWPgwRhhf9KaZyJMrzZ2ybmMevw/4prATMMb5Mo4YCKzBekFFE5A28RfwZY24pI8NG1KNPAdurFIkeAjM0A5ivoUfWBZlrkbbW2wIggsx6YzjsRrwI8HNZ1BgxsUdJIwtYGZ4q7BtBxuCcAOl+YpfQztG6SUqR1geJQs1AukapgXhrrYtYx7flAy0DtqRF2YL0jgKp/uLTAtSn3kT6wXRf5pmh6EHeJ5lF1iKZiYFaaJ41Xtfq2iZqFfgwlQ/Q51Wz6IgWF8mXSqobVIQbgXJGubx96joNx4mELEoCGaqpUXYVU2PEA7ymcd3NRwz2MS/GnbEmCA1BUObg+aGOusgc6qUQLreX8GkIOnMix9mzvmtDHXWnypauWIT0vNHTApSg3lxTna0oTJX/bJL2UdlYbsik4KcsvE2cLwPj8h0IEjVIAhykHlxTlbUZCC3woEg1YIgyB7mxTlOwBFDHfWzA4MuCZBP46hJQbgPyvkeJN9QR7lYrKqiZJU2iH0mBclm2hFOIJmn4dvHYrYDQdI1pqw8k4L8QVOCV3DKKXHK2mHAu1rnQJC6GjZvh0lBuNMWZoY5axp7NDtqtXID6feFmG7ZbVoQbn6Ks7r4rWZHzXUkSA9hO88vHEeQecz4YgDjWFx+LRA+LCb8NjkSpJew3XYbguQyp4aLgZ0ZcY40qMNVPBf7k+B01UzYdpkNQRCLmMdzSjGlMcR8R6Ojp4Z3tdyWIK+paALPK7DaopvHY6VfYG10JMhQYbtNnKmeK8h/gjdyhkdXUfKFLKZKfncgBpaDtteYUpUtQRDTmMYd17jf8WBvWgjuZYGj0TFc2C6XG7BKBMlT/MLpexO4jH2ED/y9AzEqK0ahWzEs5zaQrkM8TtE7B/HS1p0F93DIQITvBfgZdS1h27dcCVIkMHJbDNsPrCQ8YlmMphrGHDdAy3IlCAK3lJji8ditcaLVLkL7UeRgdLyn5LVij0oa6S6dYpyxVDMw6iS8dk3LYozVSJVgheN6PwRB4MYrGxIckxHnN2mBA5aNnmNJDKxjnqzRfqS0oQlBcJ0EE4klJQhx+6ScOO17a9x7BwtitFXyomoEfmm1zU9BFMUlGJG/fYbf0LDlx7EfOlvmjTcsBhZE4/ZSFYXtMYk4TucGTO8oN4yEiXWJ58U5Xncb1k5S43kG9KO4ppLGOYbq3oSNHddw6sK92geQUZwV59g2Bq6HH2RiHdirwvbVyZu6VfM+7lcG1vVt7rmIWzbhZi7xPtoxtXfvKyqaM+MUbGPxH25+s9eAGCjodBMP4udW410p8DIFTM/cDvwY+KmKJh6Px/yeRlMcfpp3Kb0MFQ1c9xO6tkp2QdpbOCemZwYTCym1cpRGQ32ankxirTL3XYvvgrSxfP5KFKvYAq6e9jR90rI+CnK1wLWOqGAA7RVum3GitAiCc3gTwfTwRADEGKXM7DwXqClLEn/sp3RGA6W/d4oEO2lUW60f9muESAx6Voy/P9XhvR6jUdFSOSjm9ksQSf5qccy/HyEX1yZOUGyBCcwXXXWMH4JgIXZjZhvcErB4dQmmZLDKfqbh+8N1cNyjpQ6NxgKXnVPeJ0G4yC7h75gFGELGHvc6GSh0dbFUBwsmMJeF39if9Mtj8EOQawRtEuWI8smuTCVBsIoFPybFPUZqU2AYoSARv9PAwuc9KlrxiGLnBMSdTgpBcN18IXM0ZaskhWsbgm9sI2YbnEYOqBSBH4JwsVmlEFwLcq2gTWYoSHDiDzS+K0NB7KCpIP7IUikGl4JI/vedtaEg9iDZQiMzFMQeuEVtWLu7MxQkOCNkjkpBuBSEU4uL1ZBzQ0HsgrMlBdqOvFAQu+CsP09UKQqXgngtUMDa2o2hIMEZIVNUCsOlIF4+P8P9VDJCQdzAy55Yk1SKw6Ugif6nBKyRXRIK4g6JtribqEI4FaQggRjZoRxuBTlUwt+x7GZyKEVwRgj+vyGFoRT+eFnHi/0Na6FmhzL4IwhWjsTuTYI1UiNDCfwTBJFTbKrKDSXwV5DTJT0Yjb8Udr//gpzejPnhsOvPjP8FGAAe96k0glViNQAAAABJRU5ErkJggg=="
+                                        alt=""></a><a href="https://www.tripadvisor.com/Restaurant_Review-g54359-d12162017-Reviews-Blueberry_s_Grill-Myrtle_Beach_South_C" target="_blank" rel="noopener noreferrer"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABHCAYAAADx2uLMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmIwZjhiZTkwLCAyMDIxLzEyLzE1LTIxOjI1OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjMuMiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM5REIwNTBCMDBFMTFFQ0E0NUJFMzg4RjBDRjgwRjIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM5REIwNTFCMDBFMTFFQ0E0NUJFMzg4RjBDRjgwRjIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzlEQjA0RUIwMEUxMUVDQTQ1QkUzODhGMENGODBGMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzlEQjA0RkIwMEUxMUVDQTQ1QkUzODhGMENGODBGMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjrQd8IAAA7FSURBVHja7F0L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"
+                                        alt=""></a></div>
+                            </div>
+                        </div>
+                        <div class="reviewsCarousel">
+                            <div class="reviewCard review-1">
+                                <div class="reviewLogo"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUsSURBVHgB7ZxLbxtVFMfPuWMnVN24QFdQMpV4VGxwdlEpwlVAYld3yarwCQoSAkUIxVmgQFfxJ2j4BG1WbIhwUYnYxWxQeEidkG0Bd4EaN557es8d241f45nxjF9zf1KSsT2Oc/855577OPcgTJDXLn+dB0vkBYi3gMAmABsJcoCYA6Bcx80EjnreURc1QHAa4N4TLjl/7n1ZhQmBMEbslU170RJFJcI19TDfI1AksKa+VYFoB1159+CXNQfGROLi2YVSbqFx9iYCFUB/JYuy3ipJWbYkVJIWMjHxXr2yWciQdYMQivFYWHgIcVucuBtJiRi7eJeUa1LGuj0OKwtKUiLGJh6756J7Zl35zScwraDYwpNGOS4RLYgBdtGsu/C9uvwAphpaUcGq+PyF1Uf/Hu2OHKVHsryZsLZBKCusW/9vOJVSDSISWTzdt1niR/UbbJhV1NhRDW+uRnVjARFgN1VBYX+mhWPU388GoAfrEQgt3utvf3vDAmVxExp+xI4SUIjMPrcLQhIqYPAHIMI2zCGqXcUXLrzv/HP0w69B3xNYvHkWrkVYAQMFjDcv38q7gvYhJSCoIHJ/rTLsvqF9HkdVF+kOpAgCcYfbPew+X/F4HDfzw5Fo6HZz+/1u8hVPD4DTJ5yHaveie3bd/5YBXHpn8yMicRtSjl//11e8uZg9xIWahdSzj5f7TeP6ui1lxU0jXBMf9+2xPG89TjwAQwfYkBe758C9lmdZ62DowVvg7aTD8ozV+dMdPDotz1idLxKtjsWDtuUZqwtErZ55fLEVeZ9ZXhYKYBiG2kY90141b4snSQ1PDENBwHefXYNx2bA8kZb9YO+zQ215xCkQhsAsoHudf3pui3QNDMHxcm1afZ6ItAGSXkjrhbxzxBsgYAiFlI1lgVbGBkMERF4gTU9CzkwhMK/6PFwCQ2gEqf3eudm8HjcolgQQ2mAID1JOmBXjiBDkIiX6GDRGvFEw4o2AaJ5jMERARVsy4kUBwRGEYMSLAqEj1GqoA4bwkHzEM4xDMIRGstsi0sRODc4yiFgRriuNeBEgt+HoDaA3rtz6zywQhKL2+/0vzjUHycb6woFaL088wh0wBIdI66XF4xPSYAhMSy8tnpd3RhUwBACrrTy99sIAAd0Dw1CkdMut67Z4TzLPbZlFguFw7YLWdVs8p/JpDck1gcMHQto+nVrbuZ4352fLRkWc0EbH49MPvJRREzj60W11TM9KMjboYzD00G11+rnuJ5rDljIYTkF9K2L03cOoZxZLunaTwatD0KCtfi/1FU9HXpTGfYHTjeXAYjYDT3o//HvXefGV986pXnAFUguV//h57ZtBr/puPabaffnAXua45HeLr3jafV15NXUzj2a9lWEFa4ZuerO/I3gJzGnBIrwepFBNoIwBHjyjTEcA4Xb+tvd5oMXhwKVBHh7tVs+/vHrIhaxgTmHhDvbWtoPeH6oozTwLGFY4/R6IgK6zwuVC5iK3D2vcpwepo9LzToiIqWI2QooZf2A9u7A8u/NgKnPhhVGqOMZS9lKXEZFiNmqwsLWpqWcUN+0mlrKXaipXPf/S6g5whvNUT+fY2o4//Ounrw4gBhKpVqv+JSVCEboeXXJQhdcpp7ZabTeTFxFrhPKuIPouDhft+wmQMFrELBT4JDnqkuZJo6xMbaMeZ+pboxRTDcJYa8M3hzdF73yviLE2vKxyysjc1Yb3gwfbDYtsJFlQYi5pMflEUk/UVgIR1TgF2MtklYeIUBWuVQ06D02CpxYdK43Ejj3YAAAAAElFTkSuQmCC"
+                                        alt=""></div>
+                                <div class="reviewBy"> Michaela M.</div>
+                                <div class="review-stars-block"><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i></div>
+                                <div class="reviewDescription">Perfect for brunch! They have something like 6-7 different
+                                    kinds of mimosas. Not to mention their Blast French Toast is sooo good!!
+                                    Definitely a must if you are in the area!
+                                </div>
+                                <div class="reviewDate"></div>
+                            </div>
+                            <div class="reviewCard review-1">
+                                <div class="reviewLogo"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUsSURBVHgB7ZxLbxtVFMfPuWMnVN24QFdQMpV4VGxwdlEpwlVAYld3yarwCQoSAkUIxVmgQFfxJ2j4BG1WbIhwUYnYxWxQeEidkG0Bd4EaN557es8d241f45nxjF9zf1KSsT2Oc/855577OPcgTJDXLn+dB0vkBYi3gMAmABsJcoCYA6Bcx80EjnreURc1QHAa4N4TLjl/7n1ZhQmBMEbslU170RJFJcI19TDfI1AksKa+VYFoB1159+CXNQfGROLi2YVSbqFx9iYCFUB/JYuy3ipJWbYkVJIWMjHxXr2yWciQdYMQivFYWHgIcVucuBtJiRi7eJeUa1LGuj0OKwtKUiLGJh6756J7Zl35zScwraDYwpNGOS4RLYgBdtGsu/C9uvwAphpaUcGq+PyF1Uf/Hu2OHKVHsryZsLZBKCusW/9vOJVSDSISWTzdt1niR/UbbJhV1NhRDW+uRnVjARFgN1VBYX+mhWPU388GoAfrEQgt3utvf3vDAmVxExp+xI4SUIjMPrcLQhIqYPAHIMI2zCGqXcUXLrzv/HP0w69B3xNYvHkWrkVYAQMFjDcv38q7gvYhJSCoIHJ/rTLsvqF9HkdVF+kOpAgCcYfbPew+X/F4HDfzw5Fo6HZz+/1u8hVPD4DTJ5yHaveie3bd/5YBXHpn8yMicRtSjl//11e8uZg9xIWahdSzj5f7TeP6ui1lxU0jXBMf9+2xPG89TjwAQwfYkBe758C9lmdZ62DowVvg7aTD8ozV+dMdPDotz1idLxKtjsWDtuUZqwtErZ55fLEVeZ9ZXhYKYBiG2kY90141b4snSQ1PDENBwHefXYNx2bA8kZb9YO+zQ215xCkQhsAsoHudf3pui3QNDMHxcm1afZ6ItAGSXkjrhbxzxBsgYAiFlI1lgVbGBkMERF4gTU9CzkwhMK/6PFwCQ2gEqf3eudm8HjcolgQQ2mAID1JOmBXjiBDkIiX6GDRGvFEw4o2AaJ5jMERARVsy4kUBwRGEYMSLAqEj1GqoA4bwkHzEM4xDMIRGstsi0sRODc4yiFgRriuNeBEgt+HoDaA3rtz6zywQhKL2+/0vzjUHycb6woFaL088wh0wBIdI66XF4xPSYAhMSy8tnpd3RhUwBACrrTy99sIAAd0Dw1CkdMut67Z4TzLPbZlFguFw7YLWdVs8p/JpDck1gcMHQto+nVrbuZ4352fLRkWc0EbH49MPvJRREzj60W11TM9KMjboYzD00G11+rnuJ5rDljIYTkF9K2L03cOoZxZLunaTwatD0KCtfi/1FU9HXpTGfYHTjeXAYjYDT3o//HvXefGV986pXnAFUguV//h57ZtBr/puPabaffnAXua45HeLr3jafV15NXUzj2a9lWEFa4ZuerO/I3gJzGnBIrwepFBNoIwBHjyjTEcA4Xb+tvd5oMXhwKVBHh7tVs+/vHrIhaxgTmHhDvbWtoPeH6oozTwLGFY4/R6IgK6zwuVC5iK3D2vcpwepo9LzToiIqWI2QooZf2A9u7A8u/NgKnPhhVGqOMZS9lKXEZFiNmqwsLWpqWcUN+0mlrKXaipXPf/S6g5whvNUT+fY2o4//Ounrw4gBhKpVqv+JSVCEboeXXJQhdcpp7ZabTeTFxFrhPKuIPouDhft+wmQMFrELBT4JDnqkuZJo6xMbaMeZ+pboxRTDcJYa8M3hzdF73yviLE2vKxyysjc1Yb3gwfbDYtsJFlQYi5pMflEUk/UVgIR1TgF2MtklYeIUBWuVQ06D02CpxYdK43Ejj3YAAAAAElFTkSuQmCC"
+                                        alt=""></div>
+                                <div class="reviewBy"> Lauren M.</div>
+                                <div class="review-stars-block"><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i></div>
+                                <div class="reviewDescription">I went here for my birthday brunch and it was fantastic!!!
+                                    food was soo delicious that ididn't mind the wait!
+                                </div>
+                                <div class="reviewDate"></div>
+                            </div>
+                            <div class="reviewCard review-1">
+                                <div class="reviewLogo"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUsSURBVHgB7ZxLbxtVFMfPuWMnVN24QFdQMpV4VGxwdlEpwlVAYld3yarwCQoSAkUIxVmgQFfxJ2j4BG1WbIhwUYnYxWxQeEidkG0Bd4EaN557es8d241f45nxjF9zf1KSsT2Oc/855577OPcgTJDXLn+dB0vkBYi3gMAmABsJcoCYA6Bcx80EjnreURc1QHAa4N4TLjl/7n1ZhQmBMEbslU170RJFJcI19TDfI1AksKa+VYFoB1159+CXNQfGROLi2YVSbqFx9iYCFUB/JYuy3ipJWbYkVJIWMjHxXr2yWciQdYMQivFYWHgIcVucuBtJiRi7eJeUa1LGuj0OKwtKUiLGJh6756J7Zl35zScwraDYwpNGOS4RLYgBdtGsu/C9uvwAphpaUcGq+PyF1Uf/Hu2OHKVHsryZsLZBKCusW/9vOJVSDSISWTzdt1niR/UbbJhV1NhRDW+uRnVjARFgN1VBYX+mhWPU388GoAfrEQgt3utvf3vDAmVxExp+xI4SUIjMPrcLQhIqYPAHIMI2zCGqXcUXLrzv/HP0w69B3xNYvHkWrkVYAQMFjDcv38q7gvYhJSCoIHJ/rTLsvqF9HkdVF+kOpAgCcYfbPew+X/F4HDfzw5Fo6HZz+/1u8hVPD4DTJ5yHaveie3bd/5YBXHpn8yMicRtSjl//11e8uZg9xIWahdSzj5f7TeP6ui1lxU0jXBMf9+2xPG89TjwAQwfYkBe758C9lmdZ62DowVvg7aTD8ozV+dMdPDotz1idLxKtjsWDtuUZqwtErZ55fLEVeZ9ZXhYKYBiG2kY90141b4snSQ1PDENBwHefXYNx2bA8kZb9YO+zQ215xCkQhsAsoHudf3pui3QNDMHxcm1afZ6ItAGSXkjrhbxzxBsgYAiFlI1lgVbGBkMERF4gTU9CzkwhMK/6PFwCQ2gEqf3eudm8HjcolgQQ2mAID1JOmBXjiBDkIiX6GDRGvFEw4o2AaJ5jMERARVsy4kUBwRGEYMSLAqEj1GqoA4bwkHzEM4xDMIRGstsi0sRODc4yiFgRriuNeBEgt+HoDaA3rtz6zywQhKL2+/0vzjUHycb6woFaL088wh0wBIdI66XF4xPSYAhMSy8tnpd3RhUwBACrrTy99sIAAd0Dw1CkdMut67Z4TzLPbZlFguFw7YLWdVs8p/JpDck1gcMHQto+nVrbuZ4352fLRkWc0EbH49MPvJRREzj60W11TM9KMjboYzD00G11+rnuJ5rDljIYTkF9K2L03cOoZxZLunaTwatD0KCtfi/1FU9HXpTGfYHTjeXAYjYDT3o//HvXefGV986pXnAFUguV//h57ZtBr/puPabaffnAXua45HeLr3jafV15NXUzj2a9lWEFa4ZuerO/I3gJzGnBIrwepFBNoIwBHjyjTEcA4Xb+tvd5oMXhwKVBHh7tVs+/vHrIhaxgTmHhDvbWtoPeH6oozTwLGFY4/R6IgK6zwuVC5iK3D2vcpwepo9LzToiIqWI2QooZf2A9u7A8u/NgKnPhhVGqOMZS9lKXEZFiNmqwsLWpqWcUN+0mlrKXaipXPf/S6g5whvNUT+fY2o4//Ounrw4gBhKpVqv+JSVCEboeXXJQhdcpp7ZabTeTFxFrhPKuIPouDhft+wmQMFrELBT4JDnqkuZJo6xMbaMeZ+pboxRTDcJYa8M3hzdF73yviLE2vKxyysjc1Yb3gwfbDYtsJFlQYi5pMflEUk/UVgIR1TgF2MtklYeIUBWuVQ06D02CpxYdK43Ejj3YAAAAAElFTkSuQmCC"
+                                        alt=""></div>
+                                <div class="reviewBy"> Dejah D.</div>
+                                <div class="review-stars-block"><i class="review-star">★</i></div>
+                                <div class="reviewDescription"> Stopped in at Blueberry Grill my first day back in town and to my expectation, I am never disappointed!
+                                    The mahimahi tacos were to die for and the mimosa are always a hit- This place is a must try!
+                                </div>
+                                <div class="reviewDate"></div>
+                            </div>
+                        </div>
+                        <div id="myCarousel" class="carousel slide reviewsCarousel-small" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="reviewCard review-1">
+                                    <div class="reviewLogo"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUsSURBVHgB7ZxLbxtVFMfPuWMnVN24QFdQMpV4VGxwdlEpwlVAYld3yarwCQoSAkUIxVmgQFfxJ2j4BG1WbIhwUYnYxWxQeEidkG0Bd4EaN557es8d241f45nxjF9zf1KSsT2Oc/855577OPcgTJDXLn+dB0vkBYi3gMAmABsJcoCYA6Bcx80EjnreURc1QHAa4N4TLjl/7n1ZhQmBMEbslU170RJFJcI19TDfI1AksKa+VYFoB1159+CXNQfGROLi2YVSbqFx9iYCFUB/JYuy3ipJWbYkVJIWMjHxXr2yWciQdYMQivFYWHgIcVucuBtJiRi7eJeUa1LGuj0OKwtKUiLGJh6756J7Zl35zScwraDYwpNGOS4RLYgBdtGsu/C9uvwAphpaUcGq+PyF1Uf/Hu2OHKVHsryZsLZBKCusW/9vOJVSDSISWTzdt1niR/UbbJhV1NhRDW+uRnVjARFgN1VBYX+mhWPU388GoAfrEQgt3utvf3vDAmVxExp+xI4SUIjMPrcLQhIqYPAHIMI2zCGqXcUXLrzv/HP0w69B3xNYvHkWrkVYAQMFjDcv38q7gvYhJSCoIHJ/rTLsvqF9HkdVF+kOpAgCcYfbPew+X/F4HDfzw5Fo6HZz+/1u8hVPD4DTJ5yHaveie3bd/5YBXHpn8yMicRtSjl//11e8uZg9xIWahdSzj5f7TeP6ui1lxU0jXBMf9+2xPG89TjwAQwfYkBe758C9lmdZ62DowVvg7aTD8ozV+dMdPDotz1idLxKtjsWDtuUZqwtErZ55fLEVeZ9ZXhYKYBiG2kY90141b4snSQ1PDENBwHefXYNx2bA8kZb9YO+zQ215xCkQhsAsoHudf3pui3QNDMHxcm1afZ6ItAGSXkjrhbxzxBsgYAiFlI1lgVbGBkMERF4gTU9CzkwhMK/6PFwCQ2gEqf3eudm8HjcolgQQ2mAID1JOmBXjiBDkIiX6GDRGvFEw4o2AaJ5jMERARVsy4kUBwRGEYMSLAqEj1GqoA4bwkHzEM4xDMIRGstsi0sRODc4yiFgRriuNeBEgt+HoDaA3rtz6zywQhKL2+/0vzjUHycb6woFaL088wh0wBIdI66XF4xPSYAhMSy8tnpd3RhUwBACrrTy99sIAAd0Dw1CkdMut67Z4TzLPbZlFguFw7YLWdVs8p/JpDck1gcMHQto+nVrbuZ4352fLRkWc0EbH49MPvJRREzj60W11TM9KMjboYzD00G11+rnuJ5rDljIYTkF9K2L03cOoZxZLunaTwatD0KCtfi/1FU9HXpTGfYHTjeXAYjYDT3o//HvXefGV986pXnAFUguV//h57ZtBr/puPabaffnAXua45HeLr3jafV15NXUzj2a9lWEFa4ZuerO/I3gJzGnBIrwepFBNoIwBHjyjTEcA4Xb+tvd5oMXhwKVBHh7tVs+/vHrIhaxgTmHhDvbWtoPeH6oozTwLGFY4/R6IgK6zwuVC5iK3D2vcpwepo9LzToiIqWI2QooZf2A9u7A8u/NgKnPhhVGqOMZS9lKXEZFiNmqwsLWpqWcUN+0mlrKXaipXPf/S6g5whvNUT+fY2o4//Ounrw4gBhKpVqv+JSVCEboeXXJQhdcpp7ZabTeTFxFrhPKuIPouDhft+wmQMFrELBT4JDnqkuZJo6xMbaMeZ+pboxRTDcJYa8M3hzdF73yviLE2vKxyysjc1Yb3gwfbDYtsJFlQYi5pMflEUk/UVgIR1TgF2MtklYeIUBWuVQ06D02CpxYdK43Ejj3YAAAAAElFTkSuQmCC"
+                                            alt=""></div>
+                                    <div class="reviewBy"> Michaela M.</div>
+                                    <div class="review-stars-block"><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i></div>
+                                    <div class="reviewDescription">Perfect for brunch! They have something like 6-7 different
+                                        kinds of mimosas. Not to mention their Blast French Toast is sooo good!!
+                                        Definitely a must if you are in the area!
+                                    </div>
+                                    <div class="reviewDate"></div>
+                                </div>
+                                <div class="reviewCard review-1">
+                                    <div class="reviewLogo"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUsSURBVHgB7ZxLbxtVFMfPuWMnVN24QFdQMpV4VGxwdlEpwlVAYld3yarwCQoSAkUIxVmgQFfxJ2j4BG1WbIhwUYnYxWxQeEidkG0Bd4EaN557es8d241f45nxjF9zf1KSsT2Oc/855577OPcgTJDXLn+dB0vkBYi3gMAmABsJcoCYA6Bcx80EjnreURc1QHAa4N4TLjl/7n1ZhQmBMEbslU170RJFJcI19TDfI1AksKa+VYFoB1159+CXNQfGROLi2YVSbqFx9iYCFUB/JYuy3ipJWbYkVJIWMjHxXr2yWciQdYMQivFYWHgIcVucuBtJiRi7eJeUa1LGuj0OKwtKUiLGJh6756J7Zl35zScwraDYwpNGOS4RLYgBdtGsu/C9uvwAphpaUcGq+PyF1Uf/Hu2OHKVHsryZsLZBKCusW/9vOJVSDSISWTzdt1niR/UbbJhV1NhRDW+uRnVjARFgN1VBYX+mhWPU388GoAfrEQgt3utvf3vDAmVxExp+xI4SUIjMPrcLQhIqYPAHIMI2zCGqXcUXLrzv/HP0w69B3xNYvHkWrkVYAQMFjDcv38q7gvYhJSCoIHJ/rTLsvqF9HkdVF+kOpAgCcYfbPew+X/F4HDfzw5Fo6HZz+/1u8hVPD4DTJ5yHaveie3bd/5YBXHpn8yMicRtSjl//11e8uZg9xIWahdSzj5f7TeP6ui1lxU0jXBMf9+2xPG89TjwAQwfYkBe758C9lmdZ62DowVvg7aTD8ozV+dMdPDotz1idLxKtjsWDtuUZqwtErZ55fLEVeZ9ZXhYKYBiG2kY90141b4snSQ1PDENBwHefXYNx2bA8kZb9YO+zQ215xCkQhsAsoHudf3pui3QNDMHxcm1afZ6ItAGSXkjrhbxzxBsgYAiFlI1lgVbGBkMERF4gTU9CzkwhMK/6PFwCQ2gEqf3eudm8HjcolgQQ2mAID1JOmBXjiBDkIiX6GDRGvFEw4o2AaJ5jMERARVsy4kUBwRGEYMSLAqEj1GqoA4bwkHzEM4xDMIRGstsi0sRODc4yiFgRriuNeBEgt+HoDaA3rtz6zywQhKL2+/0vzjUHycb6woFaL088wh0wBIdI66XF4xPSYAhMSy8tnpd3RhUwBACrrTy99sIAAd0Dw1CkdMut67Z4TzLPbZlFguFw7YLWdVs8p/JpDck1gcMHQto+nVrbuZ4352fLRkWc0EbH49MPvJRREzj60W11TM9KMjboYzD00G11+rnuJ5rDljIYTkF9K2L03cOoZxZLunaTwatD0KCtfi/1FU9HXpTGfYHTjeXAYjYDT3o//HvXefGV986pXnAFUguV//h57ZtBr/puPabaffnAXua45HeLr3jafV15NXUzj2a9lWEFa4ZuerO/I3gJzGnBIrwepFBNoIwBHjyjTEcA4Xb+tvd5oMXhwKVBHh7tVs+/vHrIhaxgTmHhDvbWtoPeH6oozTwLGFY4/R6IgK6zwuVC5iK3D2vcpwepo9LzToiIqWI2QooZf2A9u7A8u/NgKnPhhVGqOMZS9lKXEZFiNmqwsLWpqWcUN+0mlrKXaipXPf/S6g5whvNUT+fY2o4//Ounrw4gBhKpVqv+JSVCEboeXXJQhdcpp7ZabTeTFxFrhPKuIPouDhft+wmQMFrELBT4JDnqkuZJo6xMbaMeZ+pboxRTDcJYa8M3hzdF73yviLE2vKxyysjc1Yb3gwfbDYtsJFlQYi5pMflEUk/UVgIR1TgF2MtklYeIUBWuVQ06D02CpxYdK43Ejj3YAAAAAElFTkSuQmCC"
+                                            alt=""></div>
+                                    <div class="reviewBy"> Lauren M.</div>
+                                    <div class="review-stars-block"><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i></div>
+                                    <div class="reviewDescription">I went here for my birthday brunch and it was fantastic!!!
+                                        food was soo delicious that ididn't mind the wait!
+                                    </div>
+                                    <div class="reviewDate"></div>
+                                </div>
+                                <div class="reviewCard review-1">
+                                    <div class="reviewLogo"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUsSURBVHgB7ZxLbxtVFMfPuWMnVN24QFdQMpV4VGxwdlEpwlVAYld3yarwCQoSAkUIxVmgQFfxJ2j4BG1WbIhwUYnYxWxQeEidkG0Bd4EaN557es8d241f45nxjF9zf1KSsT2Oc/855577OPcgTJDXLn+dB0vkBYi3gMAmABsJcoCYA6Bcx80EjnreURc1QHAa4N4TLjl/7n1ZhQmBMEbslU170RJFJcI19TDfI1AksKa+VYFoB1159+CXNQfGROLi2YVSbqFx9iYCFUB/JYuy3ipJWbYkVJIWMjHxXr2yWciQdYMQivFYWHgIcVucuBtJiRi7eJeUa1LGuj0OKwtKUiLGJh6756J7Zl35zScwraDYwpNGOS4RLYgBdtGsu/C9uvwAphpaUcGq+PyF1Uf/Hu2OHKVHsryZsLZBKCusW/9vOJVSDSISWTzdt1niR/UbbJhV1NhRDW+uRnVjARFgN1VBYX+mhWPU388GoAfrEQgt3utvf3vDAmVxExp+xI4SUIjMPrcLQhIqYPAHIMI2zCGqXcUXLrzv/HP0w69B3xNYvHkWrkVYAQMFjDcv38q7gvYhJSCoIHJ/rTLsvqF9HkdVF+kOpAgCcYfbPew+X/F4HDfzw5Fo6HZz+/1u8hVPD4DTJ5yHaveie3bd/5YBXHpn8yMicRtSjl//11e8uZg9xIWahdSzj5f7TeP6ui1lxU0jXBMf9+2xPG89TjwAQwfYkBe758C9lmdZ62DowVvg7aTD8ozV+dMdPDotz1idLxKtjsWDtuUZqwtErZ55fLEVeZ9ZXhYKYBiG2kY90141b4snSQ1PDENBwHefXYNx2bA8kZb9YO+zQ215xCkQhsAsoHudf3pui3QNDMHxcm1afZ6ItAGSXkjrhbxzxBsgYAiFlI1lgVbGBkMERF4gTU9CzkwhMK/6PFwCQ2gEqf3eudm8HjcolgQQ2mAID1JOmBXjiBDkIiX6GDRGvFEw4o2AaJ5jMERARVsy4kUBwRGEYMSLAqEj1GqoA4bwkHzEM4xDMIRGstsi0sRODc4yiFgRriuNeBEgt+HoDaA3rtz6zywQhKL2+/0vzjUHycb6woFaL088wh0wBIdI66XF4xPSYAhMSy8tnpd3RhUwBACrrTy99sIAAd0Dw1CkdMut67Z4TzLPbZlFguFw7YLWdVs8p/JpDck1gcMHQto+nVrbuZ4352fLRkWc0EbH49MPvJRREzj60W11TM9KMjboYzD00G11+rnuJ5rDljIYTkF9K2L03cOoZxZLunaTwatD0KCtfi/1FU9HXpTGfYHTjeXAYjYDT3o//HvXefGV986pXnAFUguV//h57ZtBr/puPabaffnAXua45HeLr3jafV15NXUzj2a9lWEFa4ZuerO/I3gJzGnBIrwepFBNoIwBHjyjTEcA4Xb+tvd5oMXhwKVBHh7tVs+/vHrIhaxgTmHhDvbWtoPeH6oozTwLGFY4/R6IgK6zwuVC5iK3D2vcpwepo9LzToiIqWI2QooZf2A9u7A8u/NgKnPhhVGqOMZS9lKXEZFiNmqwsLWpqWcUN+0mlrKXaipXPf/S6g5whvNUT+fY2o4//Ounrw4gBhKpVqv+JSVCEboeXXJQhdcpp7ZabTeTFxFrhPKuIPouDhft+wmQMFrELBT4JDnqkuZJo6xMbaMeZ+pboxRTDcJYa8M3hzdF73yviLE2vKxyysjc1Yb3gwfbDYtsJFlQYi5pMflEUk/UVgIR1TgF2MtklYeIUBWuVQ06D02CpxYdK43Ejj3YAAAAAElFTkSuQmCC"
+                                            alt=""></div>
+                                    <div class="reviewBy"> Dejah D.</div>
+                                    <div class="review-stars-block"><i class="review-star">★</i></div>
+                                    <div class="reviewDescription"> Stopped in at Blueberry Grill my first day back in town and to my expectation, I am never disappointed!
+                                        The mahimahi tacos were to die for and the mimosa are always a hit- This place is a must try!
+                                    </div>
+                                    <div class="reviewDate"></div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#myCarousel" data-slide="next"><span
+                                class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a></div>
+                    </div>
+                    <div class="addReviewSection">
+                        <div class="loginToReviewDiv"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUsSURBVHgB7ZxLbxtVFMfPuWMnVN24QFdQMpV4VGxwdlEpwlVAYld3yarwCQoSAkUIxVmgQFfxJ2j4BG1WbIhwUYnYxWxQeEidkG0Bd4EaN557es8d241f45nxjF9zf1KSsT2Oc/855577OPcgTJDXLn+dB0vkBYi3gMAmABsJcoCYA6Bcx80EjnreURc1QHAa4N4TLjl/7n1ZhQmBMEbslU170RJFJcI19TDfI1AksKa+VYFoB1159+CXNQfGROLi2YVSbqFx9iYCFUB/JYuy3ipJWbYkVJIWMjHxXr2yWciQdYMQivFYWHgIcVucuBtJiRi7eJeUa1LGuj0OKwtKUiLGJh6756J7Zl35zScwraDYwpNGOS4RLYgBdtGsu/C9uvwAphpaUcGq+PyF1Uf/Hu2OHKVHsryZsLZBKCusW/9vOJVSDSISWTzdt1niR/UbbJhV1NhRDW+uRnVjARFgN1VBYX+mhWPU388GoAfrEQgt3utvf3vDAmVxExp+xI4SUIjMPrcLQhIqYPAHIMI2zCGqXcUXLrzv/HP0w69B3xNYvHkWrkVYAQMFjDcv38q7gvYhJSCoIHJ/rTLsvqF9HkdVF+kOpAgCcYfbPew+X/F4HDfzw5Fo6HZz+/1u8hVPD4DTJ5yHaveie3bd/5YBXHpn8yMicRtSjl//11e8uZg9xIWahdSzj5f7TeP6ui1lxU0jXBMf9+2xPG89TjwAQwfYkBe758C9lmdZ62DowVvg7aTD8ozV+dMdPDotz1idLxKtjsWDtuUZqwtErZ55fLEVeZ9ZXhYKYBiG2kY90141b4snSQ1PDENBwHefXYNx2bA8kZb9YO+zQ215xCkQhsAsoHudf3pui3QNDMHxcm1afZ6ItAGSXkjrhbxzxBsgYAiFlI1lgVbGBkMERF4gTU9CzkwhMK/6PFwCQ2gEqf3eudm8HjcolgQQ2mAID1JOmBXjiBDkIiX6GDRGvFEw4o2AaJ5jMERARVsy4kUBwRGEYMSLAqEj1GqoA4bwkHzEM4xDMIRGstsi0sRODc4yiFgRriuNeBEgt+HoDaA3rtz6zywQhKL2+/0vzjUHycb6woFaL088wh0wBIdI66XF4xPSYAhMSy8tnpd3RhUwBACrrTy99sIAAd0Dw1CkdMut67Z4TzLPbZlFguFw7YLWdVs8p/JpDck1gcMHQto+nVrbuZ4352fLRkWc0EbH49MPvJRREzj60W11TM9KMjboYzD00G11+rnuJ5rDljIYTkF9K2L03cOoZxZLunaTwatD0KCtfi/1FU9HXpTGfYHTjeXAYjYDT3o//HvXefGV986pXnAFUguV//h57ZtBr/puPabaffnAXua45HeLr3jafV15NXUzj2a9lWEFa4ZuerO/I3gJzGnBIrwepFBNoIwBHjyjTEcA4Xb+tvd5oMXhwKVBHh7tVs+/vHrIhaxgTmHhDvbWtoPeH6oozTwLGFY4/R6IgK6zwuVC5iK3D2vcpwepo9LzToiIqWI2QooZf2A9u7A8u/NgKnPhhVGqOMZS9lKXEZFiNmqwsLWpqWcUN+0mlrKXaipXPf/S6g5whvNUT+fY2o4//Ounrw4gBhKpVqv+JSVCEboeXXJQhdcpp7ZabTeTFxFrhPKuIPouDhft+wmQMFrELBT4JDnqkuZJo6xMbaMeZ+pboxRTDcJYa8M3hzdF73yviLE2vKxyysjc1Yb3gwfbDYtsJFlQYi5pMflEUk/UVgIR1TgF2MtklYeIUBWuVQ06D02CpxYdK43Ejj3YAAAAAElFTkSuQmCC"
+                                alt=""><span>Insert review</span><input required=""><a class="mainButton loginToReviewButton" href="/">Add review</a></div>
+                    </div>
+                    <div class="reviewsSocialMediaIcons-sm">
+                        <div><a href="https://www.facebook.com/blueberrysgrill/"><img src="/static/media/facebook.554d13f27f715cceea852994bd14f75e.svg" alt=""></a></div>
+                        <div><a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach"><img src="/static/media/yahoo.8b8d0e14a128122545027a016fdfc665.svg" alt=""></a></div>
+                        <div><a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250"><img src="/static/media/yellowPages.2501edbd992481d8967f78b516898be4.svg" alt=""></a></div>
+                        <div><a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2"><img src="/static/media/yelp.995924f1e3265b52b38cd3f719a76fe7.svg" alt=""></a></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Vendor JS Files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/LoginPopup.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

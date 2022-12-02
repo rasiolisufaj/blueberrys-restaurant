@@ -4,12 +4,18 @@
   background-size: cover;
   color: #273c89;
   position: relative;
+  padding: 50px 0px 50px 30px;
 }
 
 .blogHeader {
-  position: absolute;
-  right: 81px;
-  padding-top: 44px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.blogHeader-sm {
+  display: none;
 }
 
 .blogHeader a {
@@ -18,8 +24,8 @@
 
 .blogHeader h2 {
   font-family: "Aileron", Sans-serif, serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 900;
   text-transform: uppercase;
   line-height: 43px;
   color: #273c89;
@@ -36,18 +42,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 100px 10px 10px;
+  /*padding: 100px 10px 10px;*/
 }
 
 .blogCard {
   display: flex;
   align-content: center;
   width: 100%;
-  padding: 20px;
+  margin-bottom: 25px;
 }
 
 .blogCardContent {
-  padding: 42px;
+  /*padding: 42px;*/
+  padding: 0px 0px 0px 50px;
+  /*margin-right: -45px;*/
 }
 
 .blogCardContent h2 {
@@ -58,6 +66,8 @@
   text-transform: uppercase;
   line-height: 42.2px;
   position: relative;
+  margin-bottom: 20px;
+  width: fit-content;
 }
 
 .blogCardContent h2::before {
@@ -67,8 +77,8 @@
   width: 49px;
   background: url("../img/blog/BlogHeadingImage.png") no-repeat;
   background-size: 100%;
-  right: 0px;
-  top: 10px;
+  right: -65px;
+  top: 0px;
 }
 
 .blogCardParagraph {
@@ -77,11 +87,12 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 20px;
 }
 
 .blogCardContent a {
   font-family: "Aileron", Sans-serif, serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   fill: #273c89;
@@ -89,7 +100,7 @@
 }
 
 .blogCardReadMore {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 .blogCardReadMore svg {
@@ -97,12 +108,23 @@
   padding-left: 5px;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1199px) {
+  .blogHeader {
+    display: flex;
+  }
+
+  .blogHeader-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 1198px) {
   #blogHome {
-    padding-bottom: 25px;
+    padding: 70px 40px 70px 40px;
   }
 
   .blogHeader {
+    display: none;
     bottom: 28px !important;
   }
 
@@ -110,9 +132,14 @@
     font-size: 27px;
   }
 
+  .blogHeader-sm {
+    display: flex;
+    margin-bottom: 0;
+  }
+
   .blogCard {
-    flex-direction: column;
-    padding-top: 15px;
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
   }
 
   .blogCard img {
@@ -122,7 +149,7 @@
   }
 
   .blogCardContent {
-    padding: 0;
+    padding: 20px 0 0 0;
   }
 
   .blogCardContent h2 {
@@ -132,22 +159,20 @@
 
   .blogCardParagraph {
     font-size: 16px;
-    line-height: 19.2px;
+    line-height: 19px;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .blogCard-3 {
+    display: none;
   }
 }
 
 @media (max-width: 757px) {
   .blogHeader h2 {
     font-size: 22px;
-  }
-
-  .blogCard {
-    flex-direction: column-reverse;
-    padding-bottom: 30px;
-  }
-
-  .blogCardContent {
-    padding-top: 20px;
   }
 }
 
@@ -161,8 +186,4 @@
   }
 }
 
-@media (max-width: 780px) {
-  .blogCard-3 {
-    display: none;
-  }
-}
+

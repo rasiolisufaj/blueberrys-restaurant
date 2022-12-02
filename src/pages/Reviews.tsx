@@ -47,73 +47,88 @@ export default class Reviews extends React.Component<Props, State> {
     return (
       <section id="reviews">
         <div data-aos="fade-up">
-          <div className="reviewsContent">
-            <div className="reviewsHeader">
-              <div className="reviewsTitle">
-                Reviews
+          <div className="sectionReviewsBody">
+
+            <div className="row">
+              <div className="reviewsContent">
+                <div className="reviewsHeader">
+                  <div className="reviewsTitle">
+                    Reviews
+                  </div>
+
+                  <SocialMediaBlock/>
+                </div>
               </div>
 
-              <SocialMediaBlock/>
+              <div className="reviewsCarousel">
+                {
+                  reviewItems.map((review) => (
+                    <ReviewCard reviewCard={review} key={review.id}/>
+                  ))
+                }
+              </div>
+
+              <div id="myCarousel" className="carousel slide reviewsCarousel-small" data-ride="carousel">
+                <ol className="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div className="carousel-inner">
+                  {
+                    reviewItems.map((review) => (
+                      <ReviewCard reviewCard={review} key={"m" + review.id}/>
+                    ))
+                  }
+                </div>
+
+                <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span className="glyphicon glyphicon-chevron-left"></span>
+                  <span className="sr-only">Previous</span>
+                </a>
+                <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span className="glyphicon glyphicon-chevron-right"></span>
+                  <span className="sr-only">Next</span>
+                </a>
+              </div>
+
+
+              {!loggedUser && (
+                <div className="loginToReviewSection">
+                  <div className="loginToReviewDiv">
+                    <img src={ReviewLogoImage} alt=""/>
+                    <span>Login to Add Review</span>
+                  </div>
+                  <Link to={"/"} className="mainButton loginToReviewButton" onClick={openLoginDialog}>Login</Link>
+                </div>
+              )}
+
+              {loggedUser && (
+                <div className="addReviewSection">
+                  <div className="addReviewSectionWrap">
+                    <div className="wrap">
+                      <div className="col-100 col-wrap">
+                        <div className="loginToReviewDiv">
+                          <div className="loggedUser">
+                            <img src={ReviewLogoImage} alt=""/>
+                            <span>{loggedUser.name}: </span>
+                          </div>
+                          <input className="addReviewField" required/>
+                        </div>
+                        {/*<div>*/}
+                          <Link to={"/"} className="mainButton loginToReviewButton" onClick={this.addReview}>Add review</Link>
+                        {/*</div>*/}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              <SocialMediaSmallBlock/>
             </div>
-          </div>
-
-          <div className="reviewsCarousel">
-            {
-              reviewItems.map((review) => (
-                <ReviewCard reviewCard={review}/>
-              ))
-            }
-          </div>
-
-          <div id="myCarousel" className="carousel slide reviewsCarousel-small" data-ride="carousel">
-            <ol className="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <div className="carousel-inner">
-              {
-                reviewItems.map((review) => (
-                  <ReviewCard reviewCard={review}/>
-                ))
-              }
-            </div>
-
-            <a className="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span className="glyphicon glyphicon-chevron-left"></span>
-              <span className="sr-only">Previous</span>
-            </a>
-            <a className="right carousel-control" href="#myCarousel" data-slide="next">
-              <span className="glyphicon glyphicon-chevron-right"></span>
-              <span className="sr-only">Next</span>
-            </a>
           </div>
         </div>
-
-        {!loggedUser && (
-          <div className="loginToReviewSection">
-            <div className="loginToReviewDiv">
-              <img src={ReviewLogoImage} alt=""/>
-              <span>Login to Add Review</span>
-            </div>
-            <Link to={"/"} className="mainButton loginToReviewButton" onClick={openLoginDialog}>Login</Link>
-          </div>
-        )}
-
-        {loggedUser && (
-          <div className="addReviewSection">
-            <div className="loginToReviewDiv">
-              <img src={ReviewLogoImage} alt=""/>
-              <span>Insert review</span>
-              <input required/>
-              <Link to={"/"} className="mainButton loginToReviewButton" onClick={this.addReview}>Add review</Link>
-            </div>
-          </div>
-        )}
-
-        <SocialMediaSmallBlock/>
-
       </section>
     )
   };

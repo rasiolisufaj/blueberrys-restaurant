@@ -5,3 +5,6 @@ declare module '*.png';
 declare module '*.svg';
 
 // declare module 'react';
+
+
+export type JsonSchema = JSONSchema7

@@ -1,0 +1,133 @@
+#about {
+  background: #273c89;
+  color: #ffff;
+  padding: 125px 30px 240px;
+}
+
+#about a {
+  color: white;
+}
+
+.aboutHeader {
+   position: relative;
+}
+
+.aboutHeader h2 {
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 57px;
+  font-style: inherit;
+  position: absolute;
+  left: 126px;
+  top: -87px;
+}
+
+.valueAndTeamButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 102px;
+  top: -88px;
+}
+
+.aboutUsLink {
+  font-family: "Aileron", Sans-serif, serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 43px;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.aboutUsBackgroundImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutUsBackgroundImage img {
+  height: 80vh;
+}
+
+.aboutUsDescription {
+  padding: 50px 30px 50px 50px;
+  width: 681px;
+  height: 343px;
+  border: 14px solid #ecc36c;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  position: absolute;
+  bottom: -860px;
+  background-color: #273c89;
+}
+
+.aboutUsPara {
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+#more {
+  display: none;
+}
+
+#readMoreButton {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#readMoreButton i {
+  margin-left: 5px;
+}
+
+#readMoreButton:hover {
+  border: 1px dotted white;
+}
+
+#aboutUsArrowUp {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 1000px) {
+  .aboutUsDescription {
+    left: -1px !important;
+  }
+}
+@media (max-width: 800px) {
+  .aboutUsDescription {
+    width: 300px !important;
+    padding: 20px 20px 20px 20px;
+    top: -170px;
+  }
+  .aboutUsPara{
+    font-size: 15px;
+  }
+  #readMoreButton {
+    font-size: 14px;
+  }
+  .positionRelative-sm {
+    position: relative;
+  }
+}
+
+@media (max-width: 733px) {
+  .aboutUsDescription {
+    width: auto;
+  }
+}

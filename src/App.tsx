@@ -39,10 +39,12 @@ export const App = () => {
   }
 
   const openLoginDialog = () => {
+    console.log('Open login popup')
     setShowLoginDialog(!showLoginDialog);
   }
 
   const onCancelLoginDialog = () => {
+    console.log('Closing login popup')
     setShowLoginDialog(false);
   }
 

@@ -9,7 +9,7 @@ export default class SocialMediaSmallBlock extends React.Component {
   render() {
 
     return (
-      <div className="reviewsSocialMediaIcons-small">
+      <div className="reviewsSocialMediaIcons-sm">
         <div>
           <a href="https://www.facebook.com/blueberrysgrill/">
             <img src={FbImage} alt=""/>
