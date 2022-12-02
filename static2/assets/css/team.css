@@ -1,0 +1,223 @@
+.TeamPageSection {
+  background-color: #273c89;
+  background-image: url(https://blueberrysgrillmb.com/wp-content/uploads/2021/12/bg-shape.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 220px 85px 85px 117px;
+  /* height: 100vh; */
+  /* border-left: 1px solid #434b63; */
+}
+.valueAndTeamButtonsINTeamPage {
+  display: flex;
+  justify-content: space-between;
+}
+.MeetTheTeam {
+  display: inline-block;
+  font-family: "Aileron", Sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  /* align-self: center; */
+  padding-left: 5px;
+}
+.ValueTextInTeamPage {
+  display: inline-block;
+  color: #ffffff;
+  padding-left: 0px;
+  align-self: center;
+  font-family: "Aileron", Sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 43.2px;
+  margin-right: -42px;
+}
+.TeamParaDescription p {
+  margin-bottom: 1.6em;
+  font-family: "Aileron", Sans-serif;
+  font-size: 20px;
+  margin-top: 1.2em;
+  color: white;
+}
+.TeamParaDescription {
+  margin-bottom: 100px;
+}
+.teamMember {
+  display: flex;
+  justify-content: space-between;
+  --widgets-spacing: 20px;
+}
+.TeamImageContainer img {
+  height: 325px;
+  object-fit: cover;
+  transition-duration: 0.3s;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
+  width: 2048px;
+  aspect-ratio: auto 2048 / 2560;
+  /* border: 1px solid red; */
+}
+.TeamPhotos {
+  width: 30%;
+}
+.TeamPhotos h3 {
+  margin-bottom: 0px;
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+.TeamPhotos p {
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.BePartOfOurTeam {
+  display: flex;
+  padding-top: 100px;
+}
+.TextBePartOfOurTeam {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 70%;
+  /* padding: 0px; */
+  padding-right: 25px;
+}
+.ApplyNowButtonInTeamPage {
+  font-family: "Aileron", Sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  fill: #273c89;
+  color: #273c89;
+  background-color: #ffffff;
+  border-radius: 0px 0px 0px 0px;
+  padding: 18px 18px 18px 18px;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.TextBePartOfOurTeam div {
+  text-align: right;
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif;
+  font-size: 20px;
+}
+.RightArrowInTeamPage {
+  margin-bottom: -23px;
+}
+.leftArrowInTeamPage {
+  margin-bottom: 17px;
+}
+.ValueTextContainerInTeamPage {
+  padding-bottom: 20px;
+  margin-top: -13px;
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .TeamPageSection {
+    padding-top: 80px !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 1200px) {
+  .TeamPageSection {
+    padding: 47px 40px 22px 40px;
+  }
+  .MeetTheTeam {
+    font-size: 40px;
+  }
+}
+@media (min-width: 0px) and (max-width: 760px) {
+  .teamMember {
+    flex-direction: column;
+  }
+  .TeamPhotos {
+    width: 100%;
+  }
+  .TeamPhotos h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .TeamPhotos p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .BePartOfOurTeam {
+    flex-direction: column;
+  }
+  .TextBePartOfOurTeam {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 4px;
+    padding-right: 0;
+  }
+  .ApplyNowButtonInTeamPage {
+    width: 100%;
+  }
+  .MeetTheTeam {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .ValueTextInTeamPage {
+    font-size: 20px;
+  }
+  .ValueAndARoowImgInTeamPage {
+    padding-bottom: 40px;
+  }
+  .ValueAndARoowImgInTeamPage img {
+    width: 40px !important;
+  }
+  .ValueTextContainerInTeamPage {
+    /* padding-bottom: 20px; */
+    margin-top: 43px;
+  }
+  .TeamParaDescription {
+    text-align: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 760px) {
+  .TeamImageContainer img {
+    object-position: 0px -78px;
+  }
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .MeetTheTeam {
+    font-size: 20px;
+    line-height: 21px;
+  }
+  .ValueTextInTeamPage {
+    font-size: 13px;
+  }
+  .leftArrowInTeamPage {
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 0px) and (max-width: 400px) {
+  .leftArrowInTeamPage {
+    margin-bottom: -60px;
+  }
+  .MeetTheTeam {
+    margin-left: 38px;
+  }
+  .ValueTextInTeamPage {
+    margin-bottom: -11px;
+  }
+  .RightArrowInTeamPage {
+    margin-bottom: 0;
+  }
+}

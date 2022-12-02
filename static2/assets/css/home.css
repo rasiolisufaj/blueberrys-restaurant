@@ -1,0 +1,1099 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.headerMobile {
+  width: 100%;
+  height: 253.36px;
+  background-color: #273c89;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+
+.headerMobile img {
+  margin-top: -69px;
+  width: 159px;
+}
+
+.iconsHeaderMobile {
+  position: absolute;
+  bottom: 30px;
+  left: 42px;
+}
+
+.i-icon {
+  color: white;
+  width: 1.25em;
+  font-size: 24px;
+  font-family: "Font Awesome 5 Free", serif;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  margin-right: 24px;
+}
+#loginButtonPopup {
+  cursor: pointer;
+}
+.i-icon_heart {
+  font-weight: 400 !important;
+}
+#menuname a {
+  /* display: none; */
+  font-size: 12px !important;
+}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+#home {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/backgroundBlog.png") top center;
+  background-color: #f3f6ff !important;
+  background-size: cover;
+  /* display: none !important; */
+}
+.HomedisplayNone {
+  display: none !important;
+}
+.HomedisplayBlock {
+  display: flex !important;
+}
+.homeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 370px;
+  top: 150px;
+  height: 498px;
+  overflow: hidden;
+}
+
+.homeSectionRight {
+  background-color: #ecc36c;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  padding: 20px 30px 20px 40px;
+  height: 100%;
+}
+
+.homeSectionRight h2 {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-weight: 900;
+  margin-bottom: 15px;
+  margin-top: -50px;
+}
+
+.homeSectionRight p {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  margin-top: 25px;
+  line-height: 24px;
+}
+
+.homeSectionLeft {
+  position: relative;
+  width: 40vw;
+  height: 124%;
+  overflow: hidden;
+  padding-top: 56.25%;
+
+  /* overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; */
+}
+
+.waitlistButton {
+  background-color: #273c89;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 42px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -64px;
+}
+
+.waitlistButton:hover {
+  background-color: #000000;
+}
+.typed-cursor {
+  /* opacity: 0 !important; */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  /* left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; */
+}
+.sloganPar {
+  height: 50px;
+  margin-top: 35px !important;
+  margin-bottom: 7px;
+}
+.sloganPar span {
+  margin-top: -4px !important;
+  font-style: inherit !important;
+  font-weight: inherit !important;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  #home {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 780px) {
+  .sloganPar {
+    text-align: center;
+  }
+}
+@media (max-width: 1366px) {
+  .sloganPar span {
+    font-size: 16px;
+  }
+  .sloganPar {
+    margin-top: 10px !important;
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 1199px) {
+  .headerMobile {
+    display: flex;
+  }
+
+  #header {
+    width: 100vw;
+    left: -100vw;
+  }
+
+  #home {
+    height: 107vh;
+  }
+
+  .homeSection {
+    flex-direction: column;
+    left: 0px;
+    right: 0;
+    top: 150px;
+    height: 100%;
+    overflow: hidden;
+    top: 306px;
+  }
+
+  .homeSectionRight {
+    height: 100%;
+    width: 80vw;
+    margin-bottom: 8px !important;
+  }
+
+  .homeSectionLeft {
+    height: 100%;
+    width: 80vw;
+  }
+
+  .waitlistButton {
+    margin-bottom: 60px;
+  }
+
+  .homeSectionRight h2 {
+    margin-top: 0px;
+  }
+
+  .responsive-iframe {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  #home {
+    height: 107vh;
+  }
+
+  .waitlistButton {
+    margin-bottom: 0px;
+  }
+
+  .homeSection {
+    height: 100%;
+  }
+
+  .homeSectionRight {
+    padding: 10px;
+  }
+
+  .homeSectionRight h2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .homeSectionRight p {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .homeSectionRightPar {
+    font-style: inherit;
+    font-weight: inherit;
+  }
+
+  .sloganPar div {
+    margin-top: -4px !important;
+    font-style: inherit !important;
+    font-weight: inherit !important;
+  }
+
+  .responsive-iframe {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .waitlistButton {
+    width: 105%;
+    margin-left: -9px;
+  }
+}
+
+@media (max-width: 470px) {
+  .waitlistButton {
+    width: 106%;
+    margin-left: -9px;
+  }
+}
+
+@media (max-width: 370px) {
+  .waitlistButton {
+    width: 107%;
+    margin-left: -9px;
+  }
+}
+#menulist{
+  display: block;
+}
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about {
+  /* height: 400px; */
+  background: #273c89;
+  color: #ffff;
+  padding: 125px 30px 240px;
+  /* position: relative; */
+}
+
+#about a {
+  color: white;
+}
+
+.aboutHeader {
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+  /* border: 1px solid red; */
+  /* position: relative; */
+  width: fit-content;
+
+}
+.aboutheadersetter{
+  position: relative;
+  /* border: 1px solid red; */
+}
+.aboutUsBackgroundImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 40px; */
+  /* position: absolute; */
+}
+
+.aboutUsBackgroundImage img {
+  /* width: 80vw; */
+  object-fit: contain;
+  height: 80vh;
+  vertical-align: middle;
+  display: inline-block;
+  width: 987px;
+  aspect-ratio: auto 987 / 657;
+ 
+}
+
+.aboutHeading {
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 57.6px;
+  font-style: inherit;
+  position: absolute;
+  left: 0px;
+  top: -87px;
+}
+
+.valueAndTeamButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 25px;
+  top: -87px;
+}
+
+.ValueButton {
+  font-family: "Aileron", Sans-serif, serif;
+  /* font-size: 36px; */
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 43.2px;
+  font-size: 30px;
+  /* position: relative; */
+}
+
+.TeamButton {
+  font-family: "Aileron", Sans-serif, serif;
+  /* font-size: 36px; */
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 43.2px;
+  font-size: 30px;
+  /* position: relative; */
+}
+
+.aboutTeam img {
+  position: absolute;
+    left: 62px;
+    top: 35px;
+}
+
+.aboutValue img {
+  position: absolute;
+    left: 92px;
+    top: 35px;
+    
+}
+
+.aboutValue {
+margin-right: 30px;
+position: relative;
+}
+
+.aboutTeam {
+  /* position: absolute;
+    right: 163px;
+    top: -73px; */
+    position: relative;
+    margin-right: 5px;
+}
+
+#more {
+  display: none;
+  /* margin-bottom: 15px; */
+}
+
+#aboutUsOpenedPara {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.aboutUsDescription {
+  padding: 50px 30px 50px 50px;
+  width: 681px;
+  height: 343px;
+  border: 14px solid #ecc36c;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  position: absolute;
+  bottom: -111px;
+  left: 20px;
+  background-color: #273c89;
+}
+
+.aboutUsPara div {
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+#readMoreButton {
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+#readMoreButton i {
+  margin-left: 5px;
+}
+
+#readMoreButton:hover {
+  border: 1px dotted white;
+}
+
+.aboutUsFirstPara,
+.sty {
+  /* margin-bottom: 15px; */
+  color: #ffffff;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+#aboutUsArrowUp {
+  display: none;
+}
+
+@media (max-width: 733px) {
+  .aboutUsDescription {
+    width: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .aboutUsDescription {
+    left: -1px !important;
+  }
+}
+@media (max-width: 800px) {
+  .aboutUsDescription {
+    width: 300px !important;
+    padding: 20px 20px 20px 20px;
+    top: -170px;
+  }
+  .aboutUsFirstPara,
+  .sty {
+    font-size: 15px;
+  }
+  #readMoreButton {
+    font-size: 14px;
+  }
+  #aboutUsOpenedPara {
+    font-size: 15px;
+  }
+  .positionRelativeForSmallWIdth {
+    position: relative;
+  }
+}
+@media (max-width: 615px) {
+  .aboutUsDescription {
+
+    top: -44px;
+  }
+
+}
+
+@media (max-width: 1199px) {
+ .aboutHeading{
+  font-size: 30px;
+ }
+ .ValueButton{
+  font-size: 24px;
+ }
+ .TeamButton{
+  font-size: 24px;
+ }
+  #header {
+    box-shadow: none;
+  }
+  .valueAndTeamButtons {
+    
+    right: 25px;
+    top: -87px;
+}
+.aboutValue img {
+
+  left: 59px;
+  top: 33px;
+}
+.aboutTeam img {
+  left: 28px;
+  top: 33px;
+}
+}
+@media (max-width: 950px) {
+  .aboutUsBackgroundImage img {
+   height: auto;
+   margin-top: 30px;
+}
+}
+@media (max-width: 576px) {
+  .valueAndTeamButtons {
+    
+  flex-direction: column;
+  right: 0;
+}
+.ValueButton{
+  font-size: 19px;
+ }
+ .TeamButton{
+  font-size: 19px;
+ }
+ .aboutValue img {
+  left: 43px;
+  top: 28px;
+}
+.aboutTeam img {
+  left: 24px;
+  top: 28px;
+}
+.aboutHeading{
+  font-size: 25px;
+}
+}
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+#blogHome {
+  /* height: 400px; */
+  background-color: #f4eddd !important;
+  background: url("../img/backgroundHome.png") top center;
+  background-size: cover;
+  color: #273c89;
+  position: relative;
+}
+
+.blogTitle {
+  position: absolute;
+  right: 81px;
+  /* top: 44px; */
+  padding-top: 44px;
+}
+
+.blogContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  padding: 100px 10px 10px;
+}
+
+.blogCard {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.blogCardContent {
+  /* display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; */
+  padding: 42px;
+}
+
+.blogCardContent h2 {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 42.2px;
+  position: relative;
+}
+
+.blogCardContent h2::before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 49px;
+  background: url("../img/blog/BlogHeadingImage.png") no-repeat;
+  background-size: 100%;
+  right: 0px;
+  top: 10px;
+}
+
+.blogCardParagraph {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.blogCardContent a {
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21.6px;
+  fill: #273c89;
+  color: #273c89;
+  /* margin-top: 25px; */
+}
+
+.blogCardReadMore {
+  margin-top: 20px;
+}
+
+.blogHeader a {
+  color: #273c89;
+}
+
+.blogHeader h2 {
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 43.2px;
+}
+
+.blogTitle h2 {
+  position: relative;
+}
+
+.blogTitle img {
+  position: absolute;
+  right: -31px;
+  /* top: 32px; */
+  top: 96px;
+}
+
+@media (max-width: 1199px) {
+  .blogCard {
+    flex-direction: column;
+  }
+
+  .blogCard img {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .blogCardContent {
+    padding: 0;
+  }
+
+  .blogCardContent h2 {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .blogCardParagraph {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  .blogTitle {
+    right: 81px;
+
+    bottom: 0px !important;
+  }
+
+  #blogHome {
+    padding-bottom: 25px;
+  }
+
+  .blogHeader h2 {
+    font-size: 27px;
+  }
+
+  .blogCard {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 757px) {
+  .blogCardContent {
+    padding-top: 20px;
+  }
+
+  .blogHeader h2 {
+    font-size: 22px;
+  }
+
+  .blogCard {
+    flex-direction: column-reverse;
+  }
+
+  .blogCard {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .blogTitle {
+    right: 60px;
+  }
+
+  .blogHeader h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 780px) {
+  .blogCard-3 {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Review Section
+--------------------------------------------------------------*/
+#reviews {
+  height: 1000px;
+  padding: 40px;
+  color: #273c89;
+}
+
+#reviews nav {
+  background: white !important;
+}
+
+.reviewsCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 5px;
+  position: relative;
+  margin-top: 130px;
+}
+
+.reviewsSocialMediaIcons img {
+  max-height: 42px;
+  max-width: 45px;
+  /* padding-right: 15px; */
+  margin-right: 20px;
+}
+
+.reviewsTitle {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.review-stars-block {
+  font-size: 30px;
+  color: #273c89;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.review-star {
+  margin-right: 1px;
+  transform: rotate(20deg);
+}
+
+.review {
+  background: #ecc36c;
+  width: 326.667px;
+  height: 360px;
+  margin-right: 80px;
+  box-shadow: 10px -10px 1px 1px #273c89;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 20px 0px;
+}
+
+.reviewBy {
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #273c89;
+}
+
+.reviewDescription {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  max-height: 140px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: grab;
+}
+
+.reviewDate {
+  font-size: 19px;
+  color: #273c89;
+  margin-top: 10px;
+}
+
+.reviewLogo {
+  position: absolute;
+  top: -35px;
+}
+
+.reviewLogo img {
+  position: relative !important;
+}
+
+.reviewLogo img {
+  width: 66px;
+  height: 66px;
+}
+
+.positionRelativeOfreview {
+  position: relative;
+}
+
+.reviewLogo::before {
+  position: absolute;
+  content: "";
+  background: url(https://blueberrysgrillmb.com/wp-content/uploads/2021/12/review_before.svg)
+    no-repeat;
+  width: 67px;
+  height: 55px;
+  top: -42px;
+  left: 38px;
+  z-index: 10;
+}
+
+.reviewsHeader-small {
+  display: none;
+}
+
+.reviewsAddNewBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.loginToAddReview {
+  color: #273c89;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Aileron", Sans-serif, serif;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+.loginToAddReview img {
+  width: 39px;
+  height: 39px;
+}
+
+.loginToAddReview span {
+  margin-left: 13px;
+  display: inline;
+}
+
+.reviewsLoginButton a {
+  color: white;
+}
+
+.reviewsLoginButton {
+  /* border-bottom: 1px solid turquoise; */
+  width: 30%;
+  background: #273c89;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  min-width: 235px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.reviewsSocialMediaIcons-small {
+  display: none;
+}
+
+.reviewsCarousel-small {
+  display: none;
+}
+
+.reviewsSocialMediaIcons-small a {
+  padding: 15px;
+}
+
+.scrollable-element {
+  scrollbar-color: red yellow; /* red is for the thumb and yellow is for the track */
+}
+
+.carousel-control {
+  opacity: -1 !important;
+}
+
+::-webkit-scrollbar {
+  /* height: 12px; */
+  height: 100%;
+  width: 3px;
+  background: #ecc36c;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #273c89;
+  margin-right: 5px;
+  /* -webkit-border-radius: 1ex; */
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+@media (max-width: 1000px) {
+  #reviews nav {
+    display: none;
+  }
+
+  .reviewsCarousel {
+    display: none;
+  }
+
+  .review {
+    width: 100%;
+    padding: 40px;
+    margin-top: 137px;
+  }
+
+  .reviewsCarousel-small {
+    display: block;
+    /* margin-right: 20px; */
+  }
+
+  .reviewsHeader-small {
+    display: block;
+  }
+
+  .reviewsHeader-small h2 {
+    color: #273c89;
+    font-family: "Aileron", Sans-serif, serif;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .reviewsSocialMediaIcons-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .carousel-indicators {
+    display: none !important;
+  }
+}
+
+@media (max-width: 766px) {
+  .reviewsAddNewBlock {
+    flex-direction: column;
+  }
+
+  .loginToAddReview {
+    margin-right: 0px;
+  }
+
+  .reviewsLoginButton {
+    margin-top: 20px;
+  }
+
+  .reviewsSocialMediaIcons-small {
+    margin-top: 35px;
+  }
+
+  .reviewsHeader-small h2 {
+    font-size: 30px;
+  }
+}
+/* Welcome Popup  */
+#WelcomePopupSection {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* top: 0; */
+  bottom: 0;
+  height: 100vh;
+  z-index: 10000000;
+  transition-timing-function: ease-in-out;
+  opacity: 0.98;
+}
+#WelcomePopupSectionSmallWidth {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* top: 0; */
+  bottom: 0;
+  height: 100vh;
+  z-index: 10000000;
+  transition-timing-function: ease-in-out;
+  opacity: 0.98;
+}
+.WelcomePopupImageContainer img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+@media (max-width: 500px) {
+  #WelcomePopupSection {
+    display: none;
+  }
+}
+/* menu button css  */
+#menuname1 {
+  display: none !important;
+}

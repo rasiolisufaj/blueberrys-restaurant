@@ -1,0 +1,264 @@
+.valuePageFlexWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.valuePageDiv {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ValuesSection {
+  /* height: 100vh; */
+  padding: 200px 50px 50px 50px;
+  background-color: white;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.valueAndTeamButtonsINValuPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid yellow; */
+  padding-bottom: 30px;
+}
+.valueAndTeamButtonsINValuPage img {
+  color: blue;
+  /* position: absolute; */
+  /* right: 0; */
+}
+.ValuesTextInValuePage {
+  font-family: "Aileron", Sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 57.6px;
+  color: #273c89;
+  display: inline-block;
+  /* border: 1px solid red; */
+  /* position: relative; */
+}
+.leftArrowInValuePage {
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.TeamTextInvaluePage {
+  font-family: "Aileron", Sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 57.6px;
+  color: #273c89;
+  display: inline-block;
+  /* border: 1px solid green; */
+}
+.RightArrowInValuePage {
+  margin-bottom: -27px;
+  margin-left: -7px;
+}
+.paraOfValue p {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 1.6em;
+}
+.valueImageAndTextDescription {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;
+  justify-content: center; */
+}
+.ValueItems {
+  display: flex;
+}
+.LeftValuesItemContainer {
+  width: 50%;
+  /* border: 1px solid red; */
+  align-content: center;
+  align-items: center;
+  padding: 60px 10px 60px 10px;
+  /* background: #f4eddd; */
+  padding-left: 40px;
+}
+.item1Value {
+  background: #f4eddd;
+}
+.item2Value {
+  background: #f3f6ff;
+}
+.item3Value {
+  background: #f3f6ff;
+}
+.item4Value {
+  background: #f4eddd;
+}
+.iteam1valueR {
+  display: flex;
+  justify-content: start;
+}
+.iteam2valueR {
+  display: flex;
+  justify-content: end;
+}
+.iteam3valueR {
+  display: flex;
+  justify-content: start;
+}
+.iteam4valueR {
+  display: flex;
+  justify-content: end;
+}
+.RightValuesItemContainer {
+  width: 50%;
+  /* border: 1px solid green; */
+}
+.LeftValuesItemContainer h3 {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.paraOfvalueImageAndTextDescription {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 20px;
+  /* --widgets-spacing: 20px; */
+}
+.flexDirectionOfAlternateItems {
+  flex-direction: row-reverse;
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .ValuesSection {
+    padding-top: 80px !important;
+  }
+}
+@media only screen and (max-width: 1550px) and (min-width: 1201px) {
+  .ValuesSection {
+    /* padding: 200px 30px 50px 30px; */
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 0px) {
+  .paraOfvalueImageAndTextDescription {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 760px) and (min-width: 0px) {
+  .ValueItems {
+    flex-direction: column;
+  }
+  .LeftValuesItemContainer {
+    width: 100%;
+    height: 380px;
+  }
+  .RightValuesItemContainer {
+    width: 100%;
+    padding: 30px;
+    margin-top: -100px;
+  }
+  .RightValuesItemContainer img {
+    width: 100%;
+  }
+  .valuePageBanner img {
+    object-fit: cover;
+    height: 400px;
+    margin-bottom: -30px;
+  }
+  .ValuesSection {
+    /* padding-bottom: 0; */
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .valuePageDiv {
+    padding-bottom: 0;
+  }
+  .LeftValuesItemContainer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .LeftValuesItemContainer h3 {
+    font-size: 17px;
+    line-height: 21.6px;
+  }
+  .paraOfvalueImageAndTextDescription {
+    text-align: justify;
+    line-height: 21.6px;
+    font-size: 16px;
+  }
+  .paraOfValue p {
+    text-align: justify;
+    line-height: 21px;
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+  .ValuesTextInValuePage {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .TeamTextInvaluePage {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: -28px;
+  }
+  .valueAndTeamButtonsINValuPage img {
+    width: 40px !important;
+  }
+  .leftArrowInValuePage {
+    padding-bottom: 10px;
+  }
+  .RightArrowInValuePage {
+    margin-bottom: -31px;
+  }
+  .ValueAndARoowImgInValuesPage {
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 416px) and (min-width: 0px) {
+  .RightValuesItemContainer {
+    margin-top: -89px;
+  }
+  .LeftValuesItemContainer {
+    height: 415px;
+  }
+}
+@media only screen and (max-width: 416px) and (min-width: 0px) {
+  .LeftValuesItemContainer {
+    height: 461px;
+  }
+}
+@media only screen and (max-width: 760px) and (min-width: 431px) {
+  .item3Value {
+    height: 280px !important;
+  }
+}
+@media only screen and (max-width: 431px) and (min-width: 356px) {
+  .item3Value {
+    height: 321px !important;
+  }
+}
+@media only screen and (max-width: 356px) and (min-width: 0px) {
+  .item3Value {
+    height: 351px !important;
+  }
+}
+@media only screen and (max-width: 1030px) and (min-width: 760px) {
+  .ValuesSection {
+    /* padding-bottom: 0; */
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .valueAndTeamButtonsINValuPage {
+    padding-bottom: 35px;
+  }
+}
