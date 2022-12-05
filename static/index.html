@@ -28,30 +28,36 @@
 <div id="root">
     <div class="sidebarMobile">
         <div><img src="./assets/img/logo.png" alt="Home"></div>
-        <a class="mobile-navbar-toggle" href="/">
+        <a class="mobile-navbar-toggle" href="#">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
             </svg>
-        </a></div>
+        </a>
+    </div>
 
     <div id="sidebar" class="hide">
-        <div class="sidebarLogo"><a href="/">
-            <img src="./assets/img/logo.png" alt="Home"></a></div>
+        <div class="sidebarLogo">
+            <a href="#">
+                <img src="./assets/img/logo.png" alt="Home">
+            </a>
+        </div>
         <nav class="navbar">
             <ul>
                 <li><a class="nav-link" href="#">Home</a></li>
                 <li><a class="nav-link" href="#about">About us</a></li>
                 <li><a class="nav-link" href="#reviews">Reviews</a></li>
                 <li class="dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/">Menu</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="./pages/menu_breakfast.html">Breakfast</a>
-                        <a class="dropdown-item" href="/menu-lunch">Lunch</a><a class="dropdown-item" href="./pages/menu-cocktails.html">Special cocktails</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="pages/menu_breakfast.html">Breakfast</a>
+                        <a class="dropdown-item" href="pages/menu_lunch.html">Lunch</a>
+                        <a class="dropdown-item" href="pages/menu_cocktails.html">Special cocktails</a>
                     </div>
                 </li>
                 <li><a class="nav-link" href="pages/contact_us.html">Contact us</a></li>
                 <li><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
                 <li><a class="nav-link" href="pages/waitlist.html">Waitlist</a></li>
-                <li><a class="nav-link" href="/">Login</a></li>
+                <li><a class="nav-link" href="#" id="loginButtonPopup" class="loginButton">Login</a></li>
             </ul>
         </nav>
     </div>
@@ -100,11 +106,16 @@
                                         <div class="row"><h2>ABOUT US</h2>
                                             <div class="linksWrap wrap">
                                                 <div class="columnWrapRel">
-                                                    <div class="links"><a href="/values">
-                                                        <div class="aboutUsLink">Values</div>
-                                                        <img src="./assets/img/arrowWhite.svg" alt=""></a><a href="/team">
-                                                        <div class="aboutUsLink">Team</div>
-                                                        <img src="./assets/img/arrowWhite.svg" alt=""></a></div>
+                                                    <div class="links">
+                                                        <a href="pages/values.html">
+                                                            <div class="aboutUsLink">Values</div>
+                                                            <img src="./assets/img/arrowWhite.svg" alt="">
+                                                        </a>
+                                                        <a href="pages/team.html">
+                                                            <div class="aboutUsLink">Team</div>
+                                                            <img src="./assets/img/arrowWhite.svg" alt="">
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -141,7 +152,12 @@
                     <div class="blogContent">
                         <div class="blogHeader">
                             <div class="columnWrapRel">
-                                <div class="links"><a href="/blog"><h2>Blog</h2><img src="./assets/img/arrowBlue.svg" alt=""></a></div>
+                                <div class="links">
+                                    <a href="pages/blog.html">
+                                        <h2>Blog</h2>
+                                        <img src="./assets/img/arrowBlue.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="blogCard"><img src="./assets/img/blog/blog1.jpg" alt="">
@@ -302,7 +318,7 @@
                                 <img src="./assets/img/reviews/reviewLogo.png" alt="">
                                 <span>Login to Add Review</span>
                             </div>
-                            <a class="mainButton loginToReviewButton" href="/">Login</a></div>
+                            <a class="mainButton loginToReviewButton" href="#">Login</a></div>
                         <div class="reviewsSocialMediaIcons-sm">
                             <div>
                                 <a href="https://www.facebook.com/blueberrysgrill/"><img src="./assets/img/socialMedia/facebook.svg" alt=""></a>
