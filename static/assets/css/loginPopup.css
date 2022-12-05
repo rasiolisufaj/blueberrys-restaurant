@@ -126,28 +126,28 @@
 }
 
 /*.rememberMeDiv input {*/
-/*position: absolute;*/
-/*height: 0;*/
-/*width: 0;*/
+  /*position: absolute;*/
+  /*height: 0;*/
+  /*width: 0;*/
 /*}*/
 
 /*.checkboxCustom {*/
-/*position: absolute;*/
-/*top: -3px;*/
-/*left: 0;*/
-/*height: 25px;*/
-/*width: 28px;*/
-/*-webkit-appearance: checkbox;*/
-/*-moz-appearance: checkbox;*/
-/*appearance: checkbox;*/
-/*border: 1px solid rgb(39 60 137 / 50%);*/
-/*margin-right: 10px;*/
-/*vertical-align: middle;*/
+  /*position: absolute;*/
+  /*top: -3px;*/
+  /*left: 0;*/
+  /*height: 25px;*/
+  /*width: 28px;*/
+  /*-webkit-appearance: checkbox;*/
+  /*-moz-appearance: checkbox;*/
+  /*appearance: checkbox;*/
+  /*border: 1px solid rgb(39 60 137 / 50%);*/
+  /*margin-right: 10px;*/
+  /*vertical-align: middle;*/
 /*}*/
 
 /* When the checkbox is checked, add a blue background */
 /*.rememberMeDiv input:checked ~ .checkboxCustom {*/
-/*background-color: white;*/
+  /*background-color: white;*/
 /*}*/
 
 /*.rememberMeDiv input:checked {*/
@@ -156,13 +156,13 @@
 
 /* Create the checkboxCustom/indicator (hidden when not checked) */
 /*.checkboxCustom:after {*/
-/*content: "";*/
-/*position: absolute;*/
-/*display: none;*/
+  /*content: "";*/
+  /*position: absolute;*/
+  /*display: none;*/
 /*}*/
 
 /*.rememberMeDiv input:checked ~ .checkboxCustom:after {*/
-/*display: block;*/
+  /*display: block;*/
 /*}*/
 
 label.checkboxCustom {
@@ -175,20 +175,20 @@ label.checkboxCustom {
 
 
 .rememberMeDiv input:checked {
-  display: block;
+display: block;
 }
 
 /*.rememberMeDiv .checkboxCustom:after {*/
-/*left: 9px;*/
-/*top: 2px;*/
-/*width: 8px;*/
-/*height: 16px;*/
-/*border-bottom: 2px solid #273c89;*/
-/*border-right: 2px solid #273c89;*/
-/*opacity: 1;*/
-/*-webkit-transform: rotate(45deg);*/
-/*-ms-transform: rotate(45deg);*/
-/*transform: rotate(45deg);*/
+  /*left: 9px;*/
+  /*top: 2px;*/
+  /*width: 8px;*/
+  /*height: 16px;*/
+  /*border-bottom: 2px solid #273c89;*/
+  /*border-right: 2px solid #273c89;*/
+  /*opacity: 1;*/
+  /*-webkit-transform: rotate(45deg);*/
+  /*-ms-transform: rotate(45deg);*/
+  /*transform: rotate(45deg);*/
 /*}*/
 
 .rememberMeText {

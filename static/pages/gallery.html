@@ -1,478 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Breakfast - BlueBerry's</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<head>
+  <title>BlueBerry's Grill</title>
 
-    <link href="../assets/img/favIcon.svg" rel="icon" />
-    <link href="../assets/img/favIcon.svg" rel="apple-touch-icon" />
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="" name="description"/>
+  <meta content="" name="keywords"/>
 
-    <link
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../assets/vendor/boxicons/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../assets/vendor/swiper/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
+  <link href="../assets/img/favIcon.svg" rel="icon"/>
+  <link href="../assets/img/favIcon.svg" rel="apple-touch-icon"/>
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet"/>
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
-    <link href="../assets/css/index.css" rel="stylesheet" />
-  </head>
+  <link href="../assets/css/app.css" rel="stylesheet"/>
+</head>
 
-  <body>
-    <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<body>
+<div id="root">
+  <div class="sidebarMobile">
+    <div><img src="../assets/img/logo.png" alt="Home"></div>
+    <a class="mobile-navbar-toggle" href="/">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+      </svg>
+    </a></div>
 
-    <!-- ======= Menu / Navbar ======= -->
-    <header id="header">
-      <div class="d-flex flex-column">
-        <div class="logo">
-          <a href="index.html">
-            <img src="../assets/img/logo.png" alt="" class="img-fluid" />
-          </a>
-        </div>
-
-        <nav id="navbar" class="nav-menu navbar">
-          <ul>
-            <li>
-              <a href="../index.html" class="nav-link scrollTo active">
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="../index.html#about" class="nav-link scrollTo">
-                <span>AboutUs</span>
-              </a>
-            </li>
-            <li>
-              <a href="../index.html#reviews" class="nav-link scrollTo">
-                <span>Reviews</span>
-              </a>
-            </li>
-            <li class="menuText">
-              <a class="nav-link scrollTo">
-                <span>Menu</span>
-              </a>
-            </li>
-
-            <li id="menuname">
-              <a href="/pages/menu_breakfast.html">
-                <span>BreakFast</span>
-              </a>
-            </li>
-            <li id="menuname">
-              <a href="/pages/menu_lunch.html">
-                <span>Lunch</span>
-              </a>
-            </li>
-            <li id="menuname">
-              <a href="/pages/menu_coctails.html">
-                <span>Special Cocktails</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="pages/contact_us.html" class="nav-link scrollTo">
-                <span>Contact Us</span>
-              </a>
-            </li>
-            <li>
-              <a href="pages/gallery.html" class="nav-link scrollTo">
-                <span>Gallery</span>
-              </a>
-            </li>
-            <li>
-              <a href="pages/waitlist.html" class="nav-link scrollTo">
-                <span>Waitlist</span>
-              </a>
-            </li>
-            <li class="loginButton" id="loginButtonPopup">
-              <a class="nav-link scrollTo">
-                <span>Login</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="headerMobile">
-      <div>
-        <img src="../assets/img/logo.png" alt="" class="img-fluid" />
-      </div>
-      <div class="iconsHeaderMobile">
-        <i aria-hidden="true" class="far fa-heart i-icon i-icon_heart"></i>
-        <i aria-hidden="true" class="fas fa-shopping-cart i-icon"></i>
-        <i aria-hidden="true" class="fas fa-search i-icon"></i>
-      </div>
-    </div>
-    <main id="main">
-      <section class="GallerySection">
-        <div class="GalleryHeader">
-          <h2>Gallery</h2>
-        </div>
-      </section>
-      <section class="GalleryImages">
-        <!-- ======= Gallery Section ======= -->
-        <section id="Gallery" class="Gallery section-bg">
-          <div class="container">
-            <div
-              class="row Gallery-container"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="col-lg-4 col-md-6 Gallery-item">
-                <div class="Gallery-wrap" id="GalleryImage1">
-                  <img
-                    src="../assets/img/gallery/gallery1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 Gallery-item">
-                <div class="Gallery-wrap">
-                  <img
-                    src="../assets/img/gallery/gallery_2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="Gallery-links">
-                    <a
-                      href="../assets/img/gallery/gallery_2.jpg"
-                      data-gallery="GalleryGallery"
-                      class="Gallery-lightbox"
-                      title="Web 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="#" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 Gallery-item">
-                <div class="Gallery-wrap">
-                  <img
-                    src="../assets/img/gallery/gallery_9.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="Gallery-links">
-                    <a
-                      href="../assets/img/gallery/gallery_9.jpg"
-                      data-gallery="GalleryGallery"
-                      class="Gallery-lightbox"
-                      title="App 2"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="#" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 Gallery-item">
-                <div class="Gallery-wrap">
-                  <img
-                    src="../assets/img/gallery/gallery_4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="Gallery-links">
-                    <a
-                      href="../assets/img/gallery/gallery_4.jpg"
-                      data-gallery="GalleryGallery"
-                      class="Gallery-lightbox"
-                      title="Card 2"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="#" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 Gallery-item">
-                <div class="Gallery-wrap">
-                  <img
-                    src="../assets/img/gallery/gallery_7.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="Gallery-links">
-                    <a
-                      href="../assets/img/gallery/gallery_7.jpg"
-                      data-gallery="GalleryGallery"
-                      class="Gallery-lightbox"
-                      title="Web 2"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="#" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 Gallery-item">
-                <div class="Gallery-wrap">
-                  <img
-                    src="../assets/img/gallery/gallery_6.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="Gallery-links">
-                    <a
-                      href="../assets/img/gallery/gallery_6.jpg"
-                      data-gallery="GalleryGallery"
-                      class="Gallery-lightbox"
-                      title="App 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="#" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 Gallery-item">
-                <div class="Gallery-wrap">
-                  <img
-                    src="../assets/img/gallery/gallery_5.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="Gallery-links">
-                    <a
-                      href="../assets/img/gallery/gallery_5.jpg"
-                      data-gallery="GalleryGallery"
-                      class="Gallery-lightbox"
-                      title="Card 1"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="#" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 Gallery-item">
-                <div class="Gallery-wrap">
-                  <img
-                    src="../assets/img/gallery/gallery_3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="Gallery-links">
-                    <a
-                      href="../assets/img/gallery/gallery_3.jpg"
-                      data-gallery="GalleryGallery"
-                      class="Gallery-lightbox"
-                      title="Web 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="#" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div id="sidebar" class="hide">
+    <div class="sidebarLogo"><a href="/">
+      <img src="../assets/img/logo.png" alt="Home"></a></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="nav-link" href="../index.html#">Home</a></li>
+        <li><a class="nav-link" href="../index.html#about">About us</a></li>
+        <li><a class="nav-link" href="../index.html#reviews">Reviews</a></li>
+        <li class="dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/">Menu</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="menu_breakfast.html">Breakfast</a>
+            <a class="dropdown-item" href="menu_lunch.html">Lunch</a>
+            <a class="dropdown-item" href="menu_cocktails.html">Special cocktails</a>
           </div>
-        </section>
-        <!-- End Gallery Section -->
-      </section>
-    </main>
+        </li>
+        <li><a class="nav-link" href="contact_us.html">Contact us</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="waitlist.html">Waitlist</a></li>
+        <li><a class="nav-link" href="#">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="pageContainer">
+    <section class="emptyPage">
+      Gallery
+    </section>
     <footer>
       <div class="footerTop">
-        <div class="footerLeft">
-          We are here to reward you for your support! Download Blueberry's
-          Reward App now! (Coming soon)
-        </div>
+        <div class="footerLeft">We are here to reward you for your support! Download Blueberry's Reward App now! (Coming soon)</div>
         <div class="footerRight">
-          <div class="appleStore">
-            <img
-              width="58"
-              height="58"
-              src="../assets/img/app_store.svg"
-              class=""
-              alt=""
-              loading="lazy"
-            />
-            <h3>Download in App store</h3>
-          </div>
-          <div class="androidStore">
-            <img
-              width="58"
-              height="58"
-              src="../assets/img/android.svg"
-              class=""
-              alt=""
-              loading="lazy"
-            />
-            <h3>Download in App store</h3>
-          </div>
+          <div class="appleStore"><img width="58" height="58" src="../assets/img/app_store.svg" class="" alt="" loading="lazy">
+            <h3>Download in App store</h3></div>
+          <div class="androidStore"><img width="58" height="58" src="../assets/img/android.svg" class="" alt="" loading="lazy">
+            <h3>Download in App store</h3></div>
         </div>
       </div>
-
       <div class="footerBottom">
         <div class="locations">
           <div class="location location-1">
             <div>
-              <figure>
-                <a href="#" target="_blank" class="locationIcon">
-                  <img
-                    width="38"
-                    height="43"
-                    src="../assets/img/locationIcon.svg"
-                    alt=""
-                    loading="lazy"
-                  />
-                </a>
-              </figure>
+              <figure><a href="#" target="_blank" class="locationIcon"><img width="38" height="43" src="../assets/img/locationIcon.svg" alt="" loading="lazy"></a></figure>
             </div>
-            <div class="address">
-              <h3>
-                <a href="#" target="_blank">MYRTLE BEACH</a>
-              </h3>
-              <p>
-                7931 N Kings Hwy<br />
-                Myrtle Beach, SC 29572
-              </p>
-            </div>
+            <div class="address"><h3><a href="#" target="_blank">MYRTLE BEACH</a></h3>
+              <p>7931 N Kings Hwy<br>Myrtle Beach, SC 29572</p></div>
           </div>
           <div class="location location-2">
             <div>
-              <figure>
-                <a href="#" target="_blank" class="locationIcon">
-                  <img
-                    width="38"
-                    height="43"
-                    src="../assets/img/locationIcon.svg"
-                    alt=""
-                    loading="lazy"
-                  />
-                </a>
-              </figure>
+              <figure><a href="#" target="_blank" class="locationIcon"><img width="38" height="43" src="../assets/img/locationIcon.svg" alt="" loading="lazy"></a></figure>
             </div>
-            <div class="address">
-              <h3>
-                <a href="#" target="_blank">NORTH MYRTLE BEACH</a>
-              </h3>
-              <p>
-                4856 Highway 17 South<br />
-                North Myrtle Beach, SC 29582
-              </p>
-            </div>
+            <div class="address"><h3><a href="#" target="_blank">NORTH MYRTLE BEACH</a></h3>
+              <p>4856 Highway 17 South<br>North Myrtle Beach, SC 29582</p></div>
           </div>
-
           <div class="location location-3">
             <div>
-              <figure>
-                <a href="#" target="_blank" class="locationIcon">
-                  <img
-                    width="38"
-                    height="43"
-                    src="../assets/img/locationIcon.svg"
-                    alt=""
-                    loading="lazy"
-                  />
-                </a>
-              </figure>
+              <figure><a href="#" target="_blank" class="locationIcon"><img width="38" height="43" src="../assets/img/locationIcon.svg" alt="" loading="lazy"></a></figure>
             </div>
-            <div class="address">
-              <h3>
-                <a href="#" target="_blank">WILMINGTON, NC</a>
-              </h3>
-              <p>
-                1900 Eastwood Road<br />
-                Wilmington, NC 28403
-              </p>
-            </div>
+            <div class="address"><h3><a href="#" target="_blank">WILMINGTON, NC</a></h3>
+              <p>1900 Eastwood Road<br>Wilmington, NC 28403</p></div>
           </div>
           <div class="location location-4">
             <div>
-              <figure>
-                <a href="#" target="_blank" class="locationIcon">
-                  <img
-                    width="38"
-                    height="43"
-                    src="../assets/img/phone.svg"
-                    alt=""
-                    loading="lazy"
-                  />
-                </a>
-              </figure>
+              <figure><a href="#" target="_blank" class="locationIcon"><img width="38" height="43" src="../assets/img/phone.svg" alt="" loading="lazy"></a></figure>
             </div>
-            <div class="address">
-              <h3>
-                <a href="#" target="_blank">843-945-4588</a>
-              </h3>
-              <p>
-                Open 7 Days a Week<br />
-                7:00am to 6:30pm
-              </p>
-            </div>
+            <div class="address"><h3><a href="#" target="_blank">843-945-4588</a></h3>
+              <p>Open 7 Days a Week<br>7:00am to 6:30pm</p></div>
           </div>
         </div>
         <div class="followUs">
           <div class="followUsHeading">FOLLOW US</div>
-          <div class="followUsIcons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest"></i>
+          <div class="align-items-center reviewsSocialMediaIcons">
+            <a href="https://www.facebook.com/blueberrysgrill/" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/img/socialMedia/facebook.svg" alt="">
+            </a>
+            <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/img/socialMedia/yahoo.svg" alt="">
+            </a>
+            <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/img/socialMedia/yellowPages.svg" alt="">
+            </a>
+            <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/img/socialMedia/yelp.svg" alt="">
+            </a>
+            <a href="https://pin.it/3RItKJx" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/img/socialMedia/facebook.svg" alt="">
+            </a>
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g54359-d12162017-Reviews-Blueberry_s_Grill-Myrtle_Beach_South_C" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/img/socialMedia/facebook.svg" alt="">
+            </a>
           </div>
         </div>
       </div>
     </footer>
-    <!-- Vendor JS Files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="../assets/vendor/purecounter/purecounter.js"></script>
-    <script src="../assets/vendor/aos/aos.js"></script>
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="../assets/vendor/typed.js/typed.min.js"></script>
-    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="../assets/vendor/php-email-form/validate.js"></script>
+  </div>
+</div>
 
-    <!-- Template Main JS File -->
-    <script src="../assets/js/main.js"></script>
-  </body>
+<!-- Vendor JS Files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/purecounter/purecounter.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/typed.js/typed.min.js"></script>
+<script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+<script src="../assets/js/LoginPopup.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+
 </html>

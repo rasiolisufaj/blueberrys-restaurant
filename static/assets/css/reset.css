@@ -38,3 +38,7 @@
 .d-flex {
   display: inherit;
 }
+
+.hide {
+  display: block !important;
+}
