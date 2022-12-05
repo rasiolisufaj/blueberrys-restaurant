@@ -3,7 +3,9 @@
 }
 
 .pageContainerWrap {
-  /*max-width: 100%;*/
+  /*max-width: 90%;*/
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .pageContainerWrapCenter {
@@ -12,8 +14,8 @@
 }
 
 .sectionHomeBody {
-  /*max-width: 80%;*/
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -26,6 +28,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .centered {
@@ -52,6 +56,12 @@
   display: flex;
 }
 
+.columnWrapRel {
+  width: 100%;
+  position: relative;
+  padding: 0px 20px 20px 0px;
+}
+
 .wrap {
   padding: 0px 0px 0px 0px;
   display: -webkit-box;
@@ -63,6 +73,8 @@
   flex-wrap: wrap;
   -ms-flex-line-pack: start;
   align-content: flex-start;
+  align-content: center;
+  align-items: center;
 }
 
 .col-100 {
@@ -77,9 +89,9 @@
 }
 
 /*@media (max-width: 940px) {*/
-  /*.columnWrap {*/
-    /*padding: 30px 0px 0px 0px;*/
-  /*}*/
+/*.columnWrap {*/
+/*padding: 30px 0px 0px 0px;*/
+/*}*/
 /*}*/
 
 .mainButton {
@@ -89,7 +101,7 @@
   text-transform: uppercase;
   background-color: #273c89;
   padding: 13px 10px 14px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 19px;
   font-family: "Aileron", Sans-serif, serif;
   width: 100%;
@@ -112,4 +124,15 @@
 
 .marginBottom-10 {
   margin-bottom: 10px;
+}
+
+
+@media (min-width: 1199px) {
+
+}
+
+@media (max-width: 1198px) {
+  .columnWrap {
+    padding: 30px 0px 0px 0px;
+  }
 }
