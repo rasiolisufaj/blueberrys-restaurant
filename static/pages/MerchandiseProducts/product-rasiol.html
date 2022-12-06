@@ -15,7 +15,9 @@
   <body>
     <div class="main-content">
       <aside>
-        <div class="logo">LOGO IMAGE</div>
+        <div class="logo">
+          <img src="../../assets/img/logo.png" alt="blue-logo" />
+        </div>
         <ul>
           <li>
             <a href="../../index.html">HOME</a>
@@ -41,7 +43,7 @@
           <li>
             <a href="../../index.html">MERCHANDISE</a>
           </li>
-          <button>LOG IN</button>
+          <button class="menu-btn">LOG IN</button>
           <a href="#" class="locations-link">LOCATIONS</a>
         </ul>
       </aside>
@@ -50,18 +52,18 @@
         <div class="categories">
           <div class="category">
             CATEGORY:
-            <select>
-              <option value="select" selected>Select a category</option>
-              <option value="ceramic-mug">Ceramic mug</option>
-              <option value="ceramic-plates">Ceramic plates</option>
-              <option value="gift-card">Gift card</option>
-              <option value="glass-bottle">Glass bottle</option>
-              <option value="organizing-jars">Organizing jars</option>
+            <select class="select select-category">
+              <option value="select" selected>SELECT A CATEGORY</option>
+              <option value="ceramic-mug">CERAMIC MUG</option>
+              <option value="ceramic-plates">CERAMIC PLATES</option>
+              <option value="gift-card">GIFT CARD</option>
+              <option value="glass-bottle">GLASS BOTTLE</option>
+              <option value="organizing-jars">ORGANIZING JARS</option>
             </select>
           </div>
-          <div class="sortProducts">
+          <div class="sortProduct">
             SORT BY:
-            <select>
+            <select class="select">
               <option value="default" selected>DEFAULT SORTING</option>
               <option value="popularity">SORT BY POPULARITY</option>
               <option value="average-rating">SORT BY AVERAGE RATING</option>
@@ -70,18 +72,24 @@
               <option value="high-to-low">SORT BY PRICE: HIGH TO LOW</option>
             </select>
           </div>
-          <div class="searchBar">
-            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          <div class="searchBar w-25">
+            <!-- <i class="fa-solid fa-magnifying-glass fa-2x"></i> -->
+            <img src="../../assets/img/merchaindise/searchbar.svg" />
           </div>
           <div class="categories-logo">
-            <i class="fa-regular fa-heart fa-2x"></i>
-            <i class="fa-regular fa-cart-shopping fa-2x"></i>
+            <!-- <i class="fa-regular fa-heart fa-2x"></i> -->
+            <img src="../../assets/img/merchaindise/heart.svg" alt="" />
+            <img src="../../assets/img/merchaindise/cartButton.svg" alt="" />
+            <!-- <i class="fa-regular fa-cart-shopping fa-2x"></i> -->
           </div>
         </div>
 
-        <div class="product-info">
+        <div class="product-info flex">
           <div class="back-arrow">
-            <i class="fa-regular fa-arrow-left-long fa-2x"></i>
+            <!-- <i class="fa-regular fa-arrow-left-long fa-2x"></i> -->
+            <a href="../Merchandise.html"
+              ><img src="../../assets/img/arrowBlueLeft.svg" alt=""
+            /></a>
           </div>
           <div class="product-image">
             <img src="../../assets/img/merchaindise/M1.jpg" alt="ceramic-mug" />
@@ -101,47 +109,24 @@
               Voluptatibus laboriosam est nesciunt necessitatibus dolorem
               expedita facere quo debitis voluptates impedit?
             </p>
-            <div class="add-to-cart-btn">
-              <i class="fa-light fa-cart-shopping"></i> ADD TO CART
-            </div>
-            <div class="add-to-favourites-btn">
+            <button class="add-to-cart-btn btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              ADD TO CART
+            </button>
+            <button class="add-to-favourites-btn btn">
               <i class="fa-regular fa-heart"></i> ADD TO FAVOURITES
-            </div>
+            </button>
           </div>
         </div>
 
-        <div class="product-reviews">
-          <div class="reviews-text">
+        <div class="product-reviews column">
+          <div class="reviews-text flex">
             <h1>Reviews</h1>
             <hr />
           </div>
-          <div class="review-1">
+          <div class="review review-1">
             <div class="user">
-              <i class="fa-solid fa-circle"></i>
-            </div>
-            <div class="user-review">
-              <h4>Name:</h4>
-              <div class="product-rating">
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                repellendus iure magni praesentium voluptate ratione.
-              </p>
-              <p class="date">10/10/2021</p>
-            </div>
-            <div class="user-like">
-              <i class="fa-regular fa-thumbs-up"></i>
-            </div>
-          </div>
-
-          <div class="review-2">
-            <div class="user">
-              <i class="fa-solid fa-circle"></i>
+              <i class="fa-solid fa-circle fa-2x"></i>
             </div>
             <div class="user-review">
               <h4>Name:</h4>
@@ -158,16 +143,42 @@
               </p>
               <p class="italic">10/10/2021</p>
             </div>
-            <div class="user-like">
-              <i class="fa-regular fa-thumbs-up"></i>
+            <div class="user-like w-30">
+              <i class="fa-regular fa-thumbs-up fa-2x"></i>
+            </div>
+          </div>
+
+          <div class="review review-2">
+            <div class="user">
+              <i class="fa-solid fa-circle fa-2x"></i>
+            </div>
+            <div class="user-review">
+              <h4>Name:</h4>
+              <div class="product-rating">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                repellendus iure magni praesentium voluptate ratione.
+              </p>
+              <p class="italic">10/10/2021</p>
+            </div>
+            <div class="user-like w-30">
+              <i class="fa-regular fa-thumbs-up fa-2x"></i>
             </div>
           </div>
 
           <div class="your-review">
-            <i class="fa-solid fa-circle"></i>
-            <h4>Name:</h4>
-            <p class="italic">Write your review here</p>
-            <i class="fa-regular fa-paperclip"></i>
+            <div class="write-review flex">
+              <i class="fa-solid fa-circle fa-2x"></i>
+              <h4>Name:</h4>
+              <p class="italic">Write your review here</p>
+              <i class="fa-solid fa-paperclip"></i>
+            </div>
             <hr />
             <div class="product-rating">
               <i class="fa-regular fa-star"></i>
@@ -176,48 +187,49 @@
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
+            <button class="btn">SEND</button>
           </div>
         </div>
 
         <div class="similar-products">
           <h1>Similar products</h1>
-          <div class="other-products">
-            <div class="product">
+          <div class="other-products flex">
+            <div class="product column">
               <img src="../../assets/img/merchaindise/M2.jpg" alt="" />
               <div class="prod-info">
                 <div class="prod-price">
-                  Ceramic mug
+                  Ceramic mug <br />
                   <span>$20</span>
                 </div>
                 <div class="prod-save-buy">
                   <i class="fa-regular fa-heart"></i>
-                  <i class="fa-regular fa-cart-shopping"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product column">
               <img src="../../assets/img/merchaindise/M1.jpg" alt="" />
               <div class="prod-info">
                 <div class="prod-price">
-                  Ceramic mugs
+                  Ceramic mugs <br />
                   <span>$40</span>
                 </div>
                 <div class="prod-save-buy">
                   <i class="fa-regular fa-heart"></i>
-                  <i class="fa-regular fa-cart-shopping"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
                 </div>
               </div>
             </div>
-            <div class="product">
+            <div class="product column">
               <img src="../../assets/img/merchaindise/M4.jpg" alt="" />
               <div class="prod-info">
                 <div class="prod-price">
-                  Ceramic plates
+                  Ceramic plates <br />
                   <span>$40</span>
                 </div>
                 <div class="prod-save-buy">
                   <i class="fa-regular fa-heart"></i>
-                  <i class="fa-regular fa-cart-shopping"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
                 </div>
               </div>
             </div>
@@ -226,8 +238,8 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footer-top">
+    <footer class="column">
+      <div class="footer-top flex">
         <div class="reward-text">
           <h4>
             We are here to reward you for your support! Download Blueberry's
@@ -243,7 +255,7 @@
           <h4>Download in App store</h4>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom flex">
         <div class="address-location">
           <div class="location-icon">
             <i class="fa-solid fa-location-dot fa-2x"></i>
