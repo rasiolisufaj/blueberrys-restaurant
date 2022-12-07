@@ -8,6 +8,10 @@ body {
   font-family: "Aileron";
 }
 
+.fw-bold {
+  font-weight: bold;
+}
+
 .w-25 {
   width: 25%;
 }
@@ -262,6 +266,7 @@ aside a:hover {
 
 .user-review {
   width: 80%;
+  padding-top: 0.3rem;
 }
 
 .user-like {
@@ -284,15 +289,32 @@ aside a:hover {
   margin-bottom: 0.5rem;
 }
 
-.write-review {
-  width: 50%;
-}
-
 .your-review {
   display: flex;
-  position: relative;
+  justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  border-bottom: 2px solid #273c89;
+  width: fit-content;
+}
+
+.your-review .product-rating {
+  margin: -1rem 1rem 0;
+}
+
+.review {
+  border: 0;
+  color: #273c89;
+  outline: none;
+  font-size: 14px;
+  padding-right: 5rem;
+}
+
+.label {
+  margin: 5px 15px 0 5px;
+}
+
+.review::placeholder {
+  color: #273c89;
 }
 
 .your-review hr {
