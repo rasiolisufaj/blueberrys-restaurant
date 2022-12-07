@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../../assets/img/favIcon.svg" rel="icon" />
     <link rel="stylesheet" href="../../assets/css/merchandise_product.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/adb46161e8.js"
       crossorigin="anonymous"
@@ -73,20 +77,16 @@
             </select>
           </div>
           <div class="searchBar w-25">
-            <!-- <i class="fa-solid fa-magnifying-glass fa-2x"></i> -->
             <img src="../../assets/img/merchaindise/searchbar.svg" />
           </div>
           <div class="categories-logo">
-            <!-- <i class="fa-regular fa-heart fa-2x"></i> -->
             <img src="../../assets/img/merchaindise/heart.svg" alt="" />
             <img src="../../assets/img/merchaindise/cartButton.svg" alt="" />
-            <!-- <i class="fa-regular fa-cart-shopping fa-2x"></i> -->
           </div>
         </div>
 
         <div class="product-info flex">
           <div class="back-arrow">
-            <!-- <i class="fa-regular fa-arrow-left-long fa-2x"></i> -->
             <a href="../Merchandise.html"
               ><img src="../../assets/img/arrowBlueLeft.svg" alt=""
             /></a>
@@ -173,19 +173,24 @@
           </div>
 
           <div class="your-review">
-            <div class="write-review flex">
-              <div class="ball">
-                <i class="fa-solid fa-circle fa-2x"></i>
+            <div class="review-border flex">
+              <div class="write-review flex">
+                <div class="ball">
+                  <i class="fa-solid fa-circle fa-2x"></i>
+                </div>
+                <span class="label fw-bold">Name: </span>
+                <input
+                  type="text"
+                  placeholder="Write your review here"
+                  class="review italic"
+                />
+                <input type="file" class="file" id="file" />
+                <label for="file">
+                  <i class="fa-solid fa-paperclip"></i>
+                  Choose File</label
+                >
               </div>
-              <span class="label fw-bold">Name: </span>
-              <input
-                type="text"
-                placeholder="Write your review here"
-                class="review"
-              />
             </div>
-            <!-- <input type="file" class="file" /> -->
-            <input type="file" class="file" />
             <div class="product-rating">
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
@@ -193,20 +198,6 @@
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-            <!-- <div class="write-review flex">
-              <i class="fa-solid fa-circle fa-2x"></i>
-              <h4>Name:</h4>
-              <p class="italic">Write your review here</p>
-              <i class="fa-solid fa-paperclip"></i>
-            </div>
-            <hr />
-            <div class="product-rating">
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div> -->
             <button class="btn">SEND</button>
           </div>
         </div>
@@ -218,8 +209,10 @@
               <img src="../../assets/img/merchaindise/M2.jpg" alt="" />
               <div class="prod-info">
                 <div class="prod-price">
-                  Ceramic mug <br />
-                  <span>$20</span>
+                  <a href="#">
+                    Ceramic mug <br />
+                    <span>$20</span>
+                  </a>
                 </div>
                 <div class="prod-save-buy">
                   <i class="fa-regular fa-heart"></i>
@@ -231,8 +224,10 @@
               <img src="../../assets/img/merchaindise/M1.jpg" alt="" />
               <div class="prod-info">
                 <div class="prod-price">
-                  Ceramic mugs <br />
-                  <span>$40</span>
+                  <a href="#">
+                    Ceramic mugs <br />
+                    <span>$40</span>
+                  </a>
                 </div>
                 <div class="prod-save-buy">
                   <i class="fa-regular fa-heart"></i>
@@ -244,8 +239,10 @@
               <img src="../../assets/img/merchaindise/M4.jpg" alt="" />
               <div class="prod-info">
                 <div class="prod-price">
-                  Ceramic plates <br />
-                  <span>$40</span>
+                  <a href="#">
+                    Ceramic plates <br />
+                    <span>$40</span>
+                  </a>
                 </div>
                 <div class="prod-save-buy">
                   <i class="fa-regular fa-heart"></i>
@@ -267,21 +264,42 @@
           </h4>
         </div>
         <div class="download">
-          <i class="fa-brands fa-app-store fa-2x"></i>
+          <img
+            width="40"
+            height="40"
+            src="../../assets/img/app_store.svg"
+            class=""
+            alt=""
+            loading="lazy"
+          />
           <h4>Download in App store</h4>
         </div>
         <div class="download">
-          <i class="fa-brands fa-android fa-2x"></i>
-          <h4>Download in App store</h4>
+          <img
+            width="40"
+            height="40"
+            src="../../assets/img/android.svg"
+            class=""
+            alt=""
+            loading="lazy"
+          />
+          <h4>Download in Android</h4>
         </div>
       </div>
       <div class="footer-bottom flex">
         <div class="address-location">
           <div class="location-icon">
-            <i class="fa-solid fa-location-dot fa-2x"></i>
+            <img
+              width="38"
+              height="43"
+              src="../../assets/img/locationIcon.svg"
+              alt=""
+              loading="lazy"
+            />
           </div>
           <div class="address-location-info">
             <h4>MYRTLE BEACH</h4>
+            <br />
             <p>
               7931 N Kings Hwy<br />
               Myrtle Beach, SC 29572
@@ -291,10 +309,17 @@
 
         <div class="address-location">
           <div class="location-icon">
-            <i class="fa-solid fa-location-dot fa-2x"></i>
+            <img
+              width="38"
+              height="43"
+              src="../../assets/img/locationIcon.svg"
+              alt=""
+              loading="lazy"
+            />
           </div>
           <div class="address-location-info">
             <h4>NORTH MYRTLE BEACH</h4>
+            <br />
             <p>
               4856 Highway 17 South<br />
               North Myrtle Beach, SC 29582
@@ -304,10 +329,17 @@
 
         <div class="address-location">
           <div class="location-icon">
-            <i class="fa-solid fa-location-dot fa-2x"></i>
+            <img
+              width="38"
+              height="43"
+              src="../../assets/img/locationIcon.svg"
+              alt=""
+              loading="lazy"
+            />
           </div>
           <div class="address-location-info">
             <h4>WILMINGTON, NC</h4>
+            <br />
             <p>
               1900 Eastwood Road<br />
               Wilmington, NC 28403
@@ -317,10 +349,17 @@
 
         <div class="address-location">
           <div class="location-icon">
-            <i class="fa-solid fa-phone fa-2x"></i>
+            <img
+              width="38"
+              height="43"
+              src="../../assets/img/phone.svg"
+              alt=""
+              loading="lazy"
+            />
           </div>
           <div class="address-location-info">
             <h4>843-945-4588</h4>
+            <br />
             <p>
               Open 7 Days a Week<br />
               7:00am to 3:00pm
@@ -331,6 +370,7 @@
         <div class="follow-us">
           <div>
             <h4>FOLLOW US</h4>
+            <br />
           </div>
           <div class="icons">
             <i class="fa-brands fa-facebook-f fa-2x"></i>

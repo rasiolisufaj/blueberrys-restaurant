@@ -116,10 +116,14 @@ aside a:hover {
   color: #273c89;
   background: #f4eddd;
   font-size: 22px;
-  margin-top: 3.47em;
+  margin-top: 3.46em;
   padding: 0.6rem 0;
   width: 350px;
   font-weight: 900;
+}
+
+.locations-link:hover {
+  border: 0;
 }
 
 .merchandise-content {
@@ -293,12 +297,11 @@ aside a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #273c89;
   width: fit-content;
 }
 
 .your-review .product-rating {
-  margin: -1rem 1rem 0;
+  margin: -0.75rem 1rem 0 1rem;
 }
 
 .review {
@@ -306,7 +309,27 @@ aside a:hover {
   color: #273c89;
   outline: none;
   font-size: 14px;
-  padding-right: 5rem;
+  padding-right: 7rem;
+}
+
+.write-review input[type="file"] {
+  display: none;
+}
+
+.write-review label {
+  margin-top: 5px;
+  cursor: pointer;
+  margin-left: 5rem;
+}
+
+.review-border {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #888;
+  align-items: center;
+}
+
+.file {
+  padding-top: 5px;
 }
 
 .label {
@@ -332,6 +355,14 @@ aside a:hover {
 
 .similar-products h1 {
   margin-bottom: 1rem;
+}
+
+.similar-products a {
+  color: #273c89;
+}
+
+.similar-products a:hover {
+  text-decoration: underline;
 }
 
 .product {
@@ -365,4 +396,66 @@ aside a:hover {
 footer {
   background: #273c89;
   color: #fff;
+}
+
+.footer-top {
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.footer-top > div {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.reward-text {
+  width: 350px;
+  padding: 1rem 0;
+}
+
+.download {
+  width: 145px;
+  text-align: start;
+  padding: 1rem 0;
+}
+
+.download img {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.address-location {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.location-icon {
+  margin-right: 10px;
+}
+
+.follow-us {
+  width: 100px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+.icons i:first-child {
+  margin-right: 1.5rem;
+}
+
+.links {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  margin-bottom: 15px;
 }
