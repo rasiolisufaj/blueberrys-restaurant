@@ -66,6 +66,11 @@ ul {
   /* border: 3px solid green; */
 }
 
+/* POSITIONING */
+#pageContainer .sectionHomeBody {
+  padding-left: 0;
+}
+
 /* Aside */
 aside {
   /* border: 2px solid red; */
@@ -130,10 +135,14 @@ aside a:hover {
 }
 
 /* Merchandise Content */
+.merchandise-content * {
+  font-size: 14px;
+}
+
 .merchandise-content {
   background: #fff;
   /* border: 2px solid red; */
-  padding: 6em 3em 2em;
+  padding: 6em 3em 4em 0;
   display: flex;
   flex-direction: column;
   color: #273c89;
@@ -308,8 +317,8 @@ aside a:hover {
   width: fit-content;
 }
 
-.your-review .product-rating {
-  margin: -0.75rem 1rem 0 1rem;
+.your-review > div {
+  margin-right: 2rem;
 }
 
 .review {
