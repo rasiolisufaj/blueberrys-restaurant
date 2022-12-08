@@ -64,6 +64,7 @@
 
 .nav-link:hover {
   color: white;
+  text-decoration: none;
 }
 
 .sidebarMobile {
@@ -104,17 +105,17 @@
   }
 
   .sidebarMobile {
-    display: flex ;
+    display: flex;
   }
 
   #sidebar {
-    top:190px;
+    top: 190px;
     left: 0;
     width: 100%;
   }
 
   .hide {
-    left: -300px  !important;
+    left: -300px !important;
     width: 300px !important;
   }
 

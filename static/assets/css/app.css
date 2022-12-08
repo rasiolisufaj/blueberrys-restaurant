@@ -1,6 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-@import '~antd/dist/antd.min.css';
+@import "~antd/dist/antd.min.css";
 
 @import "reset.css";
 
@@ -16,7 +16,7 @@
 @import "waitlist.css";
 @import "profile.css";
 @import "loginPopup.css";
-/*@import "merchandise_product.css";*/
+@import "merchandise_product.css";
 @import "welcomePopup.css";
 @import "team.css";
 @import "values.css";
