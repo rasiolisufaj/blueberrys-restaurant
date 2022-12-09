@@ -9,6 +9,7 @@
   padding: 0 15px;
   background-color: #273c89;
   color: white;
+  display: none;
 }
 
 .sidebarLogo img {
@@ -114,7 +115,7 @@
     width: 100%;
   }
 
-  .hide {
+  .sx {
     left: -300px !important;
     width: 300px !important;
   }
@@ -125,7 +126,7 @@
 }
 
 @media (min-width: 1199px) {
-  .hide {
+  .sx {
     width: 300px !important;
   }
 
