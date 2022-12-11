@@ -36,47 +36,61 @@
     </div>
 
     <div id="sidebar" class="sx">
-        <div class="sidebarLogo">
-            <a href="#">
-                <img src="./assets/img/logo.png" alt="Home">
-            </a>
+        <div id="aside-links">
+
+            <div class="sidebarLogo">
+                <a href="#">
+                    <img src="./assets/img/logo.png" alt="Home">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#about">About us</a></li>
+                    <li><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <!-- <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false" href="#">Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item"                                
+                             href="pages/menu_breakfast.html">Breakfast
+                            </a>
+                            <a class="dropdown-item" href="pages/menu_lunch.html">Lunch</a>
+                            <a class="dropdown-item" 
+                             href="pages/menu_cocktails.html">Special cocktails
+                            </a>
+                        </div>
+                    </li> -->
+                    <div class="itemMenu">
+                        <a class="sub-btn">MENU <i class="fas fa-angle-right dropdown"></i></a>
+                        <div class="sub-menu">
+                          <a href="pages/menu_breakfast.html" class="sub-item">BREAKFAST</a>
+                          <a href="pages/menu_lunch.html" class="sub-item">LUNCH</a>
+                          <a href="pages/menu_cocktails.html" class="sub-item">SPECIAL COCKTAILS</a>
+                        </div>
+                    </div>
+                    <li><a class="nav-link" href="pages/contact_us.html">Contact us</a></li>
+                    <li><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
+                    <li><a class="nav-link" href="pages/waitlist.html">Waitlist</a></li>
+                    <li><a class="nav-link" href="pages/productList.html">Merchandise</a></li>
+                    <!-- <li><a class="nav-link" href="#" id="loginButtonPopup" class="loginButton">Login</a></li> -->
+                    <button class="menu-btn">LOG IN</button>
+                </ul>
+            </nav>
+
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#about">About us</a></li>
-                <li><a class="nav-link" href="#reviews">Reviews</a></li>
-                <!-- <li class="dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" 
-                    aria-haspopup="true" aria-expanded="false" href="#">Menu
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item"                                
-                         href="pages/menu_breakfast.html">Breakfast
-                        </a>
-                        <a class="dropdown-item" href="pages/menu_lunch.html">Lunch</a>
-                        <a class="dropdown-item" 
-                         href="pages/menu_cocktails.html">Special cocktails
-                        </a>
-                    </div>
-                </li> -->
-                <div class="itemMenu">
-                    <a class="sub-btn">MENU <i class="fas fa-angle-right dropdown"></i></a>
-                    <div class="sub-menu">
-                      <a href="pages/menu_breakfast.html" class="sub-item">BREAKFAST</a>
-                      <a href="pages/menu_lunch.html" class="sub-item">LUNCH</a>
-                      <a href="pages/menu_cocktails.html" class="sub-item">SPECIAL COCKTAILS</a>
-                    </div>
-                </div>
-                <li><a class="nav-link" href="pages/contact_us.html">Contact us</a></li>
-                <li><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
-                <li><a class="nav-link" href="pages/waitlist.html">Waitlist</a></li>
-                <li><a class="nav-link" href="pages/productList.html">Merchandise</a></li>
-                <!-- <li><a class="nav-link" href="#" id="loginButtonPopup" class="loginButton">Login</a></li> -->
-                <button class="menu-btn">LOG IN</button>
-            </ul>
-        </nav>
-        <a href="#" class="locations-link">LOCATIONS</a>
+        <div id="side-locations" class ="sx hidden">
+            <nav class="navbar h-100">
+              <ul>
+                <li><a class="nav-link" href="#">MYRTLE BEACH</a>
+                <li><a class="nav-link" href="#">NORTH MYRTLE BEACH</a>
+                <li><a class="nav-link" href="#">WILMINGTON, NC</a>
+                <li><i id="backIcon" class="fa-solid fa-chevron-left"></i></li>
+              </ul>
+            </nav>
+        </div>
+        <a href="#" id="locations-link" class="locations-link">LOCATIONS</a>
     </div>
 
     <div id="pageContainer">

@@ -1,4 +1,5 @@
-#sidebar {
+#sidebar, 
+#side-locations {
   position: fixed;
   top: 0;
   left: 0;
@@ -45,6 +46,14 @@
 .navbar > ul > li:hover {
   border-bottom: 1px solid #96784a;
   text-align: center;
+}
+
+#side-locations li:hover{
+  border-bottom: 1px solid transparent;
+}
+
+#side-locations li a:hover{
+  color: #3e56ad;
 }
 
 .nav-link,
@@ -111,6 +120,10 @@
 
 .h-100{
   height: 100%;
+}
+
+.hidden{
+  display: none;
 }
 
 .sidebarMobile {

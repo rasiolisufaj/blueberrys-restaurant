@@ -7,15 +7,18 @@ $(document).ready(function(){
    });
 
 // Sidebar Locations Link
-const sidebarElement = document.getElementById('sidebar');
-const locationsLinkElement = document.querySelector('.locations-link');
+const locationsLinkElement = document.getElementById('locations-link');
+const asideLinksElement = document.getElementById('aside-links');
+const sideLocationsElement = document.getElementById('side-locations');
+const backIconElement = document.getElementById('backIcon');
 
-function locationSidebar(sidebar){
-  sidebar.innerHTML = `
-  <div id="sidebar" class ="sx">
-    <a href="#" class="locations-link locations-blue">LOCATIONS</a>
-  </div>
-  `
+function locationSidebar(){
+  asideLinksElement.classList.toggle('hidden');
+  sideLocationsElement.classList.toggle('hidden');
+  locationsLinkElement.classList.toggle('locations-blue');
+  console.log(asideLinksElement.classList);
+  console.log(sideLocationsElement.classList);
 }
 
-locationsLinkElement.addEventListener('click', () => locationSidebar(sidebarElement));
+locationsLinkElement.addEventListener('click', () => locationSidebar());
+backIconElement.addEventListener('click', () => locationSidebar());

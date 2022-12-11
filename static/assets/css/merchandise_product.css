@@ -110,6 +110,10 @@ aside a:hover {
   color: #273c89;
 }
 
+#locations-link{
+  z-index: 100;
+}
+
 .locations-link {
   display: block;
   color: #273c89;
@@ -133,6 +137,7 @@ aside a:hover {
   color: #fff;
   background: #273c89;
   border-top: 2px solid #fff;
+  z-index: 100;
 }
 
 .locations-blue:hover,
@@ -141,6 +146,11 @@ aside a:hover {
   color: #fff;
   border-top: 2px solid #fff;
   text-decoration: none;
+}
+
+#backIcon{
+  cursor: pointer;
+  font-size: 18px;
 }
 
 /* Merchandise Content */
