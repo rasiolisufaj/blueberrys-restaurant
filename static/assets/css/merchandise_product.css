@@ -124,8 +124,22 @@ aside a:hover {
   margin: 0 -15px;
 }
 
-.locations-link:hover {
+.locations-link:hover{
   border: 0;
+  text-decoration: none;
+}
+
+.locations-blue{
+  color: #fff;
+  background: #273c89;
+  border-top: 2px solid #fff;
+}
+
+.locations-blue:hover,
+.locations-blue:focus{
+  cursor: pointer;
+  color: #fff;
+  border-top: 2px solid #fff;
   text-decoration: none;
 }
 
