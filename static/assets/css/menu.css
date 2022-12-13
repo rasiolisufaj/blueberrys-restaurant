@@ -1,3 +1,131 @@
 .emptyPage {
   height: 100vh;
 }
+
+.mBottom-2{
+  margin-bottom: 2rem;
+}
+
+.pLR-1{
+  padding: 0 1em;
+}
+
+.pALL-1{
+  padding: 1em;
+}
+
+.w50{
+  width: 50%;
+}
+
+.w100{
+  width: 100%;
+}
+
+.size27{
+  width: 27px;
+  height: 27px;
+}
+
+#pageContainerRasiol {
+  padding-left: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/menu/backgroundMenu-sm.png') no-repeat center center/cover;
+  color: #273C89;
+}
+
+#homeSection{
+  padding-top: 3em;
+  height: 100%;
+  /* border: 8px solid greenyellow; */
+}
+
+#homeSection p{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#menuHeader{
+  height: 300px;
+  width: 100%;
+  background: url('../img/menu/headerMenu.jpg') no-repeat center center/cover;
+}
+
+#menuPageContainer{
+  /* border: 5px solid rgb(78, 0, 0); */
+  height: 100%;
+}
+
+#menuContainerWrapper{
+  border: 1px solid #273C89;
+  padding: 2em;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #f4eddd;
+}
+
+#menuContainer{
+  border: 1px solid #ecc36c;
+  padding: 2em;
+  height: 100%;
+}
+
+/* #menuInnerContainer{
+  border: 3px solid green;
+} */
+
+#borderAround{
+  border: 3px solid crimson;
+  margin-bottom: 1em;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.flexContainer{
+  display: flex;
+}
+
+.flexColumnContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.menuTitle{
+  position: absolute;
+  top: -85px;
+  left: 25%;
+}
+
+/* Breakfast */
+.BreakFastMenuTitle {
+  background-color: #ecc36c;
+  padding: 3em 9em;
+}
+
+.BreakFastMenuTitle > h2 {
+  color: #273C89;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.breakfastServing{
+  padding-top: 30px;
+}
+
+#homeSection h2{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#homeSection h3{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
