@@ -60,6 +60,8 @@
 #homeSection{
   padding-top: 3em;
   height: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
   /* border: 8px solid greenyellow; */
 }
 
@@ -145,7 +147,7 @@
 .menuTitle{
   position: absolute;
   top: -105px;
-  left: 22%;
+  left: 25%;
 }
 
 /* Breakfast */
