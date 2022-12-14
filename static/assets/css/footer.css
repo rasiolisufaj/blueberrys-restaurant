@@ -5,17 +5,18 @@ footer {
   flex-direction: column;
   padding: 50px;
   background-color: #273c89;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   overflow: hidden;
   z-index: 101;
 }
 
-#footer{
-  display: none;
-}
+/* #footer{
+  position: fixed;
+  bottom: 0;
+} */
 
 .footerTop {
   display: flex;
