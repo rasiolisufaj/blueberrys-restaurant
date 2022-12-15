@@ -384,7 +384,21 @@
   }
 }
 
-@media screen and (min-width: 2400px) and (max-width:3400px) {
+@media screen and (min-width: 2400px) and (max-width:3500px) {
+
+  .menuTitle{
+    top: -180px;
+    left: 30%;
+  }
+
+  .BreakFastMenuTitle{
+    padding: 8em 16em;
+  }
+
+  .BreakFastMenuTitle h2{
+    font-size: 80px;
+  }
+
   .breakfastServing h2{
     font-size: 55px;
   }
@@ -400,10 +414,6 @@
 
   #homeSection h3{
     font-size: 50px;
-  }
-
-  .menuTitle{
-    left: 40%;
   }
 
   .leadHeader{
