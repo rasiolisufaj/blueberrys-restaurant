@@ -58,7 +58,6 @@
 }
 
 #homeSection p{
-  font-size: 18px;
   font-weight: 400;
 }
 
@@ -183,4 +182,122 @@
 
 .otherMenuItems{
   font-size: 18px;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile */
+@media screen and (max-width: 480px){
+  #pageContainerRasiol{
+    padding-left: 0;
+  }
+
+  .sidebarMobile{height: 200px;}
+  .mobile-navbar-toggle{
+    top: 150px;
+    right: 30px;
+    font-size: 35px;
+  }
+
+  .menuTitle{
+    top: -80px;
+    left: 15%;
+  }
+
+  .BreakFastMenuTitle {
+    padding: 2em 3.5em;
+  }
+
+  .alignLeft{
+    text-align: left;
+  }
+
+  .BreakFastMenuTitle h2{
+    font-size: 22px;
+  }
+
+  #menuHeader{
+    height: 200px;
+  }
+
+  #menuContainerWrapper{
+    padding: 0;
+    border: 0;
+  }
+
+  #menuContainer{
+    padding: 3em;
+    border: 0;
+  }
+
+  .flexContainer{
+    flex-direction: column;
+  }
+
+  .w50{
+    width: 100%;
+  }
+
+  .pTop-3{padding-top: 1rem;}
+
+  .breakfastServing h2{
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  #homeSection h3{
+    font-size: 18px;
+    /* font-weight: 800;
+    margin-bottom: 1rem; */
+  }
+
+  .breakfastServing {
+    padding-top: 0;
+  }
+
+  .leadHeader{
+    font-size: 25px;
+  }
+
+  .leadHeader.mobSize{
+    padding-top: 2rem;
+  }
+
+  .leadParagraph{
+    font-size: 16px !important;
+  }
+
+  .dishInfoParagraph {
+    padding-right: 0;
+    font-size: 15px !important;
+  }
+
+  .flexContainer.rowItems{
+    flex-direction: row;
+  }
+
+  .iconNames{
+    margin-right: 0;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+  }
+
+  .flexContainer.pLR-1{
+    padding-bottom: 1rem;
+  }
+
+  .breakfastBottom{
+    padding: 6em 0 0;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px){
+
+}
+
+/* Large Screens */
+@media screen and (min-width: 1501px) {
+  
 }
