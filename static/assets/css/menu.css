@@ -187,7 +187,7 @@
 /* Responsive Media Queries */
 
 /* Mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 620px){
   #pageContainerRasiol{
     padding-left: 0;
   }
@@ -293,11 +293,136 @@
 }
 
 /* Tablets */
-@media screen and (max-width: 768px){
+@media screen and (min-width: 620px) and (max-width: 940px){
+  #pageContainerRasiol{
+    padding-left: 0;
+  }
 
+  .sidebarMobile{height: 200px;}
+  .mobile-navbar-toggle{
+    top: 150px;
+    right: 30px;
+    font-size: 35px;
+  }
+
+  #menuContainerWrapper{
+    padding: 0;
+    border: 0;
+  }
+
+  #menuContainer{
+    padding: 3em;
+    border: 0;
+  }
+
+  .BreakFastMenuTitle {
+    padding: 3em 5.5em;
+  }
+
+  .BreakFastMenuTitle h2 {
+    font-size: 36px;
+  }
+
+  .dishInfoParagraph{
+    font-size: 16px;
+  }
+
+  .flexContainer.rowItems{
+    flex-direction: column;
+    padding-bottom: 1rem;
+    /* align-self: flex-start; */
+  }
+}
+
+@media screen and (min-width: 940px) and (max-width: 1200px){
+  #pageContainerRasiol{
+    padding-left: 0;
+  }
+
+  .dishInfoParagraph{
+    font-size: 16px;
+  }
 }
 
 /* Large Screens */
-@media screen and (min-width: 1501px) {
-  
+@media screen and (min-width: 1200px) and (max-width: 1580px){
+  .dishInfoParagraph{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1580px) and (max-width: 2400px){
+
+  #homeSection{
+    max-width: 2000px;
+    padding: 2rem 4rem;
+  }
+
+  #homeSection h3{
+    font-size: 32px;
+  }
+
+  .menuTitle{
+    left: 30%;
+  }
+
+  .leadHeader{
+    font-size: 40px;
+    padding-bottom: 1rem;
+  }
+
+  .leadParagraph{
+    font-size: 25px !important;
+  }
+
+  .dishInfoParagraph{
+    font-size: 25px;
+  }
+
+  .otherMenuItems{
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 2400px) and (max-width:3400px) {
+  .breakfastServing h2{
+    font-size: 55px;
+  }
+
+  #menuContainer{
+    padding: 4em 8em;
+  }
+
+  #homeSection{
+    max-width: 2800px;
+    padding: 4rem;
+  }
+
+  #homeSection h3{
+    font-size: 50px;
+  }
+
+  .menuTitle{
+    left: 40%;
+  }
+
+  .leadHeader{
+    font-size: 60px;
+    padding-bottom: 4rem;
+    line-height: 1.2;
+  }
+
+  .leadParagraph{
+    font-size: 40px !important;
+    letter-spacing: 0.2rem;
+  }
+
+  .dishInfoParagraph{
+    font-size: 38px;
+    letter-spacing: 0.3rem;
+  }
+
+  .otherMenuItems{
+    font-size: 40px;
+  }
 }
