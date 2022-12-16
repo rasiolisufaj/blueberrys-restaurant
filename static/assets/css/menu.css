@@ -382,21 +382,41 @@
   .otherMenuItems{
     font-size: 25px;
   }
+
+  .menuIcons{
+    margin-left: 1rem;
+    align-self: center;
+  }
+
+  .menuIcons .size27{
+    margin-top: -10px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .iconNames{
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (min-width: 2400px) and (max-width:3500px) {
 
+  #menuContainerWrapper{
+    padding: 5rem;
+  }
+
   .menuTitle{
-    top: -180px;
+    top: -140px;
     left: 30%;
   }
 
   .BreakFastMenuTitle{
-    padding: 8em 16em;
+    padding: 6em 14em;
   }
 
   .BreakFastMenuTitle h2{
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .breakfastServing h2{
@@ -408,7 +428,7 @@
   }
 
   #homeSection{
-    max-width: 2800px;
+    max-width: 2400px;
     padding: 4rem;
   }
 
@@ -434,5 +454,99 @@
 
   .otherMenuItems{
     font-size: 40px;
+  }
+
+  .menuIcons{
+    margin-left: 2rem;
+    align-self: center;
+  }
+
+  .menuIcons .size27{
+    width: 45px;
+    height: 60px;
+  }
+
+  .iconNames{
+    width: 50px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 3500px){
+
+  #menuContainer{
+    padding: 4em 8em;
+  }
+
+  #homeSection h3{
+    font-size: 57px;
+    padding: 2rem 0;
+  }
+
+  #homeSection{
+    max-width: 2800px;
+    padding: 4rem;
+  }
+
+  #menuContainerWrapper{
+    padding: 6rem;
+  }
+
+  .menuTitle{
+    top: -180px;
+    left: 30%;
+  }
+
+  .breakfastServing{
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+  }
+
+  .BreakFastMenuTitle{
+    padding: 8em 16em;
+  }
+
+  .BreakFastMenuTitle h2{
+    font-size: 80px;
+  }
+
+  .breakfastServing h2{
+    font-size: 60px;
+    padding-bottom: 2rem;
+  }
+
+  .leadHeader{
+    font-size: 70px;
+    padding-bottom: 3rem;
+    line-height: 1.2;
+  }
+
+  .leadParagraph{
+    font-size: 48px !important;
+    letter-spacing: 0.2rem;
+  }
+
+  .dishInfoParagraph{
+    font-size: 45px;
+    letter-spacing: 0.2rem;
+  }
+
+  .otherMenuItems{
+    font-size: 45px;
+  }
+
+  .menuIcons{
+    margin-left: 2rem;
+    align-self: center;
+  }
+
+  .menuIcons .size27{
+    width: 60px;
+    height: 70px;
+  }
+
+  .iconNames{
+    width: 60px;
+    height: 70px;
   }
 }
