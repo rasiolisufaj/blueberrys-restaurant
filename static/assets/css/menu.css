@@ -292,6 +292,17 @@
   }
 }
 
+/* --- */
+@media screen and (max-width: 420px){
+  .cocktailsTitle{
+    left: 5% !important;
+  }
+
+  .cocktailsMenuTitle h2{
+    font-size: 20px;
+  }
+}
+
 /* Tablets */
 @media screen and (min-width: 620px) and (max-width: 940px){
   #pageContainerRasiol{
@@ -332,6 +343,26 @@
     padding-bottom: 1rem;
     /* align-self: flex-start; */
   }
+
+  .cocktailsTitle{
+    /* top: -180px !important; */
+    left: 15% !important;
+  }
+
+  .cocktailsMenuTitle h2{
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 730px){
+  .cocktailsTitle{
+    /* top: -180px !important; */
+    left: 10% !important;
+  }
+
+  .cocktailsMenuTitle h2{
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 940px) and (max-width: 1200px){
@@ -342,12 +373,24 @@
   .dishInfoParagraph{
     font-size: 16px;
   }
+
+  .cocktailsTitle{
+    left: 10% !important;
+  }
 }
 
 /* Large Screens */
 @media screen and (min-width: 1200px) and (max-width: 1580px){
   .dishInfoParagraph{
     font-size: 16px;
+  }
+
+  .cocktailsTitle{
+    left: 15% !important;
+  }
+
+  .cocktailsMenuTitle h2{
+    font-size: 40px;
   }
 }
 
@@ -400,6 +443,13 @@
   }
 }
 
+@media screen and (min-width: 1580px) and (max-width: 2000px){
+  .cocktailsTitle{
+    /* top: -180px !important; */
+    left: 20% !important;
+  }
+}
+
 @media screen and (min-width: 2400px) and (max-width:3500px) {
 
   #menuContainerWrapper{
@@ -409,6 +459,11 @@
   .menuTitle{
     top: -140px;
     left: 30%;
+  }
+
+  .cocktailsTitle{
+    top: -140px !important;
+    left: 25% !important;
   }
 
   .BreakFastMenuTitle{
@@ -490,6 +545,11 @@
 
   #menuContainerWrapper{
     padding: 6rem;
+  }
+
+  .cocktailsTitle{
+    top: -180px !important;
+    left: 25% !important;
   }
 
   .menuTitle{
