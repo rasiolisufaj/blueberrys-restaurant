@@ -42,11 +42,6 @@
   opacity: 1;
 }
 
-.imgContainer {
-  background: #555;
-  /* border-radius: 10px; */
-}
-
 .imgContainer:nth-of-type(1) {
   grid-row: 1 / 3;
 }
