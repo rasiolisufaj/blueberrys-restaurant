@@ -4,184 +4,118 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  padding: 200px;
-
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   background-color: #f4eddd;
-  /* flex-wrap: wrap; */
+  font-family: 'Aileron', sans-serif;
 }
 
-.waitlistContainer {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 75px 30px 75px 30px;
-  background-color: #f4eddd;
-  --widgets-spacing: 20px;
-  width: 100%;
-  display: flex;
-  /* border: 1px solid red; */
-  /* flex-wrap: wrap; */
-  box-shadow: 0px 0px 4px -3px black;
+.waitlistWrapper{
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-.waitListwrap {
-  display: flex;
-  flex-wrap: wrap;
+.waitlistContainer{
+  background: #f4eddd;
+  /* border: 1px solid #777; */
+  padding: 70px 0;
+  margin: 0 70px;
 }
 
-.LeftWaitListContainer h2 {
+.queryContainer{
+  padding: 0 20px;
+}
+
+.queryContainer .flexContainer{
+  align-items: center;
+}
+
+.titleContainer h2{
   color: #273c89;
-  font-family: "Aileron", Sans-serif;
   font-size: 48px;
-  font-weight: 900;
-  line-height: 57.6px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  font-weight: 800;
+  text-align: left;
+  padding: 4rem 2rem;
 }
 
-.LeftWaitListContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.waitlist-icon{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
-.RightWaitListContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 
-.RightWaitListContainer div {
-  font-family: "Aileron", Sans-serif;
-  font-size: 19px;
-  font-weight: 900;
-  line-height: 28.8px;
+.icon-text{
+  font-size: 24px;
   color: #273c89;
+  font-weight: 800;
+  margin-top: 10px;
 }
 
-.WaitListImgclock {
-  /* position: relative; */
-  margin-bottom: 35px;
-}
-
-.WaitListImgbook {
-  /* position: relative; */
-  margin-bottom: 30px;
-}
-
-.WaitListImgplate {
-  /* position: relative; */
-  margin-bottom: 20px;
-}
-
-.clockImg {
-  /* position: absolute;
-  left: -60px;
-  top: -8px; */
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.bookImg {
-  /* position: absolute;
-  left: -60px;
-  top: -8px; */
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.platespoonImg {
-  /* position: absolute;
-  left: -60px;
-  top: -8px; */
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.JoinTheWaitlistButton {
+.joinButton{
   font-family: "Aileron", Sans-serif;
   font-size: 18px;
   font-weight: 900;
-  line-height: 21.6px;
   background-color: #273c89;
-  border-radius: 0px 0px 0px 0px;
-  padding: 16px 0px 17px 0px;
+  padding: 14px 0;
   color: white;
   border: none;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin-top: 2rem;
 }
 
-@media (max-width: 1496px) {
-  .LeftWaitListContainer h2 {
+@media (min-width: 768px) and (max-width: 1200px){
+  .icon-text{
+    font-size: 19px;
+  }
+
+  .waitlist-icon{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .titleContainer h2{
+    padding: 0 2rem;
     font-size: 40px;
-  }
-
-  .clockImg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .bookImg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .platespoonImg {
-    width: 30px;
-    height: 30px;
+    line-height: 1.3;
   }
 }
 
-@media (max-width: 850px) {
-  .LeftWaitListContainer h2 {
-    font-size: 40px;
-  }
-}
+@media screen and (max-width: 768px){
 
-@media (max-width: 1080px) {
-  .waitlistContainer {
+  .w50{
+    width: 100%;
+  }
+
+  .pBottom-3{
+    padding-bottom: 2rem;
+  }
+
+  .waitlistContainer{
+    padding: 0;
+  }
+
+  .waitlistContainer.flexContainer{
     flex-direction: column;
-    padding: 40px;
   }
 
-  .LeftWaitListContainer h2 {
+  .titleContainer h2{
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .icon-text{
     text-align: center;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 19px;
   }
 
-  .RightWaitListContainer {
-    margin-top: 25px;
+  .waitlist-icon{
+    width: 30px;
+    height: 30px;
   }
 
-  .waitListSection {
-    padding: 100px;
-  }
-}
-
-@media (max-width: 650px) {
-  .waitListSection {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 650px) {
-  .LeftWaitListContainer h2 {
-    font-size: 22px;
-    line-height: 30px;
+  .waitInfo .flexContainer{
+    flex-direction: row;
   }
 }
