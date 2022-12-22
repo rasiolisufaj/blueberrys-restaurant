@@ -1,4 +1,132 @@
-.customPopup {
+.loginSection{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7785b7;
+  position: relative;
+  padding: 80px;
+  font-family: 'Aileron', sans-serif;
+  /* display: none; */
+}
+
+.loginContainer{
+  border: 20px solid #273c89;
+  padding: 12px;
+  position: relative;
+  background: #fff;
+}
+
+.loginInnerContainer{
+  display: flex;
+  border: 5px solid #273c89;
+  margin: 20px;
+  padding: 50px;
+}
+
+.registerContainer{
+  width: 40%;
+  justify-content: center;
+}
+
+.registerContainer .blueberryLogoSvg{
+  width: 56px;
+  height: 64px;
+}
+
+.registerText{
+  font-size: 30px;
+  line-height: 36px;
+  color: #273c89;
+  margin-top: 18px;
+}
+
+.registerText .boldText{
+  font-weight: 700;
+}
+
+.registerFormContainer{
+  width: 60%;
+  justify-content: space-between;
+}
+
+.registerForm{
+  width: 48%;
+}
+
+.registerForm h2,
+.loginForm h2{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+  color: #273c89;
+  margin-bottom: 0.7em;
+}
+
+.registerFormLabelInput{
+  display: flex;
+  flex-direction: column;
+}
+
+.registerFormLabelInput label {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #273c89;
+  opacity: 0.5;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.registerFormLabelInput input {
+  height: 46px;
+  border: 1px solid rgb(39 60 137 / 50%) !important;
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 10px;
+  outline: 0;
+}
+
+.registerFormButton{
+  border: none;
+  font-weight: 700;
+  background: #273c89;
+  padding: 13px 10px 14px;
+  font-size: 16px;
+  line-height: 19.2px;
+  width: 100%;
+  color: white;
+  margin-top: 15px;
+}
+
+.loginForm{
+  width: 48%;
+}
+
+
+
+.closeLoginIcon{
+  background: #273c89;
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: -19px;
+  right: -15px;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+/* .customPopup {
   top: 0;
   left: 160px;
 }
@@ -165,7 +293,7 @@
   /*display: block;*/
 /*}*/
 
-label.checkboxCustom {
+/* label.checkboxCustom {
   opacity: 1;
 }
 
@@ -176,7 +304,7 @@ label.checkboxCustom {
 
 .rememberMeDiv input:checked {
 display: block;
-}
+} */
 
 /*.rememberMeDiv .checkboxCustom:after {*/
   /*left: 9px;*/
@@ -191,7 +319,7 @@ display: block;
   /*transform: rotate(45deg);*/
 /*}*/
 
-.rememberMeText {
+/* .rememberMeText {
   margin-left: 3px;
 }
 
@@ -261,4 +389,4 @@ display: block;
   .loginPopupContainer {
     width: revert;
   }
-}
+} */
