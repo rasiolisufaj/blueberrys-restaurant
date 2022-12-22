@@ -376,7 +376,7 @@
                             <img src="./assets/img/LoginPageLogo.svg" alt="" class="blueberryLogoSvg">
                         </div>
                         <div class="registerText">
-                            <p><span class="boldText">Register </span>or <span class="boldText">log in</span> to your account</p>
+                            <p><span class="breakParagraph"><span class="boldText">Register </span>or <span class="boldText">log in</span></span> to your account</p>
                         </div>
                     </div>
                     <div class="registerFormContainer flexContainer">
@@ -384,7 +384,7 @@
                             <h2>Register</h2>
                             <form action="">
                                 <div class="registerFormLabelInput">
-                                    <label for="name">Your name</label>
+                                    <label for="name">Your name <span class="required">*</span></label>
                                     <input type="text" name="name" id="nameInput">
                                 </div>
                                 <div class="registerFormLabelInput">
@@ -392,15 +392,15 @@
                                     <input type="number" name="phone" id="phoneInput">
                                 </div>
                                 <div class="registerFormLabelInput">
-                                    <label for="email">Email address</label>
+                                    <label for="email">Email address <span class="required">*</span></label>
                                     <input type="email" name="email" id="emailInput">
                                 </div>
                                 <div class="registerFormLabelInput">
-                                    <label for="password">Create password</label>
-                                    <input type="password" name="password" id="passwordInput">
+                                    <label for="password">Create password <span class="required">*</span></label>
+                                    <input type="password" name="password" id="registerPasswordInput">
                                 </div>
                                 <div class="registerFormLabelInput">
-                                    <label for="repeatPassword">Verify password</label>
+                                    <label for="repeatPassword">Verify password <span class="required">*</span></label>
                                     <input type="password" name="repeatPassword" id="repeatPasswordInput">
                                 </div>
                                 <div class="registerFormLabelInput">
@@ -412,12 +412,18 @@
                             <h2>Login</h2>
                             <form action="">
                                 <div class="registerFormLabelInput">
-                                    <label for="name">Your name</label>
-                                    <input type="text" name="name" id="nameInput">
+                                    <label for="username">Username or email <span class="required">*</span></label>
+                                    <input type="text" name="username" id="usernameInput">
                                 </div>
                                 <div class="registerFormLabelInput">
-                                    <label for="name">Your name</label>
-                                    <input type="text" name="name" id="nameInput">
+                                    <label for="password">Password <span class="required">*</span></label>
+                                    <input type="password" name="password" id="loginPasswordInput">
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <button class="loginFormButton" type="submit">LOG IN</button>
+                                </div>
+                                <div class="registerFormLabelInput lostPassword">
+                                    <button class="loginFormButton lost-bg" type="submit">LOST YOUR PASSWORD?</button>
                                 </div>
                             </form>
                         </div>
