@@ -1,12 +1,21 @@
 .loginSection{
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: #7785b7;
   position: relative;
   font-family: 'Aileron', sans-serif;
-  /* display: none; */
+  display: none;
+}
+
+.showUp{
+  display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .loginContainer{

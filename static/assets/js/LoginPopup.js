@@ -1,44 +1,20 @@
-// Login Popup
-let crossButtonInLoginPage = document.getElementById("crossIconPopup");
-let LoginSectionDIsplay = document.getElementById("LoginSectionPopup");
-let LoginButton = document.getElementById("loginButtonPopup");
-let home = document.getElementById("home");
-let about = document.getElementById("about");
-let blogHome = document.getElementById("blogHome");
-let reviews = document.getElementById("reviews");
-let footer = document.getElementById("footer");
-// let main = document.getElementById("main");
-LoginButton.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (LoginSectionDIsplay.style.display === "none") {
-    LoginSectionDIsplay.style.display = "flex";
-    // main.style.display = "none";
-    home.classList.add("HomedisplayNone");
-    home.classList.remove("HomedisplayBlock");
-    about.style.display = "none";
-    blogHome.style.display = "none";
-    reviews.style.display = "none";
-    footer.style.display = "none";
-  } else {
-    LoginSectionDIsplay.style.display = "none";
-    home.classList.add("HomedisplayBlock");
-    home.classList.remove("HomedisplayNone");
-    about.style.display = "block";
-    blogHome.style.display = "block";
-    reviews.style.display = "block";
-    footer.style.display = "block";
-    // main.style.display = "block";
-  }
-});
-crossButtonInLoginPage.addEventListener("click", function (e) {
-  e.preventDefault();
-  LoginSectionDIsplay.style.display = "none";
-  home.classList.add("HomedisplayBlock");
-  about.style.display = "block";
-  blogHome.style.display = "block";
-  reviews.style.display = "block";
-  footer.style.display = "block";
-  //   main.style.display = "block";
+const loginBtnElement = document.getElementById('LoginBtn');
+const closeLoginElement = document.getElementById('closeLoginIcon');
+const homeElement = document.getElementById('home');
+const aboutElement = document.getElementById('about');
+const blogElement = document.getElementById('blogHome');
+const reviewsElement = document.getElementById('reviews');
+const footerElement = document.getElementById('footer');
+const loginPopupElement = document.getElementById('loginSectionPopup');
 
-  // LoginSectionDIsplay.style.width = "0";
-});
+function loginPopup(){
+  homeElement.classList.toggle('hidden');
+  aboutElement.classList.toggle('hidden');
+  blogElement.classList.toggle('hidden');
+  reviewsElement.classList.toggle('hidden');
+  footerElement.classList.toggle('hidden');
+  loginPopupElement.classList.toggle('showUp');
+}
+
+loginBtnElement.addEventListener("click",() => loginPopup());
+closeLoginElement.addEventListener('click', () => loginPopup());
