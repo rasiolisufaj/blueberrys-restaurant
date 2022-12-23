@@ -156,6 +156,11 @@
   font-weight: 900;
 }
 
+.closeIcon{
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
 @media (min-width: 900px) and (max-width: 1024px){
   .loginContainer{
     width: 90%;
