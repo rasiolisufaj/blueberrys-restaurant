@@ -161,6 +161,50 @@
   padding-right: 5px;
 }
 
+.registerFormLabelInput .rememberMeContainer{
+  position: relative;
+  padding-left: 35px;
+  margin: 12px 0;
+  color: #273c89;
+  opacity: 1;
+}
+
+.rememberMeContainer input{
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 27px;
+  width: 27px;
+  border: 1px solid rgb(39 60 137 / 50%);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.rememberMeContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.rememberMeContainer .checkmark:after {
+  left: 9px;
+  top: 2px;
+  width: 8px;
+  height: 16px;
+  border-bottom: 2.5px solid #273c89;
+  border-right: 2.5px solid #273c89;
+  opacity: 1;
+  transform: rotate(45deg);
+}
+
 @media (min-width: 900px) and (max-width: 1024px){
   .loginContainer{
     width: 90%;
