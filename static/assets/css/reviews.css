@@ -44,11 +44,30 @@
   /*padding: 10px 10px 5px;*/
   position: relative;
   margin-top: 130px;
+  max-width: 1140px;
+  width: 100%;
 }
 
-.reviewsCarousel .reviewCard:last-of-type {
-  margin-right: 0;
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  padding: 85px 10px;
 }
+
+.swiper-navBtn{
+  color: #273c89;
+}
+
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+
+/* .reviewsCarousel .reviewCard:last-of-type {
+  margin-right: 0;
+} */
 
 .reviewCard {
   background: #ecc36c;
