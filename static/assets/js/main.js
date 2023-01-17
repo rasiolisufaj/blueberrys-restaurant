@@ -7,10 +7,8 @@
     if (isOpen == false) {
         setTimeout(function () {
           document.getElementById("WelcomePopupSection").style.display = "none";
-          document.getElementById("main").style.display = "block";
         }, 2500);
         document.getElementById("WelcomePopupSection").style.display = "flex";
-        document.getElementById("main").style.display = "none";
     }
   }
 
