@@ -2,35 +2,21 @@
   "use strict";
 
   // Welcome Popup
-  console.log(localStorage.getItem("Name"));
-  function myFunction(x) {
-    console.log(localStorage.getItem("Name"));
-    if (localStorage.getItem("Name") !== "Manas") {
-      if (!x.matches) {
+  function myFunction() {
+    let isOpen = false;
+    if (isOpen == false) {
         setTimeout(function () {
           document.getElementById("WelcomePopupSection").style.display = "none";
           document.getElementById("main").style.display = "block";
         }, 2500);
         document.getElementById("WelcomePopupSection").style.display = "flex";
         document.getElementById("main").style.display = "none";
-      } else {
-        setTimeout(function () {
-          document.getElementById(
-            "WelcomePopupSectionSmallWidth"
-          ).style.display = "none";
-        }, 2500);
-        document.getElementById("WelcomePopupSectionSmallWidth").style.display =
-          "flex";
-      }
-      localStorage.setItem("Name", "Manas");
     }
-
-    console.log(localStorage.getItem("Name"));
   }
 
   var x = window.matchMedia("(max-width: 500px)");
   myFunction(x); // Call listener function at run time
-  x.addListener(myFunction); // Attach listener function on state changes
+  // x.addListener(myFunction); // Attach listener function on state changes
 
   /**
    * Easy selector helper function
