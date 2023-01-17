@@ -329,9 +329,9 @@
     top: 100px;
   }
 
-  .reviewsContent {
-    /*display: none;*/
-  }
+  /* .reviewsContent {
+    display: none;
+  } */
 
   .slide-content{
     padding-top: 0px;
@@ -340,9 +340,9 @@
   /*.reviewsHeader {*/
   /*display: block;*/
   /*}*/
-  .reviewsCarousel {
-    /* display: none; */
-  }
+  /* .reviewsCarousel {
+    display: none;
+  } */
 
   .reviewLogo::before {
     top: -180px;
