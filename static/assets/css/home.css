@@ -104,6 +104,25 @@
   overflow: hidden;
 }
 
+/* Welcome Popup  */
+#WelcomePopupSection {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* top: 0; */
+  bottom: 0;
+  height: 100vh;
+  z-index: 10000000;
+  transition-timing-function: ease-in-out;
+  opacity: 0.98;
+}
+.WelcomePopupImageContainer img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 @media (max-width: 1199px) {
   #home {
     height: auto !important;;
