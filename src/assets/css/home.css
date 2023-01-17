@@ -104,6 +104,12 @@
   overflow: hidden;
 }
 
+#dataTypedItems {
+  font-size: 16px;
+  font-weight: 500;
+  color: #273c89;
+}
+
 @media (max-width: 1199px) {
   #home {
     height: auto !important;;

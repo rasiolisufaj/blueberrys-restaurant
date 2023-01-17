@@ -114,7 +114,10 @@
                                             <div class="title"><h2>ENTICE YOUR PALETTE!</h2></div>
                                             <div class="content">
                                                 <div><p class="homeSectionRightPar">Treat yourself with a fresh and modern American menu. Fresh ingredients sourced locally, where possible, and prepared by a dedicated team.</p></div>
-                                                <div><p class="sloganPar">SIT. DRINK AND EAT. BE OUR GUEST.</p></div>
+                                                <!-- <div><p class="sloganPar">SIT. DRINK AND EAT. BE OUR GUEST.</p></div> -->
+                                                <div class="sloganPar">
+                                                    <span class="typed" id="dataTypedItems" data-typed-items="SIT. DRINK AND EAT. BE OUR GUEST."></span>
+                                                </div>
                                             </div>
                                             <div class="waitlistButton">Waitlist</div>
                                         </div>
@@ -135,9 +138,9 @@
                                 <div class="aboutHeader col-100">
                                     <div class="aboutHeaderWrap">
                                         <div class="row"><h2>ABOUT US</h2>
-                                            <div class="linksWrap wrap">
+                                            <div class="linksWrap">
                                                 <div class="columnWrapRel">
-                                                    <div class="links">
+                                                    <div class="links" id="aboutLinks">
                                                         <a href="pages/values.html">
                                                             <div class="aboutUsLink">Values</div>
                                                             <img src="./assets/img/arrowWhite.svg" alt="">
@@ -376,7 +379,7 @@
                                 <img src="./assets/img/reviews/reviewLogo.png" alt="">
                                 <span>Login to Add Review</span>
                             </div>
-                            <a class="mainButton loginToReviewButton" href="#">Login</a>
+                            <button class="mainButton loginToReviewButton" href="" onclick="loginPopup()">Login</button>
                         </div>
                         <div class="reviewsSocialMediaIcons-sm">
                             <div>

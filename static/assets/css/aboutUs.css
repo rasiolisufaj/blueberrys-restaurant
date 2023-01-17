@@ -176,6 +176,11 @@
   display: none;
 }
 
+#aboutLinks{
+  width: auto;
+  flex-direction: row;
+}
+
 @media (max-width: 1199px) {
   .aboutUsDescription {
 
