@@ -1,6 +1,7 @@
 #pageContainer {
   padding-left: 300px;
   position: relative;
+  overflow: hidden;
 }
 
 .pageContainerWrap {
