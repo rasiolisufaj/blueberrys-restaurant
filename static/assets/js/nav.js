@@ -6,7 +6,6 @@ toggleBtnEl.addEventListener('click', (e) => {
 });
 menuLinksEl.forEach((link) => {
   link.addEventListener('click', () => {
-    console.log(link);
     sidebarEl.classList.toggle('sx');
   });
 })
