@@ -88,6 +88,10 @@
   height: 100%;
 }
 
+#menuToggleBtn{
+  color: #fff;
+}
+
 .leadHeader{
   color: #ecc36c;
   font-size: 36px;
