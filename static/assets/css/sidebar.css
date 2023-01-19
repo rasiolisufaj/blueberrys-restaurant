@@ -169,8 +169,9 @@
 
   #sidebar {
     top: 190px;
-    left: 0;
     width: 100%;
+    position: absolute;
+    bottom: 200px;
   }
 
   .sx {
