@@ -38,3 +38,7 @@
 .d-flex {
   display: inherit;
 }
+
+.navbar .nav-link, .navbar .nav-link:focus {
+  margin-bottom: 0;
+}
