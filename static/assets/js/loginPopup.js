@@ -7,6 +7,7 @@ const reviewsElement = document.getElementById('reviews');
 const footerElement = document.getElementById('footer');
 const loginPopupElement = document.getElementById('loginSectionPopup');
 const pageContainerEl = document.getElementById('pageContainerRasiol');
+console.log(pageContainerEl);
 
 function loginPopup(){
   homeElement.classList.toggle('hidden');
