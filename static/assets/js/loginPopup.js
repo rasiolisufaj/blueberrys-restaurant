@@ -6,8 +6,6 @@ const blogElement = document.getElementById('blogHome');
 const reviewsElement = document.getElementById('reviews');
 const footerElement = document.getElementById('footer');
 const loginPopupElement = document.getElementById('loginSectionPopup');
-const pageContainerEl = document.getElementById('pageContainerRasiol');
-console.log(pageContainerEl);
 
 function loginPopup(){
   homeElement.classList.toggle('hidden');
@@ -15,7 +13,6 @@ function loginPopup(){
   blogElement.classList.toggle('hidden');
   reviewsElement.classList.toggle('hidden');
   footerElement.classList.toggle('hidden');
-  pageContainerEl.classList.toggle('hidden');
   loginPopupElement.classList.toggle('showUp');
 }
 
