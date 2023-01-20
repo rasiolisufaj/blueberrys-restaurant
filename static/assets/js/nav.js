@@ -2,10 +2,13 @@ const toggleBtnEl = document.getElementById('menuToggleBtn');
 const sidebarEl = document.getElementById('sidebar');
 const menuLinksEl = document.querySelectorAll('.nav-link');
 const loginBtnEl = document.getElementById('LoginBtn');
-
+const exitIconEl = document.querySelector('i.fa-xmark');
+const menuIconEl = document.getElementById('menuSvg');
 // Event Listeners
 toggleBtnEl.addEventListener('click', (e) => {
   sidebarEl.classList.toggle('sx');
+  menuIconEl.toggleAttribute('hidden');
+  exitIconEl.toggleAttribute('hidden');
 });
 
 menuLinksEl.forEach((link) => {
