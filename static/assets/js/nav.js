@@ -6,6 +6,7 @@ const exitIconEl = document.querySelector('i.fa-xmark');
 const menuIconEl = document.getElementById('menuSvg');
 // Event Listeners
 toggleBtnEl.addEventListener('click', (e) => {
+  e.preventDefault();
   sidebarEl.classList.toggle('sx');
   menuIconEl.toggleAttribute('hidden');
   exitIconEl.toggleAttribute('hidden');
@@ -14,10 +15,16 @@ toggleBtnEl.addEventListener('click', (e) => {
 menuLinksEl.forEach((link) => {
   link.addEventListener('click', () => {
     sidebarEl.classList.toggle('sx');
+    menuIconEl.toggleAttribute('hidden');
+    exitIconEl.toggleAttribute('hidden');
   });
 });
 
-loginBtnEl.addEventListener('click', () => sidebarEl.classList.toggle('sx'));
+loginBtnEl.addEventListener('click', () => {
+  sidebarEl.classList.toggle('sx');
+  menuIconEl.toggleAttribute('hidden');
+  exitIconEl.toggleAttribute('hidden');
+});
 
 $(document).ready(function () {
   // Add smooth scrolling to all links

@@ -165,7 +165,7 @@
 
 #readMoreButton {
   background: none;
-  border: none;
+  border: 1px solid #273c89;
   color: white;
   font-family: "Aileron", Sans-serif, serif;
   font-size: 18px;
@@ -194,6 +194,10 @@
   .aboutUsDescription {
 
   }
+
+  #locations-link{
+    bottom: auto;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -213,9 +217,8 @@
     margin-left: calc(50px / 2);
   }
 
-  .links.blogLink a {
-    display: none;
-    right: 0px;
+  #blogLinkImg{
+    right: 0;
   }
 
   .aboutUsDescriptionWrap {
@@ -312,5 +315,11 @@
 
   .aboutUsLink {
     font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #blogLink{
+    margin-left: 55px;
   }
 }
