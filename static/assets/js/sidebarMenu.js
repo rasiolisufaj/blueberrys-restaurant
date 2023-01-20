@@ -16,8 +16,6 @@ function locationSidebar(){
   asideLinksElement.classList.toggle('hidden');
   sideLocationsElement.classList.toggle('hidden');
   locationsLinkElement.classList.toggle('locations-blue');
-  console.log(asideLinksElement.classList);
-  console.log(sideLocationsElement.classList);
 }
 
 locationsLinkElement.addEventListener('click', () => locationSidebar());
