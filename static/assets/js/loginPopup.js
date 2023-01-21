@@ -8,6 +8,11 @@ const footerElement = document.getElementById('footer');
 const loginPopupElement = document.getElementById('loginSectionPopup');
 const contactUsSectionEl = document.getElementById('contactUsSection');
 const lastSectionOfContactEl = document.getElementById('lastSectionOfContactUs');
+const gallerySectionEl = document.getElementById('gallerySection');
+const waitlistSectionEl = document.getElementById('waitlistSection');
+const productListEl = document.getElementById('merchandiseProduct');
+const menuHeaderEl = document.getElementById('menuHeader');
+const menuHomeSectionEl = document.getElementById('homeSection');
 const urlParts = window.location.pathname.split('/');
 const url = urlParts[urlParts.length - 1];
 console.log(url);
@@ -21,6 +26,15 @@ function loginPopup(){
   } else if(url === 'contact_us.html'){
     lastSectionOfContactEl.classList.toggle('hidden');
     contactUsSectionEl.classList.toggle('hidden');
+  } else if(url === 'gallery.html'){
+    gallerySectionEl.classList.toggle('hidden');
+  } else if(url === 'waitlist.html'){
+    waitlistSectionEl.classList.toggle('hidden');
+  } else if(url === 'productList.html'){
+    productListEl.classList.toggle('hidden');
+  } else if(url === 'menu_breakfast.html' || url === 'menu_cocktails.html' || url === 'menu_lunch.html'){
+    menuHomeSectionEl.classList.toggle('hidden');
+    menuHeaderEl.classList.toggle('hidden');
   }
   footerElement.classList.toggle('hidden');
   loginPopupElement.classList.toggle('showUp');
