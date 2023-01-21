@@ -28,10 +28,11 @@
 <div id="root">
     <div class="sidebarMobile">
         <div><img src="../assets/img/logo.png" alt="Home"></div>
-        <a class="mobile-navbar-toggle" href="../index.html">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <a class="mobile-navbar-toggle" id="menuToggleBtn" href="../index.html">
+            <svg id="menuSvg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
             </svg>
+            <i class="fa-solid fa-xmark" hidden></i>
         </a>
     </div>
 
@@ -59,7 +60,7 @@
                     <li><a class="nav-link" href="../pages/gallery.html">Gallery</a></li>
                     <li><a class="nav-link" href="../pages/waitlist.html">Waitlist</a></li>
                     <li><a class="nav-link" href="../pages/productList.html">Merchandise</a></li>
-                    <button class="menu-btn">LOG IN</button>
+                    <button class="menu-btn" id="LoginBtn">LOG IN</button>
                 </ul>
             </nav>
         </div>
@@ -77,7 +78,7 @@
     </div>
 
     <div id="pageContainer">
-        <section class="contactUsSection">
+        <section class="contactUsSection" id="contactUsSection">
             <div class="ContactUsContainer">
                 <div class="LeftContactContainer">
                     <h2 class="ContactUsHeading">Contact Us</h2>
@@ -152,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section class="LastSectionOfContactUs">
+        <section class="LastSectionOfContactUs" id="lastSectionOfContactUs">
             <div class="leftLastSectionOfContactUs">
                 <img src="../assets/img/contactUs.jpg" alt="" class="img-fluid"/>
             </div>
@@ -190,7 +191,90 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <!-- Login Popup Section -->
+        <section class="loginSection" id="loginSectionPopup">
+            <div class="loginContainer">
+                <div class="loginInnerContainer flexContainer">
+                    <div class="registerContainer flexColumnContainer">
+                        <div class="BlueBerryLogo">
+                            <img src="../assets/img/LoginPageLogo.svg" alt="" class="blueberryLogoSvg">
+                        </div>
+                        <div class="registerText">
+                            <p><span class="breakParagraph"><span class="boldText">Register </span>or <span class="boldText">log in</span></span> to your account</p>
+                        </div>
+                    </div>
+                    <div class="registerFormContainer flexContainer">
+                        <div class="registerForm">
+                            <h2>Register</h2>
+                            <form>
+                                <div class="registerFormLabelInput">
+                                    <label for="name">Your name <span class="required">*</span></label>
+                                    <input type="text" name="name" id="nameInput" required>
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <label for="phone">Phone</label>
+                                    <input type="number" name="phone" id="phoneInput"  pattern="[0-9]{4}[0-9]{2}[0-9]{4}"
+                                    required>
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <label for="email">Email address <span class="required">*</span></label>
+                                    <input type="email" name="email" id="emailInput" required>
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <label for="password">Create password <span class="required">*</span></label>
+                                    <input type="password" name="password" id="registerPasswordInput" required>
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <label for="repeatPassword">Verify password <span class="required">*</span></label>
+                                    <input type="password" name="repeatPassword" id="repeatPasswordInput" required>
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <button class="registerFormButton" type="submit">REGISTER</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="loginForm">
+                            <h2>Login</h2>
+                            <form action="">
+                                <div class="registerFormLabelInput">
+                                    <label for="username">Username or email <span class="required">*</span></label>
+                                    <input type="text" name="username" id="usernameInput" required>
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <label for="password">Password <span class="required">*</span></label>
+                                    <input type="password" name="password" id="loginPasswordInput" required>
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <label class="rememberMeContainer">
+                                        <input type="checkbox">
+                                        <span id="rememberMeText">Remember Me</span>
+                                        <span class="checkmark" id="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="registerFormLabelInput">
+                                    <button class="loginFormButton" type="submit">LOG IN</button>
+                                </div>
+                                <div class="registerFormLabelInput lostPassword">
+                                    <button class="loginFormButton lost-bg" type="submit">LOST YOUR PASSWORD?</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="closeLoginIcon" id="closeLoginIcon"><p class="closeIcon">X</p></div>
+            </div>
+        </section>
+        <!-- Welcome Popup -->
+        <section id="WelcomePopupSection">
+            <div class="WelcomePopupImageContainer">
+                <img
+                src="../assets/img/1.welcomeLogo.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+        </section>
+        <footer id="footer">
             <div class="footerTop">
                 <div class="footerLeft">We are here to reward you for your support! Download Blueberry's Reward App now! (Coming soon)</div>
                 <div class="footerRight">
@@ -275,6 +359,11 @@
 <script src="../assets/js/loginPopup.js"></script>
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/sidebarMenu.js"></script>
+<script src="../assets/js/welcomePopup.js"></script>
+<script src="../assets/js/readMore.js"></script>
+<script src="../assets/js/nav.js"></script>
+<!--<script src="assets/vendor/swiper-bundle.min.js"></script>-->
+<script src="../assets/js/reviewsSwiper.js"></script>
 
 </body>
 
