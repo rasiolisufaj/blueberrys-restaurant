@@ -123,6 +123,23 @@
   object-fit: cover;
 }
 
+::-webkit-scrollbar {
+  height: 100%;
+  width: 3px;
+  background: #ecc36c;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #273c89;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
 @media (max-width: 1199px) {
   #home {
     height: auto !important;;

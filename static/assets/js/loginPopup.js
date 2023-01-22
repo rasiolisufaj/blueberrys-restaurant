@@ -15,7 +15,6 @@ const menuHeaderEl = document.getElementById('menuHeader');
 const menuHomeSectionEl = document.getElementById('homeSection');
 const urlParts = window.location.pathname.split('/');
 const url = urlParts[urlParts.length - 1];
-console.log(url);
 
 function loginPopup(){
   if(url === 'index.html'){
@@ -40,5 +39,10 @@ function loginPopup(){
   loginPopupElement.classList.toggle('showUp');
 }
 
+loginPopupElement.addEventListener('click', (e) => {
+  if(e.target.id === 'loginSectionPopup'){
+    loginPopup();
+  }
+})
 loginBtnElement.addEventListener("click",() => loginPopup());
 closeLoginElement.addEventListener('click', () => loginPopup());
