@@ -131,6 +131,8 @@
   display: flex;
 }
 
+.flex-reverse{flex-direction: row-reverse;}
+
 .flexContainer p{
   text-align: left;
 }
