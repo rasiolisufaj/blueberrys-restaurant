@@ -120,6 +120,9 @@
 }
 
 @media screen and (max-width: 768px){
+  .teamPage{
+  padding: 80px 30px 90px;
+  }
   .teamLinksContainer.flexContainer {
     flex-direction: column;
   }
