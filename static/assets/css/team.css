@@ -121,10 +121,21 @@
 
 @media screen and (max-width: 768px){
   .teamLinksContainer.flexContainer {
+    flex-direction: column;
+  }
+  .teamLinksContainer .teamTitle {
     flex-direction: row;
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+  .teamLinksContainer .teamLink{
+    align-self: flex-end;
+  }
+  .teamLink a h3{
+    margin-right: -30px;
   }
   .teamTitle img{
-    width: 90px;
+    width: 50px;
   }
   .teamTitle.flexContainer{
     flex-direction: row;

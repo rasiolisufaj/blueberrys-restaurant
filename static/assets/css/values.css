@@ -102,7 +102,15 @@
     padding: 40px 30px;
   }
   .linksContainer.flexContainer{
+    flex-direction: column;
+  }
+  .linksContainer .valuesTitle {
     flex-direction: row;
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  .valuesLink a h3{
+    margin-right: -30px;
   }
   .valuesText{
     font-size: 30px;
