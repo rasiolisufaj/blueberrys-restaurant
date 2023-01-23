@@ -13,6 +13,7 @@ const waitlistSectionEl = document.getElementById('waitlistSection');
 const productListEl = document.getElementById('merchandiseProduct');
 const menuHeaderEl = document.getElementById('menuHeader');
 const menuHomeSectionEl = document.getElementById('homeSection');
+const valuesSectionEl = document.getElementById('valuesSection');
 const urlParts = window.location.pathname.split('/');
 const url = urlParts[urlParts.length - 1];
 
@@ -34,6 +35,8 @@ function loginPopup(){
   } else if(url === 'menu_breakfast.html' || url === 'menu_cocktails.html' || url === 'menu_lunch.html'){
     menuHomeSectionEl.classList.toggle('hidden');
     menuHeaderEl.classList.toggle('hidden');
+  } else if(url === 'values.html'){
+    valuesSectionEl.classList.toggle('hidden');
   }
   footerElement.classList.toggle('hidden');
   loginPopupElement.classList.toggle('showUp');

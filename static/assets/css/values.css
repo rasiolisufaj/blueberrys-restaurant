@@ -96,3 +96,39 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .valuesContainer{
+    padding: 40px 30px;
+  }
+  .linksContainer.flexContainer{
+    flex-direction: row;
+  }
+  .valuesText{
+    font-size: 30px;
+  }
+  .teamText{
+    font-size: 20px;
+  }
+  .itemDescription{
+    padding: 35px 20px;
+  }
+  .itemDescription p {
+    text-align: justify;
+    line-height: 21.6px;
+  }
+  .valueItems.flexContainer{
+    flex-direction: column;
+  }
+  .valueItems > div{
+    width: 100%;
+  }
+  .itemImage img{
+    width: 100%;
+  }
+  .valuesBanner img {
+    object-fit: cover;
+    height: 400px;
+  }
+}
