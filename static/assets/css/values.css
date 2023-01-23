@@ -4,6 +4,7 @@
   align-items: center;
   font-size: Aileron, sans-serif;
   color: #273c89;
+  padding-bottom: 60px;
 }
 
 .elementWrapper{
@@ -28,6 +29,10 @@
 
 .valuesBanner {
   text-align: center;
+}
+
+.valuesBanner img{
+  width: 100%;
 }
 
 .linksContainer a {
@@ -88,6 +93,6 @@
 }
 
 .itemImage img{
-  /* width: 100%; */
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
