@@ -1,0 +1,161 @@
+.teamPage{
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  font-family: Aileron, sans-serif;
+  background: #273c89;
+  color: #fff;
+  padding: 80px 60px 90px;
+}
+
+.teamContainer{
+  /* padding?  */
+  justify-content: center;
+}
+
+.teamLinksContainer {
+  justify-content: space-between;
+  /* padding-bottom: ;? */
+  align-items: center;
+}
+
+.linksContainer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.teamLink {
+  margin-top: -20px;
+}
+
+.teamLink a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.teamLink a:hover > img {
+  transform: scale(1.2);
+}
+
+.meetTeamText{
+  font-size: 48px;
+  font-weight: 900;
+  padding-left: 1rem;
+}
+
+.teamValuesText{
+  font-size: 30px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.teamParagraph {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 1.6em;
+}
+
+.teamParagraph p {
+  padding: 2rem 0;
+}
+
+/* Team Members */
+.teamMembers{
+  justify-content: space-between;
+}
+
+.member{
+  width: 30%;
+}
+
+.memberImageContainer{
+  width: 100%;
+}
+
+.memberImageContainer img {
+  height: 325px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  width: 100%;
+}
+
+.member h3{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.member p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.bePartOfTheTeam{
+  padding-top: 100px;
+  justify-content: end;
+  align-items: center;
+}
+
+.bePartText{
+  font-size: 24px;
+  margin-right: 2rem;
+}
+
+.applyBtn{
+  width: 30%;
+  font-size: 20px;
+  font-weight: 900;
+  color: #273c89;
+  padding: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1200px){
+  .meetTeamText{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .teamLinksContainer.flexContainer {
+    flex-direction: row;
+  }
+  .teamTitle img{
+    width: 90px;
+  }
+  .teamTitle.flexContainer{
+    flex-direction: row;
+  }
+  .teamTitle .meetTeamText{font-size: 30px;}
+  .teamLink .teamValuesText{font-size: 20px;}
+  .member h3{
+    font-size: 18px;
+    text-align: center;
+  }
+  .member p{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .teamMembers.flexContainer{
+    flex-direction: column;
+  }
+
+  .teamMembers .member {
+    width: 100%;
+  }
+
+  .bePartOfTheTeam.flexContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .applyBtn{
+    width: 100%;
+  }
+}
