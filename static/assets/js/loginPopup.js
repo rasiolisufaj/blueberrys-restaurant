@@ -14,6 +14,7 @@ const productListEl = document.getElementById('merchandiseProduct');
 const menuHeaderEl = document.getElementById('menuHeader');
 const menuHomeSectionEl = document.getElementById('homeSection');
 const valuesSectionEl = document.getElementById('valuesSection');
+const teamSectionEl = document.getElementById('teamSection');
 const urlParts = window.location.pathname.split('/');
 const url = urlParts[urlParts.length - 1];
 
@@ -37,6 +38,8 @@ function loginPopup(){
     menuHeaderEl.classList.toggle('hidden');
   } else if(url === 'values.html'){
     valuesSectionEl.classList.toggle('hidden');
+  } else if(url === 'team.html'){
+    teamSectionEl.classList.toggle('hidden');
   }
   footerElement.classList.toggle('hidden');
   loginPopupElement.classList.toggle('showUp');
