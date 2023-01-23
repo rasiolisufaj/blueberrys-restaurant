@@ -9,13 +9,11 @@
 }
 
 .teamContainer{
-  /* padding?  */
   justify-content: center;
 }
 
 .teamLinksContainer {
   justify-content: space-between;
-  /* padding-bottom: ;? */
   align-items: center;
 }
 

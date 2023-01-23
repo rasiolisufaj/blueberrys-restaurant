@@ -24,7 +24,6 @@
 .valuesContainer{
   padding: 80px 50px 50px;
   justify-content: center;
-  /* width: 100%; */
 }
 
 .valuesBanner {
@@ -59,13 +58,13 @@
 
 .valuesText{
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 900;
   padding-left: 1rem;
 }
 
 .teamText{
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
   display: inline-block;
 }
 
