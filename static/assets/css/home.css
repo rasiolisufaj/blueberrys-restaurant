@@ -125,13 +125,14 @@
 
 ::-webkit-scrollbar {
   height: 100%;
-  width: 3px;
+  width: 8px;
   background: #ecc36c;
   padding-right: 5px;
   margin-right: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
   background: #273c89;
   margin-right: 5px;
 }

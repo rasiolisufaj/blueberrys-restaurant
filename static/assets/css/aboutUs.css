@@ -150,6 +150,7 @@
   display: flex;
   position: relative;
   height: 343px;
+  margin-left: 0;
 }
 
 .aboutUsPara {
@@ -192,9 +193,27 @@
   flex-direction: row;
 }
 
-@media (max-width: 1199px) {
+/* Media Queries */
+@media (max-width: 1400px) {
   .aboutUsDescription {
+    margin: 0px 0px 0px -50px;
+  }
+}
 
+@media (max-width: 1280px) {
+  .aboutUsDescription {
+    margin: 0px 0px 0px -50px;
+  }
+
+  .positionRelative-sm {
+    position: relative;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutUsDescriptionWrap{
+    max-width: 65%;
+    margin-left: 40px;
   }
 
   #locations-link{
@@ -202,13 +221,7 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .aboutUsDescription {
-
-  }
-}
-
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .links {
     margin-right: calc(-50px / 2);
     margin-left: calc(-50px / 2);
@@ -223,35 +236,6 @@
     right: 0;
   }
 
-  .aboutUsDescriptionWrap {
-  }
-}
-
-@media (max-width: 1400px) {
-  .aboutUsDescription {
-    margin: 0px 0px 0px -50px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .aboutUsDescription {
-    margin: 0px 0px 0px -50px;
-  }
-
-  .aboutUsPara {
-
-  }
-
-  #readMoreButton {
-
-  }
-
-  .positionRelative-sm {
-    position: relative;
-  }
-}
-
-@media (min-width: 768px) {
   .aboutHeader h2 {
     width: 50%;
   }
@@ -263,9 +247,14 @@
   .aboutUsDescriptionWrap2 {
     width: 100%;
   }
+
+  .aboutUsDescription {
+    margin-left: -65px;
+  }
+
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .aboutHeader h2 {
     width: 60%;
     font-size: 30px;
@@ -295,7 +284,8 @@
 
   .aboutUsDescriptionWrap {
     max-width: 314px;
-    margin-left: 0px;
+    position: relative;
+    top: -295px;
   }
 
   .aboutUsDescriptionWrap2 {
@@ -304,13 +294,17 @@
 
 }
 
-@media (max-width: 733px) {
-  .aboutUsDescription {
-
+@media screen and (max-width: 500px) {
+  #blogLink{
+    margin-left: 55px;
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 436px) {
+  #about{
+    padding-bottom: 0;
+  }
+
   .aboutHeader h2 {
     font-size: 17px;
   }
@@ -318,10 +312,22 @@
   .aboutUsLink {
     font-size: 17px;
   }
-}
 
-@media screen and (max-width: 500px) {
-  #blogLink{
-    margin-left: 55px;
+  .aboutUsDescriptionWrap{
+    top: -240px;
   }
+
+  .aboutUsDescription {
+    border-width: 28px 20px 0px 0px;
+    overflow: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    background: #273c89;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  
 }

@@ -25,7 +25,7 @@
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        aboutUsDescription.style.height = "700px";
+        aboutUsDescription.style.height = "690px";
         downicon.style.display = "none";
         upicon.style.display = "inline";
         aboutUsDescription.style.transition = "height 1s ease";
