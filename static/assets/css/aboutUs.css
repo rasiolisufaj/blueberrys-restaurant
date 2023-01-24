@@ -87,7 +87,7 @@
 .aboutUsBackgroundImageWrap {
   position: relative;
   width: 100%;
-  padding-bottom: 0;
+  padding-bottom: 200px;
 }
 
 .aboutUsBackgroundImage {
@@ -125,9 +125,10 @@
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
-  position: relative;
+  /* margin-right: auto; */
+  position: absolute;
   max-width: 75%;
+  bottom: 80px;
 }
 
 .aboutUsDescriptionWrap2 {
@@ -148,6 +149,7 @@
   flex-wrap: wrap;
   display: flex;
   position: relative;
+  height: 343px;
 }
 
 .aboutUsPara {
