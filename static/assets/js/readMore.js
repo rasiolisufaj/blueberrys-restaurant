@@ -12,7 +12,7 @@
     var downicon = document.getElementById("aboutUsArrowDown");
     var aboutContainer = document.getElementById("about");
     // let height = window.innerHeight ;
-    if (screen.width >= 800) {
+    if (screen.width >= 800 || screen.width <= 436) {
       if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
