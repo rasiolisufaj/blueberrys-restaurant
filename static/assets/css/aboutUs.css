@@ -217,7 +217,7 @@
   }
 
   #locations-link{
-    bottom: auto;
+    bottom: 0;
   }
 }
 
