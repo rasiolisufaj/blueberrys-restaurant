@@ -34,7 +34,7 @@ $(document).ready(function () {
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 1000, function () {
+      }, 500, function () {
         window.location.hash = hash; // Add hash (#) to URL when done scrolling (default click behavior)
       });
     }
