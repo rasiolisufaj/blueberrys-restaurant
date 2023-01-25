@@ -138,7 +138,7 @@
   }
 
   .blogCard {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-bottom: 30px;
   }
 
