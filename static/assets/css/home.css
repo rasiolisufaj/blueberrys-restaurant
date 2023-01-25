@@ -123,6 +123,23 @@
   object-fit: cover;
 }
 
+.sloganPar {
+  height: 50px;
+  margin-top: 35px;
+  margin-bottom: 7px;
+}
+
+.sloganPar span {
+  margin-top: -4px;
+  font-style: inherit;
+  font-weight: inherit;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 ::-webkit-scrollbar {
   height: 100%;
   width: 8px;
