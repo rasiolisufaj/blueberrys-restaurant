@@ -181,3 +181,13 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 500px){
+  .memberImageContainer{
+    text-align: center;
+  }
+  .memberImageContainer img{
+    width: 235px;
+    height: 298px;
+  }
+}
