@@ -117,12 +117,17 @@
   .meetTeamText{
     font-size: 40px;
   }
+  .teamLink{
+    margin-top: 0;
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 768px){
   .teamPage{
   padding: 80px 30px 90px;
   }
+  .teamTitle .meetTeamText{font-size: 28px !important;}
   .teamLinksContainer.flexContainer {
     flex-direction: column;
   }
@@ -149,6 +154,11 @@
     font-size: 18px;
     text-align: center;
   }
+
+  .teamParagraph {
+    text-align: center;
+  }
+
   .member p{
     font-size: 18px;
     text-align: center;

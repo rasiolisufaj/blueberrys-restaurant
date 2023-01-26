@@ -97,32 +97,44 @@
 }
 
 /* Media Query */
+@media screen and (max-width: 1200px) {
+  .valuesContainer{
+    padding: 80px 35px 50px;
+  }
+  .valuesDescription .elementWrapper{
+    max-width: fit-content;
+    padding: 0 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .valuesContainer{
     padding: 40px 30px;
   }
   .linksContainer.flexContainer{
-    flex-direction: column;
+    flex-direction: row;
   }
   .linksContainer .valuesTitle {
     flex-direction: row;
     align-self: flex-start;
-    margin-bottom: 10px;
   }
   .linksContainer .valuesLink {
-    align-self: flex-end;
+    align-self: baseline;
   }
   .valuesLink a h3{
-    margin-right: -30px;
+    margin-right: -40px;
   }
   .valuesText{
     font-size: 30px;
   }
   .teamText{
-    font-size: 20px;
+    font-size: 25px;
   }
   .itemDescription{
     padding: 35px 20px;
+  }
+  .itemDescription h3 {
+    font-size: 17px;
+    font-weight: 800;
   }
   .itemDescription p {
     text-align: justify;
@@ -133,6 +145,10 @@
   }
   .valueItems > div{
     width: 100%;
+  }
+  .itemImage{
+    width: 358px;
+    height: 316px;
   }
   .itemImage img{
     width: 100%;
