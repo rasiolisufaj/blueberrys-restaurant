@@ -2,8 +2,7 @@
   "use strict";
   const dots = document.getElementById("dots");
   const moreText = document.getElementById("more");
-  const moreParagraphs = document.querySelectorAll('#more p.aboutUsPara');
-  console.log(moreParagraphs);
+  const aboutUsPara = document.querySelectorAll('.aboutUsPara');
   const btnText = document.getElementById("readMoreText");
   const aboutUsDescription = document.getElementById("aboutUsDescription");
   const upicon = document.getElementById("aboutUsArrowUp");
