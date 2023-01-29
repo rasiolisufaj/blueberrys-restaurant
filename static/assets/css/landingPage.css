@@ -1,0 +1,82 @@
+#landingPage{
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.containerFlex{
+  display: flex;
+  flex-direction: row;
+}
+
+.containerFlexColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.w30{width: 30%;}
+.w70{width: 70%;}
+
+.pageHeader {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+.welcomeLogoImgContainer{
+  width: 333px;
+  height: 162px;
+  margin: 2rem 0;
+}
+
+.welcomeLogoImgContainer img {
+  object-fit: cover;
+  width: 88%;
+  height: 100%;
+}
+
+/* Restaurant Section */
+.restaurantSection{
+  background: url('../img/backgroundBlog.png') no-repeat center center/cover;
+}
+
+.pageDescription h2 {
+  color: #273c89;
+  font-size: 46px;
+}
+
+.locationsBox{
+  justify-content: space-around;
+}
+
+.layoutContainer{
+  position: relative;
+  border: 2px solid red;
+  max-width: 400px;
+}
+
+.layoutImageContainer img {
+  height: 400px;
+  object-fit: cover;
+}
+.layoutLocationsContainer {
+  background: #273c89;
+  padding: 4rem;
+}
+
+.layoutLocationsContainer .location {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+}
+
+.layoutLocationsContainer .location .address h3 {
+  font-size: 19px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.layoutLocationsContainer .location .address p {
+  font-size: 16px;
+  margin-top: 10px;
+}
