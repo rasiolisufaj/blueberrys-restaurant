@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: url('../img/backgroundBlog.png');
+  background: url('../img/backgroundBlog2.png');
 }
 
 .containerFlex{
@@ -123,9 +123,92 @@
   margin-top: 10px;
 }
 
+/* Media Queries */
+@media screen and (max-width: 1240px) {
+  #landingPage{
+    background: url('../img/backgroundBlog2.png') center center/cover;
+  }
+  .locationsBox{
+    max-width: 1040px;
+  }
+
+  .descriptionHeading{
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .layoutLocationsContainer .location .address {
     margin-left: 0;
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1124px) {
+  .locationsBox{
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 1024px){
+  .locationsBox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .layoutContainer{
+    width: 50%;
+    height: 450px;
+  }
+  
+  .layoutImageContainer{
+    width: 100%;
+    height: 400px;
+  }
+  
+  .layoutLocationsContainer{
+    position: relative;
+    left: -45px;
+    bottom: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    margin-top: -100px;
+    justify-content: flex-start;
+  }
+
+  .layoutLocationsContainer.northMyrtleBeach,
+  .layoutLocationsContainer.wilmington {
+    left: -45px;
+  }
+
+  .layoutContainer.layout-nmb {
+    margin-bottom: 5rem;
+  }
+
+  .layoutLocationsContainer .location .address {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .layoutLocationsContainer .location .locationsIcon {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .pageDescription h2{
+    font-size: 38px;
+  }
+  .layoutContainer{
+    width: 65%;
+  }
+  .layoutLocationsContainer{
+    padding: 2rem;
   }
 }
