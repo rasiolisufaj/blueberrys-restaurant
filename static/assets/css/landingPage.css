@@ -2,6 +2,7 @@
   min-height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background: url('../img/backgroundBlog.png');
 }
 
 .containerFlex{
@@ -35,7 +36,7 @@
 
 /* Restaurant Section */
 .restaurantSection{
-  background: url('../img/backgroundBlog.png') no-repeat center center/cover;
+  
 }
 
 .pageDescription{
@@ -65,6 +66,12 @@
   position: relative;
   margin: 0 auto;
   width: 32%;
+  transition: transform 0.5s ease;
+}
+
+.layoutContainer:hover{
+  cursor: pointer;
+  transform: translateY(-15px);
 }
 
 .layoutImageContainer{
@@ -72,7 +79,7 @@
 }
 
 .layoutImageContainer img {
-  height: 400px;
+  height: 353px;
   width: 100%;
   object-fit: cover;
 }
