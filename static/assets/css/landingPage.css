@@ -35,16 +35,16 @@
 }
 
 /* Restaurant Section */
-.restaurantSection{
-  
+.restaurantSection .elementWrapper{
+  display: flex;
+  width: 100%;
 }
 
 .pageDescription{
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .descriptionHeading{
-  margin-left: -43rem;
   padding: 2rem 0;
 }
 
@@ -60,12 +60,13 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 .layoutContainer{
   position: relative;
   margin: 0 auto;
-  width: 32%;
+  width: 30%;
   transition: transform 0.5s ease;
 }
 
@@ -90,7 +91,7 @@
   width: 100%;
   position: absolute;
   bottom: -15px;
-  left: -45px;
+  left: -50px;
 }
 
 .locationsIcon{
@@ -120,4 +121,11 @@
 .layoutLocationsContainer .location .address p {
   font-size: 16px;
   margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .layoutLocationsContainer .location .address {
+    margin-left: 0;
+    align-items: flex-start;
+  }
 }
