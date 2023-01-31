@@ -71,7 +71,7 @@
 
 .postImageContainer img {
   width: 100%;
-  height: 258px;
+  /* height: auto; */
   object-fit: cover;
 }
 
@@ -104,6 +104,26 @@
   text-decoration: underline;
 }
 
+.tabsWrapper .linkArrow{
+  transform: rotate(90deg);
+  font-family: monospace;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+  transition: 0.5s all;
+  margin: 0 5px 0 5px;
+  padding: 0 5px 0px 0px;
+}
+
+.activeLink{
+  font-weight: 900;
+}
+
+.tabsWrapper a.activeLink .linkArrow{
+  transform: rotate(270deg);
+  padding: 0 5px 0 0;
+}
+
 .tabsContentWrapper{
   font-size: 20px;
   font-weight: 400;
@@ -123,4 +143,52 @@
 
 .tabsContentWrapper.tutorial .tabContentList li {
   list-style-type: "- ";
+}
+
+/* Media Queries */
+@media(max-width: 1024px){
+  .blogPost,
+  .discoverContent{
+    padding: 0 10px;
+  }
+}
+
+@media(max-width: 800px){
+  .tabsWrapper a {
+    font-size: 22px;
+  }
+}
+
+@media(max-width: 768px){
+  .discoverHeader h1{
+    font-size: 30px;
+    padding: 10px;
+  }
+  .blogContent{
+    padding: 0;
+  }
+  .discoverContent.containerFlex{
+    flex-direction: column;
+  }
+  .paraContent.width50{
+    width: 100%;
+    padding: 0 0 15px;
+  }
+  .blogPost{
+    margin-top: 10px;
+  }
+  .blogPost.containerFlex,
+  .blogPost.row-reverse{
+    flex-direction: column;
+  }
+  .postImageContainer.width45,
+  .postContent.width55{
+    width: 100%;
+  }
+  .postImageContainer img {
+    height: auto;
+  }
+  .blogsWrapper{
+    padding-bottom: 60px;
+  }
 }

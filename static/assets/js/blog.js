@@ -22,89 +22,116 @@ const post3TutorialElement = document.getElementById('post3Tutorial');
 post1Benefits.addEventListener('click', e => {
   e.preventDefault();
   post1BenefitsElement.classList.remove('hidden');
+  post1Benefits.classList.add('activeLink');
   if(!post1IngredientsElement.classList.contains('hidden')){
     post1IngredientsElement.classList.add('hidden');
+    post1Ingredients.classList.remove('activeLink');
   } else if(!post1TutorialElement.classList.contains('hidden')){
     post1TutorialElement.classList.add('hidden');
+    post1Tutorial.classList.remove('activeLink');
   }
 });
 
 post1Ingredients.addEventListener('click', e => {
   e.preventDefault();
   post1IngredientsElement.classList.remove('hidden');
+  post1Ingredients.classList.add('activeLink');
   if(!post1BenefitsElement.classList.contains('hidden')){
     post1BenefitsElement.classList.add('hidden');
+    post1Benefits.classList.remove('activeLink');
   } else if(!post1TutorialElement.classList.contains('hidden')){
     post1TutorialElement.classList.add('hidden');
+    post1Tutorial.classList.remove('activeLink');
   }
 });
 
 post1Tutorial.addEventListener('click', e => {
   e.preventDefault();
   post1TutorialElement.classList.remove('hidden');
+  post1Tutorial.classList.add('activeLink');
   if(!post1BenefitsElement.classList.contains('hidden')){
     post1BenefitsElement.classList.add('hidden');
+    post1Benefits.classList.remove('activeLink');
   } else if(!post1IngredientsElement.classList.contains('hidden')){
     post1IngredientsElement.classList.add('hidden');
+    post1Ingredients.classList.remove('activeLink');
   }
 });
 
 post2Benefits.addEventListener('click', e => {
   e.preventDefault();
   post2BenefitsElement.classList.remove('hidden');
+  post2Benefits.classList.add('activeLink');
   if(!post2IngredientsElement.classList.contains('hidden')){
     post2IngredientsElement.classList.add('hidden');
+    post2Ingredients.classList.remove('activeLink');
   } else if(!post2TutorialElement.classList.contains('hidden')){
     post2TutorialElement.classList.add('hidden');
+    post2Tutorial.classList.remove('activeLink');
   }
 });
 
 post2Ingredients.addEventListener('click', e => {
   e.preventDefault();
   post2IngredientsElement.classList.remove('hidden');
+  post2Ingredients.classList.add('activeLink');
   if(!post2BenefitsElement.classList.contains('hidden')){
     post2BenefitsElement.classList.add('hidden');
+    post2Benefits.classList.remove('activeLink');
   } else if(!post2TutorialElement.classList.contains('hidden')){
     post2TutorialElement.classList.add('hidden');
+    post2Tutorial.classList.remove('activeLink');
   }
 });
 
 post2Tutorial.addEventListener('click', e => {
   e.preventDefault();
   post2TutorialElement.classList.remove('hidden');
+  post2Tutorial.classList.add('activeLink');
   if(!post2BenefitsElement.classList.contains('hidden')){
     post2BenefitsElement.classList.add('hidden');
+    post2Benefits.classList.remove('activeLink');
   } else if(!post2IngredientsElement.classList.contains('hidden')){
     post2IngredientsElement.classList.add('hidden');
+    post2Ingredients.classList.remove('activeLink');
   }
 });
 
 post3Benefits.addEventListener('click', e => {
   e.preventDefault();
   post3BenefitsElement.classList.remove('hidden');
+  post3Benefits.classList.add('activeLink');
   if(!post3IngredientsElement.classList.contains('hidden')){
     post3IngredientsElement.classList.add('hidden');
+    post3Ingredients.classList.remove('activeLink');
   } else if(!post3TutorialElement.classList.contains('hidden')){
     post3TutorialElement.classList.add('hidden');
+    post3Tutorial.classList.remove('activeLink');
   }
 });
 
 post3Ingredients.addEventListener('click', e => {
   e.preventDefault();
   post3IngredientsElement.classList.remove('hidden');
+  post3Ingredients.classList.add('activeLink');
   if(!post3BenefitsElement.classList.contains('hidden')){
     post3BenefitsElement.classList.add('hidden');
+    post3Benefits.classList.remove('activeLink');
   } else if(!post3TutorialElement.classList.contains('hidden')){
     post3TutorialElement.classList.add('hidden');
+    post3Tutorial.classList.remove('activeLink');
   }
 });
 
 post3Tutorial.addEventListener('click', e => {
   e.preventDefault();
   post3TutorialElement.classList.remove('hidden');
+  post3Tutorial.classList.add('activeLink');
   if(!post3BenefitsElement.classList.contains('hidden')){
     post3BenefitsElement.classList.add('hidden');
+    post3Benefits.classList.remove('activeLink');
   } else if(!post3IngredientsElement.classList.contains('hidden')){
     post3IngredientsElement.classList.add('hidden');
+    post3Ingredients.classList.remove('activeLink');
   }
 });
