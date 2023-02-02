@@ -14,9 +14,10 @@
   flex-wrap: wrap;
   margin-bottom: 25px;
 }
-.blogHeader-sm {
+
+/* .blogHeader-sm {
   display: none;
-}
+} */
 
 .blogHeader a {
   color: #273c89;
@@ -163,6 +164,18 @@
   }
 
 }
+
+@media (max-width: 1200px){
+  .homeBlogLink{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+  .columnWrapRel.homeBlogLink{
+    padding: 0;
+  }
+}
+
 
 @media (max-width: 780px) {
   .blogCard-3 {
