@@ -2,7 +2,7 @@
   /*height: 1000px;*/
   /*padding: 40px;*/
   color: #273c89;
-  padding: 70px 40px 70px 40px;
+  /* padding: 70px 0px 70px 0px; */
 }
 
 .sectionReviewsBody {
@@ -147,6 +147,7 @@
   /*justify-content: space-between;*/
   align-items: center;
   margin-top: 100px;
+  padding: 0 10px;
 }
 
 .loginToReviewDiv {
@@ -373,4 +374,38 @@
   /* .carousel-indicators {
     display: none !important;
   } */
+}
+
+@media (max-width: 420px){
+  .reviewCard{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 380px){
+  .reviewCard{
+    padding: 10px;  
+  }
+  .review-stars-block{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 330px){
+  #reviews{
+    padding: 70px 0;
+  }
+  .reviewsHeader{
+    justify-content: center;
+  }
+  .loginToReviewSection{
+    padding: 0 10px;
+  }
+  .review-stars-block{
+    font-size: 20px;
+  }
+
+  .reviewDescription{
+    font-size: 18px;
+  }
 }

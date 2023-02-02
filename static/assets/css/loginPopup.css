@@ -207,6 +207,12 @@
   transform: rotate(45deg);
 }
 
+@media (max-width: 1024px){
+  .loginSection{
+    height: 100%;
+  }
+}
+
 @media (min-width: 900px) and (max-width: 1024px){
   .loginContainer{
     width: 90%;
