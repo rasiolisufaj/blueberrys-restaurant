@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .accordion {
+      background: #f9f9f9;
+    }
+
+    .accordion-tabs {
+      display: none;
+    }
+
+    .accordion-tabs :focus {
+      outline: none;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .accordion-item:last-child {
+      border: none;
+    }
+
+    .accordion-item__label {
+      margin: 0;
+      padding: 1.25rem;
+      cursor: pointer;
+      transition: padding 0.2s ease;
+      position: relative;
+    }
+
+    .accordion-item__label:after {
+      content: "";
+      height: 4px;
+      width: 4px;
+      position: absolute;
+      top: -4px;
+      right: 1.25rem;
+      bottom: 0;
+      margin: auto;
+      border: 3px solid transparent;
+      border-radius: 2px;
+      transform: rotate(45deg);
+      border-color: transparent #447fff #447fff transparent;
+      opacity: 1;
+      transition: opacity 0.1s ease;
+    }
+
+    .accordion-item__label:hover {
+      background: #d3e1ff;
+    }
+
+    .accordion-item__container {
+      padding: 0 1.25em;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
+    }
+
+    .accordion-active {
+      background: rgba(68, 127, 255, .1);
+    }
+
+    .accordion-active .accordion-item__label {
+      padding-bottom: 0;
+      cursor: inherit;
+    }
+
+    .accordion-active .accordion-item__label:hover {
+      background: none;
+    }
+
+    .accordion-active .accordion-item__label:after {
+      opacity: 0;
+    }
+
+    .accordion-active .accordion-item__container {
+      padding: 1.25em;
+      height: auto;
+      opacity: 1;
+    }
+
+    .accordion-active .accordion-item__container p:first-child,
+    .accordion-active .accordion-item__container h1:first-child,
+    .accordion-active .accordion-item__container h2:first-child,
+    .accordion-active .accordion-item__container h3:first-child,
+    .accordion-active .accordion-item__container h4:first-child,
+    .accordion-active .accordion-item__container h5:first-child,
+    .accordion-active .accordion-item__container h6:first-child {
+      margin-top: 0;
+    }
+
+    .accordion-active .accordion-item__container p:last-child,
+    .accordion-active .accordion-item__container h1:last-child,
+    .accordion-active .accordion-item__container h2:last-child,
+    .accordion-active .accordion-item__container h3:last-child,
+    .accordion-active .accordion-item__container h4:last-child,
+    .accordion-active .accordion-item__container h5:last-child,
+    .accordion-active .accordion-item__container h6:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 600px) {
+      .accordion-tabs {
+        display: flex;
+        background: rgba(68, 127, 255, .1);
+      }
+
+      .accordion-tabs .accordion-tab {
+        background: rgba(68, 127, 255, .1);
+        padding: 1rem 2rem;
+        font: inherit;
+        flex: 1;
+        border: none;
+        cursor: pointer;
+        transition: background 0.1s ease;
+      }
+
+      .accordion-tabs .accordion-tab:hover {
+        background: rgba(249, 249, 249, .01);
+      }
+
+      .accordion-tabs .accordion-tab:last-child {
+        border-right: 0;
+      }
+
+      .accordion-tabs .accordion-tab.accordion-active {
+        background: #f9f9f9;
+      }
+
+      .accordion-item {
+        padding: 2.4rem;
+        display: none;
+        border: none;
+        background: #f9f9f9;
+        min-height: 260px;
+      }
+
+      .accordion-item__label,
+      .accordion-item__container {
+        padding: 0;
+        transition: inherit;
+      }
+
+      .accordion-item__label {
+        margin-bottom: 1.5rem;
+      }
+
+      .accordion-item.accordion-active {
+        display: block;
+      }
+
+      .accordion-item.accordion-active .accordion-item__container {
+        padding: 0;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .accordion {
+      box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, .7);
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    @media (min-width: 600px) {
+      .accordion {
+        max-width: 600px;
+      }
+    }
+
+    .accordion+p {
+      color: rgba(255, 255, 255, .8);
+      font-weight: 300;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    body {
+      background: #3b70fc;
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="accordion">
+    <section class="accordion-tabs">
+      <button class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">Tab 1</button>
+      <button class="accordion-tab" data-actab-group="0" data-actab-id="1">Tab 2</button>
+      <button class="accordion-tab" data-actab-group="0" data-actab-id="2">Tab 3</button>
+      <button class="accordion-tab" data-actab-group="0" data-actab-id="3">Tab 4</button>
+      <button class="accordion-tab" data-actab-group="0" data-actab-id="4">Tab 5</button>
+    </section>
+    <section class="accordion-content">
+      <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
+        <h4 class="accordion-item__label">Tab 1</h4>
+        <div class="accordion-item__container">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere minus,
+            ipsa dolore animi quis alias eos, porro corporis quod esse quidem. Maxime a aperiam perspiciatis architecto?
+          </p>
+        </div>
+      </article>
+      <article class="accordion-item" data-actab-group="0" data-actab-id="1">
+        <h4 class="accordion-item__label">Tab 2</h4>
+        <div class="accordion-item__container">
+          <p>reprehenderit temporibus, assumenda cupiditate consequatur soluta odit ex repudiandae delectus cumque,
+            provident hic sed quod? Quis, nam. Similique eaque quae vel recusandae expedita qui sint fugiat, nisi
+            assumenda et ex molestiae atque deleniti magni, ipsam libero!</p>
+        </div>
+      </article>
+      <article class="accordion-item" data-actab-group="0" data-actab-id="2">
+        <h4 class="accordion-item__label">Tab 3</h4>
+        <div class="accordion-item__container">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere minus,
+            ipsa dolore animi quis alias eos, porro corporis quod esse quidem. Maxime a aperiam perspiciatis architecto?
+          </p>
+        </div>
+      </article>
+      <article class="accordion-item" data-actab-group="0" data-actab-id="3">
+        <h4 class="accordion-item__label">Tab 4</h4>
+        <div class="accordion-item__container">
+          <p>psum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere minus, ipsa
+            dolore</p>
+        </div>
+      </article>
+      <article class="accordion-item" data-actab-group="0" data-actab-id="4">
+        <h4 class="accordion-item__label">Tab 5</h4>
+        <div class="accordion-item__container">
+          <p>aborum similique facere quae. Quo cupiditate ad iste qui aliquam quibusdam quod, ut doloremque ipsa quas
+            soluta, sapiente possimus, tempora rerum ab nesciunt vitae molestiae dolor earum illum repudiandae! Voluptas
+            sed, soluta facere nisi perferendis cupiditate! Dicta et praesentium non ab, quod commodi, illo saepe
+            accusantium tempora autem eos nemo. Animi, pariatur placeat laudantium dolorib!</p>
+        </div>
+      </article>
+    </section>
+  </section>
+
+  <p>Scale down the browser to view the mobile version</p>
+
+  <script>
+    const labels = document.querySelectorAll(".accordion-item__label");
+    const tabs = document.querySelectorAll(".accordion-tab");
+
+    function toggleShow() {
+      const target = this;
+      const item = target.classList.contains("accordion-tab") ?
+        target :
+        target.parentElement;
+      const group = item.dataset.actabGroup;
+      const id = item.dataset.actabId;
+
+      tabs.forEach(function (tab) {
+        if (tab.dataset.actabGroup === group) {
+          if (tab.dataset.actabId === id) {
+            tab.classList.add("accordion-active");
+          } else {
+            tab.classList.remove("accordion-active");
+          }
+        }
+      });
+
+      labels.forEach(function (label) {
+        const tabItem = label.parentElement;
+
+        if (tabItem.dataset.actabGroup === group) {
+          if (tabItem.dataset.actabId === id) {
+            tabItem.classList.add("accordion-active");
+          } else {
+            tabItem.classList.remove("accordion-active");
+          }
+        }
+      });
+    }
+
+    labels.forEach(function (label) {
+      label.addEventListener("click", toggleShow);
+    });
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", toggleShow);
+    });
+  </script>
+
+</body>
+
+</html>
