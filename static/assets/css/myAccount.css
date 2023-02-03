@@ -1,0 +1,168 @@
+.ProfilePageSection {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 100px 70px 75px;
+  background: #f3f6ff;
+  font-family: "Aileron", Sans-serif;
+}
+.NameAndPhotoContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  margin-bottom: 50px;
+}
+.RightNameAndPhotoContainer {
+  color: #273c89;
+  font-size: 36px;
+  font-weight: 900;
+}
+.LeftNameAndPhotoContainer {
+  position: relative;
+}
+.imagePhotoIcon {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 156px;
+  height: 156px;
+}
+.cameraButtonOfPhoto {
+  width: 33px;
+  height: 33px;
+  background: #ecc36c;
+  /* display: inline-block; */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 29px;
+  position: absolute;
+  bottom: 0px;
+  right: 6px;
+  color: #273c89;
+  cursor: pointer;
+  /* vertical-align: middle; */
+}
+.navBarOfProfilePage {
+  display: flex;
+  justify-content: space-between;
+}
+.navBarOfProfilePage div a {
+  color: #273c89;
+  padding: 0;
+  background: transparent;
+  font-weight: 400;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navBarOfProfilePage div a.activeLink{
+  font-weight: 900;
+}
+
+.myAccountBtn{
+  font-weight: 700;
+  padding: 10px 25px;
+  color: #fff;
+  background: #273c89;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid #273c89;
+}
+
+.myAccountBtn.updateBtn{
+  padding: 16px 20px;
+  max-width: 378px;
+  width: 100%;
+  line-height: 21.6px;
+  font-weight: 900;
+  margin: 62px 3px 22px;
+}
+
+/* My Accoumt */
+.MyAccountContainer {
+  display: flex;
+  width: 100%;
+  padding-top: 45px;
+  /* display: none; */
+}
+
+.LoginDetails {
+  width: 40%;
+}
+.PersonalDetails {
+  width: 60%;
+  border-left: 1px solid #273c89 !important;
+}
+
+.LoginDetailsHeader,
+.PersonalDetailsHeader {
+  border-bottom: 1px solid #273c89;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 20px;
+  color: #273c89;
+}
+
+.PersonalDetailsHeader {
+  padding-left: 30px;
+}
+
+.inputLoginDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
+.inputLoginDetailsContainer input,
+.PersonalDetailsForm div input,
+.personalDetailsBox select {
+  border: 0.5px solid #273c89;
+  background-color: transparent;
+  height: 55px;
+  color: #273c89;
+  font-size: 18px;
+  padding: 0.75em;
+  transition: all 0.2s linear;
+  cursor: text;
+  /* opacity: 0.5; */
+}
+
+.PersonalDetailsForm div input {
+  opacity: 1;
+}
+
+.inputLoginDetailsContainer label {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #273c89;
+  opacity: 0.5;
+  font-weight: 400;
+  font-family: "Aileron", Sans-serif !important;
+  margin-bottom: 5px;
+  font-style: inherit;
+  position: relative;
+}
+
+.PersonalDetailsForm{
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+.PersonalDetailsForm form div label {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #273c89;
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+
+.personalDetailsBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.PersonalDetailsForm div {
+  padding: 3px;
+  margin: 0 0 6px;
+  max-width: 378px;
+}
