@@ -54,11 +54,15 @@
   cursor: pointer;
 }
 
-.navBarOfProfilePage div a.activeLink{
+.activeLink {
+  font-weight: 900 !important;
+}
+
+.navBarOfProfilePage div a.activeLink {
   font-weight: 900;
 }
 
-.myAccountBtn{
+.myAccountBtn {
   font-weight: 700;
   padding: 10px 25px;
   color: #fff;
@@ -68,13 +72,21 @@
   border: 1px solid #273c89;
 }
 
-.myAccountBtn.updateBtn{
+.myAccountBtn.updateBtn {
   padding: 16px 20px;
   max-width: 378px;
   width: 100%;
   line-height: 21.6px;
   font-weight: 900;
   margin: 62px 3px 22px;
+}
+
+.orderHistoryTwoButton .myAccountBtn {
+  font-size: 16px;
+}
+
+.ProfilePageSection a {
+  text-decoration: none !important;
 }
 
 /* My Accoumt */
@@ -143,7 +155,7 @@
   position: relative;
 }
 
-.PersonalDetailsForm{
+.PersonalDetailsForm {
   padding-top: 15px;
   padding-left: 30px;
 }
@@ -156,7 +168,7 @@
   margin-bottom: 5px;
 }
 
-.personalDetailsBox{
+.personalDetailsBox {
   display: flex;
   flex-direction: column;
 }
@@ -165,4 +177,618 @@
   padding: 3px;
   margin: 0 0 6px;
   max-width: 378px;
+}
+
+/* Order History */
+
+/* .OrderHistoryContainer {
+  display: flex;
+  width: 100%;
+  padding-top: 45px;
+} */
+/* .OrderHistoryDetails {
+  width: 40%;
+} */
+/* .SavedForLater {
+  width: 40%;
+} */
+/* .OrderHistoryHeader {
+  border-bottom: 1px solid #273c89;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 20px;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif !important;
+} */
+.OrderStatusAndOrderNumberDetailConatiner {
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-between;
+  padding-right: 80px;
+}
+/* .SavedForLaterHeader {
+  border-bottom: 1px solid #273c89;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 20px;
+  width: 100%;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif !important;
+} */
+.orderHistoryStatusText {
+  font-weight: 700;
+  font-size: 18px;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif !important;
+}
+.orderNumbersText {
+  font-weight: 700;
+  /* padding: 15px 0; */
+  font-size: 18px;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif !important;
+}
+.orderNumberValue {
+  font-size: 17px;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif !important;
+  padding-top: 15px;
+}
+.SavedForDetailsStatus {
+  color: #273c89;
+  font-family: "Aileron", Sans-serif !important;
+  margin-top: 41px;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-size: 18px;
+}
+.dateDelivered {
+  font-size: 17px;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif !important;
+  margin-top: -4px;
+}
+.deliveredText {
+  font-size: 17px;
+  color: #273c89;
+  font-family: "Aileron", Sans-serif !important;
+  padding-top: 15px;
+}
+/* .PersonaSavedForDetailsStatusdiv {
+  padding: 3px;
+  margin: 0 0 6px;
+  max-width: 378px;
+} */
+.SavedForDetailsHeader {
+  padding-left: 30px !important;
+  /* padding-left: 30px; */
+  padding-top: 15px !important;
+  border-bottom: 1px solid #273c89;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 20px;
+  /* font-weight: 400; */
+  font-family: "Aileron", Sans-serif !important;
+  color: #273c89;
+}
+/* .BrowseProduct {
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  color: #ffffff;
+  background-color: #273c89 !important;
+  border-radius: 0px !important;
+  border: solid;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-color: var(--ast-global-color-0);
+} */
+.orderHistoryTwoButton {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-right: 30px;
+  /* width: 100%; */
+}
+.startAReturn {
+  font-weight: 700;
+  font-family: "Aileron", Sans-serif !important;
+  padding-top: 11px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  height: 45px;
+  color: #ffffff;
+  background-color: #273c89 !important;
+  border-radius: 0px !important;
+  border: solid;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-color: var(--ast-global-color-0);
+  /* width: 40%; */
+}
+.viewOrder {
+  font-weight: 700;
+  font-family: "Aileron", Sans-serif !important;
+  padding-top: 11px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  height: 45px;
+  color: #ffffff;
+  background-color: #273c89 !important;
+  border-radius: 0px !important;
+  border: solid;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-color: var(--ast-global-color-0);
+  /* width: 40%; */
+}
+/* .OrderHistoryContainer {
+  display: flex;
+} */
+/* .LeftOrderHistoryContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-right: 30px;
+} */
+
+.orderHistory {
+  height: 400px;
+}
+.orderHistoryRightContainerHeight {
+  height: 360px;
+}
+
+/* My Wishlist */
+.WishlistContainer {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+.wishListItemsContainer {
+  display: flex;
+  width: 100%;
+}
+.wishlistItem75 {
+  width: 75%;
+  display: flex;
+}
+.wishlistItem25 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wishListItemsContainerItemDiv {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%;
+  color: #273c89;
+}
+.borderRightOfMywishList {
+  border-right: 1px solid #273c89;
+}
+.wishList {
+  padding-bottom: 30px;
+}
+.wishlistPriceAndHeart div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+.BorderBottomOfEachWishlistItemsContainer {
+  border-bottom: 1px solid #273c89;
+}
+.AddtoCartWishListItemButton div {
+  background-color: #273c89;
+  position: relative;
+  width: 162px;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  height: 40px;
+  padding-top: 9px;
+}
+.cartWishlist {
+  width: 17px;
+  position: relative;
+  margin-right: 7px;
+  margin-top: -4px;
+}
+
+/* Payment Details */
+.paymentcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.addCard,
+.payWithPaypal {
+  border: 1px solid #273c89;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.add-card-btn.myAccountBtn {
+  margin-top: 2rem;
+}
+/* Change Password  */
+.changePassword {
+  padding-top: 50px;
+  padding-bottom: 28px;
+}
+.legendPara {
+  font-size: 20px;
+  color: #273c89;
+  font-weight: 400;
+  margin: 10px 0 40px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+.ChangePasswordFormContainer form div label {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #273c89;
+  opacity: 0.5;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.ChangePasswordFormContainer form div {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+.ChangePasswordFormContainer form div input {
+  width: 100%;
+  outline: 0;
+  border: 0.5px solid #273c89;
+  background-color: transparent;
+  height: 55px;
+  color: #273c89;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0.75em;
+  transition: all 0.2s linear;
+}
+.OldPassword,
+.NewPassword,
+.VerifyNewPassword {
+  position: relative;
+}
+.eyeIconOfPassword {
+  position: absolute;
+  top: 47px;
+  right: 16px;
+  color: #273c89;
+  font-size: 18px;
+}
+.UpdateButtonOfPasswordDetails {
+  background-color: #273c89;
+  padding: 17px 20px;
+  font-size: 17px;
+  line-height: 21.6px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+}
+.UpdateButtonOfPasswordDetails:hover {
+  cursor: pointer;
+  background-color: rgb(11, 14, 61);
+}
+
+/* Media Queries */
+@media (max-width: 1260px) {
+  .PersonalDetailsForm div {
+    max-width: 100%;
+  }
+  .LoginDetails {
+    width: 46%;
+  }
+  .OrderHistoryDetails {
+    width: 46%;
+  }
+  .SavedForLater {
+    width: 46%;
+  }
+  .PersonalDetails {
+    width: 46%;
+  }
+  .MyAccountContainer {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1230px) {
+  .navBarOfProfilePage div a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navBarOfProfilePage div a {
+    font-size: 18px;
+  }
+  .navBarOfProfilePage div {
+    padding: 10px;
+  }
+  .MyAccountContainer {
+    padding-left: 12px;
+  }
+  .ProfilePageSection {
+    padding: 80px 20px 68px;
+  }
+}
+
+@media (max-width: 870px) {
+  .orderHistoryTwoButton .myAccountBtn {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .SmallWidthProfile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  input {
+    outline: none;
+  }
+  .ProfilePageSection {
+    padding: 80px 30px 70px;
+  }
+
+  .MyAccountContainer.myaccountContainerBigWidth,
+  .bigWidthProfile {
+    display: none;
+  }
+  /* Name And Photo Image Container  */
+  .NameAndPhotoContainer {
+    flex-direction: column;
+    justify-content: baseline;
+  }
+  .imagePhotoIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .RightNameAndPhotoContainer {
+    font-size: 30px;
+    line-height: normal;
+    margin-top: 25px;
+  }
+
+  /* My Account */
+  .MyAccountContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: -47px;
+  }
+  .LoginDetails {
+    width: 100%;
+  }
+  .LoginDetailsHeader {
+    border-bottom: none;
+  }
+  .inputLoginDetailsContainer {
+    padding-right: 0px;
+  }
+
+  .PersonalDetails {
+    width: 100%;
+    border-left: none !important;
+  }
+  .PersonalDetailsHeader {
+    border-bottom: none;
+    padding-left: 0px;
+  }
+  .PersonalDetailsForm {
+    padding-left: 0px;
+  }
+
+  .SmallWidthProfile div h3 {
+    color: #273c89;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #273c89;
+    padding-bottom: 15px;
+    position: relative;
+  }
+  .myAccountBtn.updateBtnSmall {
+    width: 100%;
+    margin: 40px 0 35px;
+  }
+  .SWPmyAccount h3::after,
+  .SWPOtherLinks h3::after {
+    content: "";
+    border-bottom: 3px solid #273c89;
+    border-right: 3px solid #273c89;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease;
+    transform: rotate(-135deg);
+    top: 15px;
+  }
+  .SWPOtherLinks h3::after {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  .PersonalDetailsForm div {
+    padding: 0px;
+    margin: 0 0 13px;
+  }
+  .SWPmyAccount {
+    cursor: pointer;
+    margin-bottom: 35px;
+  }
+  .SWPOtherLinks {
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .activeIdOfProfileNavbar {
+    margin-bottom: 35px;
+  }
+
+  /* order History  */
+  .orderHistoryBigWidth {
+    display: none;
+  }
+
+  /* .OrderHistoryContainer {
+    padding-top: 0px;
+  } */
+  .orderHistory {
+    height: auto;
+  }
+
+  .OrderStatusAndOrderNumberDetailConatiner {
+    padding-right: 0px;
+  }
+  .orderHistoryTwoButton {
+    flex-direction: column;
+  }
+  .orderHistoryTwoButton .myAccountBtn.startReturnBtn {
+    margin-bottom: 20px;
+  }
+  .SavedForDetailsHeader {
+    padding-left: 0px !important;
+    padding: 7px 0;
+    font-size: 18px;
+  }
+  .viewOrder {
+    margin-top: 20px;
+  }
+  .orderHistoryTwoButton {
+    padding-right: 0;
+  }
+  .orderHitoryTextHeader {
+    display: none;
+  }
+  .SavedForDetailsStatus {
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-top: 25px;
+  }
+  .orderHistoryRightContainerHeight {
+    height: auto;
+    padding-bottom: 52px;
+    padding-top: 25px;
+  }
+  /* My Wishlist */
+  .wishListBigwidth {
+    display: none;
+  }
+  .wishListItemsContainer {
+    flex-direction: column;
+  }
+  .wishlistItem25 {
+    width: 100%;
+  }
+  .wishlistItem75 {
+    width: 100%;
+  }
+  .WishlistItemName {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+  }
+  .AddtoCartWishListItemButton div {
+    width: 86vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .AddtoCartWishListItemButton.wishListItemsContainerItemDiv {
+    width: 100%;
+  }
+
+  /* Payment Details */
+  .paymentcard{
+    flex-direction: column;
+  }
+  .addCard,
+  .payWithPaypal{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .paymentDetailContainer{
+    padding: 1em 2em 1em 3.5em;
+    margin: 0 0 2em;
+    position: relative;
+    background: #f7f6f7;
+    color: #515151;
+    border-top: 3px solid #0170b9;
+  }
+  .NoSavedMethodFound{
+    position: relative;
+    border: 0;
+    font-size: 18px;
+  }
+  .logoPaymentDetail::before {
+  font-family: WooCommerce;
+  content: "\e028";
+  display: inline-block;
+  position: absolute;
+  top: -11px;
+  left: -38px;
+  font-size: 30px;
+  }
+  /* Change Password */
+  .BigWidthChangePassword {
+    display: none;
+  }
+  .legendPara {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .changePassword {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 440px){
+  .ChangePasswordFormContainer form div{
+    width: auto;
+  }
+}
+
+@media (max-width: 360px){
+  .add-card-btn.myAccountBtn{
+    font-size: 16px;
+    text-align: center;
+  }
 }
