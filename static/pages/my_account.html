@@ -86,202 +86,32 @@
 
     <div id="pageContainer">
       <section class="ProfilePageSection">
-        <div class="NameAndPhotoContainer">
-          <div class="LeftNameAndPhotoContainer">
-            <img src="../assets/img/profile/PhotoIcon.png" alt="" class="img-fluid imagePhotoIcon" />
-            <div class="cameraButtonOfPhoto">
-              <img src="../assets/img/profile/camera.svg" alt="" class="img-fluid" />
-            </div>
-          </div>
-          <div class="RightNameAndPhotoContainer">Hi Email</div>
-        </div>
-
-        <div class="navBarOfProfilePage bigWidthProfile">
-          <div><a class="ProfileNavbarLink activeLink" href="">My account</a></div>
-          <div><a class="ProfileNavbarLink" href="">Order history</a></div>
-          <div><a class="ProfileNavbarLink" href="">My wishlist</a></div>
-          <div><a class="ProfileNavbarLink" href="">Payment details</a></div>
-          <div><a class="ProfileNavbarLink" href="">Change Password</a></div>
-        </div>
-
-        <!-- My Account   -->
-        <div class="MyAccountContainer myaccountContainerBigWidth">
-          <div class="LoginDetails">
-            <div class="LoginDetailsHeader">Log in details</div>
-            <div class="inputLoginDetailsContainer">
-              <label for="email">E-mail
-              </label>
-              <input type="email" id="email" name="email" value="" required />
-            </div>
-          </div>
-          <div class="PersonalDetails">
-            <div class="PersonalDetailsHeader">Personal details</div>
-            <div class="PersonalDetailsForm">
-              <form>
-                <div class="personalDetailsBox">
-                  <label for="name">Your name
-                  </label>
-                  <input type="name" id="name" name="name" value="" required />
-                </div>
-
-                <div class="personalDetailsBox">
-                  <label for="phone">Phone </label>
-                  <input type="tel" id="phone" name="phone" value="" required />
-                </div>
-                <div class="personalDetailsBox">
-                  <label for="gender">Gender </label>
-                  <select class="select-selected" name="gender" id="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select>
-                </div>
-                <button class="myAccountBtn updateBtn">UPDATE</button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- Order History  -->
-        <div class="orderHistory orderHistoryBigWidth">
-          <div class="MyAccountContainer myaccountContainerBigWidth">
-            <div class="LoginDetails">
-              <div class="LoginDetailsHeader">Order History</div>
-              <div class="OrderStatusAndOrderNumberDetailConatiner">
-                <div class="orderStatus">
-                  <div class="orderHistoryStatusText">Order Status</div>
-                  <div class="deliveredText">Delivered</div>
-                  <div class="dateDelivered">11/22/21</div>
-                </div>
-                <div class="orderNumber">
-                  <div class="orderNumbersText">Order number</div>
-                  <div class="orderNumberValue">GEU101466187</div>
-                </div>
-              </div>
-              <div class="orderHistoryTwoButton">
-                <!-- <div class="startAReturn">START A RETURN</div> -->
-                <!-- <div class="viewOrder">VIEW ORDER</div> -->
-                <button class="myAccountBtn">START A RETURN</button>
-                <button class="myAccountBtn">VIEW ORDER</button>
+        <div class="elementWrapper">
+          <div class="NameAndPhotoContainer">
+            <div class="LeftNameAndPhotoContainer">
+              <img src="../assets/img/profile/PhotoIcon.png" alt="" class="img-fluid imagePhotoIcon" />
+              <div class="cameraButtonOfPhoto">
+                <img src="../assets/img/profile/camera.svg" alt="" class="img-fluid" />
               </div>
             </div>
-            <div class="PersonalDetails orderHistoryRightContainerHeight">
-              <div class="SavedForDetailsHeader">Saved for later</div>
-              <div class="SavedForDetailsStatus">
-                You don’t have any items saved for later (yet)
-              </div>
-            </div>
+            <div class="RightNameAndPhotoContainer">Hi Email</div>
           </div>
-        </div>
-        <!-- My wishlist  -->
-        <div class="wishList wishListBigwidth">
-          <div class="WishlistContainer">
-            <div class="wishListItemsContainer BorderBottomOfEachWishlistItemsContainer">
-              <div class="wishlistItem75">
-                <div class="borderRightOfMywishList wishListItemsContainerItemDiv">
-                  <img src="../assets/img/profile/ceremicmug2.svg" alt="" class="img-fluid" />
-                </div>
-                <div class="WishlistItemName borderRightOfMywishList wishListItemsContainerItemDiv">
-                  Ceramic mug
-                </div>
-                <div class="wishlistPriceAndHeart borderRightOfMywishList wishListItemsContainerItemDiv">
-                  <div class="wishlistPrice borderRightOfMywishList">$20</div>
-                  <div class="wishlistHeart">
-                    <img src="../assets/img/profile/heart.svg" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="wishlistItem25">
-                <div class="AddtoCartWishListItemButton">
-                  <div>
-                    <img src="../assets/img/profile/addtoCartLogo.svg" alt="" class="img-fluid cartWishlist" />
-                    ADD TO CART
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="wishListItemsContainer">
-              <div class="wishlistItem75">
-                <div class="borderRightOfMywishList wishListItemsContainerItemDiv">
-                  <img src="../assets/img/profile/ceremicmug2.svg" alt="" class="img-fluid" />
-                </div>
-                <div class="WishlistItemName borderRightOfMywishList wishListItemsContainerItemDiv">
-                  Ceramic mug
-                </div>
-                <div class="wishlistPriceAndHeart borderRightOfMywishList wishListItemsContainerItemDiv">
-                  <div class="wishlistPrice borderRightOfMywishList">$20</div>
-                  <div class="wishlistHeart">
-                    <img src="../assets/img/profile/heart.svg" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="wishlistItem25">
-                <div class="AddtoCartWishListItemButton">
-                  <div>
-                    <img src="../assets/img/profile/addtoCartLogo.svg" alt="" class="img-fluid cartWishlist" />
-                    ADD TO CART
-                  </div>
-                </div>
-              </div>
-            </div>
+  
+          <div class="navBarOfProfilePage bigWidthProfile">
+            <div><a class="ProfileNavbarLink activeLink" id="myAccountLink" href="">My account</a></div>
+            <div><a class="ProfileNavbarLink" href="" id="orderHistoryLink">Order history</a></div>
+            <div><a class="ProfileNavbarLink" href="" id="myWishlistLink">My wishlist</a></div>
+            <div><a class="ProfileNavbarLink" href="" id="paymentDetailsLink">Payment details</a></div>
+            <div><a class="ProfileNavbarLink" href="" id="changePasswordLink">Change Password</a></div>
           </div>
-        </div>
-        <!-- Payment Details -->
-        <div class="paymentcard">
-          <div class="addCard">
-            <div>
-              <img src="https://blueberrysgrillmb.com/wp-content/uploads/2022/01/cardIcon.svg" />
-            </div>
-            <div class="add-card-btn myAccountBtn">
-              <a href="https://blueberrysgrillmb.com/my-account/add-payment-method/">ADD CARD</a>
-            </div>
-          </div>
-          <div class="payWithPaypal">
-            <div>
-              <img src="https://blueberrysgrillmb.com/wp-content/uploads/2022/01/Paypal-pay.svg" />
-            </div>
-            <div class="add-card-btn myAccountBtn"><a href="">PAY WITH PAYPAL</a></div>
-          </div>
-        </div>
-        <!-- Change Password  -->
-        <div class="changePassword BigWidthChangePassword">
-          <div class="changePasswordContainer">
-            <legend class="legendPara">
-              Set up a new password below, it has to be at least 6 characters
-            </legend>
-            <div class="ChangePasswordFormContainer">
-              <form>
-                <div class="OldPassword">
-                  <label for="OldPassword">Old Password </label>
-                  <input type="password" id="OldPassword" name="password" />
-                  <i class="far fa-eye eyeIconOfPassword"></i>
-                </div>
-                <div class="NewPassword">
-                  <label for="NewPassword">New Password </label>
-                  <input type="password" id="NewPassword" name="password" />
-                  <i class="far fa-eye eyeIconOfPassword"></i>
-                </div>
-                <div class="VerifyNewPassword">
-                  <label for="VerifyNewPassword">Verify New Password </label>
-                  <input type="password" id="VerifyNewPassword" name="password" />
-                  <i class="far fa-eye eyeIconOfPassword"></i>
-                </div>
-                <div class="UpdateButtonOfPasswordDetails">UPDATE</div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- My Account Small Width  -->
-        <div class="SmallWidthProfile hidden">
-          <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPMyAccountId">
-            <a href="">
-              <h3 class="activeLink">My account</h3>
-            </a>
-          </div>
-          <div class="MyAccountContainer activeIdOfProfileNavbar">
+  
+          <!-- My Account   -->
+          <div class="MyAccountContainer myaccountContainerBigWidth" id="myAccount">
             <div class="LoginDetails">
               <div class="LoginDetailsHeader">Log in details</div>
               <div class="inputLoginDetailsContainer">
-                <label for="email">E-mail</label>
+                <label for="email">E-mail
+                </label>
                 <input type="email" id="email" name="email" value="" required />
               </div>
             </div>
@@ -290,9 +120,11 @@
               <div class="PersonalDetailsForm">
                 <form>
                   <div class="personalDetailsBox">
-                    <label for="name">Your name</label>
+                    <label for="name">Your name
+                    </label>
                     <input type="name" id="name" name="name" value="" required />
                   </div>
+  
                   <div class="personalDetailsBox">
                     <label for="phone">Phone </label>
                     <input type="tel" id="phone" name="phone" value="" required />
@@ -304,51 +136,16 @@
                       <option value="female">Female</option>
                     </select>
                   </div>
-                  <button class="myAccountBtn updateBtnSmall">UPDATE</button>
+                  <button class="myAccountBtn updateBtn">UPDATE</button>
                 </form>
               </div>
             </div>
           </div>
-          <div class="SWPOtherLinks" id="SWPOrderHistoryId">
-            <a href="./OrderHistory.html#SWPOrderHistoryId">
-              <h3>Order history</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPMyWishListID">
-            <a href="./MyWishlist.html#SWPMyWishListID">
-              <h3>My Wishlist</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPPaymentDetailID">
-            <a href="./PaymentDetails.html#SWPPaymentDetailID">
-              <h3>Payment details</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPChangePassWordId">
-            <a href="./ChangePassword.html#SWPChangePassWordId">
-              <h3>Change password</h3>
-            </a>
-          </div>
-        </div>
-        <!-- Order History Small Width -->
-        <div class="SmallWidthProfile hidden">
-          <div class="SWPOtherLinks" id="SWPMyAccountId">
-            <a href="">
-              <h3>My account</h3>
-            </a>
-          </div>
-
-          <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPOrderHistoryId">
-            <a href="">
-              <h3 class="activeLink">Order history</h3>
-            </a>
-          </div>
-          <div class="orderHistory">
-            <div class="MyAccountContainer">
+          <!-- Order History  -->
+          <div class="orderHistory orderHistoryBigWidth hidden" id="orderHistory">
+            <div class="MyAccountContainer myaccountContainerBigWidth">
               <div class="LoginDetails">
-                <div class="LoginDetailsHeader orderHitoryTextHeader">
-                  Order History
-                </div>
+                <div class="LoginDetailsHeader">Order History</div>
                 <div class="OrderStatusAndOrderNumberDetailConatiner">
                   <div class="orderStatus">
                     <div class="orderHistoryStatusText">Order Status</div>
@@ -363,7 +160,7 @@
                 <div class="orderHistoryTwoButton">
                   <!-- <div class="startAReturn">START A RETURN</div> -->
                   <!-- <div class="viewOrder">VIEW ORDER</div> -->
-                  <button class="myAccountBtn startReturnBtn">START A RETURN</button>
+                  <button class="myAccountBtn">START A RETURN</button>
                   <button class="myAccountBtn">VIEW ORDER</button>
                 </div>
               </div>
@@ -375,65 +172,28 @@
               </div>
             </div>
           </div>
-          <div class="SWPOtherLinks" id="SWPMyWishListID">
-            <a href="">
-              <h3>My Wishlist</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPPaymentDetailID">
-            <a href="">
-              <h3>Payment details</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPChangePassWordId">
-            <a href="">
-              <h3>Change password</h3>
-            </a>
-          </div>
-        </div>
-        <!-- My Wishlist Small Width -->
-        <div class="SmallWidthProfile hidden">
-          <div class="SWPOtherLinks" id="SWPMyAccountId">
-            <a href="">
-              <h3>My account</h3>
-            </a>
-          </div>
-
-          <div class="SWPOtherLinks" id="SWPOrderHistoryId">
-            <a href="">
-              <h3>Order history</h3>
-            </a>
-          </div>
-
-          <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPMyWishListID">
-            <a href="">
-              <h3 class="activeLink">My Wishlist</h3>
-            </a>
-          </div>
-          <div class="wishList">
-            <div class="WishlistConatiner">
-              <div class="wishListItemsContainer">
+          <!-- My wishlist  -->
+          <div class="wishList wishListBigwidth hidden" id="myWishlist">
+            <div class="WishlistContainer">
+              <div class="wishListItemsContainer BorderBottomOfEachWishlistItemsContainer">
                 <div class="wishlistItem75">
-                  <div
-                    class="figWishlistItem borderRightOfMywishList wishListItemsContainerItemDiv wishlistwidththertthreepersent">
-                    <img src="../assets/img/profile/ceremicmug1.svg" alt="" class="img-fluid" />
+                  <div class="borderRightOfMywishList wishListItemsContainerItemDiv">
+                    <img src="../assets/img/profile/ceremicmug2.svg" alt="" class="img-fluid" />
                   </div>
-                  <div
-                    class="WishlistItemName borderRightOfMywishList wishListItemsContainerItemDiv wishlistwidththertthreepersent">
-                    <div>Ceramic mug</div>
-                    <div class="wishlistPrice">$20</div>
+                  <div class="WishlistItemName borderRightOfMywishList wishListItemsContainerItemDiv">
+                    Ceramic mug
                   </div>
-                  <div class="wishlistPriceAndHeart wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                  <div class="wishlistPriceAndHeart borderRightOfMywishList wishListItemsContainerItemDiv">
+                    <div class="wishlistPrice borderRightOfMywishList">$20</div>
                     <div class="wishlistHeart">
                       <img src="../assets/img/profile/heart.svg" alt="" class="img-fluid" />
                     </div>
                   </div>
                 </div>
                 <div class="wishlistItem25">
-                  <div class="AddtoCartWishListItemButton wishListItemsContainerItemDiv">
+                  <div class="AddtoCartWishListItemButton">
                     <div>
                       <img src="../assets/img/profile/addtoCartLogo.svg" alt="" class="img-fluid cartWishlist" />
-
                       ADD TO CART
                     </div>
                   </div>
@@ -441,26 +201,23 @@
               </div>
               <div class="wishListItemsContainer">
                 <div class="wishlistItem75">
-                  <div
-                    class="figWishlistItem borderRightOfMywishList wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                  <div class="borderRightOfMywishList wishListItemsContainerItemDiv">
                     <img src="../assets/img/profile/ceremicmug2.svg" alt="" class="img-fluid" />
                   </div>
-                  <div
-                    class="WishlistItemName borderRightOfMywishList wishListItemsContainerItemDiv wishlistwidththertthreepersent">
-                    <div>Ceramic mug</div>
-                    <div class="wishlistPrice">$20</div>
+                  <div class="WishlistItemName borderRightOfMywishList wishListItemsContainerItemDiv">
+                    Ceramic mug
                   </div>
-                  <div class="wishlistPriceAndHeart wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                  <div class="wishlistPriceAndHeart borderRightOfMywishList wishListItemsContainerItemDiv">
+                    <div class="wishlistPrice borderRightOfMywishList">$20</div>
                     <div class="wishlistHeart">
                       <img src="../assets/img/profile/heart.svg" alt="" class="img-fluid" />
                     </div>
                   </div>
                 </div>
                 <div class="wishlistItem25">
-                  <div class="AddtoCartWishListItemButton wishListItemsContainerItemDiv">
+                  <div class="AddtoCartWishListItemButton">
                     <div>
                       <img src="../assets/img/profile/addtoCartLogo.svg" alt="" class="img-fluid cartWishlist" />
-
                       ADD TO CART
                     </div>
                   </div>
@@ -468,43 +225,8 @@
               </div>
             </div>
           </div>
-          <div class="SWPOtherLinks" id="SWPPaymentDetailID">
-            <a href="./PaymentDetails.html#SWPPaymentDetailID">
-              <h3>Payment details</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPChangePassWordId">
-            <a href="./ChangePassword.html#SWPChangePassWordId">
-              <h3>Change password</h3>
-            </a>
-          </div>
-        </div>
-        <!-- Payment Details Small Width -->
-        <div class="SmallWidthProfile">
-          <div class="SWPOtherLinks" id="SWPMyAccountId">
-            <a href="./MyAccount.html#SWPMyAccountId">
-              <h3>My account</h3>
-            </a>
-          </div>
-
-          <div class="SWPOtherLinks" id="SWPOrderHistoryId">
-            <a href="./OrderHistory.html#SWPOrderHistoryId">
-              <h3>Order history</h3>
-            </a>
-          </div>
-
-          <div class="SWPOtherLinks" id="SWPMyWishListID">
-            <a href="./MyWishlist.html#SWPMyWishListID">
-              <h3>My Wishlist</h3>
-            </a>
-          </div>
-
-          <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPPaymentDetailID">
-            <a href="./PaymentDetails.html#SWPPaymentDetailID">
-              <h3 class="activeLink">Payment details</h3>
-            </a>
-          </div>
-          <div class="paymentcard">
+          <!-- Payment Details -->
+          <div class="paymentcard hidden" id="paymentDetails">
             <div class="addCard">
               <div>
                 <img src="https://blueberrysgrillmb.com/wp-content/uploads/2022/01/cardIcon.svg" />
@@ -520,48 +242,8 @@
               <div class="add-card-btn myAccountBtn"><a href="">PAY WITH PAYPAL</a></div>
             </div>
           </div>
-          <div class="PaymentDetail">
-            <div class="paymentDetailContainer">
-              <div class="NoSavedMethodFound">
-                <div class="logoPaymentDetail"></div>
-                No saved method found
-              </div>
-            </div>
-          </div>
-          <div class="SWPOtherLinks" id="SWPChangePassWordId">
-            <a href="./ChangePassword.html#SWPChangePassWordId">
-              <h3>Change password</h3>
-            </a>
-          </div>
-        </div>
-        <!-- For Small Width  -->
-        <div class="SmallWidthProfile">
-          <div class="SWPOtherLinks" id="SWPMyAccountId">
-            <a href="./MyAccount.html#SWPMyAccountId">
-              <h3>My account</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPOrderHistoryId">
-            <a href="./OrderHistory.html#SWPOrderHistoryId">
-              <h3>Order history</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPMyWishListID">
-            <a href="./MyWishlist.html#SWPMyWishListID">
-              <h3>My Wishlist</h3>
-            </a>
-          </div>
-          <div class="SWPOtherLinks" id="SWPPaymentDetailID">
-            <a href="./PaymentDetails.html#SWPPaymentDetailID">
-              <h3>Payment details</h3>
-            </a>
-          </div>
-          <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPChangePassWordId">
-            <a href="./ChangePassword.html#SWPChangePassWordId">
-              <h3 class="active">Change password</h3>
-            </a>
-          </div>
-          <div class="changePassword">
+          <!-- Change Password  -->
+          <div class="changePassword BigWidthChangePassword hidden" id="changePassword">
             <div class="changePasswordContainer">
               <legend class="legendPara">
                 Set up a new password below, it has to be at least 6 characters
@@ -588,7 +270,219 @@
               </div>
             </div>
           </div>
+  
+          <!-- Profile Small Width  -->
+          <div class="SmallWidthProfile">
+            <!-- My Account Small Width -->
+            <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPMyAccountId">
+              <a href="">
+                <h3 class="activeLink">My account</h3>
+              </a>
+            </div>
+            <div class="MyAccountContainer activeIdOfProfileNavbar hidden">
+              <div class="LoginDetails">
+                <div class="LoginDetailsHeader">Log in details</div>
+                <div class="inputLoginDetailsContainer">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" value="" required />
+                </div>
+              </div>
+              <div class="PersonalDetails">
+                <div class="PersonalDetailsHeader">Personal details</div>
+                <div class="PersonalDetailsForm">
+                  <form>
+                    <div class="personalDetailsBox">
+                      <label for="name">Your name</label>
+                      <input type="name" id="name" name="name" value="" required />
+                    </div>
+                    <div class="personalDetailsBox">
+                      <label for="phone">Phone </label>
+                      <input type="tel" id="phone" name="phone" value="" required />
+                    </div>
+                    <div class="personalDetailsBox">
+                      <label for="gender">Gender </label>
+                      <select class="select-selected" name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+                    <button class="myAccountBtn updateBtnSmall">UPDATE</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Order History Small Width -->
+            <div class="SWPOtherLinks" id="SWPOrderHistoryId">
+              <a href="./OrderHistory.html#SWPOrderHistoryId">
+                <h3>Order history</h3>
+              </a>
+            </div>
+            <div class="orderHistory hidden">
+              <div class="MyAccountContainer">
+                <div class="LoginDetails">
+                  <div class="LoginDetailsHeader orderHitoryTextHeader">
+                    Order History
+                  </div>
+                  <div class="OrderStatusAndOrderNumberDetailConatiner">
+                    <div class="orderStatus">
+                      <div class="orderHistoryStatusText">Order Status</div>
+                      <div class="deliveredText">Delivered</div>
+                      <div class="dateDelivered">11/22/21</div>
+                    </div>
+                    <div class="orderNumber">
+                      <div class="orderNumbersText">Order number</div>
+                      <div class="orderNumberValue">GEU101466187</div>
+                    </div>
+                  </div>
+                  <div class="orderHistoryTwoButton">
+                    <!-- <div class="startAReturn">START A RETURN</div> -->
+                    <!-- <div class="viewOrder">VIEW ORDER</div> -->
+                    <button class="myAccountBtn startReturnBtn">START A RETURN</button>
+                    <button class="myAccountBtn">VIEW ORDER</button>
+                  </div>
+                </div>
+                <div class="PersonalDetails orderHistoryRightContainerHeight">
+                  <div class="SavedForDetailsHeader">Saved for later</div>
+                  <div class="SavedForDetailsStatus">
+                    You don’t have any items saved for later (yet)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- My Wishlist Small Width -->
+            <div class="SWPOtherLinks" id="SWPMyWishListID">
+              <a href="./MyWishlist.html#SWPMyWishListID">
+                <h3>My Wishlist</h3>
+              </a>
+            </div>
+            <div class="wishList hidden">
+              <div class="WishlistConatiner">
+                <div class="wishListItemsContainer">
+                  <div class="wishlistItem75">
+                    <div
+                      class="figWishlistItem borderRightOfMywishList wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                      <img src="../assets/img/profile/ceremicmug1.svg" alt="" class="img-fluid" />
+                    </div>
+                    <div
+                      class="WishlistItemName borderRightOfMywishList wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                      <div>Ceramic mug</div>
+                      <div class="wishlistPrice">$20</div>
+                    </div>
+                    <div class="wishlistPriceAndHeart wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                      <div class="wishlistHeart">
+                        <img src="../assets/img/profile/heart.svg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wishlistItem25">
+                    <div class="AddtoCartWishListItemButton wishListItemsContainerItemDiv">
+                      <div>
+                        <img src="../assets/img/profile/addtoCartLogo.svg" alt="" class="img-fluid cartWishlist" />
+  
+                        ADD TO CART
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishListItemsContainer">
+                  <div class="wishlistItem75">
+                    <div
+                      class="figWishlistItem borderRightOfMywishList wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                      <img src="../assets/img/profile/ceremicmug2.svg" alt="" class="img-fluid" />
+                    </div>
+                    <div
+                      class="WishlistItemName borderRightOfMywishList wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                      <div>Ceramic mug</div>
+                      <div class="wishlistPrice">$20</div>
+                    </div>
+                    <div class="wishlistPriceAndHeart wishListItemsContainerItemDiv wishlistwidththertthreepersent">
+                      <div class="wishlistHeart">
+                        <img src="../assets/img/profile/heart.svg" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wishlistItem25">
+                    <div class="AddtoCartWishListItemButton wishListItemsContainerItemDiv">
+                      <div>
+                        <img src="../assets/img/profile/addtoCartLogo.svg" alt="" class="img-fluid cartWishlist" />
+  
+                        ADD TO CART
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Payment Details Small Width -->
+            <div class="SWPOtherLinks" id="SWPPaymentDetailID">
+              <a href="./PaymentDetails.html#SWPPaymentDetailID">
+                <h3>Payment details</h3>
+              </a>
+            </div>
+            <div class="paymentcard">
+              <div class="addCard">
+                <div>
+                  <img src="https://blueberrysgrillmb.com/wp-content/uploads/2022/01/cardIcon.svg" />
+                </div>
+                <div class="add-card-btn myAccountBtn">
+                  <a href="https://blueberrysgrillmb.com/my-account/add-payment-method/">ADD CARD</a>
+                </div>
+              </div>
+              <div class="payWithPaypal">
+                <div>
+                  <img src="https://blueberrysgrillmb.com/wp-content/uploads/2022/01/Paypal-pay.svg" />
+                </div>
+                <div class="add-card-btn myAccountBtn"><a href="">PAY WITH PAYPAL</a></div>
+              </div>
+            </div>
+            <div class="PaymentDetail">
+              <div class="paymentDetailContainer">
+                <div class="NoSavedMethodFound">
+                  <div class="logoPaymentDetail"></div>
+                  No saved method found
+                </div>
+              </div>
+            </div>
+            <!-- Change Password Small Width -->
+            <div class="SWPOtherLinks" id="SWPChangePassWordId">
+              <a href="./ChangePassword.html#SWPChangePassWordId">
+                <h3>Change password</h3>
+              </a>
+            </div>
+            <div class="changePassword">
+              <div class="changePasswordContainer">
+                <legend class="legendPara">
+                  Set up a new password below, it has to be at least 6 characters
+                </legend>
+                <div class="ChangePasswordFormContainer">
+                  <form>
+                    <div class="OldPassword">
+                      <label for="OldPassword">Old Password </label>
+                      <input type="password" id="OldPassword" name="password" />
+                      <i class="far fa-eye eyeIconOfPassword"></i>
+                    </div>
+                    <div class="NewPassword">
+                      <label for="NewPassword">New Password </label>
+                      <input type="password" id="NewPassword" name="password" />
+                      <i class="far fa-eye eyeIconOfPassword"></i>
+                    </div>
+                    <div class="VerifyNewPassword">
+                      <label for="VerifyNewPassword">Verify New Password </label>
+                      <input type="password" id="VerifyNewPassword" name="password" />
+                      <i class="far fa-eye eyeIconOfPassword"></i>
+                    </div>
+                    <div class="UpdateButtonOfPasswordDetails">UPDATE</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPChangePassWordId">
+          <a href="./ChangePassword.html#SWPChangePassWordId">
+            <h3 class="active">Change password</h3>
+          </a>
+        </div> -->
       </section>
       <footer id="footer">
         <div class="footerTop">
