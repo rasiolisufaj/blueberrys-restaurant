@@ -2,564 +2,183 @@
 <html lang="en">
 
 <head>
-    <title>BlueBerry's Grill</title>
+    <title>BlueBerry's</title>
 
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta content="" name="description"/>
     <meta content="" name="keywords"/>
 
-    <link href="assets/img/favIcon.svg" rel="icon"/>
-    <link href="assets/img/favIcon.svg" rel="apple-touch-icon"/>
+    <link href="./assets/img/favIcon.svg" rel="icon"/>
+    <link href="./assets/img/favIcon.svg" rel="apple-touch-icon"/>
     <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <!--<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>-->
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link href="./assets/vendor/aos/aos.css" rel="stylesheet"/>
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+    <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
-    <link href="assets/css/app.css" rel="stylesheet"/>
+    <link href="./assets/css/app.css" rel="stylesheet"/>
 </head>
 
 <body>
 <div id="root">
-    <div class="sidebarMobile">
-        <div><img src="./assets/img/logo.png" alt="Home"></div>
-        <a class="mobile-navbar-toggle" id="menuToggleBtn" href="#">
-            <svg id="menuSvg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-            </svg>
-            <i class="fa-solid fa-xmark" hidden></i>
-        </a>
-    </div>
+    <section id="landingPage" class="landingPage containerFlexColumn">
+        <header class="pageHeader containerFlex">
+            <div class="welcomeLogoImgContainer">
+                <img src="./assets/img/logo2.png" alt="">
+            </div>
+        </header>
+        <section id="restaurantSection" class="restaurantSection containerFlexColumn">
+            <div class="elementWrapper">
+                <div class="pageDescription containerFlex">
+                    <div class="descriptionHeading">
+                        <h2>
+                            TRUE INGREDIENTS, <br/>
+                            FOR A LOVELY FOOD EXPERIENCE
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div id="locationsBox" class="locationsBox containerFlex">
+                <a href="./pages/home.html?shop=1">
+                    <div class="layoutContainer">
+                        <div class="layoutImageContainer">
+                            <img src="./assets/img/location_mb.jpg" alt="">
+                        </div>
+                        <div class="layoutLocationsContainer myrtleBeach">
+                            <div class="location">
+                                <div class="containerFlex">
+                                    <div class="locationsIcon">
+                                        <figure>
+                                            <a href="#" target="_blank" class="locationIcon">
+                                                <img width="38" height="43" src="./assets/img/locationIcon.svg" alt="" loading="lazy">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="address">
+                                        <h3>MYRTLE BEACH</h3>
+                                        <p>7931 N Kings Hwy<br>Myrtle Beach, SC 29572</p>
+                                    </div>
+                                </div>
+                                <div class="containerFlex">
+                                    <div class="locationsIcon">
+                                        <figure>
+                                            <a href="#" target="_blank" class="locationIcon">
+                                                <img width="38" height="43" src="./assets/img/phone.svg" alt="" loading="lazy">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="address">
+                                        <h3>843-945-4588</h3>
+                                        <p>Open 7 Days a Week<br>7:00am to 6:30pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-    <div id="sidebar" class="sx">
-        <div id="aside-links">
-            <div class="sidebarLogo">
-                <a href="#">
-                    <img src="./assets/img/logo.png" alt="Home">
+                <a href="./pages/home.html?shop=2">
+                    <div class="layoutContainer layout-nmb">
+                        <div class="layoutImageContainer">
+                            <img src="./assets/img/location_nmb.jpg" alt="">
+                        </div>
+                        <div class="layoutLocationsContainer northMyrtleBeach">
+                            <div class="location">
+                                <div class="containerFlex">
+                                    <div class="locationsIcon">
+                                        <figure>
+                                            <a href="#" target="_blank" class="locationIcon">
+                                                <img width="38" height="43" src="./assets/img/locationIcon.svg" alt="" loading="lazy">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="address">
+                                        <h3>NORTH MYRTLE BEACH</h3>
+                                        <p>4586 Highway 17 South<br>North Myrtle Beach, SC 29572</p>
+                                    </div>
+                                </div>
+                                <div class="containerFlex">
+                                    <div class="locationsIcon">
+                                        <figure>
+                                            <a href="#" target="_blank" class="locationIcon">
+                                                <img width="38" height="43" src="./assets/img/phone.svg" alt="" loading="lazy">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="address">
+                                        <h3>843-945-4588</h3>
+                                        <p>Open 7 Days a Week<br>7:00am to 6:30pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./pages/home.html?shop=3">
+                    <div class="layoutContainer">
+                        <div class="layoutImageContainer">
+                            <img src="./assets/img/location_wilmington.jpg" alt="">
+                        </div>
+                        <div class="layoutLocationsContainer wilmington">
+                            <div class="location">
+                                <div class="containerFlex">
+                                    <div class="locationsIcon">
+                                        <figure>
+                                            <a href="#" target="_blank" class="locationIcon">
+                                                <img width="38" height="43" src="./assets/img/locationIcon.svg" alt="" loading="lazy">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="address">
+                                        <h3>WILMINGTON, NC</h3>
+                                        <p>1900 Eastwood Road<br>Wilmington, NC 28403</p>
+                                    </div>
+                                </div>
+                                <div class="containerFlex">
+                                    <div class="locationsIcon">
+                                        <figure>
+                                            <a href="#" target="_blank" class="locationIcon">
+                                                <img width="38" height="43" src="./assets/img/phone.svg" alt="" loading="lazy">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <div class="address">
+                                        <h3>843-945-4588</h3>
+                                        <p>Open 7 Days a Week<br>7:00am to 6:30pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a class="nav-link" href="#home">Home</a></li>
-                    <li><a class="nav-link" href="#about">About us</a></li>
-                    <li><a class="nav-link" href="#reviews">Reviews</a></li>
-                    <!-- <li class="dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" 
-                        aria-haspopup="true" aria-expanded="false" href="#">Menu
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item"                                
-                             href="pages/menu_breakfast.html">Breakfast
-                            </a>
-                            <a class="dropdown-item" href="pages/menu_lunch.html">Lunch</a>
-                            <a class="dropdown-item" 
-                             href="pages/menu_cocktails.html">Special cocktails
-                            </a>
-                        </div>
-                    </li> -->
-                    <div class="itemMenu">
-                        <a class="sub-btn">MENU <i class="fas fa-angle-right dropdown"></i></a>
-                        <div class="sub-menu">
-                          <a href="pages/menu_breakfast.html" class="sub-item">BREAKFAST</a>
-                          <a href="pages/menu_lunch.html" class="sub-item">LUNCH</a>
-                          <a href="pages/menu_cocktails.html" class="sub-item">SPECIAL COCKTAILS</a>
-                        </div>
-                    </div>
-                    <li><a class="nav-link" href="pages/contact_us.html">Contact us</a></li>
-                    <li><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
-                    <li><a class="nav-link" href="pages/waitlist.html">Waitlist</a></li>
-                    <li><a class="nav-link" href="pages/productList.html">Merchandise</a></li>
-                    <li><a class="nav-link" href="pages/my_account.html">Profile</a></li>
-                    <!-- <li><a class="nav-link" href="#" id="loginButtonPopup" class="loginButton">Login</a></li> -->
-                    <button class="menu-btn" id="LoginBtn">LOG IN</button>
-                </ul>
-            </nav>
+        </section>
+    </section>
+    <!-- Welcome Popup -->
+    <section id="WelcomePopupSection">
+        <div class="WelcomePopupImageContainer">
+            <img src="./assets/img/1.welcomeLogo.png" alt="" class="img-fluid"/>
         </div>
-        <div id="side-locations" class ="sx hidden">
-            <nav class="navbar locations-navbar h-100">
-              <ul>
-                <li><a class="nav-link" href="#">MYRTLE BEACH</a>
-                <li><a class="nav-link" href="#">NORTH MYRTLE BEACH</a>
-                <li><a class="nav-link" href="#">WILMINGTON, NC</a>
-                <li><i id="backIcon" class="fa-solid fa-chevron-left"></i></li>
-              </ul>
-            </nav>
-        </div>
-        <a href="#" id="locations-link" class="locations-link">LOCATIONS</a>
-    </div>
-
-    <div id="pageContainer">
-        <section id="home">
-            <div class="pageContainerWrap">
-                <div class="pageContainerWrapCenter">
-                    <div class="wrap ">
-                        <div class="sectionHomeBody">
-                            <div class="row">
-                                <div class="homeSectionLeft ">
-                                    <div class="columnWrap ">
-                                        <div class="wrap ">
-                                            <div class="iframeDiv">
-                                                <iframe src="https://www.youtube-nocookie.com/embed/YqhH-RfInA4?playlist=YqhH-RfInA4&amp;autoplay=1&amp;controls=1&amp;loop=1&amp;mute=1&amp;origin=http://localhost" width="100%" height="100%" class="responsive-iframe" title="Blueberry Video"></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="homeSectionRight ">
-                                    <div class="columnWrap centered">
-                                        <div class="wrap homeSectionRightContent">
-                                            <div class="title"><h2>ENTICE YOUR PALETTE!</h2></div>
-                                            <div class="content">
-                                                <div><p class="homeSectionRightPar">Treat yourself with a fresh and modern American menu. Fresh ingredients sourced locally, where possible, and prepared by a dedicated team.</p></div>
-                                                <!-- <div><p class="sloganPar">SIT. DRINK AND EAT. BE OUR GUEST.</p></div> -->
-                                                <div class="sloganPar">
-                                                    <span class="typed" data-typed-items="SIT. DRINK AND EAT. BE OUR GUEST."></span>
-                                                </div>
-                                            </div>
-                                            <div class="waitlistButton">Waitlist</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="sectionAboutBody">
-                <div class="row">
-                    <div class="col-100">
-                        <div class="col-100 col-wrap">
-                            <div class="wrap ">
-                                <div class="aboutHeader col-100">
-                                    <div class="aboutHeaderWrap">
-                                        <div class="row"><h2>ABOUT US</h2>
-                                            <div class="linksWrap">
-                                                <div class="columnWrapRel">
-                                                    <div class="links" id="aboutLinks">
-                                                        <a href="pages/values.html">
-                                                            <div class="aboutUsLink">Values</div>
-                                                            <img src="./assets/img/arrowWhite.svg" alt="">
-                                                        </a>
-                                                        <a href="pages/team.html">
-                                                            <div class="aboutUsLink">Team</div>
-                                                            <img src="./assets/img/arrowWhite.svg" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aboutUsBackgroundImageWrap">
-                                    <div class="aboutUsBackgroundImage"><img src="./assets/img/aboutUsPhoto.jpg" alt="" width="987"></div>
-                                </div>
-                                <div class="aboutUsDescriptionWrap">
-                                    <div class="aboutUsDescription" id="aboutUsDescription">  
-                                        <div class="aboutUsPara">Blueberry’s Grill was created from what was once a modest small restaurant serving classic breakfast dishes in Sunny Side Up Grill, Little River – a small town in South Carolina.</div>
-                                        <div class="aboutUsPara">With some help, we became what you see today. Blueberry’s Grill is a Mediterranean-themed American casual dining</div>
-                                        <span id="dots"> </span>
-                                        <span id="more">
-                                            <p class="aboutUsPara">restaurant chain, serving American cuisine, based in NC and SC. We pride ourselves on our hospitality and to make everyone feel that warm welcome when they walk through the doors.</p><p class="aboutUsPara">Serving up an elevated food experience with delicious and unique dishes for breakfast, brunch and lunch that everyone can enjoy together. We are known for our modern interpretation of classic dishes and its consistency on only using high-quality fresh ingredients.</p><p
-                                            class="aboutUsPara">Whether you are a picky eater or adventurous food lover, you will find something to fill your belly at Blueberry’s Grill.</p><p class="aboutUsPara">Come on a journey with us...</p>
-                                        </span>
-                                        <div id="readMoreButton" class="aboutUsPara"><span id="readMoreText">Read more</span><i aria-hidden="true" class="fas fa-chevron-down" id="aboutUsArrowDown"></i><i aria-hidden="true" class="fas fa-chevron-up" id="aboutUsArrowUp"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="blogHome">
-            <div data-aos="fade-up">
-                <div class="sectionAboutBody">
-                    <div class="blogContent">
-                        <div class="blogHeader">
-                            <div class="columnWrapRel">
-                                <div class="links blogLink" id="aboutLinks">
-                                    <a href="pages/blog.html">
-                                        <h2>Blog</h2>
-                                        <img src="./assets/img/arrowBlue.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogCard"><img src="./assets/img/blog/blog1.jpg" alt="">
-                            <div class="row">
-                                <div class="row blogCardContent">
-                                    <div class="row centered"><h2>BLUEBERRY HUSHPUPPIES</h2>
-                                        <div class="blogCardParagraph">Hushpuppies are a classic Southern delicacy of an appetizer. They are deep-fried savory cornmeal-batter balls that can be served with breakfast, lunch or dinner. We put a nice spin on the classic hushpuppies and add fresh blueberries to the mix. A great way to start the day!</div>
-                                        <div class="blogCardReadMore"><a href="/blog"><span>Read more</span>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-                                            </svg>
-                                        </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blogCard"><img src="./assets/img/blog/blog2.jpg" width="445" height="284" alt="">
-                            <div class="blogCardContent"><h2>BLOODY MARY &amp; CHEESY SHRIMP &amp; GRITS</h2>
-                                <div class="blogCardParagraph">Shrimp &amp; grits is a popular dish in the low country. For a fun brunch spin, we made these shrimp &amp; grits with bloody Mary mix! Bloody Mary Shrimp &amp; Grits will make such a fun brunch dish to serve up next to your brunch bloody Mary bar every summer.</div>
-                                <div class="blogCardReadMore"><a href="/blog"><span>Read more</span>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-                                    </svg>
-                                </a></div>
-                            </div>
-                        </div>
-                        <div class="blogCard blogCard-3"><img src="./assets/img/blog/blog3.jpg" width="445" height="284" alt="">
-                            <div class="blogCardContent"><h2>BLUEBERRY FRENCH TOAST</h2>
-                                <div class="blogCardParagraph">Absorb the greatness of this dish because your French toasts will forever be transformed in the best way possible. This is a French toast game changer. You’ll never want ordinary French toast ever again.</div>
-                                <div class="blogCardReadMore"><a href="/#"><span>Read more</span>
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-                                    </svg>
-                                </a></div>
-                            </div>
-                        </div>
-                        <div class="blogHeader blogHeader-sm">
-                            <div class="columnWrapRel homeBlogLink">
-                                <div class="links">
-                                    <a href="./pages/blog.html" id="blogLink"><h2>Blog</h2><img src="./assets/img/arrowBlue.svg" id="blogLinkImg" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="reviews">
-            <div data-aos="fade-up">
-                <div class="sectionReviewsBody">
-                    <div class="row">
-                        <div class="reviewsContent">
-                            <div class="reviewsHeader">
-                                <div class="reviewsTitle">Reviews</div>
-                                <div class="d-flex align-items-center reviewsSocialMediaIcons">
-                                    <a href="https://www.facebook.com/blueberrysgrill/" target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/img/socialMedia/facebook.svg" alt="">
-                                    </a>
-                                    <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach" target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/img/socialMedia/yahoo.svg" alt="">
-                                    </a>
-                                    <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250" target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/img/socialMedia/yellowPages.svg" alt="">
-                                    </a>
-                                    <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2" target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/img/socialMedia/yelp.svg" alt="">
-                                    </a>
-                                    <a href="https://pin.it/3RItKJx" target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/img/socialMedia/facebook.svg" alt="">
-                                    </a>
-                                    <a href="https://www.tripadvisor.com/Restaurant_Review-g54359-d12162017-Reviews-Blueberry_s_Grill-Myrtle_Beach_South_C" target="_blank" rel="noopener noreferrer">
-                                        <img src="./assets/img/socialMedia/facebook.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviewsCarousel swiper">
-                            <div class="slide-content">
-                                <div class="card-wrapper swiper-wrapper">
-                                    <div class="reviewCard swiper-slide">
-                                        <div class="reviewLogo">
-                                            <img src="./assets/img/reviews/reviewLogo.png" alt="">
-                                        </div>
-                                        <div class="reviewBy"> Michaela M.</div>
-                                        <div class="review-stars-block"><i class="review-star">★</i><i class="review-star">★</i>
-                                            <i class="review-star">★</i>
-                                            <i class="review-star">★</i><i class="review-star">★</i></div>
-                                        <div class="reviewDescription">Perfect for brunch! They have something like 6-7 different
-                                            kinds of mimosas. Not to mention their Blast French Toast is sooo good!!
-                                            Definitely a must if you are in the area!
-                                        </div>
-                                        <div class="reviewDate"></div>
-                                    </div>
-                                    <div class="reviewCard swiper-slide">
-                                        <div class="reviewLogo">
-                                            <img src="./assets/img/reviews/reviewLogo.png" alt="">
-                                        </div>
-                                        <div class="reviewBy"> Lauren M.</div>
-                                        <div class="review-stars-block"><i class="review-star">★</i><i class="review-star">★</i>
-                                            <i class="review-star">★</i>
-                                            <i class="review-star">★</i><i class="review-star">★</i></div>
-                                        <div class="reviewDescription">I went here for my birthday brunch and it was fantastic!!!
-                                            food was soo delicious that ididn't mind the wait!
-                                        </div>
-                                        <div class="reviewDate"></div>
-                                    </div>
-                                    <div class="reviewCard swiper-slide">
-                                        <div class="reviewLogo">
-                                            <img src="./assets/img/reviews/reviewLogo.png" alt="">
-                                        </div>
-                                        <div class="reviewBy"> Dejah D.</div>
-                                        <div class="review-stars-block"><i class="review-star">★</i></div>
-                                        <div class="reviewDescription"> Stopped in at Blueberry Grill my first day back in town and 
-                                             to my expectation, I am never disappointed!
-                                            The mahimahi tacos were to die for and the mimosa are always a hit- This place is a must 
-                                            try!
-                                        </div>
-                                        <div class="reviewDate"></div>
-                                    </div>
-                                    <div class="reviewCard swiper-slide">
-                                        <div class="reviewLogo">
-                                            <img src="./assets/img/reviews/reviewLogo.png" alt="">
-                                        </div>
-                                        <div class="reviewBy"> Dejah D.</div>
-                                        <div class="review-stars-block"><i class="review-star">★</i></div>
-                                        <div class="reviewDescription"> Stopped in at Blueberry Grill my first day back in town and 
-                                             to my expectation, I am never disappointed!
-                                            The mahimahi tacos were to die for and the mimosa are always a hit- This place is a must 
-                                            try!
-                                        </div>
-                                        <div class="reviewDate"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-button-next swiper-navBtn"></div>
-                            <div class="swiper-button-prev swiper-navBtn"></div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        <!-- <div id="myCarousel" class="carousel slide reviewsCarousel-small" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="reviewCard review-1">
-                                    <div class="reviewLogo">
-                                        <img src="./assets/img/reviews/reviewLogo.png" alt="">
-                                    </div>
-                                    <div class="reviewBy"> Michaela M.</div>
-                                    <div class="review-stars-block"><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i></div>
-                                    <div class="reviewDescription">Perfect for brunch! They have something like 6-7 different
-                                        kinds of mimosas. Not to mention their Blast French Toast is sooo good!!
-                                        Definitely a must if you are in the area!
-                                    </div>
-                                    <div class="reviewDate"></div>
-                                </div>
-                                <div class="reviewCard review-1">
-                                    <div class="reviewLogo">
-                                        <img src="./assets/img/reviews/reviewLogo.png" alt="">
-                                    </div>
-                                    <div class="reviewBy"> Lauren M.</div>
-                                    <div class="review-stars-block"><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i><i class="review-star">★</i></div>
-                                    <div class="reviewDescription">I went here for my birthday brunch and it was fantastic!!!
-                                        food was soo delicious that ididn't mind the wait!
-                                    </div>
-                                    <div class="reviewDate"></div>
-                                </div>
-                                <div class="reviewCard review-1">
-                                    <div class="reviewLogo">
-                                        <img src="./assets/img/reviews/reviewLogo.png" alt="">
-                                    </div>
-                                    <div class="reviewBy"> Dejah D.</div>
-                                    <div class="review-stars-block"><i class="review-star">★</i></div>
-                                    <div class="reviewDescription"> Stopped in at Blueberry Grill my first day back in town and to my expectation, I am never disappointed!
-                                        The mahimahi tacos were to die for and the mimosa are always a hit- This place is a must try!
-                                    </div>
-                                    <div class="reviewDate"></div>
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a></div> -->
-                        <div class="loginToReviewSection">
-                            <div class="loginToReviewDiv">
-                                <img src="./assets/img/reviews/reviewLogo.png" alt="">
-                                <span>Login to Add Review</span>
-                            </div>
-                            <button class="mainButton loginToReviewButton" href="" onclick="loginPopup()">Login</button>
-                        </div>
-                        <div class="reviewsSocialMediaIcons-sm">
-                            <div>
-                                <a href="https://www.facebook.com/blueberrysgrill/"><img src="./assets/img/socialMedia/facebook.svg" alt=""></a>
-                            </div>
-                            <div>
-                                <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach"><img src="./assets/img/socialMedia/yahoo.svg" alt=""></a>
-                            </div>
-                            <div>
-                                <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250"><img src="./assets/img/socialMedia/yellowPages.svg" alt=""></a>
-                            </div>
-                            <div>
-                                <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2"><img src="./assets/img/socialMedia/yelp.svg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Login Popup Section -->
-        <section class="loginSection" id="loginSectionPopup">
-            <div class="loginContainer">
-                <div class="loginInnerContainer flexContainer">
-                    <div class="registerContainer flexColumnContainer">
-                        <div class="BlueBerryLogo">
-                            <img src="./assets/img/LoginPageLogo.svg" alt="" class="blueberryLogoSvg">
-                        </div>
-                        <div class="registerText">
-                            <p><span class="breakParagraph"><span class="boldText">Register </span>or <span class="boldText">log in</span></span> to your account</p>
-                        </div>
-                    </div>
-                    <div class="registerFormContainer flexContainer">
-                        <div class="registerForm">
-                            <h2>Register</h2>
-                            <form>
-                                <div class="registerFormLabelInput">
-                                    <label for="name">Your name <span class="required">*</span></label>
-                                    <input type="text" name="name" id="nameInput" required>
-                                </div>
-                                <div class="registerFormLabelInput">
-                                    <label for="phone">Phone</label>
-                                    <input type="number" name="phone" id="phoneInput"  pattern="[0-9]{4}[0-9]{2}[0-9]{4}"
-                                    required>
-                                </div>
-                                <div class="registerFormLabelInput">
-                                    <label for="email">Email address <span class="required">*</span></label>
-                                    <input type="email" name="email" id="emailInput" required>
-                                </div>
-                                <div class="registerFormLabelInput">
-                                    <label for="password">Create password <span class="required">*</span></label>
-                                    <input type="password" name="password" id="registerPasswordInput" required>
-                                </div>
-                                <div class="registerFormLabelInput">
-                                    <label for="repeatPassword">Verify password <span class="required">*</span></label>
-                                    <input type="password" name="repeatPassword" id="repeatPasswordInput" required>
-                                </div>
-                                <div class="registerFormLabelInput">
-                                    <button class="registerFormButton" type="submit">REGISTER</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="loginForm">
-                            <h2>Login</h2>
-                            <form action="">
-                                <div class="registerFormLabelInput">
-                                    <label for="username">Username or email <span class="required">*</span></label>
-                                    <input type="text" name="username" id="usernameInput" required>
-                                </div>
-                                <div class="registerFormLabelInput">
-                                    <label for="password">Password <span class="required">*</span></label>
-                                    <input type="password" name="password" id="loginPasswordInput" required>
-                                </div>
-                                <div class="registerFormLabelInput">
-                                    <label class="rememberMeContainer">
-                                        <input type="checkbox">
-                                        <span id="rememberMeText">Remember Me</span>
-                                        <span class="checkmark" id="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="registerFormLabelInput">
-                                    <button class="loginFormButton" type="submit">LOG IN</button>
-                                </div>
-                                <div class="registerFormLabelInput lostPassword">
-                                    <button class="loginFormButton lost-bg" type="submit">LOST YOUR PASSWORD?</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="closeLoginIcon" id="closeLoginIcon"><p class="closeIcon">X</p></div>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="footerTop">
-                <div class="footerLeft">We are here to reward you for your support! Download Blueberry's Reward App now! (Coming soon)</div>
-                <div class="footerRight">
-                    <div class="appleStore"><img width="58" height="58" src="./assets/img/app_store.svg" class="" alt="" loading="lazy">
-                        <h3>Download in App store</h3></div>
-                    <div class="androidStore"><img width="58" height="58" src="./assets/img/android.svg" class="" alt="" loading="lazy">
-                        <h3>Download in App store</h3></div>
-                </div>
-            </div>
-            <div class="footerBottom">
-                <div class="locations">
-                    <div class="location location-1">
-                        <div>
-                            <figure><a href="#" target="_blank" class="locationIcon"><img width="38" height="43" src="./assets/img/locationIcon.svg" alt="" loading="lazy"></a></figure>
-                        </div>
-                        <div class="address"><h3><a href="#" target="_blank">MYRTLE BEACH</a></h3>
-                            <p>7931 N Kings Hwy<br>Myrtle Beach, SC 29572</p></div>
-                    </div>
-                    <div class="location location-2">
-                        <div>
-                            <figure><a href="#" target="_blank" class="locationIcon"><img width="38" height="43" src="./assets/img/locationIcon.svg" alt="" loading="lazy"></a></figure>
-                        </div>
-                        <div class="address"><h3><a href="#" target="_blank">NORTH MYRTLE BEACH</a></h3>
-                            <p>4856 Highway 17 South<br>North Myrtle Beach, SC 29582</p></div>
-                    </div>
-                    <div class="location location-3">
-                        <div>
-                            <figure><a href="#" target="_blank" class="locationIcon"><img width="38" height="43" src="./assets/img/locationIcon.svg" alt="" loading="lazy"></a></figure>
-                        </div>
-                        <div class="address"><h3><a href="#" target="_blank">WILMINGTON, NC</a></h3>
-                            <p>1900 Eastwood Road<br>Wilmington, NC 28403</p></div>
-                    </div>
-                    <div class="location location-4">
-                        <div>
-                            <figure><a href="#" target="_blank" class="locationIcon"><img width="38" height="43" src="./assets/img/phone.svg" alt="" loading="lazy"></a></figure>
-                        </div>
-                        <div class="address"><h3><a href="#" target="_blank">843-945-4588</a></h3>
-                            <p>Open 7 Days a Week<br>7:00am to 6:30pm</p></div>
-                    </div>
-                </div>
-                <div class="followUs">
-                    <div class="followUsHeading">FOLLOW US</div>
-                    <div class="align-items-center reviewsSocialMediaIcons">
-                        <a href="https://www.facebook.com/blueberrysgrill/" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/img/socialMedia/facebook.svg" alt="">
-                        </a>
-                        <a href="https://local.yahoo.com/info-204802573-blueberry-s-grill-myrtle-beach" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/img/socialMedia/yahoo.svg" alt="">
-                        </a>
-                        <a href="https://www.yellowpages.com/myrtle-beach-sc/mip/blueberrys-grill-531519250" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/img/socialMedia/yellowPages.svg" alt="">
-                        </a>
-                        <a href="https://www.yelp.com/biz/blueberrys-grill-myrtle-beach-2" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/img/socialMedia/yelp.svg" alt="">
-                        </a>
-                        <a href="https://pin.it/3RItKJx" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/img/socialMedia/facebook.svg" alt="">
-                        </a>
-                        <a href="https://www.tripadvisor.com/Restaurant_Review-g54359-d12162017-Reviews-Blueberry_s_Grill-Myrtle_Beach_South_C" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/img/socialMedia/facebook.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    </section>
 </div>
 
 <!-- Vendor JS Files -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/adb46161e8.js" crossorigin="anonymous"></script>
-<script src="assets/vendor/purecounter/purecounter.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.min.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/js/loginPopup.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/sidebarMenu.js"></script>
-<script src="assets/js/readMore.js"></script>
-<script src="assets/js/nav.js"></script>
-<!--<script src="assets/vendor/swiper-bundle.min.js"></script>-->
-<script src="assets/js/reviewsSwiper.js"></script>
+<script src="./assets/vendor/purecounter/purecounter.js"></script>
+<script src="./assets/vendor/aos/aos.js"></script>
+<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="./assets/vendor/typed.js/typed.min.js"></script>
+<script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="./assets/js/welcomePopup.js"></script>
 </body>
 
 </html>
