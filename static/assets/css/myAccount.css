@@ -30,7 +30,6 @@
   width: 33px;
   height: 33px;
   background: #ecc36c;
-  /* display: inline-block; */
   border-radius: 50%;
   text-align: center;
   line-height: 29px;
@@ -39,7 +38,6 @@
   right: 6px;
   color: #273c89;
   cursor: pointer;
-  /* vertical-align: middle; */
 }
 .navBarOfProfilePage {
   display: flex;
@@ -86,7 +84,7 @@
 }
 
 .ProfilePageSection a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 /* My Accoumt */
@@ -94,7 +92,6 @@
   display: flex;
   width: 100%;
   padding-top: 45px;
-  /* display: none; */
 }
 
 .LoginDetails {
@@ -102,7 +99,7 @@
 }
 .PersonalDetails {
   width: 60%;
-  border-left: 1px solid #273c89 !important;
+  border-left: 1px solid #273c89;
 }
 
 .LoginDetailsHeader,
@@ -136,7 +133,6 @@
   padding: 0.75em;
   transition: all 0.2s linear;
   cursor: text;
-  /* opacity: 0.5; */
 }
 
 .PersonalDetailsForm div input {
@@ -149,7 +145,6 @@
   color: #273c89;
   opacity: 0.5;
   font-weight: 400;
-  font-family: "Aileron", Sans-serif !important;
   margin-bottom: 5px;
   font-style: inherit;
   position: relative;
@@ -180,63 +175,29 @@
 }
 
 /* Order History */
-
-/* .OrderHistoryContainer {
-  display: flex;
-  width: 100%;
-  padding-top: 45px;
-} */
-/* .OrderHistoryDetails {
-  width: 40%;
-} */
-/* .SavedForLater {
-  width: 40%;
-} */
-/* .OrderHistoryHeader {
-  border-bottom: 1px solid #273c89;
-  font-weight: 700;
-  padding: 15px 0;
-  font-size: 20px;
-  color: #273c89;
-  font-family: "Aileron", Sans-serif !important;
-} */
 .OrderStatusAndOrderNumberDetailConatiner {
   display: flex;
   padding-top: 15px;
   justify-content: space-between;
   padding-right: 80px;
 }
-/* .SavedForLaterHeader {
-  border-bottom: 1px solid #273c89;
-  font-weight: 700;
-  padding: 15px 0;
-  font-size: 20px;
-  width: 100%;
-  color: #273c89;
-  font-family: "Aileron", Sans-serif !important;
-} */
 .orderHistoryStatusText {
   font-weight: 700;
   font-size: 18px;
   color: #273c89;
-  font-family: "Aileron", Sans-serif !important;
 }
 .orderNumbersText {
   font-weight: 700;
-  /* padding: 15px 0; */
   font-size: 18px;
   color: #273c89;
-  font-family: "Aileron", Sans-serif !important;
 }
 .orderNumberValue {
   font-size: 17px;
   color: #273c89;
-  font-family: "Aileron", Sans-serif !important;
   padding-top: 15px;
 }
 .SavedForDetailsStatus {
   color: #273c89;
-  font-family: "Aileron", Sans-serif !important;
   margin-top: 41px;
   padding-left: 30px;
   padding-top: 15px;
@@ -245,58 +206,30 @@
 .dateDelivered {
   font-size: 17px;
   color: #273c89;
-  font-family: "Aileron", Sans-serif !important;
   margin-top: -4px;
 }
 .deliveredText {
   font-size: 17px;
   color: #273c89;
-  font-family: "Aileron", Sans-serif !important;
   padding-top: 15px;
 }
-/* .PersonaSavedForDetailsStatusdiv {
-  padding: 3px;
-  margin: 0 0 6px;
-  max-width: 378px;
-} */
 .SavedForDetailsHeader {
   padding-left: 30px !important;
-  /* padding-left: 30px; */
   padding-top: 15px !important;
   border-bottom: 1px solid #273c89;
   font-weight: 700;
   padding: 15px 0;
   font-size: 20px;
-  /* font-weight: 400; */
-  font-family: "Aileron", Sans-serif !important;
   color: #273c89;
 }
-/* .BrowseProduct {
-  padding-top: 15px;
-  padding-right: 30px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  color: #ffffff;
-  background-color: #273c89 !important;
-  border-radius: 0px !important;
-  border: solid;
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-  border-bottom-width: 0;
-  border-color: var(--ast-global-color-0);
-} */
 .orderHistoryTwoButton {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   margin-top: 25px;
   padding-right: 30px;
-  /* width: 100%; */
 }
 .startAReturn {
   font-weight: 700;
-  font-family: "Aileron", Sans-serif !important;
   padding-top: 11px;
   padding-right: 25px;
   padding-bottom: 10px;
@@ -315,7 +248,6 @@
 }
 .viewOrder {
   font-weight: 700;
-  font-family: "Aileron", Sans-serif !important;
   padding-top: 11px;
   padding-right: 25px;
   padding-bottom: 10px;
@@ -330,17 +262,7 @@
   border-left-width: 0;
   border-bottom-width: 0;
   border-color: var(--ast-global-color-0);
-  /* width: 40%; */
 }
-/* .OrderHistoryContainer {
-  display: flex;
-} */
-/* .LeftOrderHistoryContainer {
-  display: flex;
-  flex-direction: column;
-  padding-top: 15px;
-  padding-right: 30px;
-} */
 
 .orderHistory {
   height: 400px;
@@ -628,6 +550,9 @@
     width: 100%;
     margin: 40px 0 35px;
   }
+  .SWPmyAccount a.activeLink h3{
+    font-weight: 900;
+  }
   .SWPmyAccount h3::after,
   .SWPOtherLinks h3::after {
     content: "";
@@ -668,9 +593,6 @@
     display: none;
   }
 
-  /* .OrderHistoryContainer {
-    padding-top: 0px;
-  } */
   .orderHistory {
     height: auto;
   }
@@ -737,6 +659,9 @@
   }
 
   /* Payment Details */
+  .paymentCardBigWidth{
+    display: none;
+  }
   .paymentcard{
     flex-direction: column;
   }

@@ -96,7 +96,7 @@
             </div>
             <div class="RightNameAndPhotoContainer">Hi Email</div>
           </div>
-  
+
           <div class="navBarOfProfilePage bigWidthProfile">
             <div><a class="ProfileNavbarLink activeLink" id="myAccountLink" href="">My account</a></div>
             <div><a class="ProfileNavbarLink" href="" id="orderHistoryLink">Order history</a></div>
@@ -104,15 +104,15 @@
             <div><a class="ProfileNavbarLink" href="" id="paymentDetailsLink">Payment details</a></div>
             <div><a class="ProfileNavbarLink" href="" id="changePasswordLink">Change Password</a></div>
           </div>
-  
+
           <!-- My Account   -->
           <div class="MyAccountContainer myaccountContainerBigWidth" id="myAccount">
             <div class="LoginDetails">
               <div class="LoginDetailsHeader">Log in details</div>
               <div class="inputLoginDetailsContainer">
-                <label for="email">E-mail
+                <label for="Email">E-mail
                 </label>
-                <input type="email" id="email" name="email" value="" required />
+                <input type="email" id="Email" name="email" value="" required />
               </div>
             </div>
             <div class="PersonalDetails">
@@ -124,14 +124,13 @@
                     </label>
                     <input type="name" id="name" name="name" value="" required />
                   </div>
-  
                   <div class="personalDetailsBox">
-                    <label for="phone">Phone </label>
-                    <input type="tel" id="phone" name="phone" value="" required />
+                    <label for="Phone">Phone </label>
+                    <input type="tel" id="Phone" name="phone" value="" required />
                   </div>
                   <div class="personalDetailsBox">
-                    <label for="gender">Gender </label>
-                    <select class="select-selected" name="gender" id="gender">
+                    <label for="Gender">Gender </label>
+                    <select class="select-selected" name="gender" id="Gender">
                       <option value="male">Male</option>
                       <option value="female">Female</option>
                     </select>
@@ -158,8 +157,6 @@
                   </div>
                 </div>
                 <div class="orderHistoryTwoButton">
-                  <!-- <div class="startAReturn">START A RETURN</div> -->
-                  <!-- <div class="viewOrder">VIEW ORDER</div> -->
                   <button class="myAccountBtn">START A RETURN</button>
                   <button class="myAccountBtn">VIEW ORDER</button>
                 </div>
@@ -226,7 +223,7 @@
             </div>
           </div>
           <!-- Payment Details -->
-          <div class="paymentcard hidden" id="paymentDetails">
+          <div class="paymentcard  paymentCardBigWidth hidden" id="paymentDetails">
             <div class="addCard">
               <div>
                 <img src="https://blueberrysgrillmb.com/wp-content/uploads/2022/01/cardIcon.svg" />
@@ -270,16 +267,16 @@
               </div>
             </div>
           </div>
-  
+
           <!-- Profile Small Width  -->
           <div class="SmallWidthProfile">
             <!-- My Account Small Width -->
             <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPMyAccountId">
-              <a href="">
-                <h3 class="activeLink">My account</h3>
+              <a href="" class="activeLink" id="myAccountSmallLink">
+                <h3>My account</h3>
               </a>
             </div>
-            <div class="MyAccountContainer activeIdOfProfileNavbar hidden">
+            <div class="MyAccountContainer activeIdOfProfileNavbar" id="accountContainer">
               <div class="LoginDetails">
                 <div class="LoginDetailsHeader">Log in details</div>
                 <div class="inputLoginDetailsContainer">
@@ -292,8 +289,8 @@
                 <div class="PersonalDetailsForm">
                   <form>
                     <div class="personalDetailsBox">
-                      <label for="name">Your name</label>
-                      <input type="name" id="name" name="name" value="" required />
+                      <label for="Name">Your name</label>
+                      <input type="name" id="Name" name="name" value="" required />
                     </div>
                     <div class="personalDetailsBox">
                       <label for="phone">Phone </label>
@@ -312,12 +309,12 @@
               </div>
             </div>
             <!-- Order History Small Width -->
-            <div class="SWPOtherLinks" id="SWPOrderHistoryId">
-              <a href="./OrderHistory.html#SWPOrderHistoryId">
+            <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPOrderHistoryId">
+              <a href="" id="orderHistorySmallLink">
                 <h3>Order history</h3>
               </a>
             </div>
-            <div class="orderHistory hidden">
+            <div class="orderHistory hidden" id="orderHistoryContainer">
               <div class="MyAccountContainer">
                 <div class="LoginDetails">
                   <div class="LoginDetailsHeader orderHitoryTextHeader">
@@ -335,8 +332,6 @@
                     </div>
                   </div>
                   <div class="orderHistoryTwoButton">
-                    <!-- <div class="startAReturn">START A RETURN</div> -->
-                    <!-- <div class="viewOrder">VIEW ORDER</div> -->
                     <button class="myAccountBtn startReturnBtn">START A RETURN</button>
                     <button class="myAccountBtn">VIEW ORDER</button>
                   </div>
@@ -350,12 +345,12 @@
               </div>
             </div>
             <!-- My Wishlist Small Width -->
-            <div class="SWPOtherLinks" id="SWPMyWishListID">
-              <a href="./MyWishlist.html#SWPMyWishListID">
+            <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPMyWishListID">
+              <a href="" id="myWishlistSmallLink">
                 <h3>My Wishlist</h3>
               </a>
             </div>
-            <div class="wishList hidden">
+            <div class="wishList hidden" id="myWishlistContainer">
               <div class="WishlistConatiner">
                 <div class="wishListItemsContainer">
                   <div class="wishlistItem75">
@@ -378,7 +373,7 @@
                     <div class="AddtoCartWishListItemButton wishListItemsContainerItemDiv">
                       <div>
                         <img src="../assets/img/profile/addtoCartLogo.svg" alt="" class="img-fluid cartWishlist" />
-  
+
                         ADD TO CART
                       </div>
                     </div>
@@ -405,7 +400,7 @@
                     <div class="AddtoCartWishListItemButton wishListItemsContainerItemDiv">
                       <div>
                         <img src="../assets/img/profile/addtoCartLogo.svg" alt="" class="img-fluid cartWishlist" />
-  
+
                         ADD TO CART
                       </div>
                     </div>
@@ -414,12 +409,12 @@
               </div>
             </div>
             <!-- Payment Details Small Width -->
-            <div class="SWPOtherLinks" id="SWPPaymentDetailID">
-              <a href="./PaymentDetails.html#SWPPaymentDetailID">
+            <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPPaymentDetailID">
+              <a href="" id="paymentDetailsSmallLink">
                 <h3>Payment details</h3>
               </a>
             </div>
-            <div class="paymentcard">
+            <div class="paymentcard hidden" id="paymentDetailsContainer1">
               <div class="addCard">
                 <div>
                   <img src="https://blueberrysgrillmb.com/wp-content/uploads/2022/01/cardIcon.svg" />
@@ -435,7 +430,7 @@
                 <div class="add-card-btn myAccountBtn"><a href="">PAY WITH PAYPAL</a></div>
               </div>
             </div>
-            <div class="PaymentDetail">
+            <div class="PaymentDetail hidden" id="paymentDetailsContainer2">
               <div class="paymentDetailContainer">
                 <div class="NoSavedMethodFound">
                   <div class="logoPaymentDetail"></div>
@@ -444,12 +439,12 @@
               </div>
             </div>
             <!-- Change Password Small Width -->
-            <div class="SWPOtherLinks" id="SWPChangePassWordId">
-              <a href="./ChangePassword.html#SWPChangePassWordId">
+            <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPChangePassWordId">
+              <a href="" id="changePasswordSmallLink">
                 <h3>Change password</h3>
               </a>
             </div>
-            <div class="changePassword">
+            <div class="changePassword hidden" id="changePasswordContainer">
               <div class="changePasswordContainer">
                 <legend class="legendPara">
                   Set up a new password below, it has to be at least 6 characters
@@ -457,18 +452,18 @@
                 <div class="ChangePasswordFormContainer">
                   <form>
                     <div class="OldPassword">
-                      <label for="OldPassword">Old Password </label>
-                      <input type="password" id="OldPassword" name="password" />
+                      <label for="oldPassword">Old Password </label>
+                      <input type="password" id="oldPassword" name="password" />
                       <i class="far fa-eye eyeIconOfPassword"></i>
                     </div>
                     <div class="NewPassword">
-                      <label for="NewPassword">New Password </label>
-                      <input type="password" id="NewPassword" name="password" />
+                      <label for="newPassword">New Password </label>
+                      <input type="password" id="newPassword" name="password" />
                       <i class="far fa-eye eyeIconOfPassword"></i>
                     </div>
                     <div class="VerifyNewPassword">
-                      <label for="VerifyNewPassword">Verify New Password </label>
-                      <input type="password" id="VerifyNewPassword" name="password" />
+                      <label for="verifyNewPassword">Verify New Password </label>
+                      <input type="password" id="verifyNewPassword" name="password" />
                       <i class="far fa-eye eyeIconOfPassword"></i>
                     </div>
                     <div class="UpdateButtonOfPasswordDetails">UPDATE</div>
@@ -478,11 +473,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="SWPmyAccount activeIdOfProfileNavbar" id="SWPChangePassWordId">
-          <a href="./ChangePassword.html#SWPChangePassWordId">
-            <h3 class="active">Change password</h3>
-          </a>
-        </div> -->
       </section>
       <footer id="footer">
         <div class="footerTop">
