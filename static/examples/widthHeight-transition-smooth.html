@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .aboutUsDescriptionWrap {
+            height: 468px;
+            /*display: -webkit-box;*/
+            /*display: -ms-flexbox;*/
+            /*display: flex;*/
+            /*flex-wrap: wrap;*/
+            /*!* margin-right: auto; *!*/
+            /*position: absolute;*/
+            /*max-width: 75%;*/
+            /*bottom: 140px;*/
+            border: 6px solid red;
+            display: flex;
+        }
+
+        .aboutUsDescription {
+            /*padding: 50px 30px 50px 50px;*/
+            /*transition: width 1s, height 1s;*/
+            transition: all ease-in-out 0.5s;
+            /*border: 14px solid #ecc36c;*/
+            /*border-bottom-width: 0px;*/
+            /*border-left-width: 0px;*/
+            /*transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*justify-content: end;*/
+            background-color: #273c89;
+            /*flex-wrap: wrap;*/
+            width: 500px;
+
+            /*width: 1200px;*/
+            align-self: end;
+            display: flex;
+            /*display: flex;*/
+            /*position: relative;*/
+        }
+
+        .aboutUsDescription2 {
+            align-self: end;
+        }
+
+        #readMoreButton {
+            /*background: none;*/
+            /*border: none;*/
+            /*color: white;*/
+            /*font-family: "Aileron", Sans-serif, serif;*/
+            /*font-size: 18px;*/
+            /*font-weight: 600;*/
+            /*cursor: pointer;*/
+        }
+
+        #readMoreButton i {
+            margin-left: 5px;
+        }
+
+        #aboutUsDescription:hover {
+            /*border: 1px dotted white;*/
+            /*width: 1200px;*/
+            /*height: 600px;*/
+        }
+    </style>
+
+
+</head>
+
+<body>
+<section class="aa">
+    <div class="aboutUsDescriptionWrap">
+        <div class="aboutUsDescription" id="aboutUsDescription">
+            <div class="aboutUsDescription2">
+                <div class="aboutUsPara">Blueberry’s Grill was created from what was once a modest small restaurant serving classic breakfast dishes in Sunny Side Up Grill, Little River – a small town in South Carolina.</div>
+                <div class="aboutUsPara">With some help, we became what you see today. Blueberry’s Grill is a Mediterranean-themed American casual dining</div>
+                <span id="dots"> </span>
+                <span id="more">
+                                            <p class="aboutUsPara">restaurant chain, serving American cuisine, based in NC and SC. We pride ourselves on our hospitality and to make everyone feel that warm welcome when they walk through the doors.</p><p class="aboutUsPara">Serving up an elevated food experience with delicious and unique dishes for breakfast, brunch and lunch that everyone can enjoy together. We are known for our modern interpretation of classic dishes and its consistency on only using high-quality fresh ingredients.</p><p
+                        class="aboutUsPara">Whether you are a picky eater or adventurous food lover, you will find something to fill your belly at Blueberry’s Grill.</p><p class="aboutUsPara">Come on a journey with us...</p>
+                                        </span>
+                <div id="readMoreButton" class="aboutUsPara"><span id="readMoreText">Read more</span><i aria-hidden="true" class="fas fa-chevron-down" id="aboutUsArrowDown"></i><i aria-hidden="true" class="fas fa-chevron-up" id="aboutUsArrowUp"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<p>Scale down the browser to view the mobile version</p>
+<script>
+  (function () {
+    "use strict";
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("more");
+    const btnText = document.getElementById("readMoreText");
+    const aboutUsDescription = document.getElementById("aboutUsDescription");
+    const upicon = document.getElementById("aboutUsArrowUp");
+    const downicon = document.getElementById("aboutUsArrowDown");
+    const aboutContainer = document.getElementById("about");
+    let readMoreButton = document.getElementById("readMoreButton");
+
+    readMoreButton.addEventListener("click", function (e) {
+      e.preventDefault();
+      // let height = window.innerHeight ;
+      if (screen.width >= 800 || screen.width <= 436) {
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+          aboutUsDescription.style.height = "125px";
+          downicon.style.display = "inline";
+          upicon.style.display = "none";
+          // aboutUsDescription.style.transition = "height 1s ease";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          // aboutUsDescription.style.height = "auto";
+          aboutUsDescription.style.height = "380px";
+          downicon.style.display = "none";
+          upicon.style.display = "inline";
+          // aboutUsDescription.style.transition = "width 0.5s ease-in-out";
+          setTimeout(() => {
+          moreText.style.display = 'block';
+          }, 500);
+        }
+      }
+    });
+  })();
+
+</script>
+
+</body>
+
+</html>
