@@ -271,10 +271,10 @@
   height: 360px;
 }
 
-.orderHistoryBigWidth .LoginDetails,
+/* .orderHistoryBigWidth .LoginDetails,
 .orderHistoryBigWidth .PersonalDetails {
   width: 46%;
-}
+} */
 
 /* My Wishlist */
 .WishlistContainer {
@@ -434,6 +434,12 @@
 }
 
 /* Media Queries */
+@media (max-width: 1370px){
+  .orderHistoryTwoButton .myAccountBtn{
+    width: 48.5%;
+  }
+}
+
 @media (max-width: 1260px) {
   .PersonalDetailsForm div {
     max-width: 100%;
@@ -452,9 +458,6 @@
   }
   .MyAccountContainer {
     justify-content: flex-start;
-  }
-  .orderHistoryTwoButton .myAccountBtn{
-    width: 48.5%;
   }
 }
 

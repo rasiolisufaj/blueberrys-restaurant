@@ -15,11 +15,13 @@ const menuHeaderEl = document.getElementById('menuHeader');
 const menuHomeSectionEl = document.getElementById('homeSection');
 const valuesSectionEl = document.getElementById('valuesSection');
 const teamSectionEl = document.getElementById('teamSection');
+const profilePageSectionEl = document.getElementById('ProfilePageSection');
 const urlParts = window.location.pathname.split('/');
 const url = urlParts[urlParts.length - 1];
+console.log(url);
 
 function loginPopup(){
-  if(url === 'index.html'){
+  if(url === 'home.html'){
     homeElement.classList.toggle('hidden');
     aboutElement.classList.toggle('hidden');
     blogElement.classList.toggle('hidden');
@@ -40,6 +42,8 @@ function loginPopup(){
     valuesSectionEl.classList.toggle('hidden');
   } else if(url === 'team.html'){
     teamSectionEl.classList.toggle('hidden');
+  } else if(url === 'my_account.html'){
+    profilePageSectionEl.classList.toggle('hidden');
   }
   footerElement.classList.toggle('hidden');
   loginPopupElement.classList.toggle('showUp');

@@ -67,6 +67,7 @@
             <li><a class="nav-link" href="../pages/gallery.html">Gallery</a></li>
             <li><a class="nav-link" href="../pages/waitlist.html">Waitlist</a></li>
             <li><a class="nav-link" href="../pages/productList.html">Merchandise</a></li>
+            <li><a class="nav-link" href="../pages/my_account.html">Profile</a></li>
             <button class="menu-btn" id="LoginBtn">LOG IN</button>
           </ul>
         </nav>
@@ -85,7 +86,7 @@
     </div>
 
     <div id="pageContainer">
-      <section class="ProfilePageSection">
+      <section class="ProfilePageSection" id="ProfilePageSection">
         <div class="elementWrapper">
           <div class="NameAndPhotoContainer">
             <div class="LeftNameAndPhotoContainer">
@@ -141,7 +142,7 @@
             </div>
           </div>
           <!-- Order History  -->
-          <div class="orderHistory orderHistoryBigWidth hidden" id="orderHistory">
+          <!-- <div class="orderHistory orderHistoryBigWidth hidden" id="orderHistory">
             <div class="MyAccountContainer myaccountContainerBigWidth">
               <div class="LoginDetails">
                 <div class="LoginDetailsHeader">Order History</div>
@@ -157,7 +158,7 @@
                   </div>
                 </div>
                 <div class="orderHistoryTwoButton">
-                  <button class="myAccountBtn">START A RETURN</button>
+                  <button class="myAccountBtn orderReturnBtn">START A RETURN</button>
                   <button class="myAccountBtn">VIEW ORDER</button>
                 </div>
               </div>
@@ -168,9 +169,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- My wishlist  -->
-          <div class="wishList wishListBigwidth hidden" id="myWishlist">
+          <!-- <div class="wishList wishListBigwidth hidden" id="myWishlist">
             <div class="WishlistContainer">
               <div class="wishListItemsContainer BorderBottomOfEachWishlistItemsContainer">
                 <div class="wishlistItem75">
@@ -221,9 +222,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- Payment Details -->
-          <div class="paymentcard  paymentCardBigWidth hidden" id="paymentDetails">
+          <!-- <div class="paymentcard  paymentCardBigWidth hidden" id="paymentDetails">
             <div class="addCard">
               <div>
                 <img src="https://blueberrysgrillmb.com/wp-content/uploads/2022/01/cardIcon.svg" />
@@ -238,7 +239,7 @@
               </div>
               <div class="add-card-btn myAccountBtn"><a href="">PAY WITH PAYPAL</a></div>
             </div>
-          </div>
+          </div> -->
           <!-- Change Password  -->
           <div class="changePassword BigWidthChangePassword hidden" id="changePassword">
             <div class="changePasswordContainer">
@@ -309,7 +310,7 @@
               </div>
             </div>
             <!-- Order History Small Width -->
-            <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPOrderHistoryId">
+            <!-- <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPOrderHistoryId">
               <a href="" id="orderHistorySmallLink">
                 <h3>Order history</h3>
               </a>
@@ -343,9 +344,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- My Wishlist Small Width -->
-            <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPMyWishListID">
+            <!-- <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPMyWishListID">
               <a href="" id="myWishlistSmallLink">
                 <h3>My Wishlist</h3>
               </a>
@@ -407,9 +408,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- Payment Details Small Width -->
-            <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPPaymentDetailID">
+            <!-- <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPPaymentDetailID">
               <a href="" id="paymentDetailsSmallLink">
                 <h3>Payment details</h3>
               </a>
@@ -437,7 +438,7 @@
                   No saved method found
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- Change Password Small Width -->
             <div class="SWPOtherLinks SWPmyAccount activeIdOfProfileNavbar" id="SWPChangePassWordId">
               <a href="" id="changePasswordSmallLink">
@@ -472,6 +473,84 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Login Popup Section -->
+      <section class="loginSection" id="loginSectionPopup">
+        <div class="loginContainer">
+            <div class="loginInnerContainer flexContainer">
+                <div class="registerContainer flexColumnContainer">
+                    <div class="BlueBerryLogo">
+                        <img src="../assets/img/LoginPageLogo.svg" alt="" class="blueberryLogoSvg">
+                    </div>
+                    <div class="registerText">
+                        <p><span class="breakParagraph"><span class="boldText">Register </span>or <span
+                                    class="boldText">log in</span></span> to your account</p>
+                    </div>
+                </div>
+                <div class="registerFormContainer flexContainer">
+                    <div class="registerForm">
+                        <h2>Register</h2>
+                        <form>
+                            <div class="registerFormLabelInput">
+                                <label for="name">Your name <span class="required">*</span></label>
+                                <input type="text" name="name" id="nameInput" required>
+                            </div>
+                            <div class="registerFormLabelInput">
+                                <label for="phone">Phone</label>
+                                <input type="number" name="phone" id="phoneInput"
+                                    pattern="[0-9]{4}[0-9]{2}[0-9]{4}" required>
+                            </div>
+                            <div class="registerFormLabelInput">
+                                <label for="email">Email address <span class="required">*</span></label>
+                                <input type="email" name="email" id="emailInput" required>
+                            </div>
+                            <div class="registerFormLabelInput">
+                                <label for="password">Create password <span class="required">*</span></label>
+                                <input type="password" name="password" id="registerPasswordInput" required>
+                            </div>
+                            <div class="registerFormLabelInput">
+                                <label for="repeatPassword">Verify password <span
+                                        class="required">*</span></label>
+                                <input type="password" name="repeatPassword" id="repeatPasswordInput" required>
+                            </div>
+                            <div class="registerFormLabelInput">
+                                <button class="registerFormButton" type="submit">REGISTER</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="loginForm">
+                        <h2>Login</h2>
+                        <form action="">
+                            <div class="registerFormLabelInput">
+                                <label for="username">Username or email <span class="required">*</span></label>
+                                <input type="text" name="username" id="usernameInput" required>
+                            </div>
+                            <div class="registerFormLabelInput">
+                                <label for="password">Password <span class="required">*</span></label>
+                                <input type="password" name="password" id="loginPasswordInput" required>
+                            </div>
+                            <div class="registerFormLabelInput">
+                                <label class="rememberMeContainer">
+                                    <input type="checkbox">
+                                    <span id="rememberMeText">Remember Me</span>
+                                    <span class="checkmark" id="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="registerFormLabelInput">
+                                <button class="loginFormButton" type="submit">LOG IN</button>
+                            </div>
+                            <div class="registerFormLabelInput lostPassword">
+                                <button class="loginFormButton lost-bg" type="submit">LOST YOUR
+                                    PASSWORD?</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="closeLoginIcon" id="closeLoginIcon">
+                <p class="closeIcon">X</p>
+            </div>
         </div>
       </section>
       <footer id="footer">
