@@ -271,6 +271,11 @@
   height: 360px;
 }
 
+.orderHistoryBigWidth .LoginDetails,
+.orderHistoryBigWidth .PersonalDetails {
+  width: 46%;
+}
+
 /* My Wishlist */
 .WishlistContainer {
   font-size: 18px;
@@ -329,6 +334,7 @@
   font-size: 15px;
   height: 40px;
   padding-top: 9px;
+  cursor: pointer;
 }
 .cartWishlist {
   width: 17px;
@@ -446,6 +452,9 @@
   }
   .MyAccountContainer {
     justify-content: flex-start;
+  }
+  .orderHistoryTwoButton .myAccountBtn{
+    width: 48.5%;
   }
 }
 
