@@ -17,18 +17,20 @@
       if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-        aboutUsDescription.style.height = "343px";
+        setTimeout(() => {
+          moreText.style.display = "none";
+        }, 50);
+        aboutUsDescription.style.height = "320px";
         downicon.style.display = "inline";
         upicon.style.display = "none";
-        // aboutUsDescription.style.transition = "height 1s ease";
+        aboutUsDescription.style.transition = "height 0.5s ease";
       } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
-        aboutUsDescription.style.height = "690px";
+        aboutUsDescription.style.height = "670px";
         downicon.style.display = "none";
         upicon.style.display = "inline";
-        aboutUsDescription.style.transition = "height 0.5s ease-in-out";
+        aboutUsDescription.style.transition = "height 0.4s ease-in-out";
         setTimeout(() => {
           moreText.style.display = 'block';
         }, 350);

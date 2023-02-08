@@ -126,7 +126,7 @@
   /* margin-right: auto; */
   position: absolute;
   max-width: 75%;
-  bottom: 140px;
+  bottom: 170px;
 }
 
 .aboutUsDescriptionWrap2 {
@@ -149,7 +149,7 @@
   flex-direction: column;
   justify-content: end;
   position: relative;
-  height: 343px;
+  height: 320px;
   margin-left: 0;
 }
 
@@ -221,7 +221,16 @@
   }
 }
 
+@media (min-width: 879px) and (max-width: 939px){
+  .aboutUsPara{
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
+  .aboutUsDescriptionWrap{
+    bottom: 140px;
+  }
   .links {
     margin-right: calc(-50px / 2);
     margin-left: calc(-50px / 2);
@@ -255,6 +264,13 @@
 
 }
 
+@media (max-width: 879px){
+  .aboutUsPara{
+    line-height: 20px;
+    margin-bottom: 22px;
+  }
+}
+
 @media (max-width: 768px) {
   .aboutHeader h2 {
     width: 60%;
@@ -280,7 +296,7 @@
   .aboutUsPara{
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .aboutUsDescription {
@@ -288,6 +304,7 @@
     padding: 20px 20px 20px 20px;
     margin-right: 0;
     margin-left: -60px;
+    justify-content: start;
   }
 
   .aboutUsBackgroundImageWrap{
