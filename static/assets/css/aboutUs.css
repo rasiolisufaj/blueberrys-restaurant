@@ -121,10 +121,8 @@
 }
 
 .aboutUsDescriptionWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* margin-right: auto; */
   position: absolute;
   max-width: 75%;
@@ -146,8 +144,10 @@
   border-left-width: 0px;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   background-color: #273c89;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   display: flex;
+  flex-direction: column;
+  justify-content: end;
   position: relative;
   height: 343px;
   margin-left: 0;
@@ -181,7 +181,7 @@
 }
 
 #readMoreButton:hover {
-  border: 1px dotted white;
+  /* border: 1px dotted white; */
 }
 
 #aboutUsArrowUp {

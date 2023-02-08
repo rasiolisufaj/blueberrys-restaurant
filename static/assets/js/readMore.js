@@ -31,7 +31,7 @@
         aboutUsDescription.style.transition = "height 0.5s ease-in-out";
         setTimeout(() => {
           moreText.style.display = 'block';
-        }, 500);
+        }, 350);
       }
     }
   });
