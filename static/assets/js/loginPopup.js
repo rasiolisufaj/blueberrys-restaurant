@@ -16,9 +16,9 @@ const menuHomeSectionEl = document.getElementById('homeSection');
 const valuesSectionEl = document.getElementById('valuesSection');
 const teamSectionEl = document.getElementById('teamSection');
 const profilePageSectionEl = document.getElementById('ProfilePageSection');
+const applyNowFormSectionEl = document.getElementById('applyNowForm');
 const urlParts = window.location.pathname.split('/');
 const url = urlParts[urlParts.length - 1];
-console.log(url);
 
 function loginPopup(){
   if(url === 'home.html'){

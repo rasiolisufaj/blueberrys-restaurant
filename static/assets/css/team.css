@@ -112,6 +112,96 @@
   cursor: pointer;
 }
 
+.loginSection.applyNowForm{
+  display: none;
+}
+
+.loginContainer.applyNowContainer{
+  width: 80%;
+}
+
+.loginContainer.applyNowContainer .loginInnerContainer{
+  height: 95%;
+}
+
+.applyNowFormContainer{
+  height: 100%;
+  width: 100%;
+}
+
+.loginForm.applyForm{
+  width: 100%;
+}
+
+.loginForm.applyForm form{
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm.applyForm form input,
+.loginForm.applyForm form textarea{
+  padding: 1rem;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #273c89;
+  border-radius: 3px;
+  border: 1px solid #273c89;
+  outline: none;
+}
+ 
+.loginForm.applyForm form input[type="file"]{
+  border: none;
+} 
+
+.loginForm.applyForm form input::placeholder,
+.loginForm.applyForm form textarea::placeholder{
+  color: #273c89;
+  opacity: 0.7;
+}
+
+.applyNowBtn{
+  background: #273c89;
+  color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #273c89;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.file-input{
+  margin-bottom: 20px;
+}
+
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 18px !important;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 12px;
+  background-color: #273c89;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.file-input__label svg {
+  height: 16px;
+  margin-right: 4px;
+}
 /* Media Queries */
 @media (min-width: 768px) and (max-width: 1200px){
   .meetTeamText{
@@ -189,5 +279,12 @@
   .memberImageContainer img{
     width: 235px;
     height: 298px;
+  }
+  .file-input__label{
+    font-size: 14px !important;
+  }
+  .applyNowBtn{
+    padding: 1rem;
+    font-size: 16px;
   }
 }
