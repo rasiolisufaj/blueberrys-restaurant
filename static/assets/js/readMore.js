@@ -12,8 +12,7 @@
 
   readMoreButton.addEventListener("click", function (e) {
     e.preventDefault();
-    // let height = window.innerHeight ;
-    if (screen.width >= 800 || screen.width <= 436) {
+    if (screen.width >=800 || screen.width <= 436 || screen.width > 437) {
       if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
