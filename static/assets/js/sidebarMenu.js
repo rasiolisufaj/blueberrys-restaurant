@@ -18,5 +18,11 @@ function locationSidebar(){
   locationsLinkElement.classList.toggle('locations-blue');
 }
 
-locationsLinkElement.addEventListener('click', () => locationSidebar());
-backIconElement.addEventListener('click', () => locationSidebar());
+locationsLinkElement.addEventListener('click', (e) => {
+  e.preventDefault();
+  locationSidebar();
+});
+backIconElement.addEventListener('click', (e) => {
+  e.preventDefault();
+  locationSidebar();
+});

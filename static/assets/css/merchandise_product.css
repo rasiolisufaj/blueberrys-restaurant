@@ -138,19 +138,27 @@ aside a:hover {
   background: #273c89;
   border-top: 2px solid #fff;
   z-index: 100;
+  transition: color 0.15s ease-in;
+  text-decoration: none;
 }
 
 .locations-blue:hover,
 .locations-blue:focus{
   cursor: pointer;
-  color: #fff;
+  color: var(--hover-color);
   border-top: 2px solid #fff;
   text-decoration: none;
+  outline: none;
 }
 
 #backIcon{
   cursor: pointer;
   font-size: 18px;
+  transition: color 0.15s ease-in;
+}
+
+#backIcon:hover{
+  color: var(--hover-color);
 }
 
 /* Merchandise Content */

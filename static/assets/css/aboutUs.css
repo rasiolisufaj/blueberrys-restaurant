@@ -50,11 +50,13 @@
   margin-left: calc(80px / 2);
   position: relative;
   text-decoration: none;
+  transition: transform 0.15s ease-in;
 }
 
-.links a:hover > img {
+.links a:hover {
   transform: scale(1.2);
 }
+
 
 .links a img {
   position: absolute;
@@ -164,6 +166,14 @@
 
 #more {
   display: none;
+}
+
+#readMoreButton{
+  transition: color var(--hover-transition);
+}
+
+#readMoreButton:hover{
+  color: var(--hover-color);
 }
 
 #readMoreButton {

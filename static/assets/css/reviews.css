@@ -175,6 +175,12 @@
 .loginToReviewButton {
   width: 30%;
   font-weight: 900;
+  transition: color var(--hover-transition);
+}
+
+.loginToReviewButton:hover{
+  background: #273c89;
+  color: var(--hover-color);
 }
 
 .addReviewSection {
