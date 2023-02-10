@@ -77,6 +77,11 @@
   line-height: 21.6px;
   font-weight: 900;
   margin: 62px 3px 22px;
+  transition: color var(--hover-transition);
+}
+
+.myAccountBtn.updateBtn:hover{
+  color: var(--hover-color);
 }
 
 .orderHistoryTwoButton .myAccountBtn {

@@ -281,6 +281,18 @@ aside a:hover {
   padding: 2rem 6rem 2rem 3rem;
 }
 
+.product-description h2 {
+  font-size: 36px;
+}
+
+.write-review .label.reviewName{
+  color: #273c89;
+}
+
+.other-products .product{
+  cursor: pointer;
+}
+
 .product-description h2,
 .product-description span {
   font-weight: 800;
@@ -316,6 +328,11 @@ aside a:hover {
 .reviews-text {
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.reviews-text h1 {
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .reviews-text hr {
@@ -438,8 +455,13 @@ aside a:hover {
 .prod-info {
   /* border: 2px solid greenyellow; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   border: 1px solid #f4eddd;
+}
+
+.searchInput{
+  border: none;
+  outline: none;
 }
 
 .prod-save-buy {
