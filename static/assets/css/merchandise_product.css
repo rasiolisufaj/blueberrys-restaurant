@@ -66,6 +66,22 @@ ul {
   /* border: 3px solid green; */
 }
 
+.productDetail{
+  display: flex;
+  width: 100%;
+  padding: 80px 40px;
+}
+
+.productDetailPage{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.productDetailPage .merchandise-content{
+  padding: 0;
+}
+
 /* Aside */
 aside {
   /* border: 2px solid red; */
@@ -357,6 +373,15 @@ aside a:hover {
   justify-content: center;
 }
 
+.user-like i {
+  cursor: pointer;
+  transition: transform 0.15s ease-in;
+}
+
+.user-like i:hover{
+  transform: scale(1.2);
+}
+
 .italic {
   font-style: italic;
 }
@@ -437,7 +462,9 @@ aside a:hover {
 }
 
 .similar-products h1 {
-  margin-bottom: 1rem;
+  margin: 4rem 0;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .similar-products a {
@@ -546,4 +573,8 @@ footer {
 
 .links a {
   margin-bottom: 15px;
+}
+
+@media (max-width: 965px){
+
 }

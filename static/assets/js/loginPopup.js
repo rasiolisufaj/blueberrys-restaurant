@@ -17,6 +17,7 @@ const valuesSectionEl = document.getElementById('valuesSection');
 const teamSectionEl = document.getElementById('teamSection');
 const profilePageSectionEl = document.getElementById('ProfilePageSection');
 const applyNowFormSectionEl = document.getElementById('applyNowForm');
+const productDetailPage = document.getElementById('productDetailPage');
 const urlParts = window.location.pathname.split('/');
 const url = urlParts[urlParts.length - 1];
 
@@ -44,6 +45,8 @@ function loginPopup(){
     teamSectionEl.classList.toggle('hidden');
   } else if(url === 'my_account.html'){
     profilePageSectionEl.classList.toggle('hidden');
+  } else if(url === 'product_detail.html'){
+    productDetailPage.classList.toggle('hidden');
   }
   footerElement.classList.toggle('hidden');
   loginPopupElement.classList.toggle('showUp');
@@ -53,6 +56,6 @@ loginPopupElement.addEventListener('click', (e) => {
   if(e.target.id === 'loginSectionPopup'){
     loginPopup();
   }
-})
+});
 loginBtnElement.addEventListener("click",() => loginPopup());
 closeLoginElement.addEventListener('click', () => loginPopup());

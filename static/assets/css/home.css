@@ -78,6 +78,10 @@
   padding-top: 87%;
 }
 
+.homeSectionRightContent a {
+  text-decoration: none;
+}
+
 .waitlistButton {
   background-color: #273c89;
   /*padding: 10px;*/
