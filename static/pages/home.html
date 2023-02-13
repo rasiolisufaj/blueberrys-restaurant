@@ -442,29 +442,29 @@
                                 <form id="register-now" action="">
                                     <div class="registerFormLabelInput">
                                         <label for="name">Your name <span class="required">*</span></label>
-                                        <input type="text" name="name" id="nameInput" required>
+                                        <input type="text" name="name" id="nameInput" placeholder="Name" required>
                                     </div>
                                     <div class="registerFormLabelInput">
                                         <label for="surname">Your surname <span class="required">*</span></label>
-                                        <input type="text" name="surname" id="surnameInput" required>
+                                        <input type="text" name="surname" id="surnameInput" placeholder="Surname" required>
                                     </div>
                                     <div class="registerFormLabelInput">
                                         <label for="phone">Phone</label>
-                                        <input type="number" name="phone" id="phoneInput"
-                                            pattern="[0-9]{4}[0-9]{2}[0-9]{4}" required>
+                                        <input type="tel" name="phone" id="phoneInput" placeholder="444-444-5555" required 
+                                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" >
                                     </div>
                                     <div class="registerFormLabelInput">
                                         <label for="email">Email address <span class="required">*</span></label>
-                                        <input type="email" name="email" id="emailInput" required>
+                                        <input type="email" name="email" id="emailInput" placeholder="email@address.com" required>
                                     </div>
                                     <div class="registerFormLabelInput">
                                         <label for="password">Create password <span class="required">*</span></label>
-                                        <input type="password" name="password" id="registerPasswordInput" required>
+                                        <input type="password" name="password" id="registerPasswordInput" placeholder="Create Password" required>
                                     </div>
                                     <div class="registerFormLabelInput">
                                         <label for="repeatPassword">Verify password <span
                                                 class="required">*</span></label>
-                                        <input type="password" name="repeatPassword" id="repeatPasswordInput" required>
+                                        <input type="password" name="repeatPassword" id="repeatPasswordInput" placeholder="Confirm Password" required>
                                     </div>
                                     <div class="registerFormLabelInput">
                                         <button class="registerFormButton" type="submit">REGISTER</button>

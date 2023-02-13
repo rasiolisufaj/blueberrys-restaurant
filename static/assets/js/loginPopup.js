@@ -28,6 +28,9 @@ const name = document.getElementById("YourName");
 const phone = document.getElementById("phone");
 const email = document.getElementById("email");
 const password = document.getElementById("createpassword");
+const registerPasswordInputEl = document.getElementById('registerPasswordInput');
+const repeatPasswordInputEl = document.getElementById('repeatPasswordInput');
+let passwordsMatch = false;
 
 function loginPopup() {
   if (url === "home.html") {
@@ -73,26 +76,40 @@ loginPopupElement.addEventListener("click", (e) => {
 loginBtnElement.addEventListener("click", () => loginPopup());
 closeLoginElement.addEventListener("click", () => loginPopup());
 
+repeatPasswordInputEl.addEventListener('keyup', e => {
+  if(registerPasswordInputEl.value === e.target.value){
+    passwordsMatch = true;
+    repeatPasswordInputEl.classList.remove('notMatch');
+  } else {
+    passwordsMatch = false;
+    repeatPasswordInputEl.classList.add('notMatch');
+  }
+})
+
 loginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   const formData = new FormData(loginForm);
-  console.log(formData.get("email"));
   const data = Object.fromEntries(formData);
-  console.log(data);
 
   const response = await handleLogin(data);
   let token = response.token;
   localStorage.setItem("token", token);
+  localStorage.setItem("userEmail", data.email);
 });
 
 registerForm.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const formData = new FormData(registerForm);
-  console.log(formData.get("email"));
-  const data = Object.fromEntries(formData);
-  console.log(data);
+  if(passwordsMatch){
+    const formData = new FormData(registerForm);
+    const data = Object.fromEntries(formData);
+  
+    const response = await handleRegister(data);
+    registerForm.reset();
 
-  const response = await handleRegister(data);
+  } else {
+    repeatPasswordInputEl.setAttribute('title', 'Please make sure passwords match!');
+    return;
+  }
 });
 
 async function handleLogin(data) {
@@ -116,7 +133,6 @@ async function handleLogin(data) {
 
 async function handleRegister(data) {
   delete data.repeatPassword;
-  console.log(data);
 
   try {
     const beUrl = `http://localhost:8080/signin`;
@@ -130,7 +146,6 @@ async function handleRegister(data) {
       //TODO  call the endpoint
     });
 
-    console.log(await response.json());
   } catch (err) {
     console.log(err);
   }

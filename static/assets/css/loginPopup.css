@@ -101,6 +101,11 @@
   outline: 0;
 }
 
+.registerFormLabelInput input::placeholder{
+  color: #273c89;
+  opacity: 0.5;
+}
+
 .registerFormLabelInput.lostPassword{
   margin-top: -15px;
 }
@@ -115,6 +120,10 @@
   width: 100%;
   color: white;
   margin-top: 15px;
+}
+
+#repeatPasswordInput.notMatch{
+  border: 1px solid red !important;
 }
 
 .loginForm{
