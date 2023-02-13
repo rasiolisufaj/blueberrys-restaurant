@@ -17,6 +17,7 @@ const menuHeaderEl = document.getElementById("menuHeader");
 const menuHomeSectionEl = document.getElementById("homeSection");
 const valuesSectionEl = document.getElementById("valuesSection");
 const teamSectionEl = document.getElementById("teamSection");
+const blogSectionEl = document.getElementById('blogPage');
 const profilePageSectionEl = document.getElementById("ProfilePageSection");
 const applyNowFormSectionEl = document.getElementById("applyNowForm");
 const productDetailPage = document.getElementById("productDetailPage");
@@ -62,6 +63,8 @@ function loginPopup() {
     profilePageSectionEl.classList.toggle("hidden");
   } else if (url === "product_detail.html") {
     productDetailPage.classList.toggle("hidden");
+  } else if(url === "blog.html"){
+    blogSectionEl.classList.toggle('hidden');
   }
   footerElement.classList.toggle("hidden");
   loginPopupElement.classList.toggle("showUp");

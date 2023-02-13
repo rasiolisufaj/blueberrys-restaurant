@@ -6,7 +6,7 @@ const test = async () => {
   });
 
   let data;
-
+  console.log(response.status);
   if (response.status === 200) {
     data = await response.json();
     data = data.reviews;
@@ -48,16 +48,18 @@ const test = async () => {
 
     htmlData += `<div class="reviewCard swiper-slide">
                                       <div class="reviewLogo">
-                                          <img src="./assets/img/reviews/reviewLogo.png" alt="">
+                                          <img src="../assets/img/reviews/reviewLogo.png" alt="">
                                       </div>
                                       <div class="reviewBy"> '${el.name}'</div>
                                       <div class="review-stars-block"><i class="review-star">★</i></div>
                                       <div class="reviewDescription"> ${el.description}
                                       </div>
-                                      <div class="reviewDate">${el.updatedAt}</div>
+                                      <div class="reviewDate">${el.date}</div>
                                   </div>`;
   });
   theReviewEl.innerHTML = htmlData;
 };
+
+/* <div class="reviewDate">${el.updatedAt}</div> */
 
 test();
