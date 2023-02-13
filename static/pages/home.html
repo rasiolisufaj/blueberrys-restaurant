@@ -322,7 +322,7 @@
                             </div>
                             <div class="reviewsCarousel swiper">
                                 <div class="slide-content">
-                                    <div class="card-wrapper swiper-wrapper">
+                                    <!-- <div class="card-wrapper swiper-wrapper">
                                         <div class="reviewCard swiper-slide">
                                             <div class="reviewLogo">
                                                 <img src="../assets/img/reviews/reviewLogo.png" alt="">
@@ -384,7 +384,8 @@
                                             </div>
                                             <div class="reviewDate"></div>
                                         </div>
-                                    </div>
+                                    </div> -->
+                                    <div class="card-wrapper swiper-wrapper" id="the-review"></div>
                                 </div>
 
                                 <div class="swiper-button-next swiper-navBtn"></div>
@@ -438,10 +439,14 @@
                         <div class="registerFormContainer flexContainer">
                             <div class="registerForm">
                                 <h2>Register</h2>
-                                <form>
+                                <form id="register-now" action="">
                                     <div class="registerFormLabelInput">
                                         <label for="name">Your name <span class="required">*</span></label>
                                         <input type="text" name="name" id="nameInput" required>
+                                    </div>
+                                    <div class="registerFormLabelInput">
+                                        <label for="surname">Your surname <span class="required">*</span></label>
+                                        <input type="text" name="surname" id="surnameInput" required>
                                     </div>
                                     <div class="registerFormLabelInput">
                                         <label for="phone">Phone</label>
@@ -468,10 +473,10 @@
                             </div>
                             <div class="loginForm">
                                 <h2>Login</h2>
-                                <form action="">
+                                <form id="loginForm" method="post" action="">
                                     <div class="registerFormLabelInput">
                                         <label for="username">Username or email <span class="required">*</span></label>
-                                        <input type="text" name="username" id="usernameInput" required>
+                                        <input type="text" name="email" id="usernameInput" required>
                                     </div>
                                     <div class="registerFormLabelInput">
                                         <label for="password">Password <span class="required">*</span></label>
@@ -612,6 +617,7 @@
     <script src="../assets/js/nav.js"></script>
     <!--<script src="assets/vendor/swiper-bundle.min.js"></script>-->
     <script src="../assets/js/reviewsSwiper.js"></script>
+    <script src="../assets/js/reviews.js"></script>
 </body>
 
 </html>
